@@ -1,0 +1,42 @@
+---
+- hosts: leaf1b
+  connection: local
+  gather_facts: no 
+  vars_files:
+  - "vars/all.yaml"
+
+  tasks:
+  - name: register time
+    shell: date +%Y%m%d-%H%M%S-%N
+    register: output
+  - debug: var=output.stdout
+
+  - name: Install Config and save diff
+    napalm_install_config:
+      hostname: '{{ inventory_hostname }}' 
+      username: vagrant
+      dev_os: eos
+      password: vagrant
+      config_file: leaf1b.cfg.qa 
+      commit_changes: Yes
+      get_diffs: True
+      diff_file: '{{ inventory_hostname }}-test-diff-{{ output.stdout }}'
+
+  - name: Gather System Status
+    eos_command:
+      commands:
+        - command: 'show running-config'
+          output: 'text'
+      provider: '{{ eos_connection }}'
+
+    register: results
+
+  - name: Set facts
+    set_fact:
+      show_run: "{{ results }}"
+
+  - name: Save the current running-Config 
+    copy:
+     content: "{{ show_run.stdout[0] }}"
+     dest: /vagrant/scripts/CICD/{{  inventory_hostname }}.cfg.prod
+    ignore_errors: yes

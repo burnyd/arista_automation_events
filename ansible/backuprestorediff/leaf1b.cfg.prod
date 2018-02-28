@@ -1,0 +1,81 @@
+! Command: show running-config
+! device: leaf1b (vEOS, EOS-4.20.0F-6593220.berlinrel (engineering build))
+!
+! boot system flash:/vEOS-lab.swi
+!
+event-handler Terminattr
+   trigger on-boot
+   action bash /usr/bin/TerminAttr -grpcaddr 0.0.0.0:6042 -allowed_ips 0.0.0.0/0 -disableaaa
+!
+event-handler dhclient
+   trigger on-boot
+   action bash sudo /mnt/flash/initialize_ma1.sh
+!
+transceiver qsfp default-mode 4x10G
+!
+hostname leaf1b
+ip name-server vrf default 8.8.8.8
+ip domain-list 8.8.8.8
+!
+spanning-tree mode mstp
+!
+aaa authorization exec default local
+!
+aaa root secret sha512 $6$91wN0o2yQbYrnk0A$v3/sEoBvyjm44EBiKwx1nnuLQYBNmEL6xpk7AQxysM3tE92omHKoQrJp2ZwOdh7URiaPG0FWu9br.U0XDDrpd.
+!
+username admin privilege 15 role network-admin secret sha512 $6$K6hOpQI88lEbSFdO$upe/BlM9u0NGQ6wyC2AA3c49lFx2R/ba3RHytt5s1zSMr7iv3OYAxzMzJtqpKd5VJ9VTYav9V85yc1XYYccZs.
+username api secret sha512 $6$Y7PKolYm52bwQskW$c/knM0U5t.Pq0zOo3pJWQ8VSkeMmPl4h93pX6tw1XY1hcfuoOc/E0AyBcK/YVaYokN0CG.4aroCXrDfPFqxtb.
+username ******** privilege 15 role network-admin secret sha512 $6$vxQ5CtunP5WOITpF$6JBchSWzTXiPLNQgOs894hDigicPZlWke..ropaOEf1ZFfg6a6zcvu/dfGp3yNMpdHLIj3vLgpXfLyScZ5fak1
+!
+vlan 5,600,700,800
+!
+vlan 7
+   name production
+!
+vlan 8
+   name app
+!
+interface Ethernet1
+   no switchport
+   ip address 10.0.0.100/24
+!
+interface Ethernet2
+   description connection-to-spine1
+   no switchport
+   ip address 10.0.21.2/24
+!
+interface Ethernet3
+   description connection-to-spine2
+   no switchport
+   ip address 10.0.22.2/24
+!
+interface Ethernet4
+   description connection-to-leaf1a
+   switchport mode trunk
+!
+interface Ethernet5
+   description connection-to-host2
+   switchport access vlan 5
+!
+interface Loopback0
+   ip address 2.2.2.2/32
+!
+interface Management1
+   ip address 10.0.2.15/24
+!
+interface Vlan5
+   ip address 10.0.5.3/24
+   vrrp 5 ip 10.0.5.1
+!
+ip route 0.0.0.0/0 10.0.2.2
+!
+ip routing
+!
+management api http-commands
+   protocol http
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+end

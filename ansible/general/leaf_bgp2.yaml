@@ -1,0 +1,22 @@
+- hosts: leaf1a
+  connection: local
+  gather_facts: no 
+  vars_files: 
+    - "vars/all.yaml"
+
+  tasks:
+    - name: BGP on leaf switches
+      eos_config:
+        src: templates/bgp_leaf.j2
+        provider: "{{ eos_connection }}"
+      ignore_errors: True
+
+    - name: ping p2p links
+      eos_command:
+        commands:
+           - ping {{ item }}
+        provider: '{{ eos_connection }}'
+      register: result
+      failed_when: "' 100% packet loss' in result.stdout[0].messages[0]"
+      #failed_when: "' 100% packet loss' in result.stdout[0].mesages[0]"
+      with_items: "{{ ebgp_peers[inventory_hostname].keys() }}"

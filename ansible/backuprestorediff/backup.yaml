@@ -1,0 +1,27 @@
+---
+- hosts: leaf1b
+  connection: local
+  gather_facts: no 
+  vars_files:
+  - "vars/all.yaml"
+
+  tasks:
+
+  - name: Gather System Status
+    eos_command:
+      commands:
+        - command: 'show running-config'
+          output: 'text'
+      provider: '{{ eos_connection }}'
+
+    register: results
+
+  - name: Set facts
+    set_fact:
+      show_run: "{{ results }}"
+
+  - name: Save the current running-Config 
+    copy:
+     content: "{{ show_run.stdout[0] }}"
+     dest: ./{{  inventory_hostname }}.cfg.prod
+    ignore_errors: yes
