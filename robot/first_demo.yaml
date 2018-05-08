@@ -1,0 +1,17 @@
+---
+TRANSPORT: https
+PORT: 443
+USERNAME: daniel
+PASSWORD: daniel123
+
+RUNFORMAT: suite
+
+nodes:
+  SW1:
+    host: 10.20.30.24
+
+PROD_TAGS:
+  - ignoretags
+
+testfiles:
+  - first_demo

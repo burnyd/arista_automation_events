@@ -1,0 +1,41 @@
+---
+TRANSPORT: https
+PORT: 443
+USERNAME: daniel
+PASSWORD: daniel123
+   
+RUNFORMAT: suite
+   
+PROD_TAGS:
+  - ignoretags
+   
+testfiles:
+  - network_validation
+   
+nodes:
+  SW1:
+    host: 10.20.30.24
+  SW2:
+    host: 10.20.30.25
+  SW3:
+    host: 10.20.30.26
+  SW4:
+    host: 10.20.30.27
+  SW5:
+    host: 10.20.30.28
+  SW6:
+    host: 10.20.30.29
+  SW7:
+    host: 10.20.30.30
+  SW8:
+    host: 10.20.30.31
+  SW9:
+    host: 10.20.30.32
+  SW10:
+    host: 10.20.30.33
+  SW11:
+    host: 10.20.30.34
+  SW12:
+    host: 10.20.30.21
+  SW13:
+    host: 10.20.30.22

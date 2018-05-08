@@ -1,0 +1,32 @@
+*** Settings ***
+Documentation     This test changes a BGP neighbor statement to the wrong AS to verify that the neighbor state becomes un-established.
+...               The test reverts the neighbor statement to it's proper state.
+Suite Setup       Connect To Switches
+Suite Teardown    Clear All Connections
+Library           AristaLibrary
+Library           AristaLibrary.Expect
+Library           Collections
+Library    network_validation.Bgp
+
+
+*** Test Cases ***
+show bgp neighbors
+   Record Output    cmd=show ip bgp summary
+
+*** Keywords ***
+Connect To Switches
+    [Documentation]    Establish connection to a switch which gets used by test cases.
+{% for switchnum in countlist %}
+{% set numbersw = 'SW' + switchnum|string + '_HOST' %}
+    Connect To    host=${ {{ numbersw }} }    transport=${TRANSPORT}    username=${USERNAME}    password=${PASSWORD}
+    Get Command Output  cmd=show ip bgp summary
+    Record Output
+    ${peers}=       Get Value    vrfs default peers
+    :FOR    ${peer}  IN      @{peers}
+    \       Log     ${peer}
+    \       Expect  vrfs default peers ${peer} peerState  to be  Established
+{% endfor %}
+
+Gather Post Change Output
+    Record Output    cmd=show ip bgp summary
+
