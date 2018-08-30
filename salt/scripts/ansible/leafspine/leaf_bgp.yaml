@@ -1,0 +1,12 @@
+---
+- hosts: leafs
+  connection: local
+  gather_facts: no 
+  vars_files:
+  - "group_vars/all.yaml"
+
+  tasks:
+  - name: BGP on leaf switches
+    eos_config:
+      src: templates/bgp_leaf.j2
+      provider: "{{ eos_connection }}"

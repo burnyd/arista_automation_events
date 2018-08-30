@@ -1,0 +1,13 @@
+---
+- hosts: all
+  connection: local
+  gather_facts: yes 
+  vars_files:
+  - "group_vars/all.yaml"  
+
+  tasks:
+
+  - name: Configure our syslog servers
+    eos_config:
+      src: syslog.j2
+      provider: "{{ eos_connection }}"

@@ -1,0 +1,19 @@
+---
+- hosts: leaf1a
+  connection: local
+  gather_facts: no 
+  vars_files:
+  - "group_vars/all.yaml"
+
+  tasks:
+
+  - name: run show version on remote devices
+    register: showcommands
+    eos_command:
+      commands:
+        - show version
+        - show inventory
+      provider: "{{ eos_connection }}"
+
+  - debug: var=showcommands.stdout
+

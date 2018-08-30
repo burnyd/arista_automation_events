@@ -1,0 +1,23 @@
+---
+
+- hosts: leaf1a
+  connection: local
+  gather_facts: no 
+  vars_files:
+  - "group_vars/all.yaml"
+
+  tasks:
+
+  - name: get facts from device
+    napalm_get_facts:
+     hostname={{ inventory_hostname }}
+     username=vagrant
+     dev_os=eos
+     password=vagrant
+     filter='facts,interfaces'
+    register: result
+
+  - name: print data
+    debug: var=result
+
+
