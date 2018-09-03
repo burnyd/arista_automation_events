@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SALT_MASTER="10.0.0.15"
+SALT_MASTER="192.168.0.4"
 #Check if /etc/salt is exist
 if [ -d "/etc/salt" ]; then
         echo -e "Salt directoy exists"
