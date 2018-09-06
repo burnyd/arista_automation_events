@@ -6,8 +6,8 @@ dev = driver(hostname='leaf1', username='arista',
              password='arista')
 
 dev.open()
-bgp_neighbors = dev.get_bgp_neighbors()
+facts = dev.get_facts()
 dev.close()
-print(json.dumps(bgp_neighbors, sort_keys=True, indent=4))
+print(json.dumps(facts, sort_keys=True, indent=4))
 
 
