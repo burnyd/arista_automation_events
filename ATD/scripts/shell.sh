@@ -33,6 +33,7 @@ echo "Install napalm EOS libraries"
 sudo pip install napalm
 sudo pip install napalm-logs
 sudo pip install napalm-base
+sudo pip install jtextfsm
 
 echo "Installing Saltstack"
 sudo wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/
