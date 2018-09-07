@@ -4,6 +4,19 @@
 #Git clone && cd into directory then shell into this script to run the ansible playbook last?
 #Clone the directory or add the salt swix/startup.sh files.
 
+ping -q -c5 google.com > /dev/null
+ 
+if [ $? -eq 0 ]
+then
+	echo "connectivity is there"
+else    echo "connectivity is not there"
+        exit 1 
+fi 
+
+sudo echo 192.168.0.4 salt >> /etc/hosts
+sudo echo 192.168.0.4 master >> /etc/hosts
+
+
 echo "Firewall rules for salt"
 sudo ufw allow 4505:4506/tcp
 
