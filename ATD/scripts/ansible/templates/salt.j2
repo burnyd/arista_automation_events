@@ -1,0 +1,10 @@
+management api http-commands
+   protocol http
+   protocol unix-socket
+   no shutdown
+!
+username ansible secret ansible privilege 15 shell /bin/bash
+!
+event-handler boot-up-script
+   trigger on-boot
+   action bash sudo /mnt/flash/startup.sh

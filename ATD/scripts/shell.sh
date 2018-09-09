@@ -2,7 +2,8 @@
 #Todos
 #loop through adding directories?
 #Git clone && cd into directory then shell into this script to run the ansible playbook last?
-#Clone the directory or add the salt swix/startup.sh files.
+#Clone the directory or add the salt swix/startup.sh files
+#start the proxy minions
 
 ping -q -c5 google.com > /dev/null
  
