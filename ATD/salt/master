@@ -2,6 +2,7 @@ file_roots:
   base:
     - /srv/salt
     - /srv/salt/templates
+    - /srv/salt/states
 
 pillar_roots:
   base:
