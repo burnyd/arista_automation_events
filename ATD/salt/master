@@ -8,6 +8,8 @@ pillar_roots:
     - /srv/salt
     - /srv/salt/templates
     - /srv/salt/pillar
+    - /srv/salt/states
+
 ##### Primary configuration settings #####
 ##########################################
 # This configuration file is used to manage the behavior of the Salt Master.
