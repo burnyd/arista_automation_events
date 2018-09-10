@@ -20,6 +20,7 @@
       mode: "{{ item.mode }}"
     connection: ssh
     remote_user: ansible
+    password: ansible
     become: yes
     with_items:
     - { src: ./salt-eos-latest.swix , dest: /mnt/flash , mode: 0777}
@@ -34,5 +35,6 @@
       - 'FastCli -p 15 -c "copy installed-extensions boot-extensions"'
     connection: ssh
     remote_user: ansible
+    password: ansible
     become: yes
 
