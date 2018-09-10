@@ -8,7 +8,7 @@
 
   tasks:
 
-  - name: Add shell user
+  - name: Add Shell user, unix protocol and eventhandler for reboots
     eos_config:
        src: templates/salt.j2         
        provider: "{{ eos_connection }}"
@@ -25,14 +25,21 @@
     - { src: ./salt-eos-latest.swix , dest: /mnt/flash , mode: 0777}
     - { src: ./startup.sh , dest: /mnt/flash , mode: 0777}
 
-  - name: Install salt
+  - name: Copy boot extensions
     shell: "{{ item }}"
     with_items:
       - 'FastCli -p 15 -c "copy flash:salt-eos-latest.swix extension:"'
       - 'FastCli -p 15 -c "extension salt-eos-latest.swix force"'
-      - sudo /mnt/flash/startup.sh
       - 'FastCli -p 15 -c "copy installed-extensions boot-extensions"'
     connection: ssh
     remote_user: ansible
     become: yes
 
+  - name: install start via startup shell script.
+    shell: "{{ item }}"
+    with_items:
+      - sleep 10
+      - sudo /mnt/flash/startup.sh
+    connection: ssh
+    remote_user: ansible
+    become: yes
