@@ -1,0 +1,2 @@
+#Add vlans 
+salt leaf1.localdomain state.sls states.vlans.vlan

@@ -35,10 +35,8 @@ echo "Adding salt directories"
 sudo mkdir -p /srv/salt/
 sudo mkdir -p /srv/salt/pillar/
 sudo mkdir -p /srv/salt/states/
+sudo mkdir -p /srv/salt/states/vlans/
 sudo mkdir -p /srv/salt/templates/
-sudo mkdir -p /srv/salt/states/leaf
-sudo mkdir -p /srv/salt/states/spine
-sudo mkdir -p /srv/salt/reactor/
 
 echo "fixing the default ubuntu pyOpenSSL issue"
 pip install --upgrade pyOpenSSL
