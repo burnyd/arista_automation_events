@@ -4,6 +4,8 @@
 #Git clone && cd into directory then shell into this script to run the ansible playbook last?
 #Clone the directory or add the salt swix/startup.sh files
 #start the proxy minions
+#Copy the salt custom grain for bgp
+
 
 ping -q -c5 google.com > /dev/null
  
@@ -37,6 +39,7 @@ sudo mkdir -p /srv/salt/pillar/
 sudo mkdir -p /srv/salt/states/
 sudo mkdir -p /srv/salt/states/vlans/
 sudo mkdir -p /srv/salt/templates/
+sudo mkdir -p /srv/salt/_grains/
 
 echo "fixing the default ubuntu pyOpenSSL issue"
 pip install --upgrade pyOpenSSL
