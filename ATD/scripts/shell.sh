@@ -60,7 +60,8 @@ echo "Move salt files to their directories"
 cp ../salt/master /etc/salt/master
 cp -R ../salt/pillar/* /srv/salt/pillar/
 cp -R ../salt/reactor/* /srv/salt/reactor
-
+cp -R ../salt/states/ /srv/salt/states/
+cp -R ../salt/templates/* /srv/salt/templates/
 
 echo "restarting the master service" 
 service salt-master restart
