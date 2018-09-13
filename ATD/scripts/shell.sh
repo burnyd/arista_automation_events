@@ -1,9 +1,4 @@
 #!/bin/bash
-#Todos
-#loop through adding directories?
-#Git clone && cd into directory then shell into this script to run the ansible playbook last?
-#Clone the directory or add the salt swix/startup.sh files
-#start the proxy minions
 #Copy the salt custom grain for bgp
 #Sync grains salt '*' saltutil.sunc_grains
 
@@ -38,8 +33,10 @@ sudo mkdir -p /srv/salt/
 sudo mkdir -p /srv/salt/pillar/
 sudo mkdir -p /srv/salt/states/
 sudo mkdir -p /srv/salt/states/vlans/
+sudo mkdir -p /srv/salt/states/bgp/
 sudo mkdir -p /srv/salt/templates/
 sudo mkdir -p /srv/salt/_grains/
+sudo mkdir -p /srv/salt/reactor
 
 echo "fixing the default ubuntu pyOpenSSL issue"
 pip install --upgrade pyOpenSSL
@@ -54,7 +51,14 @@ echo "Installing Saltstack"
 sudo wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/
 sudo sh bootstrap-salt.sh -M
 
+echo "Use ansible to install salstack agent on all switches"
+ansible-playbook playbook.yaml
+
 sleep 5
+
+echo "Move salt files to their directories"
+cp ../salt/master /etc/salt/master
+
 
 echo "restarting the master service" 
 service salt-master restart
