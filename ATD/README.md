@@ -1,5 +1,3 @@
-Readme
-
 The slide presentation will be presented to you from the presenter.
 
 Each slide will come with the lab in the labs directory for each of the given modules.
