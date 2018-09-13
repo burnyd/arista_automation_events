@@ -58,6 +58,8 @@ sleep 5
 
 echo "Move salt files to their directories"
 cp ../salt/master /etc/salt/master
+cp -R ../salt/pillar/* /srv/salt/pillar/
+cp -R ../salt/reactor/* /srv/salt/reactor
 
 
 echo "restarting the master service" 
