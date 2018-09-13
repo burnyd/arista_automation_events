@@ -5,7 +5,7 @@
 #Clone the directory or add the salt swix/startup.sh files
 #start the proxy minions
 #Copy the salt custom grain for bgp
-
+#Sync grains salt '*' saltutil.sunc_grains
 
 ping -q -c5 google.com > /dev/null
  
@@ -52,7 +52,7 @@ sudo pip install jtextfsm
 
 echo "Installing Saltstack"
 sudo wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/
-sudo sh bootstrap-salt.sh
+sudo sh bootstrap-salt.sh -M
 
 sleep 5
 

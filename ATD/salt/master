@@ -3,6 +3,7 @@ file_roots:
     - /srv/salt
     - /srv/salt/templates
     - /srv/salt/states
+    - /srv/salt/pillar
 
 pillar_roots:
   base:
@@ -10,6 +11,13 @@ pillar_roots:
     - /srv/salt/templates
     - /srv/salt/pillar
     - /srv/salt/states
+
+reactor:
+  - salt/minion/leaf4*/start:
+    - salt://reactor/leafvlansztp.sls
+
+  - salt/minion/leaf4/start:
+    - salt://reactor/slackgenerate.sls
 
 ##### Primary configuration settings #####
 ##########################################
