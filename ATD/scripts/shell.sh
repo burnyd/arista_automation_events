@@ -63,6 +63,29 @@ cp -R ../salt/reactor/* /srv/salt/reactor
 cp -R ../salt/states/ /srv/salt/states/
 cp -R ../salt/templates/* /srv/salt/templates/
 
+echo "installing salt api via apt"
+apt-get update && apt-get install salt-api -y
+
+echo "upgrading cherrypy for api server"
+pip install --upgrade cherrypy
+
 echo "restarting the master service" 
 service salt-master restart
 
+sleep 5
+
+echo "getting salt keys"
+salt-call --local tls.create_self_signed_cert
+
+echo "adding api user"
+useradd saltdev
+echo "saltdev:saltdev" | chpasswd
+usermod -aG sudo saltdev
+
+
+echo "setting permissions for salt folders for api user"
+chown -R saltdev /etc/salt /var/cache/salt /var/log/salt /var/run/salt
+
+
+echo "restarting salt-master and starting api-server"
+service salt-master restart && service salt-api start 

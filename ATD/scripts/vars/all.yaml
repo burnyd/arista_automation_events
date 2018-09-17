@@ -3,7 +3,7 @@ eos_connection:
   username: arista
   password: arista
   transport: eapi
-  use_ssl: False 
+  use_ssl: False
 
 ansible_ssh_user: ansible
 ansible_ssh_password: ansible

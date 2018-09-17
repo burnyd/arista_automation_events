@@ -19,6 +19,17 @@ reactor:
   - salt/minion/leaf4/start:
     - salt://reactor/slackgenerate.sls
 
+external_auth:
+ pam:
+   saltdev:
+     - .*
+
+rest_cherrypy:
+  port: 8888
+  ssl_crt: /etc/pki/tls/certs/localhost.crt
+  ssl_key: /etc/pki/tls/certs/localhost.key
+  #disable_ssl: True
+
 ##### Primary configuration settings #####
 ##########################################
 # This configuration file is used to manage the behavior of the Salt Master.
