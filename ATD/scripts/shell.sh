@@ -41,6 +41,9 @@ sudo mkdir -p /srv/salt/reactor
 echo "fixing the default ubuntu pyOpenSSL issue"
 pip install --upgrade pyOpenSSL
 
+echo "upgrading setup"
+pip install -U setuptools
+
 echo "Install napalm EOS libraries"
 sudo pip install napalm
 sudo pip install napalm-logs
