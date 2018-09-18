@@ -17,6 +17,8 @@ sudo echo 192.168.0.4 master >> /etc/hosts
 
 echo "Firewall rules for salt"
 sudo ufw allow 4505:4506/tcp
+sudo ufw allow 5514/tcp
+sudo ufw allow 5514/udp
 
 echo "Checking connectivity exists"
 ping -q -c5 google.com > /dev/null
@@ -37,6 +39,10 @@ sudo mkdir -p /srv/salt/states/bgp/
 sudo mkdir -p /srv/salt/templates/
 sudo mkdir -p /srv/salt/_grains/
 sudo mkdir -p /srv/salt/reactor
+
+echo "upgrade pip"
+sudo python -m pip install --upgrade pip==9.0.3
+sudo pip install req
 
 echo "fixing the default ubuntu pyOpenSSL issue"
 pip install --upgrade pyOpenSSL
@@ -93,3 +99,6 @@ chown -R saltdev /etc/salt /var/cache/salt /var/log/salt /var/run/salt
 
 echo "restarting salt-master and starting api-server"
 service salt-master restart && service salt-api start 
+
+echo "Run napalm logs"
+napalm-logs --publisher zmq --disable-security --port 5514 &
