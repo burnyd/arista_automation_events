@@ -19,6 +19,10 @@ reactor:
   - salt/minion/leaf4*/start:
     - salt://reactor/slackgenerate.sls
 
+  - 'napalm/syslog/eos/BGP-5-ADJCHANGE/*':
+    - salt://reactor/slackgenerate-bgp.sls
+
+
 external_auth:
  pam:
    saltdev:
@@ -35,6 +39,7 @@ engines:
       address: 0.0.0.0
       port: 49017
       disable_security: true
+
 ##### Primary configuration settings #####
 ##########################################
 # This configuration file is used to manage the behavior of the Salt Master.

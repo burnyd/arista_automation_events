@@ -8,3 +8,6 @@ username ansible secret ansible privilege 15 shell /bin/bash
 event-handler boot-up-script
    trigger on-boot
    action bash sudo /mnt/flash/startup.sh
+!
+logging host 192.168.0.4 5514
+logging format hostname fqdn

@@ -1,6 +1,7 @@
 #!/bin/bash
 #Copy the salt custom grain for bgp
 #Sync grains salt '*' saltutil.sunc_grains
+#salt-run state.event pretty=true
 
 ping -q -c5 google.com > /dev/null
  
