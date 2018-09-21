@@ -62,7 +62,7 @@ sudo wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/
 sudo sh bootstrap-salt.sh -M
 
 echo "Use ansible to install salstack agent on all switches"
-ansible-playbook playbook.yaml
+ansible-playbook playbook.yaml -i inventory
 
 sleep 5
 
