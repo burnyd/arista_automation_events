@@ -41,12 +41,12 @@ sudo mkdir -p /srv/salt/templates/
 sudo mkdir -p /srv/salt/_grains/
 sudo mkdir -p /srv/salt/reactor
 
+echo "fixing the default ubuntu pyOpenSSL issue"
+pip install --upgrade pyOpenSSL
+
 echo "upgrade pip"
 sudo python -m pip install --upgrade pip==9.0.3
 sudo pip install req
-
-echo "fixing the default ubuntu pyOpenSSL issue"
-pip install --upgrade pyOpenSSL
 
 echo "upgrading setup"
 pip install -U setuptools
