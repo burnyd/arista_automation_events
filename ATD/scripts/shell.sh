@@ -73,6 +73,7 @@ cp -R ../salt/reactor/* /srv/salt/reactor
 cp -R ../salt/states/vlans/ /srv/salt/states/vlans/
 cp -R ../salt/states/bgp/ /srv/salt/states/bgp/
 cp -R ../salt/templates/* /srv/salt/templates/
+cp ../salt/_grains/bgp-as.py /srv/salt/_grains/
 
 echo "installing salt api via apt"
 apt-get update && apt-get install salt-api -y
