@@ -102,5 +102,7 @@ chown -R saltdev /etc/salt /var/cache/salt /var/log/salt /var/run/salt
 echo "restarting salt-master and starting api-server"
 service salt-master restart && service salt-api start 
 
+cp /home/arista/arista_automation/events/ATD/salt/BGP_NEIGHBOR_STATE_CHANGE.yml /usr/local/lib/python2.7/dist-packages/napalm_logs/config/eos/
+
 echo "Run napalm logs"
 napalm-logs --publisher zmq --disable-security --port 5514 &
