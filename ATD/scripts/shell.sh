@@ -2,7 +2,9 @@
 #Copy the salt custom grain for bgp
 #salt '*' saltutil.sync_grains
 #salt-run state.event pretty=true
-#salt-run state.event pretty=true
+#salt '*' saltutil.refresh_pillar
+#salt '*' pillar.items
+
 
 ping -q -c5 google.com > /dev/null
  
