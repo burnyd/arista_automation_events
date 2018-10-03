@@ -4,7 +4,7 @@
 #salt-run state.event pretty=true
 #salt '*' saltutil.refresh_pillar
 #salt '*' pillar.items
-
+#/usr/lib/python2.7/dist-packages/salt/modules#
 
 ping -q -c5 google.com > /dev/null
  
