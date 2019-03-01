@@ -1,10 +1,10 @@
 eos_connection:
   host: "{{ inventory_hostname }}"
-  username: vagrant
-  password: vagrant
+  username: ansible
+  password: ansible
   transport: eapi
-  use_ssl: false
-
+  use_ssl: true
+  validate_certs: False
 spine_as: 10
 
 #leaf_as: 1
