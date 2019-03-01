@@ -1,0 +1,12 @@
+{% if inventory_hostname in leaf_as.bgpleaf %}
+  {% set as_num = leaf_as.bgpleaf[inventory_hostname][0] %}
+   router bgp {{ as_num  }}
+  {% endif %}
+{% if inventory_hostname in ebgp_peers %}
+  {% for neighbor_ip in ebgp_peers[inventory_hostname] %}
+    {% for option in ebgp_peers[inventory_hostname][neighbor_ip] %}
+   neighbor {{ neighbor_ip }} {{ option }}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+redistribute connected

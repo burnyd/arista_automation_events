@@ -1,0 +1,10 @@
+router bgp {{ spine_as }}
+{% if inventory_hostname in spine_peers %}
+  {% for neighbor_ip in spine_peers[inventory_hostname] %}
+    {% for option in spine_peers[inventory_hostname][neighbor_ip] %}
+ neighbor {{ neighbor_ip }} {{ option }}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+redistribute connected
+

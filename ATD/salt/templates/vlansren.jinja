@@ -1,0 +1,5 @@
+{%- import_yaml "vlansren.yml" as vlans %}
+{% for vlan in vlans.vlans %}
+vlan {{ vlan.vlanid }}
+name {{ vlan.name }}
+{% endfor %}
