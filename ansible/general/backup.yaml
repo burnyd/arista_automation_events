@@ -1,0 +1,20 @@
+---
+
+- hosts: leafs
+  connection: local
+  gather_facts: yes 
+
+  vars_files:
+  - "vars/all.yaml"  
+
+  tasks:
+  - name: diff against a provided master config
+    eos_config:
+      diff_against: running
+      config: "{{ lookup('file', 'master.cfg') }}"
+      provider: "{{ eos_connection }}"
+
+  - name: Configure our syslog servers
+    eos_config:
+      src: syslog.j2
+      provider: "{{ eos_connection }}"
