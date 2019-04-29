@@ -1,0 +1,26 @@
+---
+10.20.30.24:
+    hostname: 10.20.30.24
+    username: ansible
+    password: ansible
+    platform: eos
+    port: 443
+    data:
+         type: network_device
+         role: leaf
+         site: nyc
+    groups:
+        - nyc
+
+10.20.30.25:
+    hostname: 10.20.30.25
+    username: ansible
+    password: ansible
+    platform: eos
+    port: 443
+    data:
+         type: network_device
+         role: leaf
+         site: nyc
+    groups:
+        - nyc
