@@ -352,3 +352,375 @@ paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
 2019-04-29 12:19:47,847 -  nornir.core -  WARNING -        run() - Task 'remote_command' has not been run – 0 hosts selected
 2019-04-29 12:20:31,033 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
 2019-04-29 12:22:07,605 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 13:20:20,373 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 13:26:23,753 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'command': 'show version'} on 2 hosts
+2019-04-29 13:26:23,759 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_cli() got an unexpected keyword argument 'command'
+
+2019-04-29 13:26:23,760 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_cli() got an unexpected keyword argument 'command'
+
+2019-04-29 13:26:45,079 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'command': 'show version'} on 2 hosts
+2019-04-29 13:27:40,364 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commanda': 'show version'} on 2 hosts
+2019-04-29 13:27:44,540 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': 'show version'} on 2 hosts
+2019-04-29 13:30:06,708 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 13:30:21,213 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 13:31:18,815 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': 'show version'} on 2 hosts
+2019-04-29 13:31:19,297 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+  File "/usr/local/lib/python3.7/site-packages/napalm/eos/eos.py", line 679, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2019-04-29 13:31:19,445 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+  File "/usr/local/lib/python3.7/site-packages/napalm/eos/eos.py", line 679, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2019-04-29 13:31:40,135 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 13:32:34,431 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 13:33:26,397 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:43:52,547 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:44:15,082 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:44:15,085 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+AttributeError: 'UnestablishedConnection' object has no attribute 'cli'
+
+2019-04-29 15:44:15,086 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+AttributeError: 'UnestablishedConnection' object has no attribute 'cli'
+
+2019-04-29 15:44:23,610 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:44:45,153 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:47:04,393 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 16:11:24,136 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:11:24,148 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Base Configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 17, in render_from_file
+    t = env.get_template(template)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.j2
+
+2019-04-29 16:11:24,148 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Base Configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 17, in render_from_file
+    t = env.get_template(template)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.j2
+
+2019-04-29 16:11:24,148 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2019-04-29 16:11:24,149 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2019-04-29 16:17:14,450 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:17:14,482 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:17:14,483 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:17:14,483 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:17:14,483 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:18:40,035 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:19:51,449 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:21:05,789 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:21:05,820 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:21:05,820 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:21:05,820 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 16, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:21:05,821 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 16, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:22:21,918 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:22:21,951 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:22:21,951 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:22:21,951 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:22:21,952 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:24:59,659 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:24:59,685 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    vlan {{ vlans }}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:24:59,685 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:24:59,685 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    vlan {{ vlans }}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:24:59,686 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:40:52,694 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2019-05-06 14:20:31,953 -  nornir.core -     INFO -        run() - Running task 'rollback_diff' with args {} on 2 hosts
+2019-05-06 14:28:42,935 -  nornir.core -     INFO -        run() - Running task 'rollback_diff' with args {} on 2 hosts
+2019-05-06 14:30:10,557 -  nornir.core -     INFO -        run() - Running task 'commands' with args {} on 2 hosts
+2019-05-06 14:31:12,226 -  nornir.core -     INFO -        run() - Running task 'commands' with args {} on 2 hosts

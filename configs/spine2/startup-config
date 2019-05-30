@@ -1,0 +1,36 @@
+hostname spine2
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+interface Ethernet1
+   description management
+   no switchport
+   ip address 10.99.0.6/24
+!
+interface Ethernet2
+   description leaf1
+   no switchport
+   ip address 10.1.0.2/30
+!
+interface Ethernet3
+   description leaf2
+   no switchport
+   ip address 10.1.0.6/30
+!
+interface Ethernet4
+   description leaf3
+   no switchport
+   ip address 10.1.0.10/30
+!
+interface Ethernet5
+   description leaf4
+   no switchport
+   ip address 10.1.0.14/30
+!
+ip routing
+!
+management api http-commands
+   protocol http
+   no shutdown
