@@ -2,9 +2,9 @@
 from jsonrpclib import Server
 import json
 
-switchusername = 'daniel'
-switchpassword = 'daniel123'
-switch = '10.20.30.24'
+switchusername = 'admin'
+switchpassword = 'admin'
+switch = 'base-lab_Spine1'
 
 urlString = "http://{}:{}@{}/command-api".format(switchusername, switchpassword, switch)
 switchReq = Server( urlString )

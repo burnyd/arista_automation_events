@@ -2,9 +2,9 @@
 
 from jsonrpclib import Server
 
-switchusername = 'ansible'
-switchpassword = 'vansible'
-switches = ['10.20.30.25']
+switchusername = 'admin'
+switchpassword = 'admin'
+switches = ['base-lab_Spine1']
 
 def find_neighbors(): #Function makes sure that each and every API is actually running on each switches and can pull with the current password.
     for switch in switches:

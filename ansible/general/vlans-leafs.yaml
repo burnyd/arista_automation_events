@@ -2,9 +2,9 @@
 
 - hosts: leafs
   connection: local
-  gather_facts: yes 
+  gather_facts: yes
   vars_files:
-  - "vars/all.yaml"  
+  - "../vars/all.yaml"  
 
   tasks:
 
@@ -13,7 +13,7 @@
       src: vlans.j2
       provider: "{{ eos_connection }}"
 
-  - name: send some commands  
+  - name: send some commands
     eos_command:
-      commands: show vlan id {{ vlans[0].vlanid }}      
+      commands: show vlan id {{ vlans[0].vlanid }}
       provider: "{{ eos_connection }}"

@@ -2,9 +2,9 @@
 
 - hosts: leaf1b
   connection: local
-  gather_facts: yes 
+  gather_facts: yes
   vars_files:
-  - "vars/all.yaml"
+  - "../vars/all.yaml"
 
   tasks:
   - name: BGP on leaf switches
@@ -19,7 +19,7 @@
         - ping {{ item }}
       provider: '{{ eos_connection }}'
     register: result
-    with_items: "{{ ebgp_peers[inventory_hostname].keys() }}"    
+    with_items: "{{ ebgp_peers[inventory_hostname].keys() }}"
 
   - name: Check the pings from point to point links
     debug: var=result

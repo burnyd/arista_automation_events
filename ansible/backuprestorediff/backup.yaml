@@ -1,9 +1,9 @@
 ---
 - hosts: leaf1b
   connection: local
-  gather_facts: no 
+  gather_facts: no
   vars_files:
-  - "vars/all.yaml"
+  - "../vars/all.yaml"
 
   tasks:
 
@@ -20,7 +20,7 @@
     set_fact:
       show_run: "{{ results }}"
 
-  - name: Save the current running-Config 
+  - name: Save the current running-Config
     copy:
      content: "{{ show_run.stdout[0] }}"
      dest: ./{{  inventory_hostname }}.cfg.prod

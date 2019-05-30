@@ -1,0 +1,84 @@
+eos_connection:
+  host: "{{ inventory_hostname }}"
+  username: admin
+  password: admin
+  transport: eapi
+  use_ssl: fasle
+
+spine_as: 6500
+
+#leaf_as: 1
+
+leaf_as:
+  bgpleaf:
+    base-lab_Leaf1:
+      - 65001
+    lbase-lab_Leaf2:
+      - 65002
+    base-lab_Leaf3:
+      - 65003
+    base-lab_Leaf4:
+      - 65004
+    gobgp:
+      - 65005
+
+
+
+ebgp_peers:
+  base-lab_Leaf1:
+    10.0.0.2:
+      - remote-as 6500
+    10.1.0.2:
+      - remote-as 6500
+  base-lab_Leaf2:
+    10.0.0.6:
+      - remote-as 6500
+    10.1.0.6:
+      - remote-as 6500
+  base-lab_Leaf3:
+    10.0.0.10:
+      - remote-as 6500
+    10.1.0.10:
+      - remote-as 6500
+  base-lab_Leaf4:
+    10.0.0.14:
+      - remote-as 6500
+    10.0.0.14:
+      - remote-as 6500
+
+spine_peers:
+  base-lab_Spine1:
+    10.0.0.2:
+      - remote-as 6501
+    10.0.0.5:
+      - remote-as 6502
+    10.0.0.9:
+      - remote-as 6503
+    10.0.0.13:
+      - remote-as 6504
+  base-lab_Spine2:
+    10.1.0.2:
+      - remote-as 6501
+    10.1.0.5:
+      - remote-as 6502
+    10.1.0.9:
+      - remote-as 6503
+    10.1.0.13:
+      - remote-as 6504
+
+vlans:
+      - vlanid: 7
+        name: production
+      - vlanid: 8
+        name: app
+
+syslogs:
+      - host: 1.1.1.1
+      - host: 2.2.2.2
+      - host: 3.3.3.3
+      - host: 4.4.4.4
+
+acl:
+      - acl: 10.10.11.0/24
+
+name_server: 8.8.8.8

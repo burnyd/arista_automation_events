@@ -2,6 +2,8 @@
 - hosts: nycleafs
   connection: httpapi
   gather_facts: false
+  vars_files:
+  - "../vars/all.yaml" 
   tasks:
 
     - name: type a simple arista command

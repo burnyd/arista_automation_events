@@ -8,19 +8,15 @@ username admin privilege 15 role network-admin secret sha512 $6$aw2g1BtPIkNZNCzi
 username arista privilege 15 secret sha512 $6$sO2S8XZgWs38w/hf$xmwY.GJcivJ2Sq1Bv5wRcny.l9B6njT7IifbmDPM1Vyn4cMzEkuQeOMeFDg9n7EMuKRDs0OsjgSvuMswU8nQq0
 !
 interface Ethernet1
-   description management
-   no switchport
-   ip address 10.99.0.2/24
-!
-interface Ethernet2
    no switchport
    ip address 10.0.0.5/30
 !
-interface Ethernet3
+interface Ethernet2
    no switchport
    ip address 10.1.0.5/30
 !
-interface Ethernet4
+interface Ethernet3
+   switchport
    switchport mode trunk
 !
 ip access-list copp

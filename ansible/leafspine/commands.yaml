@@ -1,9 +1,9 @@
 ---
 - hosts: leaf1a
   connection: local
-  gather_facts: no 
+  gather_facts: no
   vars_files:
-  - "group_vars/all.yaml"
+  - "../vars/all.yaml"
 
   tasks:
 
@@ -16,4 +16,3 @@
       provider: "{{ eos_connection }}"
 
   - debug: var=showcommands.stdout
-

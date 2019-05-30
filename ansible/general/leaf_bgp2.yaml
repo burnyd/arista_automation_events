@@ -1,8 +1,8 @@
 - hosts: leaf1a
   connection: local
-  gather_facts: no 
-  vars_files: 
-    - "vars/all.yaml"
+  gather_facts: no
+  vars_files:
+    - "../vars/all.yaml"
 
   tasks:
     - name: BGP on leaf switches

@@ -1,13 +1,12 @@
 ---
 - hosts: spines
   connection: local
-  gather_facts: no 
+  gather_facts: no
   vars_files:
-  - "vars/all.yaml"
+  - "../vars/all.yaml"
 
   tasks:
   - name: BGP on spine switches
     eos_config:
       src: templates/bgp_spine.j2
       provider: "{{ eos_connection }}"
- 

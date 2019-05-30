@@ -2,9 +2,9 @@
 from jsonrpclib import Server
 import json
 
-switchusername = 'vagrant'
-switchpassword = 'vagrant'
-switches = ['leaf1a', 'leaf1b']
+switchusername = 'admin'
+switchpassword = 'admin'
+switches = ['base-lab_Leaf1', 'base-lab_Leaf2']
 vlans = ['600','700','800']
 
 def add_vlans():
