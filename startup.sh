@@ -90,6 +90,7 @@ docker cp ./configs/spine2/startup-config spine2:/mnt/flash/startup-config
 
 sleep 10s
 
+docker exec -it leaf1 Cli -p 15 -c "copy start run"
 docker exec -it leaf2 Cli -p 15 -c "copy start run"
 docker exec -it leaf3 Cli -p 15 -c "copy start run"
 docker exec -it leaf4 Cli -p 15 -c "copy start run"
