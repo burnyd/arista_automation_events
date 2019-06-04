@@ -19,6 +19,11 @@ interface Ethernet3
    switchport
    switchport mode trunk
 !
+int lo0
+ip address 2.2.2.2/32
+!
+int lo1
+ip address 22.22.22.22/32
 ip access-list copp
    10 permit ip any any
 !

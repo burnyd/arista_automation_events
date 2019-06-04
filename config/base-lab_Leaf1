@@ -15,8 +15,14 @@ interface Ethernet2
    no switchport
    ip address 10.1.0.1/30
 !
+int lo0
+ip address 1.1.1.1/32
+!
+int lo1
+ip address 11.11.11.11/32
+!
 interface Ethernet3
-   switchport 
+   switchport
    switchport mode trunk
 !
 ip access-list copp
