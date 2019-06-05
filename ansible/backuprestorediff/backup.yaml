@@ -1,6 +1,6 @@
 ---
 - hosts: leafs
-  connection: local
+  connection: httpapi 
   gather_facts: no
   vars_files:
   - "../vars/all.yaml"

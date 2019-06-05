@@ -1,11 +1,11 @@
 ---
 
 - hosts: leafs
-  connection: local
+  connection: httpapi
   gather_facts: yes
 
   vars_files:
-  - "../vars/all.yaml"  
+  - "../vars/all.yaml"
 
   tasks:
   - name: Configure our syslog servers
