@@ -1,19 +1,17 @@
 ---
 
 - hosts: leafs
-  connection: local
+  connection: httpapi
   gather_facts: yes
   vars_files:
-  - "../vars/all.yaml"  
+  - "../vars/all.yaml"
 
   tasks:
 
   - name: Configure Arista Vlans
     eos_config:
-      src: vlans.j2
-      provider: "{{ eos_connection }}"
+      src: ../templates/vlans.j2
 
   - name: send some commands
     eos_command:
       commands: show vlan id {{ vlans[0].vlanid }}
-      provider: "{{ eos_connection }}"
