@@ -1,8 +1,8 @@
 [leafs]
-base-lab_Leaf1 remote_port=2000 ansible_host=localhost ansible_httpapi_port=8000
-#base-lab_Leaf2 remote_port=2001 ansible_host=localhost ansible_httpapi_port=8001
-#base-lab_Leaf3 remote_port=2002 ansible_host=localhost ansible_httpapi_port=8002
-#base-lab_Leaf4 remote_port=2003 ansible_host=localhost ansible_httpapi_port=8003
+base-lab_Leaf1 ansible_host=localhost ansible_httpapi_port=8000
+base-lab_Leaf2 ansible_host=localhost ansible_httpapi_port=8001
+base-lab_Leaf3 ansible_host=localhost ansible_httpapi_port=8002
+base-lab_Leaf4 ansible_host=localhost ansible_httpapi_port=8003
 
 [spines]
 base-lab_Spine1

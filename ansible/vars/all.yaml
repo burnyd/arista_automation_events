@@ -55,17 +55,17 @@ loopback0spine:
   - 8.8.8.8
   - 9.9.9.9
 
-loopback0-leaf:
+loopback0leaf:
   - 1.1.1.1
   - 2.2.2.2
   - 3.3.3.3
   - 4.4.4.4
 
-loopback1-spine:
+loopback1spine:
   - 88.88.88.88
   - 99.99.99.99
 
-loopback1-leaf:
+loopback1leaf:
   - 11.11.11.11
   - 22.22.22.22
   - 33.33.33.33
