@@ -75,9 +75,9 @@ vmac: 00:00:00:00:00:33
 
 ebgp_peers:
   base-lab_Leaf1:
-    10.0.0.2:
+    10.0.0.1:
       - remote-as 6500
-    10.1.0.2:
+    10.1.0.1:
       - remote-as 6500
   base-lab_Leaf2:
     10.0.0.6:
@@ -98,22 +98,42 @@ ebgp_peers:
 spine_peers:
   base-lab_Spine1:
     10.0.0.2:
-      - remote-as 6501
+      - remote-as 65001
     10.0.0.5:
-      - remote-as 6502
+      - remote-as 65002
     10.0.0.9:
-      - remote-as 6503
+      - remote-as 65003
     10.0.0.13:
-      - remote-as 6504
+      - remote-as 65004
   base-lab_Spine2:
     10.1.0.2:
-      - remote-as 6501
+      - remote-as 65001
     10.1.0.5:
-      - remote-as 6502
+      - remote-as 65002
     10.1.0.9:
-      - remote-as 6503
+      - remote-as 65003
     10.1.0.13:
-      - remote-as 6504
+      - remote-as 65004
+
+spine_evpn_peers:
+  base-lab_Spine1:
+    1.1.1.1:
+      - remote-as 65001
+    2.2.2.2:
+      - remote-as 65002
+    3.3.3.3:
+      - remote-as 65003
+    4.4.4.4:
+      - remote-as 65004
+  base-lab_Spine2:
+    1.1.1.1:
+      - remote-as 65001
+    2.2.2.2:
+      - remote-as 65002
+    3.3.3.3:
+      - remote-as 65003
+    4.4.4.4:
+      - remote-as 65004
 
 vnis:
   - 1000
