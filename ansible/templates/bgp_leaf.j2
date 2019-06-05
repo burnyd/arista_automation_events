@@ -28,7 +28,7 @@ vlan {{ vlan.vlanid }}
   neighbor SPINE fall-over bfd
   neighbor SPINE maximum-routes 12000
   neighbor SPINE-EVPN-TRANSIT peer-group
-  neighbor SPINE-EVPN-TRANSIT remote-as 65001
+  neighbor SPINE-EVPN-TRANSIT remote-as {{ spine_as }}
   neighbor SPINE-EVPN-TRANSIT next-hop-unchanged
   neighbor SPINE-EVPN-TRANSIT update-source Loopback0
   neighbor SPINE-EVPN-TRANSIT ebgp-multihop
@@ -42,6 +42,7 @@ vlan {{ vlan.vlanid }}
 {% for evpn_neighbor_ip in loopback0spine %}
    neighbor {{ evpn_neighbor_ip }} peer-group SPINE-EVPN-TRANSIT
   {% endfor %}
+  redistribute connected
   address-family evpn
      neighbor SPINE-EVPN-TRANSIT activate
   !
@@ -61,5 +62,5 @@ vlan {{ vlan.vlanid }}
  interface Vxlan1
  vxlan source-interface Loopback1
  vxlan udp-port 4789
- vxlan vrf {{ vrf.vrf }} vni {{ vrf.vni }}
+ vxlan vrf {{ vrf.vrf }} vni {{ vrf.vni}}
  {% endfor %}
