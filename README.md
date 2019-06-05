@@ -31,4 +31,4 @@ First install [Docker-topo](https://github.com/networkop/docker-topo) and get up
 
 `docker-topo --create -a base-lab.yml`  
 
-`docker exec -it base-lab_lab-1 bash`  clone this diretory once inside and you can simply try any of the automation tools. 
+`docker exec -it base-lab_lab-1 bash`  clone this diretory once inside and you can simply try any of the automation tools.

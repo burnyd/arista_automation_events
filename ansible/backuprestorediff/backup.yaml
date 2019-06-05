@@ -1,19 +1,16 @@
 ---
-- hosts: leaf1b
+- hosts: leafs
   connection: local
   gather_facts: no
   vars_files:
   - "../vars/all.yaml"
 
   tasks:
-
   - name: Gather System Status
     eos_command:
       commands:
         - command: 'show running-config'
           output: 'text'
-      provider: '{{ eos_connection }}'
-
     register: results
 
   - name: Set facts

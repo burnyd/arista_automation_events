@@ -9,5 +9,5 @@
   tasks:
   - name: BGP on leaf switches
     eos_config:
-      src: templates/bgp_leaf.j2
+      src: ../templates/bgp_leaf.j2
     ignore_errors: True
