@@ -7,3 +7,14 @@ base-lab_Leaf4
 [spines]
 base-lab_Spine1
 base-lab_Spine2
+
+[all:vars]
+ansible_network_os=eos
+ansible_become=yes
+ansible_become_method=enable
+ansible_user=admin
+ansible_password=admin
+ansible_become_pass=admin
+ansible_httpapi_pass=admin
+ansible_httpapi_password=admin
+ansible_httpapi_user=admin

@@ -4,7 +4,7 @@ import json
 
 switchusername = 'admin'
 switchpassword = 'admin'
-switches = ['base-lab_Leaf1', 'base-lab_Leaf2']
+switches = ['127.0.0.1:8000', '127.0.0.1:8001']
 vlans = ['600','700','800']
 
 def add_vlans():
