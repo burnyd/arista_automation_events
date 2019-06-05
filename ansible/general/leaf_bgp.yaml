@@ -1,7 +1,7 @@
 ---
 
-- hosts: leaf1b
-  connection: local
+- hosts: base-lab_Leaf1
+  connection: httpapi
   gather_facts: yes
   vars_files:
   - "../vars/all.yaml"
@@ -10,16 +10,4 @@
   - name: BGP on leaf switches
     eos_config:
       src: templates/bgp_leaf.j2
-      provider: "{{ eos_connection }}"
     ignore_errors: True
-
-  - name: Connectivity checker
-    eos_command:
-      commands:
-        - ping {{ item }}
-      provider: '{{ eos_connection }}'
-    register: result
-    with_items: "{{ ebgp_peers[inventory_hostname].keys() }}"
-
-  - name: Check the pings from point to point links
-    debug: var=result

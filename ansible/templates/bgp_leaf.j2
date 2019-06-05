@@ -4,13 +4,12 @@ ip virtual-router mac-address {{ vmac }}
 !
 {% for vrf in vrfs %}
 vrf definition {{ vrf.vrf}}
-description {{ vrf.name }}
 !
 ip routing
 !
-ip routing {{ vrf.vrf }}
-!
+ip routing vrf {{ vrf.vrf }}
 {% endfor %}
+!
 {% for vlan in vlans %}
 vlan {{ vlan.vlanid }}
    name {{ vlan.name }}
@@ -20,9 +19,9 @@ vlan {{ vlan.vlanid }}
   {% set as_num = leaf_as.bgpleaf[inventory_hostname][0] %}
    router bgp {{ as_num  }}
   {% endif %}
-{% if inventory_hostname in loopback0 %}
-   {% set router_id = loopback0[inventory_hostname] %}
-   router_id {{ router_id }}
+  {% if inventory_hostname in loopback0 %}
+     {% set router_id = loopback0[inventory_hostname][0] %}
+     router-id {{ router_id }}
   {% endif %}
   neighbor SPINE peer-group
   neighbor SPINE remote-as {{ spine_as }}
@@ -35,12 +34,12 @@ vlan {{ vlan.vlanid }}
   neighbor SPINE-EVPN-TRANSIT ebgp-multihop
   neighbor SPINE-EVPN-TRANSIT send-community extended
   neighbor SPINE-EVPN-TRANSIT maximum-routes 0
-{% if inventory_hostname in ebgp_peers %}
+  {% if inventory_hostname in ebgp_peers %}
   {% for neighbor_ip in ebgp_peers[inventory_hostname] %}
    neighbor {{ neighbor_ip }} peer-group SPINE
   {% endfor %}
 {% endif %}
-{% for evpn_neighbor_ip in loopback0-spine %}
+{% for evpn_neighbor_ip in loopback0spine %}
    neighbor {{ evpn_neighbor_ip }} peer-group SPINE-EVPN-TRANSIT
   {% endfor %}
   address-family evpn
@@ -49,16 +48,18 @@ vlan {{ vlan.vlanid }}
   address-family ipv4
      no neighbor SPINE-EVPN-TRANSIT activate
   !
-  {% for vrf in vrfs %}
-  vrf {{ vrf.vrf}}
-  rd 1.1.1.1:100
-  route-target import 1:1001
-  route-target export 1:1001
-  redistribute connected
-  redistribute static
-  !
-  interface Vxlan1
-  vxlan source-interface Loopback1
-  vxlan udp-port 4789
-  vxlan vrf {{ vrf.vrf }} vni 10000
-  {% endfor %}
+ {% for vrf in vrfs %}
+ vrf {{ vrf.vrf}}
+ rd {{ vrf.rd }}:{{ vrf.vni }}
+ route-target import evpn 1:1001
+ route-target export evpn 1:1001
+ redistribute connected
+ redistribute static
+ {% endfor %}
+ !
+ {% for vrf in vrfs %}
+ interface Vxlan1
+ vxlan source-interface Loopback1
+ vxlan udp-port 4789
+ vxlan vrf {{ vrf.vrf }} vni {{ vrf.vni }}
+ {% endfor %}

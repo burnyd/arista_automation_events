@@ -7,15 +7,15 @@ eos_connection:
 
 vrfs:
       - vrf: prod
-        name: prod-vrf
-        VNI: 10000
+        vni: 10000
+        rd: 1.2.3.4
       - vrf: QA
-        name: QA-vrf
-        VNI: 20000
+        rd: 2.3.4.5
+        vni: 20000
 
 
 vlans:
-      - vlanid: 2
+      - vlanid: 200
         name: prod
       - vlanid: 3
         name: QA
@@ -37,7 +37,21 @@ leaf_as:
     gobgp:
       - 65005
 
-loopback0-spine:
+loopback0:
+    base-lab_Leaf1:
+      - 1.1.1.1
+    lbase-lab_Leaf2:
+      - 2.2.2.2
+    base-lab_Leaf3:
+      - 3.3.3.3
+    base-lab_Leaf4:
+      - 4.4.4.4
+    base-lab_Spine1:
+      - 8.8.8.8
+    base-lab_Spine2:
+      - 9.9.9.9
+
+loopback0spine:
   - 8.8.8.8
   - 9.9.9.9
 
