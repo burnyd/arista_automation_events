@@ -1,6 +1,6 @@
 ---
 
-- hosts: base-lab_Leaf1
+- hosts: spines
   connection: httpapi
   gather_facts: yes
   vars_files:

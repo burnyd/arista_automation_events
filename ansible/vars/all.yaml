@@ -28,7 +28,7 @@ leaf_as:
   bgpleaf:
     base-lab_Leaf1:
       - 65001
-    lbase-lab_Leaf2:
+    base-lab_Leaf2:
       - 65002
     base-lab_Leaf3:
       - 65003
@@ -92,7 +92,7 @@ ebgp_peers:
   base-lab_Leaf4:
     10.0.0.14:
       - remote-as 6500
-    10.0.0.14:
+    10.1.0.14:
       - remote-as 6500
 
 spine_peers:
