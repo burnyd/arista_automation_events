@@ -52,8 +52,8 @@ vlan {{ vlan.vlanid }}
  {% for vrf in vrfs %}
  vrf {{ vrf.vrf}}
  rd {{ vrf.rd }}:{{ vrf.vni }}
- route-target import evpn 1:1001
- route-target export evpn 1:1001
+ route-target import evpn {{ vrf.rt }}
+ route-target export evpn {{ vrf.rt }}
  redistribute connected
  redistribute static
  {% endfor %}

@@ -9,10 +9,11 @@ vrfs:
       - vrf: prod
         vni: 10000
         rd: 1.2.3.4
+        rt: 2:2001
       - vrf: QA
         rd: 2.3.4.5
         vni: 20000
-
+        rt: 1:1001
 
 vlans:
       - vlanid: 2
