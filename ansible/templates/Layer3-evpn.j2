@@ -2,7 +2,7 @@
   {% for vrf in vrfs %}
 interface vlan {{ vlan.vlanid }}
 no autostate
-vrf forwarding {{ vrf.vrf }}
+vrf forwarding {{ vlan.name }}
 ip address virtual 10.0.{{ vlan.vlanid }}.1/24
   {% endfor %}
 {% endfor %}
