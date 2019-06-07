@@ -11,7 +11,3 @@
   - name: Configure Arista Vlans
     eos_config:
       src: ../templates/vlans.j2
-
-  - name: send some commands
-    eos_command:
-      commands: show vlan id {{ vlans[0].vlanid }}
