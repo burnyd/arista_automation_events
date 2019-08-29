@@ -1,5 +1,5 @@
-#added salt pillars
-#Changed the salt master config file with new pillar / file roots
+#salt-master -l debug replace entrypoint or CMD with this.
+#cp /arista_automation_events/salt/pillar/* /srv/salt/pillar/
 
 FROM ubuntu:16.04
 
@@ -25,10 +25,15 @@ mkdir -p /srv/salt/states/leaf && \
 mkdir -p /srv/salt/states/spine && \
 mkdir -p /srv/salt/reactor/ && \
 mkdir -p /etc/salt && \
-cp /arista_automation_events/salt/scripts/salt/master /etc/salt/ && \
-echo 127.0.0.1 salt  >> /etc/hosts
+echo 127.0.0.1 salt  >> /etc/hosts && \
+cp /arista_automation_events/salt/scripts/salt/master /etc/salt/
 
-RUN wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/ && sh bootstrap-salt.sh
+
+RUN wget -O bootstrap-salt.sh https://bootstrap.saltstack.com && \
+sh bootstrap-salt.sh -M -stable
+
+RUN service salt-master restart && service salt-minion restart
 
 #using this to keep the container alive.
-CMD tail -f /dev/null
+#CMD tail -f /dev/null
+CMD salt-master -l debug
