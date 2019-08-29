@@ -1,3 +1,6 @@
+#added salt pillars
+#Changed the salt master config file with new pillar / file roots
+
 FROM ubuntu:16.04
 
 WORKDIR /arista_automation_events
@@ -22,9 +25,10 @@ mkdir -p /srv/salt/states/leaf && \
 mkdir -p /srv/salt/states/spine && \
 mkdir -p /srv/salt/reactor/ && \
 mkdir -p /etc/salt && \
-cp /arista_automation_events/salt/scripts/salt/master /etc/salt/
+cp /arista_automation_events/salt/scripts/salt/master /etc/salt/ && \
+echo 127.0.0.1 salt  >> /etc/hosts
 
-RUN wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/ && sh bootstrap-salt.sh -M
+RUN wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/ && sh bootstrap-salt.sh
 
 #using this to keep the container alive.
 CMD tail -f /dev/null

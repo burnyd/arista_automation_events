@@ -1,12 +1,18 @@
 file_roots:
   base:
     - /srv/salt
+    - /srv/salt/pillar
     - /srv/salt/templates
+    - /arista_automation_events/salt/
+    - /arista_automation_events/salt/pillar
 
 pillar_roots:
   base:
     - /srv/salt
+    - /srv/salt/pillar
     - /srv/salt/templates
+    - /arista_automation_events/salt/
+    - /arista_automation_events/salt/pillar
 
 reactor:
   - salt/minion/leaf*/start:
@@ -1262,4 +1268,3 @@ reactor:
 # use OS defaults, typically 75 seconds on Linux, see
 # /proc/sys/net/ipv4/tcp_keepalive_intvl.
 #tcp_keepalive_intvl: -1
-
