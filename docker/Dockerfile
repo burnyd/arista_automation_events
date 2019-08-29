@@ -25,6 +25,7 @@ mkdir -p /srv/salt/states/leaf && \
 mkdir -p /srv/salt/states/spine && \
 mkdir -p /srv/salt/reactor/ && \
 mkdir -p /etc/salt && \
+cp /arista_automation_events/salt/pillar/* /srv/salt/pillar/ && \
 echo 127.0.0.1 salt  >> /etc/hosts && \
 cp /arista_automation_events/salt/scripts/salt/master /etc/salt/
 
