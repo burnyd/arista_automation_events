@@ -11,15 +11,13 @@ pip install --upgrade pyOpenSSL
  mkdir -p /etc/salt
 cp salt/scripts/salt/master /etc/salt/
 
- pip install napalm
- pip install napalm-logs
- pip install napalm-base
-
- wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/stable
+wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/
 sh bootstrap-salt.sh -M
-
 
 wget -qO - https://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest/SALTSTACK-GPG-KEY.pub | apt-key add -
 apt-get install apt-transport-https ca-certificates -y
 echo "deb http://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest xenial main" |  tee -a /etc/apt/sources.list.d/saltstack.list
 apt-get update && apt-get install salt-master salt-minion -y
+
+
+#####

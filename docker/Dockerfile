@@ -1,6 +1,3 @@
-#salt-master -l debug replace entrypoint or CMD with this.
-#cp /arista_automation_events/salt/pillar/* /srv/salt/pillar/
-
 FROM ubuntu:16.04
 
 WORKDIR /arista_automation_events
