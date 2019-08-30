@@ -6,7 +6,6 @@
 
 #Todos
 -Finish nornir
--Finish saltstack
 
 # Issues
 
