@@ -1,8 +1,10 @@
 # Requirements
 
 * docker/Moby (tested in 17.09.0-ce)
-* Arista ceos-lab (tested in 4.21.4F)
+* docker container burnyd/arista_automation_events
+* Arista ceos-lab (tested in 4.21.7M)
 * [Docker-topo](https://github.com/networkop/docker-topo)
+
 
 #Todos
 -Finish nornir
