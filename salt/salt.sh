@@ -11,6 +11,10 @@ cachedir: /var/cache/salt/proxy
 multiprocessing: False
 " >> /etc/salt/proxy
 
+echo -e "Starting salt master and minion"
+service salt-master start &
+service salt-minion start &
+
 echo -e "Starting proxy minions"
 salt-proxy --proxyid=base-lab_Leaf1 &
 salt-proxy --proxyid=base-lab_Leaf2 &
