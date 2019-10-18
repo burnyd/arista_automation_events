@@ -1,0 +1,726 @@
+2019-04-29 11:24:39,484 -  nornir.core -     INFO -        run() - Running task 'remote_command' with args {'command': 'show version'} on 2 hosts
+2019-04-29 11:26:31,122 -  nornir.core -     INFO -        run() - Running task 'remote_command' with args {'command': 'ls -la /tmp'} on 2 hosts
+2019-04-29 11:26:31,128 - nornir.core.task -    ERROR -      start() - Host 'leaf1': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 26, in remote_command
+    chan = client.get_transport().open_session()
+AttributeError: 'UnestablishedConnection' object has no attribute 'get_transport'
+
+2019-04-29 11:26:31,129 - nornir.core.task -    ERROR -      start() - Host 'leaf2': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 26, in remote_command
+    chan = client.get_transport().open_session()
+AttributeError: 'UnestablishedConnection' object has no attribute 'get_transport'
+
+2019-04-29 11:26:49,141 - nornir.core.task -    ERROR -      start() - Host 'leaf2': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko", task.nornir.config)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/paramiko.py", line 64, in open
+    client.connect(**extras)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 343, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/util.py", line 280, in retry_on_signal
+    return function()
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 343, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: [Errno 110] Connection timed out
+
+2019-04-29 11:26:49,142 - nornir.core.task -    ERROR -      start() - Host 'leaf1': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko", task.nornir.config)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/paramiko.py", line 64, in open
+    client.connect(**extras)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 343, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/util.py", line 280, in retry_on_signal
+    return function()
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 343, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: [Errno 110] Connection timed out
+
+2019-04-29 11:29:11,695 -  nornir.core -     INFO -        run() - Running task 'remote_command' with args {'command': 'show version'} on 2 hosts
+2019-04-29 11:40:01,765 -  nornir.core -     INFO -        run() - Running task 'remote_command' with args {'command': 'show version'} on 2 hosts
+2019-04-29 11:40:22,292 -  nornir.core -     INFO -        run() - Running task 'remote_command' with args {'command': 'uname'} on 2 hosts
+2019-04-29 11:40:22,299 - nornir.core.task -    ERROR -      start() - Host 'leaf2': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 26, in remote_command
+    chan = client.get_transport().open_session()
+AttributeError: 'UnestablishedConnection' object has no attribute 'get_transport'
+
+2019-04-29 11:40:22,300 - nornir.core.task -    ERROR -      start() - Host 'leaf1': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 26, in remote_command
+    chan = client.get_transport().open_session()
+AttributeError: 'UnestablishedConnection' object has no attribute 'get_transport'
+
+2019-04-29 11:42:12,787 - nornir.core.task -    ERROR -      start() - Host 'leaf1': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko", task.nornir.config)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/paramiko.py", line 64, in open
+    client.connect(**extras)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 343, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/util.py", line 280, in retry_on_signal
+    return function()
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 343, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: [Errno 110] Connection timed out
+
+2019-04-29 11:42:12,790 - nornir.core.task -    ERROR -      start() - Host 'leaf2': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko", task.nornir.config)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/paramiko.py", line 64, in open
+    client.connect(**extras)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 343, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/util.py", line 280, in retry_on_signal
+    return function()
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 343, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: [Errno 110] Connection timed out
+
+2019-04-29 11:42:56,098 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 11:47:57,242 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 11:49:56,423 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {} on 2 hosts
+2019-04-29 11:49:56,430 - nornir.core.task -    ERROR -      start() - Host 'leaf2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_get() missing 1 required positional argument: 'getters'
+
+2019-04-29 11:49:56,430 - nornir.core.task -    ERROR -      start() - Host 'leaf1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_get() missing 1 required positional argument: 'getters'
+
+2019-04-29 11:56:51,487 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 11:59:46,707 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 11:59:46,783 - nornir.core.task -    ERROR -      start() - Host 'leaf1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/pyeapi/eapilib.py", line 385, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/usr/lib/python3.6/http/client.py", line 1400, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:847)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/napalm/eos/eos.py", line 142, in open
+    self.device.run_commands(["show clock"], encoding="text")
+  File "/usr/local/lib/python3.6/dist-packages/pyeapi/client.py", line 730, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/pyeapi/eapilib.py", line 499, in execute
+    response = self.send(request)
+  File "/usr/local/lib/python3.6/dist-packages/pyeapi/eapilib.py", line 428, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:847)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/usr/local/lib/python3.6/dist-packages/napalm/eos/eos.py", line 147, in open
+    raise ConnectionException(py23_compat.text_type(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:847)
+
+2019-04-29 11:59:46,794 - nornir.core.task -    ERROR -      start() - Host 'leaf2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/pyeapi/eapilib.py", line 385, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/usr/lib/python3.6/http/client.py", line 1400, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib/python3.6/ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:847)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/napalm/eos/eos.py", line 142, in open
+    self.device.run_commands(["show clock"], encoding="text")
+  File "/usr/local/lib/python3.6/dist-packages/pyeapi/client.py", line 730, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/pyeapi/eapilib.py", line 499, in execute
+    response = self.send(request)
+  File "/usr/local/lib/python3.6/dist-packages/pyeapi/eapilib.py", line 428, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:847)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/usr/local/lib/python3.6/dist-packages/napalm/eos/eos.py", line 147, in open
+    raise ConnectionException(py23_compat.text_type(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:847)
+
+2019-04-29 12:02:22,736 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 12:04:42,541 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': 'show version'} on 2 hosts
+2019-04-29 12:04:42,549 - nornir.core.task -    ERROR -      start() - Host 'leaf1': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+  File "/usr/local/lib/python3.6/dist-packages/napalm/eos/eos.py", line 679, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2019-04-29 12:04:42,550 - nornir.core.task -    ERROR -      start() - Host 'leaf2': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+  File "/usr/local/lib/python3.6/dist-packages/napalm/eos/eos.py", line 679, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2019-04-29 12:05:55,654 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 12:06:29,303 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': 'show version'} on 2 hosts
+2019-04-29 12:06:29,313 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+  File "/usr/local/lib/python3.6/dist-packages/napalm/eos/eos.py", line 679, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2019-04-29 12:06:29,314 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+  File "/usr/local/lib/python3.6/dist-packages/napalm/eos/eos.py", line 679, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2019-04-29 12:08:38,912 -  nornir.core -     INFO -        run() - Running task 'remote_command' with args {'command': 'uname'} on 2 hosts
+2019-04-29 12:08:38,985 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 2138, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/packet.py", line 367, in readline
+    buf += self._read_timeout(timeout)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/packet.py", line 563, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko", task.nornir.config)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/paramiko.py", line 64, in open
+    client.connect(**extras)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 397, in connect
+    t.start_client(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 587, in start_client
+    raise e
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 1966, in run
+    self._check_banner()
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 2143, in _check_banner
+    "Error reading SSH protocol banner" + str(e)
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+2019-04-29 12:08:38,986 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'remote_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 2138, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/packet.py", line 367, in readline
+    buf += self._read_timeout(timeout)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/packet.py", line 563, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/tasks/commands/remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko", task.nornir.config)
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/usr/local/lib/python3.6/dist-packages/nornir/plugins/connections/paramiko.py", line 64, in open
+    client.connect(**extras)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/client.py", line 397, in connect
+    t.start_client(timeout=timeout)
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 587, in start_client
+    raise e
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 1966, in run
+    self._check_banner()
+  File "/usr/local/lib/python3.6/dist-packages/paramiko/transport.py", line 2143, in _check_banner
+    "Error reading SSH protocol banner" + str(e)
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+2019-04-29 12:08:47,183 -  nornir.core -     INFO -        run() - Running task 'remote_command' with args {'command': 'show version'} on 2 hosts
+2019-04-29 12:11:55,881 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show arp'} on 2 hosts
+2019-04-29 12:19:47,847 -  nornir.core -  WARNING -        run() - Task 'remote_command' has not been run – 0 hosts selected
+2019-04-29 12:20:31,033 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 12:22:07,605 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 13:20:20,373 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 13:26:23,753 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'command': 'show version'} on 2 hosts
+2019-04-29 13:26:23,759 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_cli() got an unexpected keyword argument 'command'
+
+2019-04-29 13:26:23,760 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_cli() got an unexpected keyword argument 'command'
+
+2019-04-29 13:26:45,079 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'command': 'show version'} on 2 hosts
+2019-04-29 13:27:40,364 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commanda': 'show version'} on 2 hosts
+2019-04-29 13:27:44,540 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': 'show version'} on 2 hosts
+2019-04-29 13:30:06,708 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 13:30:21,213 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 2 hosts
+2019-04-29 13:31:18,815 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': 'show version'} on 2 hosts
+2019-04-29 13:31:19,297 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+  File "/usr/local/lib/python3.7/site-packages/napalm/eos/eos.py", line 679, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2019-04-29 13:31:19,445 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+  File "/usr/local/lib/python3.7/site-packages/napalm/eos/eos.py", line 679, in cli
+    raise TypeError("Please enter a valid list of commands!")
+TypeError: Please enter a valid list of commands!
+
+2019-04-29 13:31:40,135 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 13:32:34,431 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 13:33:26,397 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:43:52,547 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:44:15,082 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:44:15,085 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+AttributeError: 'UnestablishedConnection' object has no attribute 'cli'
+
+2019-04-29 15:44:15,086 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/napalm_cli.py", line 18, in napalm_cli
+    result = device.cli(commands)
+AttributeError: 'UnestablishedConnection' object has no attribute 'cli'
+
+2019-04-29 15:44:23,610 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:44:45,153 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 15:47:04,393 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show version']} on 2 hosts
+2019-04-29 16:11:24,136 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:11:24,148 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Base Configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 17, in render_from_file
+    t = env.get_template(template)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.j2
+
+2019-04-29 16:11:24,148 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Base Configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 17, in render_from_file
+    t = env.get_template(template)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/loaders.py", line 187, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.j2
+
+2019-04-29 16:11:24,148 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2019-04-29 16:11:24,149 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Base Configuration (failed)
+
+
+2019-04-29 16:17:14,450 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:17:14,482 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:17:14,483 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:17:14,483 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:17:14,483 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:18:40,035 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:19:51,449 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:21:05,789 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:21:05,820 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:21:05,820 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:21:05,820 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 16, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:21:05,821 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 16, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:22:21,918 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:22:21,951 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:22:21,951 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    {% for vlan in vlans %}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:22:21,951 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:22:21,952 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:24:59,659 -  nornir.core -     INFO -        run() - Running task 'basic_configuration' with args {} on 2 hosts
+2019-04-29 16:24:59,685 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    vlan {{ vlans }}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:24:59,685 - nornir.core.task -    ERROR -      start() - Host '10.20.30.25': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:24:59,685 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'Vlans_config' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.7/site-packages/nornir/plugins/tasks/text/template_file.py", line 35, in template_file
+    **kwargs
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/helpers/jinja_helper.py", line 18, in render_from_file
+    return t.render(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "templates/vlans.j2", line 1, in top-level template code
+    vlan {{ vlans }}
+jinja2.exceptions.UndefinedError: 'vlans' is undefined
+
+2019-04-29 16:24:59,686 - nornir.core.task -    ERROR -      start() - Host '10.20.30.24': task 'basic_configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "<stdin>", line 6, in basic_configuration
+  File "/usr/local/lib/python3.7/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Vlans_config (failed)
+
+
+2019-04-29 16:40:52,694 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2019-05-06 14:20:31,953 -  nornir.core -     INFO -        run() - Running task 'rollback_diff' with args {} on 2 hosts
+2019-05-06 14:28:42,935 -  nornir.core -     INFO -        run() - Running task 'rollback_diff' with args {} on 2 hosts
+2019-05-06 14:30:10,557 -  nornir.core -     INFO -        run() - Running task 'commands' with args {} on 2 hosts
+2019-05-06 14:31:12,226 -  nornir.core -     INFO -        run() - Running task 'commands' with args {} on 2 hosts

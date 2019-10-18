@@ -1,0 +1,3 @@
+base:
+  '*':
+    - switches_ztp

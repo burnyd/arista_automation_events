@@ -1,0 +1,17 @@
+---
+- hosts: base-lab_Leaf1
+  connection: httpapi
+  gather_facts: no
+  vars_files:
+  - "../vars/all.yaml"
+
+  tasks:
+
+  - name: run show version on remote devices
+    register: showcommands
+    eos_command:
+      commands:
+        - show version
+        - show inventory
+
+  - debug: var=showcommands.stdout

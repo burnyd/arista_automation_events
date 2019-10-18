@@ -1,0 +1,152 @@
+eos_connection:
+  host: "{{ inventory_hostname }}"
+  username: admin
+  password: admin
+  transport: eapi
+  use_ssl: fasle
+
+vrfs:
+      - vrf: prod
+        vni: 10000
+        rd: 1.2.3.4
+        rt: 2:2001
+      - vrf: QA
+        rd: 2.3.4.5
+        vni: 20000
+        rt: 1:1001
+
+vlans:
+      - vlanid: 2
+        name: prod
+      - vlanid: 3
+        name: QA
+
+#BGP / EVPN config
+
+spine_as: 6500
+
+leaf_as:
+  bgpleaf:
+    base-lab_Leaf1:
+      - 65001
+    base-lab_Leaf2:
+      - 65002
+    base-lab_Leaf3:
+      - 65003
+    base-lab_Leaf4:
+      - 65004
+    gobgp:
+      - 65005
+
+loopback0:
+    base-lab_Leaf1:
+      - 1.1.1.1
+    lbase-lab_Leaf2:
+      - 2.2.2.2
+    base-lab_Leaf3:
+      - 3.3.3.3
+    base-lab_Leaf4:
+      - 4.4.4.4
+    base-lab_Spine1:
+      - 8.8.8.8
+    base-lab_Spine2:
+      - 9.9.9.9
+
+loopback0spine:
+  - 8.8.8.8
+  - 9.9.9.9
+
+loopback0leaf:
+  - 1.1.1.1
+  - 2.2.2.2
+  - 3.3.3.3
+  - 4.4.4.4
+
+loopback1spine:
+  - 88.88.88.88
+  - 99.99.99.99
+
+loopback1leaf:
+  - 11.11.11.11
+  - 22.22.22.22
+  - 33.33.33.33
+  - 44.44.44.44
+
+vmac: 00:00:00:00:00:33
+
+ebgp_peers:
+  base-lab_Leaf1:
+    10.0.0.2:
+      - remote-as 6500
+    10.1.0.2:
+      - remote-as 6500
+  base-lab_Leaf2:
+    10.0.0.6:
+      - remote-as 6500
+    10.1.0.6:
+      - remote-as 6500
+  base-lab_Leaf3:
+    10.0.0.10:
+      - remote-as 6500
+    10.1.0.10:
+      - remote-as 6500
+  base-lab_Leaf4:
+    10.0.0.14:
+      - remote-as 6500
+    10.1.0.14:
+      - remote-as 6500
+
+spine_peers:
+  base-lab_Spine1:
+    10.0.0.1:
+      - remote-as 65001
+    10.0.0.5:
+      - remote-as 65002
+    10.0.0.9:
+      - remote-as 65003
+    10.0.0.13:
+      - remote-as 65004
+  base-lab_Spine2:
+    10.1.0.1:
+      - remote-as 65001
+    10.1.0.5:
+      - remote-as 65002
+    10.1.0.9:
+      - remote-as 65003
+    10.1.0.13:
+      - remote-as 65004
+
+spine_evpn_peers:
+  base-lab_Spine1:
+    1.1.1.1:
+      - remote-as 65001
+    2.2.2.2:
+      - remote-as 65002
+    3.3.3.3:
+      - remote-as 65003
+    4.4.4.4:
+      - remote-as 65004
+  base-lab_Spine2:
+    1.1.1.1:
+      - remote-as 65001
+    2.2.2.2:
+      - remote-as 65002
+    3.3.3.3:
+      - remote-as 65003
+    4.4.4.4:
+      - remote-as 65004
+
+vnis:
+  - 1000
+  - 2000
+
+syslogs:
+      - host: 1.1.1.1
+      - host: 2.2.2.2
+      - host: 3.3.3.3
+      - host: 4.4.4.4
+
+acl:
+      - acl: 10.10.11.0/24
+
+name_server: 8.8.8.8

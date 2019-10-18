@@ -1,0 +1,20 @@
+[leafs]
+base-lab_Leaf1 #ansible_host=127.0.0.1 ansible_httpapi_port=8000
+base-lab_Leaf2 #ansible_host=127.0.0.1 ansible_httpapi_port=8001
+base-lab_Leaf3 #ansible_host=127.0.0.1 ansible_httpapi_port=8002
+base-lab_Leaf4 #ansible_host=127.0.0.1 ansible_httpapi_port=8003
+
+[spines]
+base-lab_Spine1 #ansible_host=localhost ansible_httpapi_port=8004
+base-lab_Spine2 #ansible_host=localhost ansible_httpapi_port=8005
+
+[all:vars]
+ansible_network_os=eos
+ansible_become=yes
+ansible_become_method=enable
+ansible_user=admin
+ansible_password=admin
+ansible_become_pass=admin
+ansible_httpapi_pass=admin
+ansible_httpapi_password=admin
+ansible_httpapi_user=admin

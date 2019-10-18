@@ -1,0 +1,16 @@
+python3.6 -m pip install --upgrade pip setuptools wheel
+pip3 install nornir
+/usr/local/lib/python3.6/dist-packages/nornir/__init__.py
+
+#Code
+import nornir.core
+from nornir import InitNornir
+from nornir.plugins.tasks import commands
+from nornir.plugins.functions.text import print_result
+
+nr = InitNornir(config_file="config.yaml")
+
+result = test_filter.run(task=commands.remote_command,
+                       command="show version")
+
+print_result(result, vars=["stdout"])

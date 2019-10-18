@@ -1,0 +1,6 @@
+base:
+  leaf1a:
+    - leaf1a
+
+include:
+ - ntp_config
