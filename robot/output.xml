@@ -1,102 +1,1425 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180507 19:59:46.659" generator="Rebot 3.0.4 (Python 2.7.5 on linux2)">
-<suite source="/opt/projects/robot/first_demo" id="s1" name="Combined Validation Report">
-<suite source="/opt/projects/robot/first_demo/bgp-test.robot" id="s1-s1" name="Bgp-Test">
+<robot generated="20180507 20:41:15.781" generator="Rebot 3.0.4 (Python 2.7.12 on linux2)">
+<suite source="/opt/projects/arista_automation_events/robot/network_validation" id="s1" name="Combined Validation Report">
+<suite source="/opt/projects/arista_automation_events/robot/network_validation/bgp-test.robot" id="s1-s1" name="Bgp-Test">
 <kw type="setup" name="Connect To Switches">
 <doc>Establish connection to a switch which gets used by test cases.</doc>
 <kw name="Connect To" library="AristaLibrary">
 <doc>This is the cornerstone of all testing. The Connect To</doc>
 <arguments>
-<arg>host=${SW1_HOST}</arg>
+<arg>host=${ SW1_HOST }</arg>
 <arg>transport=${TRANSPORT}</arg>
 <arg>username=${USERNAME}</arg>
 <arg>password=${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20180507 19:59:45.806" level="INFO">Created connection to https://daniel:****@10.20.30.24:443/command-api: model: DCS-7280SR2A-48YC6-M-F, serial: SSJ17095067, systemMAC: 28:99:3a:8f:90:97, version: 4.20.5F, lastBootTime: 1524014386.18</msg>
-<status status="PASS" endtime="20180507 19:59:45.806" starttime="20180507 19:59:45.661"></status>
+<msg timestamp="20180507 20:40:12.801" level="INFO">Created connection to https://daniel:****@10.20.30.24:443/command-api: model: DCS-7280SR2A-48YC6-M-F, serial: SSJ17095067, systemMAC: 28:99:3a:8f:90:97, version: 4.20.5F, lastBootTime: 1524014386.18</msg>
+<status status="PASS" endtime="20180507 20:40:12.801" starttime="20180507 20:40:12.560"></status>
 </kw>
-<status status="PASS" endtime="20180507 19:59:45.807" starttime="20180507 19:59:45.661"></status>
-</kw>
-<kw type="teardown" name="Clear All Connections" library="AristaLibrary">
-<doc>Remove all connection objects from the cache and resets the list of</doc>
-<status status="PASS" endtime="20180507 19:59:46.574" starttime="20180507 19:59:46.573"></status>
-</kw>
-<test id="s1-s1-t1" name="PEER Established">
 <kw name="Get Command Output" library="AristaLibrary.Expect">
 <doc>Execute the specified command on the named switch and store the</doc>
 <arguments>
 <arg>cmd=show ip bgp summary</arg>
 </arguments>
-<status status="PASS" endtime="20180507 19:59:46.161" starttime="20180507 19:59:45.808"></status>
+<status status="PASS" endtime="20180507 20:40:13.288" starttime="20180507 20:40:12.802"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:13.290" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.102', u'peers': {u'10.1.102.1': {u'msgSent': 8378, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1525737472.0, u'version': 4, u'prefixAccepted': 11, u'msgReceived': 8368, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}, u'10.2.102.1': {u'msgSent': 8339, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1525316608.0, u'version': 4, u'prefixAccepted': 11, u'msgReceived': 8311, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}}, u'vrf': u'default', u'asn': u'65101'}}}</msg>
+<status status="PASS" endtime="20180507 20:40:13.290" starttime="20180507 20:40:13.289"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:13.291" level="INFO">${peers} = {u'10.1.102.1': {u'msgSent': 8378, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1525737472.0, u'version': 4, u'prefixAccepted': 11, u'msgReceived': 8368, u'peerState': u'Established', u'out...</msg>
+<status status="PASS" endtime="20180507 20:40:13.292" starttime="20180507 20:40:13.290"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.1.102.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:13.294" level="INFO">10.1.102.1</msg>
+<status status="PASS" endtime="20180507 20:40:13.294" starttime="20180507 20:40:13.293"></status>
 </kw>
 <kw name="Expect" library="AristaLibrary.Expect">
 <doc>This keyword provides a method of testing various types of values</doc>
 <arguments>
-<arg>vrfs default peers ${PEER_ADDRESS} peerState</arg>
-<arg>is</arg>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
 <arg>Established</arg>
 </arguments>
-<msg timestamp="20180507 19:59:46.163" level="FAIL">AristaLibrary.Expect: Key: '[u'vrfs', u'default', u'peers', u'10.1.102.1', u'peerState']', Found: 'Idle', Expected: 'Established'</msg>
-<status status="FAIL" endtime="20180507 19:59:46.164" starttime="20180507 19:59:46.162"></status>
+<status status="PASS" endtime="20180507 20:40:13.295" starttime="20180507 20:40:13.294"></status>
 </kw>
-<doc>Check PEER Established</doc>
-<status status="FAIL" endtime="20180507 19:59:46.164" critical="yes" starttime="20180507 19:59:45.807">AristaLibrary.Expect: Key: '[u'vrfs', u'default', u'peers', u'10.1.102.1', u'peerState']', Found: 'Idle', Expected: 'Established'</status>
-</test>
-<test id="s1-s1-t2" name="PEER Established">
+<status status="PASS" endtime="20180507 20:40:13.295" starttime="20180507 20:40:13.292"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.102.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:13.297" level="INFO">10.2.102.1</msg>
+<status status="PASS" endtime="20180507 20:40:13.297" starttime="20180507 20:40:13.296"></status>
+</kw>
 <kw name="Expect" library="AristaLibrary.Expect">
 <doc>This keyword provides a method of testing various types of values</doc>
 <arguments>
-<arg>vrfs default peers ${PEER_ADDRESS} peerState</arg>
-<arg>is</arg>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
 <arg>Established</arg>
 </arguments>
-<msg timestamp="20180507 19:59:46.167" level="FAIL">AristaLibrary.Expect: Key: '[u'vrfs', u'default', u'peers', u'10.1.102.1', u'peerState']', Found: 'Idle', Expected: 'Established'</msg>
-<status status="FAIL" endtime="20180507 19:59:46.167" starttime="20180507 19:59:46.166"></status>
+<status status="PASS" endtime="20180507 20:40:13.298" starttime="20180507 20:40:13.297"></status>
 </kw>
-<doc>Check PEER Established</doc>
-<status status="FAIL" endtime="20180507 19:59:46.168" critical="yes" starttime="20180507 19:59:46.165">AristaLibrary.Expect: Key: '[u'vrfs', u'default', u'peers', u'10.1.102.1', u'peerState']', Found: 'Idle', Expected: 'Established'</status>
-</test>
-<test id="s1-s1-t3" name="Gather Post Change Output">
+<status status="PASS" endtime="20180507 20:40:13.298" starttime="20180507 20:40:13.296"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:13.299" starttime="20180507 20:40:13.292"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW2_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:13.555" level="INFO">Created connection to https://daniel:****@10.20.30.25:443/command-api: model: DCS-7150S-24-F, serial: JPE12233271, systemMAC: 00:1c:73:1e:7a:68, version: 4.20.5F, lastBootTime: 1525242551.66</msg>
+<status status="PASS" endtime="20180507 20:40:13.556" starttime="20180507 20:40:13.299"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:14.568" starttime="20180507 20:40:13.556"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:14.569" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.103', u'peers': {u'10.1.103.1': {u'msgSent': 10239, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1525751808.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 10247, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}, u'10.2.103.1': {u'msgSent': 10166, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1525242752.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 10155, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}}, u'vrf': u'default', u'asn': u'65102'}}}</msg>
+<status status="PASS" endtime="20180507 20:40:14.569" starttime="20180507 20:40:14.568"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:14.570" level="INFO">${peers} = {u'10.1.103.1': {u'msgSent': 10239, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1525751808.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 10247, u'peerState': u'Established', u'o...</msg>
+<status status="PASS" endtime="20180507 20:40:14.570" starttime="20180507 20:40:14.569"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.1.103.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:14.571" level="INFO">10.1.103.1</msg>
+<status status="PASS" endtime="20180507 20:40:14.571" starttime="20180507 20:40:14.571"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:14.571" starttime="20180507 20:40:14.571"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:14.571" starttime="20180507 20:40:14.571"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.103.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:14.572" level="INFO">10.2.103.1</msg>
+<status status="PASS" endtime="20180507 20:40:14.572" starttime="20180507 20:40:14.572"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:14.572" starttime="20180507 20:40:14.572"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:14.572" starttime="20180507 20:40:14.572"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:14.572" starttime="20180507 20:40:14.570"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW3_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:14.844" level="INFO">Created connection to https://daniel:****@10.20.30.26:443/command-api: model: DCS-7150S-24-F, serial: JAS12170007, systemMAC: 00:1c:73:00:44:88, version: 4.20.5F, lastBootTime: 1524020913.67</msg>
+<status status="PASS" endtime="20180507 20:40:14.844" starttime="20180507 20:40:14.573"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:16.253" starttime="20180507 20:40:14.844"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:16.254" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.104', u'peers': {u'10.2.104.1': {u'msgSent': 30911, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524172544.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30897, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}, u'10.1.104.1': {u'msgSent': 30894, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524172544.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30906, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}}, u'vrf': u'default', u'asn': u'65102'}}}</msg>
+<status status="PASS" endtime="20180507 20:40:16.254" starttime="20180507 20:40:16.254"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:16.255" level="INFO">${peers} = {u'10.2.104.1': {u'msgSent': 30911, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524172544.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30897, u'peerState': u'Established', u'o...</msg>
+<status status="PASS" endtime="20180507 20:40:16.255" starttime="20180507 20:40:16.254"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.2.104.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:16.256" level="INFO">10.2.104.1</msg>
+<status status="PASS" endtime="20180507 20:40:16.256" starttime="20180507 20:40:16.256"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:16.257" starttime="20180507 20:40:16.256"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:16.257" starttime="20180507 20:40:16.255"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.104.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:16.257" level="INFO">10.1.104.1</msg>
+<status status="PASS" endtime="20180507 20:40:16.257" starttime="20180507 20:40:16.257"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:16.258" starttime="20180507 20:40:16.258"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:16.258" starttime="20180507 20:40:16.257"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:16.258" starttime="20180507 20:40:16.255"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW4_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:16.563" level="INFO">Created connection to https://daniel:****@10.20.30.27:443/command-api: model: DCS-7050T-52-F, serial: JPE12160030, systemMAC: 00:1c:73:1b:f6:78, version: 4.18.7M, lastBootTime: 1523889546.7</msg>
+<status status="PASS" endtime="20180507 20:40:16.563" starttime="20180507 20:40:16.259"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:18.630" starttime="20180507 20:40:16.563"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:18.631" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.105', u'peers': {u'10.2.105.1': {u'msgSent': 32490, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524163899.971611, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30879, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': 65001}, u'10.1.105.1': {u'msgSent': 32491, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524163900.595716, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30903, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': 65001}}, u'vrf': u'default', u'asn': 65103}}}</msg>
+<status status="PASS" endtime="20180507 20:40:18.631" starttime="20180507 20:40:18.630"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:18.631" level="INFO">${peers} = {u'10.2.105.1': {u'msgSent': 32490, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524163899.971611, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30879, u'peerState': u'Established'...</msg>
+<status status="PASS" endtime="20180507 20:40:18.631" starttime="20180507 20:40:18.631"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.2.105.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:18.632" level="INFO">10.2.105.1</msg>
+<status status="PASS" endtime="20180507 20:40:18.632" starttime="20180507 20:40:18.632"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:18.633" starttime="20180507 20:40:18.633"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:18.633" starttime="20180507 20:40:18.632"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.105.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:18.634" level="INFO">10.1.105.1</msg>
+<status status="PASS" endtime="20180507 20:40:18.634" starttime="20180507 20:40:18.633"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:18.635" starttime="20180507 20:40:18.634"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:18.635" starttime="20180507 20:40:18.633"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:18.635" starttime="20180507 20:40:18.632"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW5_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:18.925" level="INFO">Created connection to https://daniel:****@10.20.30.28:443/command-api: model: DCS-7050T-52-F, serial: JPE12181357, systemMAC: 00:1c:73:1c:2a:08, version: 4.18.7M, lastBootTime: 1523889482.68</msg>
+<status status="PASS" endtime="20180507 20:40:18.925" starttime="20180507 20:40:18.635"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:21.451" starttime="20180507 20:40:18.926"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:21.451" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.106', u'peers': {u'10.1.106.1': {u'msgSent': 32508, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524163908.205399, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30903, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': 65001}, u'10.2.106.1': {u'msgSent': 32449, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524163885.957009, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30907, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': 65001}}, u'vrf': u'default', u'asn': 65103}}}</msg>
+<status status="PASS" endtime="20180507 20:40:21.451" starttime="20180507 20:40:21.451"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:21.452" level="INFO">${peers} = {u'10.1.106.1': {u'msgSent': 32508, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524163908.205399, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30903, u'peerState': u'Established'...</msg>
+<status status="PASS" endtime="20180507 20:40:21.452" starttime="20180507 20:40:21.451"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.1.106.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:21.452" level="INFO">10.1.106.1</msg>
+<status status="PASS" endtime="20180507 20:40:21.452" starttime="20180507 20:40:21.452"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:21.453" starttime="20180507 20:40:21.453"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:21.453" starttime="20180507 20:40:21.452"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.106.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:21.453" level="INFO">10.2.106.1</msg>
+<status status="PASS" endtime="20180507 20:40:21.453" starttime="20180507 20:40:21.453"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:21.454" starttime="20180507 20:40:21.453"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:21.454" starttime="20180507 20:40:21.453"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:21.454" starttime="20180507 20:40:21.452"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW6_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:21.685" level="INFO">Created connection to https://daniel:****@10.20.30.29:443/command-api: model: DCS-7160-48YC6-F, serial: JAS16420034, systemMAC: 44:4c:a8:b8:84:f0, version: 4.20.5F, lastBootTime: 1524014009.18</msg>
+<status status="PASS" endtime="20180507 20:40:21.685" starttime="20180507 20:40:21.454"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:24.997" starttime="20180507 20:40:21.686"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:24.997" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.107', u'peers': {u'10.1.107.1': {u'msgSent': 30875, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524165760.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30917, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}, u'10.2.107.1': {u'msgSent': 30941, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524165760.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30910, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}}, u'vrf': u'default', u'asn': u'65104'}}}</msg>
+<status status="PASS" endtime="20180507 20:40:24.997" starttime="20180507 20:40:24.997"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:24.998" level="INFO">${peers} = {u'10.1.107.1': {u'msgSent': 30875, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524165760.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30917, u'peerState': u'Established', u'o...</msg>
+<status status="PASS" endtime="20180507 20:40:24.998" starttime="20180507 20:40:24.998"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.1.107.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:24.998" level="INFO">10.1.107.1</msg>
+<status status="PASS" endtime="20180507 20:40:24.999" starttime="20180507 20:40:24.998"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:24.999" starttime="20180507 20:40:24.999"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:24.999" starttime="20180507 20:40:24.998"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.107.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:24.999" level="INFO">10.2.107.1</msg>
+<status status="PASS" endtime="20180507 20:40:24.999" starttime="20180507 20:40:24.999"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:25.000" starttime="20180507 20:40:25.000"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:25.000" starttime="20180507 20:40:24.999"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:25.000" starttime="20180507 20:40:24.998"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW7_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:25.278" level="INFO">Created connection to https://daniel:****@10.20.30.30:443/command-api: model: DCS-7160-48YC6-F, serial: JAS16420035, systemMAC: 44:4c:a8:b8:85:3a, version: 4.20.5F, lastBootTime: 1524013735.17</msg>
+<status status="PASS" endtime="20180507 20:40:25.279" starttime="20180507 20:40:25.000"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:28.952" starttime="20180507 20:40:25.279"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:28.953" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.108', u'peers': {u'10.2.108.1': {u'msgSent': 30938, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524165376.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30898, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}, u'10.1.108.1': {u'msgSent': 30919, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524165504.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30916, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}}, u'vrf': u'default', u'asn': u'65104'}}}</msg>
+<status status="PASS" endtime="20180507 20:40:28.953" starttime="20180507 20:40:28.952"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:28.953" level="INFO">${peers} = {u'10.2.108.1': {u'msgSent': 30938, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524165376.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30898, u'peerState': u'Established', u'o...</msg>
+<status status="PASS" endtime="20180507 20:40:28.953" starttime="20180507 20:40:28.953"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.2.108.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:28.954" level="INFO">10.2.108.1</msg>
+<status status="PASS" endtime="20180507 20:40:28.954" starttime="20180507 20:40:28.954"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:28.954" starttime="20180507 20:40:28.954"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:28.954" starttime="20180507 20:40:28.954"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.108.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:28.955" level="INFO">10.1.108.1</msg>
+<status status="PASS" endtime="20180507 20:40:28.955" starttime="20180507 20:40:28.955"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:28.955" starttime="20180507 20:40:28.955"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:28.955" starttime="20180507 20:40:28.954"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:28.955" starttime="20180507 20:40:28.953"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW8_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:29.200" level="INFO">Created connection to https://daniel:****@10.20.30.31:443/command-api: model: DCS-7050TX-96-F, serial: JAS14270020, systemMAC: 00:1c:73:74:7f:b4, version: 4.20.5F, lastBootTime: 1524015675.05</msg>
+<status status="PASS" endtime="20180507 20:40:29.200" starttime="20180507 20:40:28.955"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:35.417" starttime="20180507 20:40:29.200"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:35.417" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.109', u'peers': {u'10.2.109.1': {u'msgSent': 30923, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524167424.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30921, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}, u'10.1.109.1': {u'msgSent': 30956, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524167296.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30918, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}}, u'vrf': u'default', u'asn': u'65105'}}}</msg>
+<status status="PASS" endtime="20180507 20:40:35.417" starttime="20180507 20:40:35.417"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:35.418" level="INFO">${peers} = {u'10.2.109.1': {u'msgSent': 30923, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524167424.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30921, u'peerState': u'Established', u'o...</msg>
+<status status="PASS" endtime="20180507 20:40:35.418" starttime="20180507 20:40:35.417"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.2.109.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:35.419" level="INFO">10.2.109.1</msg>
+<status status="PASS" endtime="20180507 20:40:35.419" starttime="20180507 20:40:35.419"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:35.421" starttime="20180507 20:40:35.420"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:35.421" starttime="20180507 20:40:35.418"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.109.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:35.422" level="INFO">10.1.109.1</msg>
+<status status="PASS" endtime="20180507 20:40:35.422" starttime="20180507 20:40:35.421"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:35.423" starttime="20180507 20:40:35.422"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:35.423" starttime="20180507 20:40:35.421"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:35.423" starttime="20180507 20:40:35.418"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW9_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:36.257" level="INFO">Created connection to https://daniel:****@10.20.30.32:443/command-api: model: DCS-7050TX-96-F, serial: JAS14270029, systemMAC: 00:1c:73:74:83:88, version: 4.20.5F, lastBootTime: 1524015474.03</msg>
+<status status="PASS" endtime="20180507 20:40:36.257" starttime="20180507 20:40:35.423"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:42.984" starttime="20180507 20:40:36.258"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:42.985" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.110', u'peers': {u'10.1.110.1': {u'msgSent': 30932, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524167168.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30931, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}, u'10.2.110.1': {u'msgSent': 30961, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524167168.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30919, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65001'}}, u'vrf': u'default', u'asn': u'65105'}}}</msg>
+<status status="PASS" endtime="20180507 20:40:42.985" starttime="20180507 20:40:42.985"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:42.985" level="INFO">${peers} = {u'10.1.110.1': {u'msgSent': 30932, u'inMsgQueue': 0, u'prefixReceived': 10, u'upDownTime': 1524167168.0, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30931, u'peerState': u'Established', u'o...</msg>
+<status status="PASS" endtime="20180507 20:40:42.986" starttime="20180507 20:40:42.985"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.1.110.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:42.987" level="INFO">10.1.110.1</msg>
+<status status="PASS" endtime="20180507 20:40:42.987" starttime="20180507 20:40:42.986"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:42.988" starttime="20180507 20:40:42.987"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:42.988" starttime="20180507 20:40:42.986"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.110.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:42.989" level="INFO">10.2.110.1</msg>
+<status status="PASS" endtime="20180507 20:40:42.989" starttime="20180507 20:40:42.989"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:42.990" starttime="20180507 20:40:42.990"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:42.990" starttime="20180507 20:40:42.988"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:42.990" starttime="20180507 20:40:42.986"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW10_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:43.291" level="INFO">Created connection to https://daniel:****@10.20.30.33:443/command-api: model: DCS-7050T-52-R, serial: JPE12160034, systemMAC: 00:1c:73:1b:f5:70, version: 4.18.7M, lastBootTime: 1523065250.69</msg>
+<status status="PASS" endtime="20180507 20:40:43.292" starttime="20180507 20:40:42.990"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:51.618" starttime="20180507 20:40:43.292"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:51.619" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.111', u'peers': {u'10.1.111.1': {u'msgSent': 32501, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524167611.032719, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30927, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': 65001}, u'10.2.111.1': {u'msgSent': 32525, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524167631.158634, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30895, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': 65001}}, u'vrf': u'default', u'asn': 65106}}}</msg>
+<status status="PASS" endtime="20180507 20:40:51.619" starttime="20180507 20:40:51.618"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:51.619" level="INFO">${peers} = {u'10.1.111.1': {u'msgSent': 32501, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524167611.032719, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30927, u'peerState': u'Established'...</msg>
+<status status="PASS" endtime="20180507 20:40:51.619" starttime="20180507 20:40:51.619"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.1.111.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:51.620" level="INFO">10.1.111.1</msg>
+<status status="PASS" endtime="20180507 20:40:51.620" starttime="20180507 20:40:51.620"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:51.621" starttime="20180507 20:40:51.620"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:51.621" starttime="20180507 20:40:51.620"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.111.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:51.621" level="INFO">10.2.111.1</msg>
+<status status="PASS" endtime="20180507 20:40:51.621" starttime="20180507 20:40:51.621"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:51.622" starttime="20180507 20:40:51.621"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:51.622" starttime="20180507 20:40:51.621"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:51.622" starttime="20180507 20:40:51.619"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW11_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:51.925" level="INFO">Created connection to https://daniel:****@10.20.30.34:443/command-api: model: DCS-7050T-52-F, serial: JPE12160170, systemMAC: 00:1c:73:1b:fe:76, version: 4.18.7M, lastBootTime: 1523063370.68</msg>
+<status status="PASS" endtime="20180507 20:40:51.925" starttime="20180507 20:40:51.622"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:58.854" starttime="20180507 20:40:51.926"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:40:58.855" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.112', u'peers': {u'10.2.112.1': {u'msgSent': 32515, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524165755.863754, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30938, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': 65001}, u'10.1.112.1': {u'msgSent': 32485, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524165798.362875, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30946, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': 65001}}, u'vrf': u'default', u'asn': 65106}}}</msg>
+<status status="PASS" endtime="20180507 20:40:58.856" starttime="20180507 20:40:58.854"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:40:58.857" level="INFO">${peers} = {u'10.2.112.1': {u'msgSent': 32515, u'inMsgQueue': 0, u'prefixReceived': 11, u'upDownTime': 1524165755.863754, u'version': 4, u'prefixAccepted': 10, u'msgReceived': 30938, u'peerState': u'Established'...</msg>
+<status status="PASS" endtime="20180507 20:40:58.857" starttime="20180507 20:40:58.856"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.2.112.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:58.859" level="INFO">10.2.112.1</msg>
+<status status="PASS" endtime="20180507 20:40:58.859" starttime="20180507 20:40:58.858"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:58.861" starttime="20180507 20:40:58.860"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:58.861" starttime="20180507 20:40:58.858"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.112.1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:58.862" level="INFO">10.1.112.1</msg>
+<status status="PASS" endtime="20180507 20:40:58.862" starttime="20180507 20:40:58.861"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:40:58.864" starttime="20180507 20:40:58.863"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:58.864" starttime="20180507 20:40:58.861"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:40:58.864" starttime="20180507 20:40:58.857"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW12_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:40:59.020" level="INFO">Created connection to https://daniel:****@10.20.30.21:443/command-api: model: DCS-7504, serial: HSH14085036, systemMAC: 00:1c:73:3c:e4:46, version: 4.20.0F-8016086.bloomingtonmaint (engineering build), lastBootTime: 1524049951.39</msg>
+<status status="PASS" endtime="20180507 20:40:59.021" starttime="20180507 20:40:58.864"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.799" starttime="20180507 20:40:59.021"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:41:06.800" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.1', u'peers': {u'10.1.111.2': {u'msgSent': 30918, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30885, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65106'}, u'10.1.103.2': {u'msgSent': 31007, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1525732608.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30988, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65102'}, u'10.1.110.2': {u'msgSent': 30926, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30917, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65105'}, u'10.1.106.2': {u'msgSent': 30898, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30893, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65103'}, u'10.1.105.2': {u'msgSent': 30900, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30874, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65103'}, u'10.1.108.2': {u'msgSent': 30910, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30908, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65104'}, u'10.1.109.2': {u'msgSent': 30913, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30944, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65105'}, u'10.1.102.2': {u'msgSent': 30952, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1525737600.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30949, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65101'}, u'10.1.112.2': {u'msgSent': 30939, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30866, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65106'}, u'10.1.104.2': {u'msgSent': 30901, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30882, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65102'}, u'10.1.107.2': {u'msgSent': 30913, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30865, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65104'}}, u'vrf': u'default', u'asn': u'65001'}}}</msg>
+<status status="PASS" endtime="20180507 20:41:06.801" starttime="20180507 20:41:06.800"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:41:06.802" level="INFO">${peers} = {u'10.1.111.2': {u'msgSent': 30918, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166144.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30885, u'peerState': u'Established', u'out...</msg>
+<status status="PASS" endtime="20180507 20:41:06.802" starttime="20180507 20:41:06.801"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.1.111.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.802" level="INFO">10.1.111.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.803" starttime="20180507 20:41:06.802"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.803" starttime="20180507 20:41:06.803"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.803" starttime="20180507 20:41:06.802"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.103.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.803" level="INFO">10.1.103.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.804" starttime="20180507 20:41:06.803"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.804" starttime="20180507 20:41:06.804"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.804" starttime="20180507 20:41:06.803"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.110.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.804" level="INFO">10.1.110.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.804" starttime="20180507 20:41:06.804"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.805" starttime="20180507 20:41:06.804"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.805" starttime="20180507 20:41:06.804"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.106.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.805" level="INFO">10.1.106.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.805" starttime="20180507 20:41:06.805"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.806" starttime="20180507 20:41:06.805"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.806" starttime="20180507 20:41:06.805"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.105.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.806" level="INFO">10.1.105.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.806" starttime="20180507 20:41:06.806"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.806" starttime="20180507 20:41:06.806"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.806" starttime="20180507 20:41:06.806"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.108.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.807" level="INFO">10.1.108.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.807" starttime="20180507 20:41:06.807"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.807" starttime="20180507 20:41:06.807"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.807" starttime="20180507 20:41:06.807"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.109.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.808" level="INFO">10.1.109.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.808" starttime="20180507 20:41:06.808"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.808" starttime="20180507 20:41:06.808"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.808" starttime="20180507 20:41:06.807"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.102.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.809" level="INFO">10.1.102.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.809" starttime="20180507 20:41:06.808"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.809" starttime="20180507 20:41:06.809"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.809" starttime="20180507 20:41:06.808"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.112.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.810" level="INFO">10.1.112.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.810" starttime="20180507 20:41:06.809"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.810" starttime="20180507 20:41:06.810"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.810" starttime="20180507 20:41:06.809"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.104.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.811" level="INFO">10.1.104.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.811" starttime="20180507 20:41:06.810"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.811" starttime="20180507 20:41:06.811"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.811" starttime="20180507 20:41:06.810"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.1.107.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:06.811" level="INFO">10.1.107.2</msg>
+<status status="PASS" endtime="20180507 20:41:06.812" starttime="20180507 20:41:06.811"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:06.812" starttime="20180507 20:41:06.812"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.812" starttime="20180507 20:41:06.811"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:06.812" starttime="20180507 20:41:06.802"></status>
+</kw>
+<kw name="Connect To" library="AristaLibrary">
+<doc>This is the cornerstone of all testing. The Connect To</doc>
+<arguments>
+<arg>host=${ SW13_HOST }</arg>
+<arg>transport=${TRANSPORT}</arg>
+<arg>username=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:07.060" level="INFO">Created connection to https://daniel:****@10.20.30.22:443/command-api: model: DCS-7050QX-32-F, serial: JPE13091461, systemMAC: 00:1c:73:38:23:55, version: 4.20.0F-8016086.bloomingtonmaint (engineering build), lastBootTime: 1524049909.65</msg>
+<status status="PASS" endtime="20180507 20:41:07.060" starttime="20180507 20:41:06.812"></status>
+</kw>
+<kw name="Get Command Output" library="AristaLibrary.Expect">
+<doc>Execute the specified command on the named switch and store the</doc>
+<arguments>
+<arg>cmd=show ip bgp summary</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.238" starttime="20180507 20:41:07.060"></status>
+</kw>
+<kw name="Record Output" library="AristaLibrary.Expect">
+<doc>Log the provided command. If no command is provided then log the</doc>
+<msg timestamp="20180507 20:41:15.239" level="INFO">{u'vrfs': {u'default': {u'routerId': u'10.0.1.2', u'peers': {u'10.2.102.2': {u'msgSent': 30904, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1525317248.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30897, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65101'}, u'10.2.111.2': {u'msgSent': 30890, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30906, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65106'}, u'10.2.109.2': {u'msgSent': 30919, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30897, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65105'}, u'10.2.107.2': {u'msgSent': 30905, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30910, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65104'}, u'10.2.106.2': {u'msgSent': 30902, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30836, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65103'}, u'10.2.103.2': {u'msgSent': 30909, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1525223936.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30919, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65102'}, u'10.2.110.2': {u'msgSent': 30919, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30928, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65105'}, u'10.2.108.2': {u'msgSent': 30893, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30912, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65104'}, u'10.2.105.2': {u'msgSent': 30870, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30871, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65103'}, u'10.2.104.2': {u'msgSent': 30896, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30871, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65102'}, u'10.2.112.2': {u'msgSent': 30932, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1524166528.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30895, u'peerState': u'Established', u'outMsgQueue': 0, u'underMaintenance': False, u'asn': u'65106'}}, u'vrf': u'default', u'asn': u'65001'}}}</msg>
+<status status="PASS" endtime="20180507 20:41:15.239" starttime="20180507 20:41:15.238"></status>
+</kw>
+<kw name="Get Value" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of getting a value for a key</doc>
+<arguments>
+<arg>vrfs default peers</arg>
+</arguments>
+<assign>
+<var>${peers}</var>
+</assign>
+<msg timestamp="20180507 20:41:15.239" level="INFO">${peers} = {u'10.2.102.2': {u'msgSent': 30904, u'inMsgQueue': 0, u'prefixReceived': 1, u'upDownTime': 1525317248.0, u'version': 4, u'prefixAccepted': 1, u'msgReceived': 30897, u'peerState': u'Established', u'out...</msg>
+<status status="PASS" endtime="20180507 20:41:15.239" starttime="20180507 20:41:15.239"></status>
+</kw>
+<kw type="for" name="${peer} IN [ @{peers} ]">
+<kw type="foritem" name="${peer} = 10.2.102.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.240" level="INFO">10.2.102.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.240" starttime="20180507 20:41:15.240"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.241" starttime="20180507 20:41:15.240"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.241" starttime="20180507 20:41:15.240"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.111.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.241" level="INFO">10.2.111.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.242" starttime="20180507 20:41:15.241"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.242" starttime="20180507 20:41:15.242"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.242" starttime="20180507 20:41:15.241"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.109.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.243" level="INFO">10.2.109.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.243" starttime="20180507 20:41:15.243"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.244" starttime="20180507 20:41:15.243"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.244" starttime="20180507 20:41:15.242"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.107.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.244" level="INFO">10.2.107.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.244" starttime="20180507 20:41:15.244"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.245" starttime="20180507 20:41:15.245"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.245" starttime="20180507 20:41:15.244"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.106.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.245" level="INFO">10.2.106.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.246" starttime="20180507 20:41:15.245"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.246" starttime="20180507 20:41:15.246"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.246" starttime="20180507 20:41:15.245"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.103.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.246" level="INFO">10.2.103.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.247" starttime="20180507 20:41:15.246"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.247" starttime="20180507 20:41:15.247"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.247" starttime="20180507 20:41:15.246"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.110.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.247" level="INFO">10.2.110.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.247" starttime="20180507 20:41:15.247"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.248" starttime="20180507 20:41:15.248"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.248" starttime="20180507 20:41:15.247"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.108.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.248" level="INFO">10.2.108.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.248" starttime="20180507 20:41:15.248"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.249" starttime="20180507 20:41:15.248"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.249" starttime="20180507 20:41:15.248"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.105.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.249" level="INFO">10.2.105.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.249" starttime="20180507 20:41:15.249"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.250" starttime="20180507 20:41:15.249"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.250" starttime="20180507 20:41:15.249"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.104.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.250" level="INFO">10.2.104.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.250" starttime="20180507 20:41:15.250"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.251" starttime="20180507 20:41:15.250"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.251" starttime="20180507 20:41:15.250"></status>
+</kw>
+<kw type="foritem" name="${peer} = 10.2.112.2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${peer}</arg>
+</arguments>
+<msg timestamp="20180507 20:41:15.251" level="INFO">10.2.112.2</msg>
+<status status="PASS" endtime="20180507 20:41:15.251" starttime="20180507 20:41:15.251"></status>
+</kw>
+<kw name="Expect" library="AristaLibrary.Expect">
+<doc>This keyword provides a method of testing various types of values</doc>
+<arguments>
+<arg>vrfs default peers ${peer} peerState</arg>
+<arg>to be</arg>
+<arg>Established</arg>
+</arguments>
+<status status="PASS" endtime="20180507 20:41:15.251" starttime="20180507 20:41:15.251"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.251" starttime="20180507 20:41:15.251"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.251" starttime="20180507 20:41:15.239"></status>
+</kw>
+<status status="PASS" endtime="20180507 20:41:15.252" starttime="20180507 20:40:12.559"></status>
+</kw>
+<kw type="teardown" name="Clear All Connections" library="AristaLibrary">
+<doc>Remove all connection objects from the cache and resets the list of</doc>
+<status status="PASS" endtime="20180507 20:41:15.698" starttime="20180507 20:41:15.697"></status>
+</kw>
+<test id="s1-s1-t1" name="show bgp neighbors">
 <kw name="Record Output" library="AristaLibrary.Expect">
 <doc>Log the provided command. If no command is provided then log the</doc>
 <arguments>
 <arg>cmd=show ip bgp summary</arg>
 </arguments>
-<msg timestamp="20180507 19:59:46.571" level="INFO">BGP summary information for VRF default
-Router identifier 10.0.1.102, local AS number 65101
+<msg timestamp="20180507 20:41:15.696" level="INFO">BGP summary information for VRF default
+Router identifier 10.0.1.2, local AS number 65001
 Neighbor Status Codes: m - Under maintenance
   Neighbor         V  AS           MsgRcvd   MsgSent  InQ OutQ  Up/Down State  PfxRcd PfxAcc
-  10.1.102.1       4  65001           8305      8317    0    0 00:00:04 Idle(Admin) 0      0
-  10.2.102.1       4  65001           8264      8286    0    0    4d20h Estab  11     11
+  10.2.102.2       4  65101          30897     30904    0    0    4d21h Estab  1      1
+  10.2.103.2       4  65102          30919     30909    0    0    5d23h Estab  1      1
+  10.2.104.2       4  65102          30871     30896    0    0   18d05h Estab  1      1
+  10.2.105.2       4  65103          30871     30870    0    0   18d05h Estab  1      1
+  10.2.106.2       4  65103          30836     30902    0    0   18d05h Estab  1      1
+  10.2.107.2       4  65104          30910     30905    0    0   18d05h Estab  1      1
+  10.2.108.2       4  65104          30912     30893    0    0   18d05h Estab  1      1
+  10.2.109.2       4  65105          30897     30919    0    0   18d05h Estab  1      1
+  10.2.110.2       4  65105          30928     30919    0    0   18d05h Estab  1      1
+  10.2.111.2       4  65106          30906     30890    0    0   18d05h Estab  1      1
+  10.2.112.2       4  65106          30895     30932    0    0   18d05h Estab  1      1
 </msg>
-<status status="PASS" endtime="20180507 19:59:46.571" starttime="20180507 19:59:46.169"></status>
+<status status="PASS" endtime="20180507 20:41:15.696" starttime="20180507 20:41:15.252"></status>
 </kw>
-<status status="PASS" endtime="20180507 19:59:46.571" critical="yes" starttime="20180507 19:59:46.168"></status>
+<status status="PASS" endtime="20180507 20:41:15.697" critical="yes" starttime="20180507 20:41:15.252"></status>
 </test>
 <doc>This test changes a BGP neighbor statement to the wrong AS to verify that the neighbor state becomes un-established.
 The test reverts the neighbor statement to it's proper state.</doc>
-<status status="FAIL" endtime="20180507 19:59:46.574" starttime="20180507 19:59:45.611"></status>
+<status status="PASS" endtime="20180507 20:41:15.698" starttime="20180507 20:40:12.523"></status>
 </suite>
 <metadata>
 <item name="Author">EOS+ Consulting Services</item>
 </metadata>
-<status status="FAIL" endtime="20180507 19:59:46.578" starttime="20180507 19:59:45.555"></status>
+<status status="PASS" endtime="20180507 20:41:15.699" starttime="20180507 20:40:12.503"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="2" pass="1">Critical Tests</stat>
-<stat fail="2" pass="1">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 <stat info="non-critical" fail="0" pass="0">new</stat>
 <stat info="non-critical" fail="0" pass="0">not_enabled</stat>
 </tag>
 <suite>
-<stat fail="2" id="s1" name="Combined Validation Report" pass="1">Combined Validation Report</stat>
-<stat fail="2" id="s1-s1" name="Bgp-Test" pass="1">Combined Validation Report.Bgp-Test</stat>
+<stat fail="0" id="s1" name="Combined Validation Report" pass="1">Combined Validation Report</stat>
+<stat fail="0" id="s1-s1" name="Bgp-Test" pass="1">Combined Validation Report.Bgp-Test</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20180507 19:59:46.165" level="WARN">Multiple test cases with name 'PEER Established' executed in test suite 'Run Full Suite.Bgp-Test'.</msg>
 </errors>
 </robot>

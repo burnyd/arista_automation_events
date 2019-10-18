@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="2" tests="3" errors="0" name="Run Full Suite" skip="0">
-<testcase classname="Run Full Suite.Bgp-Test" name="PEER Established" time="0">
-<failure message="AristaLibrary.Expect: Key: '[u'vrfs', u'default', u'peers', u'10.1.102.1', u'peerState']', Found: 'Idle', Expected: 'Established'" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Run Full Suite.Bgp-Test" name="PEER Established" time="0">
-<failure message="AristaLibrary.Expect: Key: '[u'vrfs', u'default', u'peers', u'10.1.102.1', u'peerState']', Found: 'Idle', Expected: 'Established'" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Run Full Suite.Bgp-Test" name="Gather Post Change Output" time="0">
+<testsuite failures="0" tests="1" errors="0" name="Run Full Suite" skip="0">
+<testcase classname="Run Full Suite.Bgp-Test" name="show bgp neighbors" time="0">
 </testcase>
 </testsuite>
