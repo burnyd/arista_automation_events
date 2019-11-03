@@ -10,7 +10,7 @@ VERSION: 2
 driver: bridge
 CUSTOM_IMAGE:
   lab: burnyd/arista_automation_events:latest
-CONF_DIR: /config
+CONF_DIR: /Users/dherzberg/Desktop/projects/arista_automation_events/config
 CEOS_IMAGE: ceosimage:4.21.7M
 PUBLISH_BASE:
   443/tcp: 9000
