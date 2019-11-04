@@ -1,0 +1,22 @@
+links:
+  - endpoints: ["Spine1:eth0", "Spine2:eth0", "Leaf1:eth0", "Leaf2:eth0", "Leaf3:eth0", "Leaf4:eth0", "lab-1"]
+    driver: bridge
+  - endpoints: ["Spine1:eth1", "Leaf1:eth1"]
+  - endpoints: ["Spine1:eth2", "Leaf2:eth1"]
+  - endpoints: ["Spine1:eth3", "Leaf3:eth1"]
+  - endpoints: ["Spine1:eth4", "Leaf4:eth1"]
+  - endpoints: ["Spine2:eth1", "Leaf1:eth2"]
+  - endpoints: ["Spine2:eth2", "Leaf2:eth2"]
+  - endpoints: ["Spine2:eth3", "Leaf3:eth2"]
+  - endpoints: ["Spine2:eth4", "Leaf4:eth2"]
+
+VERSION: 2
+driver: macvlan
+CUSTOM_IMAGE:
+  lab: burnyd/arista_automation_events:latest
+CONF_DIR: './config'
+CEOS_IMAGE: ceosimage:4.21.7M
+PUBLISH_BASE:
+  443/tcp: 9000
+  80/tcp: 8000
+  22/tcp: 2000

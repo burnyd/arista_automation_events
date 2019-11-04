@@ -8,6 +8,9 @@
 
 #Todos
 -Finish nornir
+-Integrate Tik stack or similar
+-Salt demos
+-OpenBMP
 
 # Issues
 

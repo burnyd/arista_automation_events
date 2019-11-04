@@ -27,29 +27,29 @@ spine_as: 6500
 
 leaf_as:
   bgpleaf:
-    base-lab_Leaf1:
+    base_lab_Leaf1:
       - 65001
-    base-lab_Leaf2:
+    base_lab_Leaf2:
       - 65002
-    base-lab_Leaf3:
+    base_lab_Leaf3:
       - 65003
-    base-lab_Leaf4:
+    base_lab_Leaf4:
       - 65004
     gobgp:
       - 65005
 
 loopback0:
-    base-lab_Leaf1:
+    base_lab_Leaf1:
       - 1.1.1.1
-    lbase-lab_Leaf2:
+    lbase_lab_Leaf2:
       - 2.2.2.2
-    base-lab_Leaf3:
+    base_lab_Leaf3:
       - 3.3.3.3
-    base-lab_Leaf4:
+    base_lab_Leaf4:
       - 4.4.4.4
-    base-lab_Spine1:
+    base_lab_Spine1:
       - 8.8.8.8
-    base-lab_Spine2:
+    base_lab_Spine2:
       - 9.9.9.9
 
 loopback0spine:
@@ -75,29 +75,29 @@ loopback1leaf:
 vmac: 00:00:00:00:00:33
 
 ebgp_peers:
-  base-lab_Leaf1:
+  base_lab_Leaf1:
     10.0.0.2:
       - remote-as 6500
     10.1.0.2:
       - remote-as 6500
-  base-lab_Leaf2:
+  base_lab_Leaf2:
     10.0.0.6:
       - remote-as 6500
     10.1.0.6:
       - remote-as 6500
-  base-lab_Leaf3:
+  base_lab_Leaf3:
     10.0.0.10:
       - remote-as 6500
     10.1.0.10:
       - remote-as 6500
-  base-lab_Leaf4:
+  base_lab_Leaf4:
     10.0.0.14:
       - remote-as 6500
     10.1.0.14:
       - remote-as 6500
 
 spine_peers:
-  base-lab_Spine1:
+  base_lab_Spine1:
     10.0.0.1:
       - remote-as 65001
     10.0.0.5:
@@ -106,7 +106,7 @@ spine_peers:
       - remote-as 65003
     10.0.0.13:
       - remote-as 65004
-  base-lab_Spine2:
+  base_lab_Spine2:
     10.1.0.1:
       - remote-as 65001
     10.1.0.5:
@@ -117,7 +117,7 @@ spine_peers:
       - remote-as 65004
 
 spine_evpn_peers:
-  base-lab_Spine1:
+  base_lab_Spine1:
     1.1.1.1:
       - remote-as 65001
     2.2.2.2:
@@ -126,7 +126,7 @@ spine_evpn_peers:
       - remote-as 65003
     4.4.4.4:
       - remote-as 65004
-  base-lab_Spine2:
+  base_lab_Spine2:
     1.1.1.1:
       - remote-as 65001
     2.2.2.2:

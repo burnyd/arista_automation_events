@@ -1,4 +1,4 @@
-- hosts: leaf1a
+- hosts: leafs
   connection: local
   gather_facts: no
   vars_files:

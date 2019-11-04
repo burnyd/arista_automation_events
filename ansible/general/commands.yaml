@@ -1,5 +1,5 @@
 ---
-- hosts: base-lab_Leaf1
+- hosts: leafs
   connection: httpapi
   gather_facts: no
   vars_files:

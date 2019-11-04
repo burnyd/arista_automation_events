@@ -1,7 +1,7 @@
 proxy:
   proxytype: napalm
   driver: eos
-  fqdn: base-lab_Leaf3
+  fqdn: base_lab_Leaf3
   username: admin
   password: admin
   optional_args:

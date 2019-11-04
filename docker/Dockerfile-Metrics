@@ -1,0 +1,90 @@
+FROM	ubuntu:18.04
+
+ENV GRAFANA_VERSION 5.2.2
+ENV INFLUXDB_VERSION 1.6.0
+ENV TELEGRAF_VERSION 1.12.4-1
+
+# Prevent some error messages
+ENV DEBIAN_FRONTEND noninteractive
+
+#RUN		echo 'deb http://us.archive.ubuntu.com/ubuntu/ Utopic Unicorn' >> /etc/apt/sources.list
+RUN		apt-get -y update && apt-get -y upgrade && apt-get install wget nginx-light supervisor curl gnupg2 sudo -y
+
+# ---------------- #
+#   Installation   #
+# ---------------- #
+
+# Install Grafana to /src/grafana
+RUN		mkdir -p src/grafana && cd src/grafana && \
+			wget -nv https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-${GRAFANA_VERSION}.linux-amd64.tar.gz -O grafana.tar.gz && \
+			tar xzf grafana.tar.gz --strip-components=1 && rm grafana.tar.gz
+
+# Install InfluxDB
+RUN		wget -nv https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_amd64.deb && \
+			dpkg -i influxdb_${INFLUXDB_VERSION}_amd64.deb && rm influxdb_${INFLUXDB_VERSION}_amd64.deb
+
+# Install Telegraf
+RUN   wget -nv https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}_amd64.deb && \
+      dpkg -i telegraf_${TELEGRAF_VERSION}_amd64.deb && rm telegraf_${TELEGRAF_VERSION}_amd64.deb
+
+# ----------------- #
+#   Configuration   #
+# ----------------- #
+
+#Configure telegraf
+ADD   docker/telegraf/telegraf.conf /etc/telegraf/telegraf.conf
+
+# Configure InfluxDB
+ADD		docker/influxdb/config.toml /etc/influxdb/config.toml
+ADD		docker/influxdb/run.sh /usr/local/bin/run_influxdb
+# These two databases have to be created. These variables are used by set_influxdb.sh and set_grafana.sh
+ENV		PRE_CREATE_DB data grafana
+ENV   INFLUXDB_DB metrics
+ENV		INFLUXDB_HOST localhost:8086
+ENV   INFLUXDB_DATA_USER admin
+ENV   INFLUXDB_DATA_PW admin
+ENV		INFLUXDB_GRAFANA_USER admin
+ENV		INFLUXDB_GRAFANA_PW admin
+ENV		ROOT_PW root
+
+# Configure Grafana
+ADD   docker/grafana/config.ini /etc/grafana/config.ini
+ADD		docker/grafana/run.sh /usr/local/bin/run_grafana
+ADD		docker/configure.sh /configure.sh
+ADD		docker/set_grafana.sh /set_grafana.sh
+ADD		docker/set_influxdb.sh /set_influxdb.sh
+RUN 	/configure.sh
+
+# Configure nginx and supervisord
+ADD		docker/nginx/nginx.conf /etc/nginx/nginx.conf
+ADD		docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# ----------- #
+#   Cleanup   #
+# ----------- #
+
+RUN		apt-get autoremove -y wget curl && \
+			apt-get -y clean && \
+			rm -rf /var/lib/apt/lists/* && rm /*.sh
+
+# ---------------- #
+#   Expose Ports   #
+# ---------------- #
+
+# Grafana
+EXPOSE	3000
+
+# InfluxDB Admin server
+EXPOSE	8083
+
+# InfluxDB HTTP API
+EXPOSE	8086
+
+# InfluxDB HTTPS API
+EXPOSE	8084
+
+# -------- #
+#   Run!   #
+# -------- #
+RUN   telegraf &
+CMD		["/usr/bin/supervisord"]
