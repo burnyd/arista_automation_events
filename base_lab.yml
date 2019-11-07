@@ -1,5 +1,5 @@
 links:
-  - endpoints: ["Spine1:eth0", "Spine2:eth0", "Leaf1:eth0", "Leaf2:eth0", "Leaf3:eth0", "Leaf4:eth0", "lab-1"]
+  - endpoints: ["Spine1:eth0", "Spine2:eth0", "Leaf1:eth0", "Leaf2:eth0", "Leaf3:eth0", "Leaf4:eth0", "labs"]
     driver: bridge
   - endpoints: ["Spine1:eth1", "Leaf1:eth1"]
   - endpoints: ["Spine1:eth2", "Leaf2:eth1"]
@@ -19,4 +19,5 @@ CEOS_IMAGE: ceosimage:4.21.7M
 PUBLISH_BASE:
   443/tcp: 9000
   80/tcp: 8000
-  22/tcp: 2000
+
+#docker run -dit -p 3000:3000 --network=base_lab_net-0 arista_automation_events_metrics:latest
