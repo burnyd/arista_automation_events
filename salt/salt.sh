@@ -16,9 +16,9 @@ service salt-master start &
 service salt-minion start &
 
 echo -e "Starting proxy minions"
-salt-proxy --proxyid=base-lab_Leaf1 &
-salt-proxy --proxyid=base-lab_Leaf2 &
-salt-proxy --proxyid=base-lab_Leaf3 &
-salt-proxy --proxyid=base-lab_Leaf4 &
-salt-proxy --proxyid=base-lab_Spine1 &
-salt-proxy --proxyid=base-lab_Spine2 &
+salt-proxy --proxyid=base_lab_Leaf1 &
+salt-proxy --proxyid=base_lab_Leaf2 &
+salt-proxy --proxyid=base_lab_Leaf3 &
+salt-proxy --proxyid=base_lab_Leaf4 &
+salt-proxy --proxyid=base_lab_Spine1 &
+salt-proxy --proxyid=base_lab_Spine2 &
