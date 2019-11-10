@@ -2,10 +2,12 @@ apiVersion: 1
 
 providers:
  - name: 'test-boards'
+   orgId: 1
    folder: ''
    folderUid: ''
    type: file
+   editable: true
    allowUiUpdates: false
-   updateIntervalSeconds: 60
+   updateIntervalSeconds: 10
    options:
      path: /etc/grafana/provisioning/dashboards
