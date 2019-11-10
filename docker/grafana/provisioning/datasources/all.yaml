@@ -1,0 +1,11 @@
+apiVersion: 1
+
+datasources:
+  - name: data
+    type: influxdb
+    database: data
+    user: admin
+    password: admin
+    url: http://localhost:8086
+    access: 'proxy'
+    editable: true

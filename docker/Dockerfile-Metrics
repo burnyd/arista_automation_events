@@ -48,8 +48,9 @@ ENV		INFLUXDB_GRAFANA_PW admin
 ENV		ROOT_PW root
 
 # Configure Grafana
-ADD   docker/grafana/config.ini /etc/grafana/config.ini
+#ADD   docker/grafana/config.ini /etc/grafana/config.ini
 ADD		docker/grafana/run.sh /usr/local/bin/run_grafana
+ADD   docker/grafana/ /etc/grafana/
 ADD		docker/configure.sh /configure.sh
 ADD		docker/set_grafana.sh /set_grafana.sh
 ADD		docker/set_influxdb.sh /set_influxdb.sh
