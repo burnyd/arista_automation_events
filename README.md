@@ -2,14 +2,13 @@
 
 * docker/Moby (tested in 17.09.0-ce)
 * docker container burnyd/arista_automation_events
-* Arista ceos-lab (tested in 4.21.7M)
+* Arista ceos-lab (tested in 4.21.7M, 4.22.0F)
 * [Docker-topo](https://github.com/networkop/docker-topo)
 
 
 #Todos
--Finish nornir
--Integrate Tik stack or similar
 -Salt demos
+-Finish nornir
 -OpenBMP
 
 # Issues
