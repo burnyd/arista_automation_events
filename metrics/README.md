@@ -1,5 +1,5 @@
-# Arista Salt stack
-![Alt text](images/grafana.jpg?raw=true "lab"
+# Openconfig metrics using telegraf
+![Alt text](../images/grafana.jpg?raw=true "lab")
 
 Repo for playing with openconfig metrics using telegraf, influxdb and grafana.
 
