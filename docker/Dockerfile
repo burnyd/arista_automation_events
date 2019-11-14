@@ -26,6 +26,8 @@ cp /arista_automation_events/salt/pillar/* /srv/salt/pillar/ && \
 echo 127.0.0.1 salt  >> /etc/hosts && \
 cp /arista_automation_events/salt/scripts/salt/master /etc/salt/
 
+ADD salt/states /srv/salt/states
+ADD salt/templates /srv/salt/templates
 
 RUN wget -O bootstrap-salt.sh https://bootstrap.saltstack.com && \
 sh bootstrap-salt.sh -M -stable
