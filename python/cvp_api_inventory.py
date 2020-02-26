@@ -4,7 +4,7 @@ import json
 
 username = 'daniel'
 password = 'daniel123'
-server = 'https://10.20.30.142'
+server = 'https://10.20.30.181'
 
 connect_timeout = 10
 headers = {"Accept": "application/json",
@@ -29,5 +29,9 @@ def get_inventory(url_prefix):
     return response.json()
 
 login(server, username, password)
-data = get_inventory(server1)
+data = get_inventory(server)
 print json.dumps(data, indent=4)
+
+print ("******** Devices in cvp are ********")
+for i in data:
+    print[i][0]['hostname']
