@@ -38,3 +38,17 @@ management api http-commands
 !
 management api gnmi
    transport grpc default
+!
+management api restconf
+   transport https test
+   ssl profile restconf
+!
+management api netconf
+   transport ssh test
+      port 22
+!
+management security
+   ssl profile restconf
+   certificate restconf.crt key restconf.key
+!
+security pki certificate generate self-signed restconf.crt key restconf.key generate rsa 2048 parameters common-name restconf

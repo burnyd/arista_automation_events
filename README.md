@@ -1,5 +1,6 @@
 #Todos
-Create a Openconfig folder
+Add a models folder
+create a bash script which reaches out to public and potentially installs pyang?
 Fix pyangbind && Fix dockerfile 
 Update documentation for pyang
 Fix restconf to look better json structure wise

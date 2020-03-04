@@ -11,7 +11,7 @@ RUN apt-get update && \
 apt-get install wget python-cffi libxslt1-dev libffi-dev libssl-dev default-jre python3-pip python3-dev python-pip python-dev git net-tools iputils-ping mtr vim curl -y
 
 #Install necessary Python packages
-RUN pip install futures ansible napalm jsonrpclib
+RUN pip install futures ansible napalm jsonrpclib ncclient
 RUN pip install --upgrade pyOpenSSL
 
 RUN mkdir -p /srv/salt/ && \
