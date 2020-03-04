@@ -1,0 +1,13 @@
+---
+
+- hosts: spines
+  connection: httpapi
+  gather_facts: yes
+  vars_files:
+    - "../vars/all.yaml"
+
+  tasks:
+    - name: BGP on Spine switches
+      eos_config:
+        src: ../templates/bgp_spine.j2
+      ignore_errors: True

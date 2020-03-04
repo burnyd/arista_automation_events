@@ -4,7 +4,7 @@ import json
 
 switchusername = 'admin'
 switchpassword = 'admin'
-switch = '127.0.0.1:8000'
+switch = 'base_lab_Leaf1'
 
 urlString = "http://{}:{}@{}/command-api".format(switchusername, switchpassword, switch)
 switchReq = Server( urlString )

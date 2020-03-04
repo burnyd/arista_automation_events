@@ -4,7 +4,7 @@ from jsonrpclib import Server
 
 switchusername = 'admin'
 switchpassword = 'admin'
-switches = ['127.0.0.1:8006']
+switches = ['base_lab_Leaf1']
 
 def find_neighbors(): #Function makes sure that each and every API is actually running on each switches and can pull with the current password.
     for switch in switches:

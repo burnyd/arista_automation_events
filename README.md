@@ -1,3 +1,13 @@
+#Todos
+Create a Openconfig folder
+Fix pyangbind && Fix dockerfile 
+Update documentation for pyang
+Fix restconf to look better json structure wise
+Add Post restconf
+Add restconf md readme
+Add Netconf examples
+Add Netconf readme 
+
 # Requirements
 
 * docker/Moby (tested in 17.09.0-ce)

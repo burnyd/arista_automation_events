@@ -1,0 +1,115 @@
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname leaf3
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$PDiLEs2KEEXN/Jvc$aq.23B4FNfs6tg09EgRnxhQRqioXWE.QpdkyOQugIJlRjd.ST5gZdQ0Z4FbkcB3rubIPYXCNF2e9OG/tQetrV1
+username arista privilege 15 secret sha512 $6$9QRAr99y7uruxTuA$LdDFixFIlNDP9LfMlq4vOVBU166u2H8MY/qtiJn9TKwlu6roJzcqHnFUt.WtAbzIfRvBHgtAiR2QAjX62Xqbt.
+!
+vlan 2
+   name prod
+!
+vlan 3
+   name QA
+!
+vrf definition QA
+!
+vrf definition prod
+!
+interface Ethernet1
+   no switchport
+   ip address 10.0.0.9/30
+!
+interface Ethernet2
+   no switchport
+   ip address 10.1.0.9/30
+!
+interface Ethernet3
+   switchport mode trunk
+!
+interface Loopback0
+   ip address 3.3.3.3/32
+!
+interface Loopback1
+   ip address 33.33.33.33/32
+!
+interface Vlan2
+   no autostate
+   vrf forwarding prod
+   ip address virtual 10.0.2.1/24
+!
+interface Vlan3
+   no autostate
+   vrf forwarding QA
+   ip address virtual 10.0.3.1/24
+!
+interface Vxlan1
+   vxlan source-interface Loopback1
+   vxlan udp-port 4789
+   vxlan vrf QA vni 20000
+   vxlan vrf prod vni 10000
+!
+ip virtual-router mac-address 00:00:00:00:00:33
+!
+ip access-list copp
+   10 permit ip any any
+!
+ip routing
+ip routing vrf QA
+ip routing vrf prod
+!
+control-plane
+   ip access-group copp in
+!
+router bgp 65003
+   router-id 3.3.3.3
+   neighbor SPINE peer-group
+   neighbor SPINE remote-as 6500
+   neighbor SPINE fall-over bfd
+   neighbor SPINE maximum-routes 12000
+   neighbor SPINE-EVPN-TRANSIT peer-group
+   neighbor SPINE-EVPN-TRANSIT remote-as 6500
+   neighbor SPINE-EVPN-TRANSIT next-hop-unchanged
+   neighbor SPINE-EVPN-TRANSIT update-source Loopback0
+   neighbor SPINE-EVPN-TRANSIT ebgp-multihop
+   neighbor SPINE-EVPN-TRANSIT send-community extended
+   neighbor SPINE-EVPN-TRANSIT maximum-routes 0
+   neighbor 8.8.8.8 peer-group SPINE-EVPN-TRANSIT
+   neighbor 9.9.9.9 peer-group SPINE-EVPN-TRANSIT
+   neighbor 10.0.0.10 peer-group SPINE
+   neighbor 10.1.0.10 peer-group SPINE
+   redistribute connected
+   !
+   address-family evpn
+      neighbor SPINE-EVPN-TRANSIT activate
+   !
+   address-family ipv4
+      no neighbor SPINE-EVPN-TRANSIT activate
+   !
+   vrf QA
+      rd 2.3.4.5:20000
+      route-target import evpn 1:1001
+      route-target export evpn 1:1001
+      redistribute connected
+      redistribute static
+   !
+   vrf prod
+      rd 1.2.3.4:10000
+      route-target import evpn 2:2001
+      route-target export evpn 2:2001
+      redistribute connected
+      redistribute static
+!
+management api http-commands
+   protocol http
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+end

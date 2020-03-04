@@ -1,0 +1,22 @@
+---
+
+- hosts: leafs
+  connection: httpapi
+  gather_facts: yes
+  vars_files:
+    - "../vars/all.yaml"
+
+  tasks:
+    - name: BGP on leaf switches
+      eos_config:
+        src: ../templates/bgp_leaf.j2
+      ignore_errors: True
+
+    - name: Add Layer 2 VLANS
+      eos_config:
+        src: ../templates/vlans.j2
+      ignore_errors: True
+
+    - name: Add Layer 3
+      eos_config:
+        src: ../templates/Layer3-evpn.j2

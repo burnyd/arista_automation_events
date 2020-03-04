@@ -1,0 +1,90 @@
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname spine1
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$JLp3YTq546uWAucx$W8J.GiacGTA0c.zkwFYa/JTOyVZY93UwvTeUi.BsJoGeFWsItMXdUTDRHqm6dJX01KZ2gc1jJ4FRF2T2AmAKP.
+username arista privilege 15 secret sha512 $6$EHQh0O5wa.GZw0h/$7TgK17LzV0Sh45HZIotbGHPF9OPWidXaO5c7OB.betS6jlIrvycD3e4mSyCJfEa7JbnfdHQ1n1stdsfP/xuTP/
+!
+interface Ethernet1
+   no switchport
+   ip address 10.0.0.2/30
+!
+interface Ethernet2
+   no switchport
+   ip address 10.0.0.6/30
+!
+interface Ethernet3
+   no switchport
+   ip address 10.0.0.10/30
+!
+interface Ethernet4
+   no switchport
+   ip address 10.0.0.14/30
+!
+interface Ethernet5
+!
+interface Loopback0
+   ip address 8.8.8.8/32
+!
+interface Loopback1
+   ip address 88.88.88.88/32
+!
+ip access-list copp
+   10 permit ip any any
+!
+ip routing
+!
+control-plane
+   ip access-group copp in
+!
+router bgp 6500
+   router-id 8.8.8.8
+   neighbor VTEP peer-group
+   neighbor VTEP fall-over bfd
+   neighbor VTEP send-community
+   neighbor VTEP maximum-routes 12000
+   neighbor VTEP-EVPN-TRANSIT peer-group
+   neighbor VTEP-EVPN-TRANSIT next-hop-unchanged
+   neighbor VTEP-EVPN-TRANSIT update-source Loopback0
+   neighbor VTEP-EVPN-TRANSIT ebgp-multihop
+   neighbor VTEP-EVPN-TRANSIT send-community extended
+   neighbor VTEP-EVPN-TRANSIT maximum-routes 0
+   neighbor 1.1.1.1 peer-group VTEP-EVPN-TRANSIT
+   neighbor 1.1.1.1 remote-as 65001
+   neighbor 2.2.2.2 peer-group VTEP-EVPN-TRANSIT
+   neighbor 2.2.2.2 remote-as 65002
+   neighbor 3.3.3.3 peer-group VTEP-EVPN-TRANSIT
+   neighbor 3.3.3.3 remote-as 65003
+   neighbor 4.4.4.4 peer-group VTEP-EVPN-TRANSIT
+   neighbor 4.4.4.4 remote-as 65004
+   neighbor 10.0.0.1 peer-group VTEP
+   neighbor 10.0.0.1 remote-as 65001
+   neighbor 10.0.0.5 peer-group VTEP
+   neighbor 10.0.0.5 remote-as 65002
+   neighbor 10.0.0.9 peer-group VTEP
+   neighbor 10.0.0.9 remote-as 65003
+   neighbor 10.0.0.13 peer-group VTEP
+   neighbor 10.0.0.13 remote-as 65004
+   redistribute connected
+   !
+   address-family evpn
+      bgp next-hop-unchanged
+      neighbor VTEP-EVPN-TRANSIT activate
+   !
+   address-family ipv4
+      no neighbor VTEP-EVPN-TRANSIT activate
+!
+management api http-commands
+   protocol http
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+end

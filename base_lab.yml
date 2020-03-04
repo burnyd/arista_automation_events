@@ -1,5 +1,6 @@
 links:
-  - endpoints: ["Spine1:eth0", "Spine2:eth0", "Leaf1:eth0", "Leaf2:eth0", "Leaf3:eth0", "Leaf4:eth0", "labs"]
+  #- endpoints: ["Spine1:eth0", "Spine2:eth0", "Leaf1:eth0", "Leaf2:eth0", "Leaf3:eth0", "Leaf4:eth0", "labs"]
+  - endpoints: ["Spine1:eth0", "Spine2:eth0", "Leaf1:eth0", "Leaf2:eth0", "Leaf3:eth0", "Leaf4:eth0"]
     driver: bridge
   - endpoints: ["Spine1:eth1", "Leaf1:eth1"]
   - endpoints: ["Spine1:eth2", "Leaf2:eth1"]
@@ -19,5 +20,8 @@ CEOS_IMAGE: ceosimage:4.21.7M
 PUBLISH_BASE:
   443/tcp: 9000
   80/tcp: 8000
+  6030/tcp: 7000
 
-#docker run -dit -p 3000:3000 --network=base_lab_net-0 arista_automation_events_metrics:latest
+#docker run --name metrics -dit -p 3000:3000 --network=base_lab_net-0 arista_automation_events_metrics:latest
+#docker run --name mgt -dit -v $PWD:/arista_automation_events --network=base_lab_net-0 burnyd/arista_automation_events:latest
+#docker run --name batfish -dit -v batfish:/data -p 8888:8888 -p 9997:9997 -p 9996:9996 --network=base_lab_net-0 batfish/allinone
