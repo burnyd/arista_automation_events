@@ -1,0 +1,13 @@
+eos_connection:
+  host: "{{ inventory_hostname }}"
+  username: admin
+  password: admin
+  transport: eapi
+  use_ssl: fasle
+
+expected_version: 4.22.3M
+
+extensions:
+  - jpmcmm
+  - TerminAttr-1.6.0-1.swix
+

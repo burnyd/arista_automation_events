@@ -1,0 +1,2001 @@
+{
+    "name": "D123456-F20LF117-icp",
+    "tags": [],
+    "product": {
+        "hardware": "Cisco 93180-Border-Small"
+    },
+    "location": "99999",
+    "management_address": "10.130.130.104",
+    "node_id": "117",
+    "device_roles": [
+        "icp_compute_platinum_tier3"
+    ],
+    "fabric": {
+        "name": "GNCF-FABRIC-SMALL-1",
+        "type": "simpl:nxapi",
+        "location": "12345",
+        "compartments": [
+            {
+                "name": "tier2",
+                "tier": "2",
+                "description": "",
+                "segments": [
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 550,
+                        "vni": 1100550,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier2_prod_550",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.7.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 551,
+                        "vni": 1100551,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier2_prod_551",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.8.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 552,
+                        "vni": 1100502,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier2_prod_552",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.9.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 554,
+                        "vni": 1100554,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier2_prod_554",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.11.0/24"
+                            }
+                        ]
+                    }
+                ],
+                "vrfs": [
+                    {
+                        "name": "VRF_TIER2",
+                        "vpns": [
+                            {
+                                "name": "1100550",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 550,
+                                        "vni": 1100550,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier2_prod_550",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.7.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "1100551",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 551,
+                                        "vni": 1100551,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier2_prod_551",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.8.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "1100552",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 552,
+                                        "vni": 1100502,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier2_prod_552",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.9.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "fabric_local": "no",
+                        "vni": "1000002",
+                        "vrf_vlan": "102",
+                        "mcast_enabled": "yes",
+                        "redist_points": [
+                            "leafs",
+                            "borders",
+                            "service_leafs"
+                        ]
+                    },
+                    {
+                        "name": "VRF_TIER2_LB_INSIDE",
+                        "vpns": [
+                            {
+                                "name": "1100554",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 554,
+                                        "vni": 1100554,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier2_prod_554",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.11.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "fabric_local": "no",
+                        "vni": "1000004",
+                        "vrf_vlan": "104",
+                        "mcast_enabled": "yes",
+                        "redist_points": [
+                            "leafs",
+                            "borders",
+                            "service_leafs"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "tier3",
+                "tier": "3",
+                "description": "",
+                "segments": [
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 401,
+                        "vni": 1100401,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier3_prod_401",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.2.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 402,
+                        "vni": 1100402,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier3_prod_402",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.3.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 403,
+                        "vni": 1100403,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier3_prod_403",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.4.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 404,
+                        "vni": 1100404,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier3_prod_404",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.5.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 200,
+                        "vni": 1100200,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_200",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 201,
+                        "vni": 1100201,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_201",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 202,
+                        "vni": 1100202,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_202",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 203,
+                        "vni": 1100203,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_203",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 204,
+                        "vni": 1100204,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_204",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 205,
+                        "vni": 1100205,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_205",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 206,
+                        "vni": 1100206,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_206",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 207,
+                        "vni": 1100207,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_207",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 208,
+                        "vni": 1100208,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_208",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 209,
+                        "vni": 1100209,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_209",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 210,
+                        "vni": 1100210,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_210",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 211,
+                        "vni": 1100211,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_211",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 212,
+                        "vni": 1100212,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_212",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 213,
+                        "vni": 1100213,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_213",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 214,
+                        "vni": 1100214,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_214",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 215,
+                        "vni": 1100215,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_215",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 216,
+                        "vni": 1100216,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_216",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 217,
+                        "vni": 1100217,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_217",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 218,
+                        "vni": 1100218,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_218",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 219,
+                        "vni": 1100219,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_219",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 220,
+                        "vni": 1100220,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_220",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 221,
+                        "vni": 1100221,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_221",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 222,
+                        "vni": 1100222,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_222",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 223,
+                        "vni": 1100223,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_223",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 224,
+                        "vni": 1100224,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_224",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 225,
+                        "vni": 1100225,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_225",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 226,
+                        "vni": 1100226,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_226",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 227,
+                        "vni": 1100227,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_227",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 228,
+                        "vni": 1100228,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_228",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 229,
+                        "vni": 1100229,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_229",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 230,
+                        "vni": 1100230,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_230",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 231,
+                        "vni": 1100231,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_231",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 232,
+                        "vni": 1100232,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_232",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 233,
+                        "vni": 1100233,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_233",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 234,
+                        "vni": 1100234,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_234",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 235,
+                        "vni": 1100235,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_235",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 236,
+                        "vni": 1100236,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_236",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 237,
+                        "vni": 1100237,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_237",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 238,
+                        "vni": 1100238,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_238",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 239,
+                        "vni": 1100239,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_239",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 240,
+                        "vni": 1100240,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_240",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 241,
+                        "vni": 1100241,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_241",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 242,
+                        "vni": 1100242,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_242",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 243,
+                        "vni": 1100243,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_243",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 244,
+                        "vni": 1100244,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_244",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 245,
+                        "vni": 1100245,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_245",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 246,
+                        "vni": 1100246,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_246",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 247,
+                        "vni": 1100247,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_247",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 248,
+                        "vni": 1100248,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_248",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 249,
+                        "vni": 1100249,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_249",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 250,
+                        "vni": 1100250,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_250",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 251,
+                        "vni": 1100251,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_251",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 252,
+                        "vni": 1100252,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_252",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 253,
+                        "vni": 1100253,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_253",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 254,
+                        "vni": 1100254,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_254",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 255,
+                        "vni": 1100255,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_255",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 256,
+                        "vni": 1100256,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_256",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 257,
+                        "vni": 1100257,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_257",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 258,
+                        "vni": 1100258,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_258",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 259,
+                        "vni": 1100259,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_259",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 260,
+                        "vni": 1100260,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_260",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 261,
+                        "vni": 1100261,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_261",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 262,
+                        "vni": 1100262,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_262",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 263,
+                        "vni": 1100263,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_263",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 264,
+                        "vni": 1100264,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_264",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 265,
+                        "vni": 1100265,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_265",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 266,
+                        "vni": 1100266,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_266",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 267,
+                        "vni": 1100267,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_267",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 268,
+                        "vni": 1100268,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_268",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 269,
+                        "vni": 1100269,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_269",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 270,
+                        "vni": 1100270,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_270",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 271,
+                        "vni": 1100271,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_271",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 272,
+                        "vni": 1100272,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_272",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 273,
+                        "vni": 1100273,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_273",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 274,
+                        "vni": 1100274,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_274",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 275,
+                        "vni": 1100275,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_275",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 276,
+                        "vni": 1100276,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_276",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 277,
+                        "vni": 1100277,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_277",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 278,
+                        "vni": 1100278,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_278",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 279,
+                        "vni": 1100279,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_279",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 280,
+                        "vni": 1100280,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_280",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 281,
+                        "vni": 1100281,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_281",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 282,
+                        "vni": 1100282,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_282",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 283,
+                        "vni": 1100283,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_283",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 284,
+                        "vni": 1100284,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_284",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 285,
+                        "vni": 1100285,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_285",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 286,
+                        "vni": 1100286,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_286",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 287,
+                        "vni": 1100287,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_287",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 288,
+                        "vni": 1100288,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_288",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 289,
+                        "vni": 1100289,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_289",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 290,
+                        "vni": 1100290,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_290",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 291,
+                        "vni": 1100291,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_291",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 292,
+                        "vni": 1100292,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_292",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 293,
+                        "vni": 1100293,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_293",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 294,
+                        "vni": 1100294,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_294",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 295,
+                        "vni": 1100295,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_295",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 296,
+                        "vni": 1100296,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_296",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 297,
+                        "vni": 1100297,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_297",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 298,
+                        "vni": 1100298,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_298",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 299,
+                        "vni": 1100299,
+                        "status": "active",
+                        "routed": false,
+                        "category": "deadnet",
+                        "name": "tier3_deadnet_299",
+                        "description": "",
+                        "scope": "",
+                        "subnets": []
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 3801,
+                        "vni": 1103801,
+                        "status": "active",
+                        "routed": true,
+                        "category": "iscsiprod",
+                        "name": "solidfire_iscsiprod_3801",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.16.0/22"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 405,
+                        "vni": 1100405,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier3_prod_405",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.6.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 406,
+                        "vni": 1100406,
+                        "status": "active",
+                        "routed": true,
+                        "category": "Production",
+                        "name": "tier3_prod_406",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "99.99.99.0/24"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "vxlan",
+                        "vlan_id": 3800,
+                        "vni": 1103800,
+                        "status": "active",
+                        "routed": true,
+                        "category": "iscsimgmt",
+                        "name": "solidfire_iscsimgmt_3800",
+                        "description": "",
+                        "scope": "",
+                        "subnets": [
+                            {
+                                "prefix": "10.30.20.0/22"
+                            }
+                        ]
+                    }
+                ],
+                "vrfs": [
+                    {
+                        "name": "VRF_TIER3_LB_INSIDE",
+                        "vpns": [
+                            {
+                                "name": "1100405",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 405,
+                                        "vni": 1100405,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier3_prod_405",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.6.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "fabric_local": "no",
+                        "vni": "1000003",
+                        "vrf_vlan": "103",
+                        "mcast_enabled": "yes",
+                        "redist_points": [
+                            "leafs",
+                            "borders",
+                            "service_leafs"
+                        ]
+                    },
+                    {
+                        "name": "VRF_TIER3",
+                        "vpns": [
+                            {
+                                "name": "1100402",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 402,
+                                        "vni": 1100402,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier3_prod_402",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.3.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "1103800",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 3800,
+                                        "vni": 1103800,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "iscsimgmt",
+                                        "name": "solidfire_iscsimgmt_3800",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.20.0/22"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "1103801",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 3801,
+                                        "vni": 1103801,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "iscsiprod",
+                                        "name": "solidfire_iscsiprod_3801",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.16.0/22"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "1100406",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 406,
+                                        "vni": 1100406,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier3_prod_406",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "99.99.99.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "1100403",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 403,
+                                        "vni": 1100403,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier3_prod_403",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.4.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "1100404",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 404,
+                                        "vni": 1100404,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier3_prod_404",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.5.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "1100401",
+                                "segments": [
+                                    {
+                                        "type": "vxlan",
+                                        "vlan_id": 401,
+                                        "vni": 1100401,
+                                        "status": "active",
+                                        "routed": true,
+                                        "category": "Production",
+                                        "name": "tier3_prod_401",
+                                        "description": "",
+                                        "scope": "",
+                                        "subnets": [
+                                            {
+                                                "prefix": "10.30.2.0/24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "fabric_local": "no",
+                        "vni": "1000001",
+                        "vrf_vlan": "101",
+                        "mcast_enabled": "yes",
+                        "redist_points": [
+                            "leafs",
+                            "borders",
+                            "service_leafs"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "fabric_form": "physical",
+        "fabric_groups": {
+            "all": {
+                "children": [
+                    "nxosdevs"
+                ]
+            },
+            "borders": {
+                "hosts": [
+                    "D123456-F20LF101",
+                    "D123456-F20LF102"
+                ]
+            },
+            "instrumentation_leafs": {
+                "hosts": []
+            },
+            "leafs": {
+                "hosts": [
+                    "D123456-F20LF117",
+                    "D123456-F20LF118"
+                ]
+            },
+            "nxosdevs": {
+                "children": [
+                    "borders",
+                    "instrumentation_leafs",
+                    "leafs",
+                    "service_leafs",
+                    "spines"
+                ]
+            },
+            "service_leafs": {
+                "hosts": [
+                    "D123456-F20LF105",
+                    "D123456-F20LF106"
+                ]
+            },
+            "spines": {
+                "hosts": [
+                    "D123456-F20SP601",
+                    "D123456-F20SP602"
+                ]
+            }
+        },
+        "fabric_hostvars": {
+            "D123456-F20LF101": {
+                "logical_node": "101",
+                "base_loopback_addr": "10.0.254.1",
+                "node_to_addr_map": "2"
+            },
+            "D123456-F20LF102": {
+                "logical_node": "102",
+                "base_loopback_addr": "10.0.254.2",
+                "node_to_addr_map": "3"
+            },
+            "D123456-F20LF105": {
+                "logical_node": "105",
+                "base_loopback_addr": "10.0.254.5",
+                "node_to_addr_map": "6"
+            },
+            "D123456-F20LF106": {
+                "logical_node": "106",
+                "base_loopback_addr": "10.0.254.6",
+                "node_to_addr_map": "7"
+            },
+            "D123456-F20LF117": {
+                "logical_node": "117",
+                "base_loopback_addr": "10.0.254.17",
+                "node_to_addr_map": "18"
+            },
+            "D123456-F20LF118": {
+                "logical_node": "118",
+                "base_loopback_addr": "10.0.254.18",
+                "node_to_addr_map": "19"
+            },
+            "D123456-F20SP601": {
+                "logical_node": "601",
+                "base_loopback_addr": "10.0.254.241",
+                "node_to_addr_map": "241"
+            },
+            "D123456-F20SP602": {
+                "logical_node": "602",
+                "base_loopback_addr": "10.0.254.242",
+                "node_to_addr_map": "242"
+            }
+        },
+        "network_lookup": {
+            "ip_net_fabric_base_loopback": "10.0.254.0/24",
+            "ip_net_fabric_nve_loopback": "10.0.253.0/24",
+            "ip_net_anycast_range_1": "10.0.252.0/24",
+            "ip_net_mclag_anycast_tep": "10.0.251.0/24",
+            "ip_net_overlay_mcast_group_range": "225.0.0.0/8",
+            "ip_net_tier3_routeable_loopback": "10.30.1.0/27",
+            "ip_net_tier2_routeable_loopback": "10.30.1.32/27"
+        },
+        "dhcp_relay_sets": {
+            "dhcp_set_1": [
+                "1.2.3.4",
+                "5.6.7.8"
+            ]
+        },
+        "fabric_bgp_asn": 4200001111,
+        "pal_bgp_asn": 4200009999,
+        "tier2_fw_outside_peering_asn": 10065010,
+        "tier2_fw_inside_peering_asn": 10065011,
+        "tier2_fw_asn": 10065006,
+        "tier3_lb_outside_peering_asn": 20065010,
+        "tier3_lb_inside_peering_asn": 20065011,
+        "tier3_lb_asn": 20065004,
+        "tier2_lb_outside_peering_asn": 20065010,
+        "tier2_lb_inside_peering_asn": 20065011,
+        "tier2_lb_asn": 20065004,
+        "dcc_bgp_asn": "",
+        "dcbb_bgp_asn": "",
+        "anycast_rp_ip_address": "{{ \"10.0.252.0/24\" | ipaddr(1) | ipaddr(\"address\") }}",
+        "overlay_bum_mcast_range": "{{ \"225.0.0.0/8\" | ipaddr(0) }}",
+        "mcast_rp_profile": "northamerica",
+        "static_mcast_rp_sitelocal": "167.84.1.1",
+        "static_mcast_rp_mds": "10.0.1.1",
+        "ospf_password": "removed",
+        "dcc_bgp_md5": "removed",
+        "dcbb_bgp_md5": "removed",
+        "dcf_pal_bgp_md5": "removed",
+        "lb_md5": "removed",
+        "fw_md5": "removed",
+        "9504_pal_border": {
+            "spine_uplinks": [
+                "1/49",
+                "1/50"
+            ]
+        },
+        "alpine_9508_spine": {
+            "leaf_downlinks": [
+                "1/1",
+                "1/2",
+                "1/3",
+                "1/4",
+                "1/5",
+                "1/6"
+            ]
+        },
+        "standard_93180yc_fx_leaf": {
+            "spine_uplinks": [
+                "1/49",
+                "1/50"
+            ]
+        },
+        "link_data": [
+            {
+                "leaf": "101",
+                "leaf_iface": "1/49",
+                "spine": "601",
+                "spine_iface": "1/1",
+                "subnet": "10.0.1.0/31"
+            },
+            {
+                "leaf": "101",
+                "leaf_iface": "1/50",
+                "spine": "602",
+                "spine_iface": "1/1",
+                "subnet": "10.0.1.8/31"
+            },
+            {
+                "leaf": "102",
+                "leaf_iface": "1/49",
+                "spine": "601",
+                "spine_iface": "1/2",
+                "subnet": "10.0.2.0/31"
+            },
+            {
+                "leaf": "102",
+                "leaf_iface": "1/50",
+                "spine": "602",
+                "spine_iface": "1/2",
+                "subnet": "10.0.2.4/31"
+            },
+            {
+                "leaf": "105",
+                "leaf_iface": "1/49",
+                "spine": "601",
+                "spine_iface": "1/3",
+                "subnet": "10.0.5.0/31"
+            },
+            {
+                "leaf": "105",
+                "leaf_iface": "1/50",
+                "spine": "602",
+                "spine_iface": "1/3",
+                "subnet": "10.0.5.4/31"
+            },
+            {
+                "leaf": "106",
+                "leaf_iface": "1/49",
+                "spine": "601",
+                "spine_iface": "1/4",
+                "subnet": "10.0.6.0/31"
+            },
+            {
+                "leaf": "106",
+                "leaf_iface": "1/50",
+                "spine": "602",
+                "spine_iface": "1/4",
+                "subnet": "10.0.6.4/31"
+            },
+            {
+                "leaf": "117",
+                "leaf_iface": "1/49",
+                "spine": "601",
+                "spine_iface": "1/5",
+                "subnet": "10.0.17.0/31"
+            },
+            {
+                "leaf": "117",
+                "leaf_iface": "1/50",
+                "spine": "602",
+                "spine_iface": "1/5",
+                "subnet": "10.0.17.4/31"
+            },
+            {
+                "leaf": "118",
+                "leaf_iface": "1/49",
+                "spine": "601",
+                "spine_iface": "1/6",
+                "subnet": "10.0.18.0/31"
+            },
+            {
+                "leaf": "118",
+                "leaf_iface": "1/50",
+                "spine": "602",
+                "spine_iface": "1/6",
+                "subnet": "10.0.18.4/31"
+            }
+        ],
+        "mclag_pairs": [
+            {
+                "mclag_pair_id": "1",
+                "switch_a": "117",
+                "switch_b": "118"
+            }
+        ]
+    },
+    "ports": [],
+    "links": [],
+    "linked_devices": [],
+    "logical_node": 117,
+    "oob_ip_addr": "10.130.130.104/23",
+    "switch_hostname": "D123456-F20LF117",
+    "device_role": "icp_compute_platinum_tier3",
+    "switch_model": "standard_93180yc_fx_leaf",
+    "node_to_addr_map": "{{ ((fabric[\"fabric_hostvars\"][switch_hostname][\"logical_node\"]|int) - 100) + 1 }}",
+    "node_to_loopback_map": "{{ ((fabric[\"fabric_hostvars\"][switch_hostname][\"logical_node\"]|int) - 100) }}",
+    "base_loopback_addr": "{{ fabric[\"network_lookup\"][\"ip_net_fabric_base_loopback\"] | ipaddr(node_to_loopback_map) | ipaddr(\"address\") }}",
+    "nve_loopback_addr": "{{ fabric[\"network_lookup\"][\"ip_net_fabric_nve_loopback\"] | ipaddr(node_to_loopback_map) | ipaddr(\"address\") }}",
+    "fabricwide_trm_rp_loopback_addr": "{{ fabric[\"network_lookup\"][\"ip_net_trm_loopback\"] | ipaddr(1) | ipaddr(\"address\") }}",
+    "router_id": "{{ fabric[\"network_lookup\"][\"ip_net_fabric_base_loopback\"] | ipaddr(node_to_loopback_map) | ipaddr(\"address\") }}",
+    "routeable_tier3_loopback_addr": "{{ fabric[\"network_lookup\"][\"ip_net_tier3_routeable_loopback\"] | ipaddr(node_to_loopback_map) | ipaddr(\"address\") }}",
+    "vlan3706": {
+        "prefix": "10.30.12.0/26",
+        "dhcp_relay_set": "dhcp_set_1"
+    },
+    "bmc_switch_downlink": "1/48",
+    "lowest_port_number": 1,
+    "highest_port_number": 21,
+    "local_vni_base": "11170000"
+}

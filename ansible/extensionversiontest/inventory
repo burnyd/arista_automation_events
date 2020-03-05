@@ -1,0 +1,15 @@
+[leaf]
+10.20.30.24
+
+[all:vars]
+ansible_network_os=eos
+ansible_become=yes
+ansible_become_method=enable
+ansible_user=ansible
+ansible_password=ansible
+ansible_httpapi_use_ssl=true
+ansible_become_pass=ansible
+ansible_httpapi_pass=ansible
+ansible_httpapi_password=ansible
+ansible_httpapi_user=ansible
+ansible_httpapi_validate_certs=no

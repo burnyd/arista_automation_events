@@ -1,0 +1,76 @@
+---
+- hosts: leaf
+  connection: httpapi
+  gather_facts: no
+  vars_files:
+  - "../vars/all.yaml"
+
+  tasks:
+  
+  - name: Debug eos facts
+    register: eosfacts
+    eos_facts:
+      gather_subset: all
+
+  - debug: var=eosfacts
+
+  - name: run show version and show extensions
+    register: showcommands
+    eos_command:
+      commands:
+        - show version | json
+        - show extensions | json
+        - bash timeout 1 python -c 'import os, json; print json.dumps(os.listdir("/mnt/flash"))'
+        
+  - debug: var=showcommands
+
+  - set_fact:
+        # Shows the current version
+        current_version: "{{ showcommands.stdout_lines[0]['version'] }}"
+   
+  - set_fact:
+        # shows the current extensions
+        current_extensions: "{{ showcommands.stdout_lines[1] }}"
+
+  - set_fact:
+        check_files: "{{ showcommands.stdout_lines[2] }}" 
+
+  - debug: var=current_version
+  - debug: var=current_extensions
+  - debug: var=check_files
+
+  - name: check if eos image in list
+    #contents: "{{ lookup('list', check_files) }}"
+    #loop: "{{ lookup('list', check_files) }}"
+    loop: "{{ lookup('list', check_files) | replace('\', '') }}"
+    when: "'eos-4.22.swi' in item"
+    command: echo YAY!
+
+  #- name: Do something if current_version and expected versions are the same 
+  #  when: current_version == expected_version
+  #  command: echo yay
+
+  #- name: debug stuff
+  #  debug:
+  #    msg: "{{item.value}}"
+  #  loop: "{{ lookup('dict', current_extensions ) }}"
+  #  with_dict: "{{ lookup('dict', current_extensions) }}"
+
+  #- name: check if toptalkers extension is there?
+    #loop: "{{ lookup('dict', users) }}"
+   # with_dict: "{{ lookup('dict', current_extensions ) }}"
+    #when: "'TerminAttr-1.6.0-1.swix' in item.value"
+    #command: echo yay
+  
+  #register keys 
+  #- name: Find extension keys 
+   # with_items: current_extensions
+    #register: extensions
+  
+  #- debug: var=extensions
+
+  
+
+
+
+  

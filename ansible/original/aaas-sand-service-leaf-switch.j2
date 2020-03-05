@@ -1,0 +1,24 @@
+{# Here we define the config block that's extra for an L3-enabled segment (has subnet) #}
+{# We build a VLAN interface for just the L3 enabled segments that have a subnet attached #}
+{# Here we iterate over the compartments.vrfs.vpns.segments lists #}
+{% for compartment_entry in fabric['compartments'] %}
+{% for vrf_entry in compartment_entry['vrfs'] %}
+{% for vpn_entry in vrf_entry['vpns'] %}
+{% for segment_entry in vpn_entry['segments'] %}
+interface Vlan{{ segment_entry['vlan_id'] }}
+  no shutdown
+  mtu 9000
+  vrf member {{ vrf_entry['name'] }}
+  no ip redirects
+  ip address {{ segment_entry['subnets'][0]['prefix'] | ipaddr(1) }}
+  ip pim sparse-mode
+  ip pim neighbor-policy NONE*
+  fabric forwarding mode anycast-gateway
+{# if a dhcp relay policy is set - do stuff #}
+{% if (segment_entry['subnets'][0]['dhcp_relay_set'] is defined) %}
+{% for dhcp_relay_set_entry in fabric['dhcp_relay_sets'][segment_entry['subnets'][0]['dhcp_relay_set']] %}
+  ip dhcp relay address {{ dhcp_relay_set_entry }}
+{% endfor %}
+  ip dhcp relay source-interface loopback3
+{% elif (segment_entry['subnets'][0]['dhcp_relay_set'] is not defined) %}
+{% endif %}

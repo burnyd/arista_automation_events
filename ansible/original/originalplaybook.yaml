@@ -1,0 +1,41 @@
+---
+- hosts: target_hosts
+  connection: local
+  gather_facts: no
+  tasks:
+
+
+###########################################################################################################
+#  Service Leaf Render
+
+#  - name: "List all known variables and facts for debugging purposes"
+#    debug:
+#      var: hostvars[inventory_hostname]
+
+
+  - name: store rendered config for debugging
+    template:
+      src: aaas-sand-service-leaf-switch.j2
+      dest: /var/tmp/{{name}}_service-leaf-switch.config
+    when: '"service_leaf" in device_roles'
+    register: output
+    tags:
+      - render
+  - debug:
+      var: output
+
+
+###########################################################################################################
+#  Service Leaf Push
+
+  - name: direct push clear-text base service leaf switch
+    nxos_config:
+      src: aaas-sand-service-leaf-switch.j2
+      save_when: modified
+      timeout: 600
+    when: '"service_leaf" in device_roles'
+    register: output
+    tags:
+      - push
+  - debug:
+      var: output

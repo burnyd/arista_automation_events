@@ -8,6 +8,9 @@ base_lab_Leaf4 #ansible_httpapi_port=8003
 base_lab_Spine1 #ansible_httpapi_port=8004
 base_lab_Spine2 #ansible_httpapi_port=8005
 
+[leaf]
+base_lab_Leaf1
+
 [all:vars]
 ansible_network_os=eos
 ansible_become=yes
