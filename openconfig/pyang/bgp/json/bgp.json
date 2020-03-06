@@ -1,0 +1,31 @@
+{
+    "openconfig-bgp:bgp": {
+        "neighbors": {
+            "neighbor": [
+                {
+                    "neighbor-address": "10.0.11.3", 
+                    "config": {
+                        "peer-as": 10, 
+                        "description": "Spine 1"
+                    }
+                }
+            ]
+        }, 
+        "global": {
+            "use-multiple-paths": {
+                "config": {
+                    "enabled": true
+                }
+            }, 
+            "config": {
+                "as": 1, 
+                "router-id": "1.1.1.1"
+            }, 
+            "graceful-restart": {
+                "config": {
+                    "enabled": true
+                }
+            }
+        }
+    }
+}

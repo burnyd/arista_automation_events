@@ -11,4 +11,3 @@
   - name: Configure our syslog servers
     eos_config:
       src: syslog.j2
-      provider: "{{ eos_connection }}"
