@@ -25,4 +25,5 @@ PUBLISH_BASE:
 #docker exec -it base_lab_Leaf1 Cli -p 15 -c "security pki certificate generate self-signed restconf.crt key restconf.key generate rsa 2048 parameters common-name restconf"
 #docker run --name metrics -dit -p 3000:3000 --network=base_lab_net-0 arista_automation_events_metrics:latest
 #docker run --name mgt -dit -v $PWD:/arista_automation_events --network=base_lab_net-0 burnyd/arista_automation_events:latest
+#docker run --name flaskapi -dit -v $PWD/flask/static:/arista_automation_events/flask/static -p 5000:5000 --network=base_lab_net-0 burnyd/arista_automation_flaskapi
 #docker run --name batfish -dit -v batfish:/data -p 8888:8888 -p 9997:9997 -p 9996:9996 --network=base_lab_net-0 batfish/allinone

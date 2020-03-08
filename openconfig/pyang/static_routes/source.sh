@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install pyang 
+pip install pyang pyangbind
 
 export PYBINDPLUGIN=`/usr/bin/env python -c \
 'import pyangbind; import os; print ("{}/plugin".format(os.path.dirname(pyangbind.__file__)))'`

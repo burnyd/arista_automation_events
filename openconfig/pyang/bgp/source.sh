@@ -1,8 +1,10 @@
 #!/bin/bash
 
-pip install pyang 
+pip install pyang pyangbind
 
 SDIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+mkdir -p $SDIR/yang
 
 git clone https://github.com/openconfig/public $SDIR/yang/
 

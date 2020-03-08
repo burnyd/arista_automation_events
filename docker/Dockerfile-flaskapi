@@ -1,0 +1,16 @@
+FROM ubuntu:18.04
+
+WORKDIR /arista_automation_events/flask/
+
+RUN apt-get update -y && \
+    apt-get install -y python-pip python-dev
+
+COPY  flask/. /arista_automation_events/flask/
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT [ "python" ]
+
+CMD [ "app.py" ]
+
+
