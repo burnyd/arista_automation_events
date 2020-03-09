@@ -1,0 +1,41 @@
+service routing protocols model multi-agent
+!
+router bgp {{ spine_as }}
+{% if inventory_hostname in loopback0 %}
+   {% set router_id = loopback0[inventory_hostname][0] %}
+   router-id {{ router_id }}
+{% endif %}
+neighbor VTEP peer-group
+neighbor VTEP fall-over bfd
+neighbor VTEP send-community
+neighbor VTEP maximum-routes 12000
+neighbor VTEP-EVPN-TRANSIT peer-group
+neighbor VTEP-EVPN-TRANSIT next-hop-unchanged
+neighbor VTEP-EVPN-TRANSIT update-source Loopback0
+neighbor VTEP-EVPN-TRANSIT ebgp-multihop
+neighbor VTEP-EVPN-TRANSIT send-community extended
+neighbor VTEP-EVPN-TRANSIT maximum-routes 0
+   {% if inventory_hostname in spine_peers %}
+     {% for neighbor_ip in spine_peers[inventory_hostname] %}
+       {% for option in spine_peers[inventory_hostname][neighbor_ip] %}
+      neighbor {{ neighbor_ip }} peer-group VTEP
+      neighbor {{ neighbor_ip }} {{ option }}
+       {% endfor %}
+     {% endfor %}
+   {% endif %}
+   {% if inventory_hostname in spine_evpn_peers %}
+     {% for neighbor_ip_evpn in spine_evpn_peers[inventory_hostname] %}
+       {% for option in spine_evpn_peers[inventory_hostname][neighbor_ip_evpn] %}
+      neighbor {{ neighbor_ip_evpn }} peer-group VTEP-EVPN-TRANSIT
+      neighbor {{ neighbor_ip_evpn }} {{ option }}
+       {% endfor %}
+     {% endfor %}
+   {% endif %}
+   redistribute connected
+   !
+      address-family evpn
+         bgp next-hop-unchanged
+         neighbor VTEP-EVPN-TRANSIT activate
+      !
+      address-family ipv4
+         no neighbor VTEP-EVPN-TRANSIT activate

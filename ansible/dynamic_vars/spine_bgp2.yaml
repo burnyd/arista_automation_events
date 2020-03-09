@@ -1,0 +1,10 @@
+---
+
+- hosts: spines
+  connection: httpapi
+
+  tasks:
+    - name: BGP on Spine switches
+      eos_config:
+        src: templates/bgp_spine.j2
+      ignore_errors: True

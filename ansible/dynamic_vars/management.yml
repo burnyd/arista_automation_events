@@ -1,0 +1,15 @@
+---
+    - hosts: leafs
+      connection: httpapi
+      gather_facts: no
+    
+      tasks:
+      - name: Configure syslog servers 
+        eos_config:
+          src: ../templates/syslog.j2
+        ignore_errors: True
+
+      - name: Configure vlans 
+        eos_config:
+          src: ../templates/vlans.j2
+        ignore_errors: True

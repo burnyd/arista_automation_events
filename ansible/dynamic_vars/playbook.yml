@@ -1,9 +1,0 @@
----
-    - hosts: grouptest
-      connection: httpapi
-      gather_facts: no
-    
-      tasks:
-      - name: Configure our syslog servers
-        eos_config:
-          src: ../templates/syslog.j2

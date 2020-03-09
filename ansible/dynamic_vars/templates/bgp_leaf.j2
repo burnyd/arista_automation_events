@@ -1,0 +1,66 @@
+service routing protocols model multi-agent
+!
+ip virtual-router mac-address {{ vmac }}
+!
+{% for vrf in vrfs %}
+vrf definition {{ vrf.vrf}}
+!
+ip routing
+!
+ip routing vrf {{ vrf.vrf }}
+{% endfor %}
+!
+{% for vlan in vlans %}
+vlan {{ vlan.vlanid }}
+   name {{ vlan.name }}
+{% endfor %}}
+!
+{% if inventory_hostname in leaf_as.bgpleaf %}
+  {% set as_num = leaf_as.bgpleaf[inventory_hostname][0] %}
+   router bgp {{ as_num  }}
+  {% endif %}
+  {% if inventory_hostname in loopback0 %}
+     {% set router_id = loopback0[inventory_hostname][0] %}
+     router-id {{ router_id }}
+  {% endif %}
+  neighbor SPINE peer-group
+  neighbor SPINE remote-as {{ spine_as }}
+  neighbor SPINE fall-over bfd
+  neighbor SPINE maximum-routes 12000
+  neighbor SPINE-EVPN-TRANSIT peer-group
+  neighbor SPINE-EVPN-TRANSIT remote-as {{ spine_as }}
+  neighbor SPINE-EVPN-TRANSIT next-hop-unchanged
+  neighbor SPINE-EVPN-TRANSIT update-source Loopback0
+  neighbor SPINE-EVPN-TRANSIT ebgp-multihop
+  neighbor SPINE-EVPN-TRANSIT send-community extended
+  neighbor SPINE-EVPN-TRANSIT maximum-routes 0
+  {% if inventory_hostname in ebgp_peers %}
+  {% for neighbor_ip in ebgp_peers[inventory_hostname] %}
+   neighbor {{ neighbor_ip }} peer-group SPINE
+  {% endfor %}
+{% endif %}
+{% for evpn_neighbor_ip in loopback0spine %}
+   neighbor {{ evpn_neighbor_ip }} peer-group SPINE-EVPN-TRANSIT
+  {% endfor %}
+  redistribute connected
+  address-family evpn
+     neighbor SPINE-EVPN-TRANSIT activate
+  !
+  address-family ipv4
+     no neighbor SPINE-EVPN-TRANSIT activate
+  !
+ {% for vrf in vrfs %}
+ vrf {{ vrf.vrf}}
+ rd {{ vrf.rd }}:{{ vrf.vni }}
+ route-target import evpn {{ vrf.rt }}
+ route-target export evpn {{ vrf.rt }}
+ redistribute connected
+ redistribute static
+ {% endfor %}
+ !
+ {% for vrf in vrfs %}
+ interface Vxlan1
+ vxlan source-interface Loopback1
+ vxlan udp-port 4789
+ vxlan vrf {{ vrf.vrf }} vni {{ vrf.vni}}
+ {% endfor %}
