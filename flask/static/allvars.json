@@ -209,13 +209,12 @@
       }
     ],
     "name_server": "8.8.8.8",
-    "vnis": [
+    "devices": [
         "base_lab_Leaf1",
         "base_lab_Leaf2",
         "base_lab_Leaf3",
         "base_lab_Leaf4",
         "base_lab_Spine1",
         "base_lab_Spine2"
-
-      ],
+      ]
   }

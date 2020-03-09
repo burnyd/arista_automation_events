@@ -1,0 +1,77 @@
+{
+    "vrfs": [
+      {
+        "vrf": "prod",
+        "vni": 10000,
+        "rd": "1.2.3.4",
+        "rt": "2:2001"
+      },
+      {
+        "vrf": "QA",
+        "rd": "2.3.4.5",
+        "vni": 20000,
+        "rt": "1:1001"
+      }
+    ],
+    "vlans": [
+      {
+        "vlanid": 2,
+        "name": "prod"
+      },
+      {
+        "vlanid": 3,
+        "name": "QA"
+      }
+    ],
+    "vnis": [
+      1000,
+      2000
+    ],
+    "syslogs": [
+      {
+        "host": "1.1.1.1"
+      },
+      {
+        "host": "1.2.2.2"
+      },
+      {
+        "host": "3.3.3.3"
+      },
+      {
+        "host": "4.4.4.4"
+      }
+    ],
+    "acl": [
+      {
+        "acl": "10.10.11.0/24"
+      }
+    ],
+    "name_server": "8.8.8.8",
+    "devices": [
+        "base_lab_Leaf1",
+        "base_lab_Leaf2",
+        "base_lab_Leaf3",
+        "base_lab_Leaf4",
+        "base_lab_Spine1",
+        "base_lab_Spine2"
+      ],
+    "leafs": [
+        "base_lab_Leaf1",
+        "base_lab_Leaf2",
+        "base_lab_Leaf3",
+        "base_lab_Leaf4"
+      ],
+    "spines": [
+        "base_lab_Spine1",
+        "base_lab_Spine2"
+    ],
+    "ansible_network_os": "eos",
+    "ansible_become": true,
+    "ansible_become_method": "enable",
+    "ansible_user": "admin",
+    "ansible_password": "admin",
+    "ansible_become_pass": "admin",
+    "ansible_httpapi_pass": "admin",
+    "ansible_httpapi_password": "admin",
+    "ansible_httpapi_user": "admin"
+  }
