@@ -1,0 +1,165 @@
+Apr  2 15:27:06 spine2 xinetd[239]: xinetd Version 2.3.15 started with loadavg labeled-networking options compiled in.
+Apr  2 15:27:06 spine2 xinetd[239]: Started working: 0 available services
+Apr  2 15:27:07 spine2 dbus[233]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Apr  2 15:27:08 spine2 kernel: [4894969.375917] eth0: renamed from vethbcb04ed
+Apr  2 15:27:09 spine2 kernel: [4894970.183337] IPv6: ADDRCONF(NETDEV_UP): clab-9634c2c4: link is not ready
+Apr  2 15:27:11 spine2 archive-init: selecting archive: ext4 flash found
+Apr  2 15:27:11 spine2 archive-init: no archive directory to rotate
+Apr  2 15:27:12 spine2 archive-init: archive setup done
+Apr  2 15:27:12 spine2 archive-init: write archive config done
+Apr  2 15:27:13 spine2 archive-init: checking that 50% of the reserved space is free
+Apr  2 15:27:13 spine2 archive-init: no archived instances of the archive deleted
+Apr  2 15:27:15 spine2 archive-init: archive status: name=flash path=/mnt/flash/archive/current exists=True dirsExist=True valid=True disabled=False enabled=True devName=/dev/sda1 devPresent=True devPhysical=True devMounted=True usedKiB=28 usedPct=0 fsMntPt=/mnt/flash fsSize=114854020 fsUsedKiB=100199376 fsUsedPct=92 fsQuotaMount=False quotasOn=None quotasOff=None quotaKiB=None quotaPct=None
+Apr  2 15:27:20 spine2 logEosStarted: %EOS-6-STARTED: EOS started.
+Apr  2 15:27:21 spine2 ProcMgr-master: %PROCMGR-6-MASTER_STARTED: Master ProcMgr process started. (PID=578)
+Apr  2 15:27:21 spine2 ProcMgr-master: %PROCMGR-6-MASTER_RUNNING: Master ProcMgr (PID=578) monitoring ProcMgr worker (PID=579)
+Apr  2 15:27:21 spine2 ProcMgr-worker: %PROCMGR-6-WORKER_COLDSTART: New ProcMgr worker cold start. (PID=579) (Master ProcMgr PID=578)
+Apr  2 15:27:21 spine2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=579)
+Apr  2 15:27:23 spine2 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+Apr  2 15:27:25 spine2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=579)
+Apr  2 15:27:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StageMgr' starting with PID=640 (PPID=579) -- execing '/usr/bin/StageMgr'
+Apr  2 15:27:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SlabMonitor' starting with PID=641 (PPID=579) -- execing '/usr/bin/SlabMonitor'
+Apr  2 15:27:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ConfigAgent' starting with PID=642 (PPID=579) -- execing '/usr/bin/ConfigAgent'
+Apr  2 15:27:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Fru' starting with PID=643 (PPID=579) -- execing '/usr/bin/Fru'
+Apr  2 15:27:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Sysdb' starting with PID=644 (PPID=579) -- execing '/usr/bin/Sysdb'
+Apr  2 15:27:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Launcher' starting with PID=645 (PPID=579) -- execing '/usr/bin/Launcher'
+Apr  2 15:27:31 spine2 Sysdb: %AGENT-6-INITIALIZED: Agent 'Sysdb' initialized; pid=644
+Apr  2 15:27:34 spine2 ConfigAgent: %AGENT-6-INITIALIZED: Agent 'ConfigAgent' initialized; pid=642
+Apr  2 15:28:18 spine2 LoadConfig: %SYSDB-3-STARTUP_CONFIG_PARSE_ERROR: Errors encountered in parsing the startup-config
+Apr  2 15:28:21 spine2 Launcher: %AGENT-6-INITIALIZED: Agent 'Launcher' initialized; pid=645
+Apr  2 15:28:22 spine2 StageMgr: %AGENT-6-INITIALIZED: Agent 'StageMgr' initialized; pid=640
+Apr  2 15:28:22 spine2 Fru: %AGENT-6-INITIALIZED: Agent 'Fru' initialized; pid=643
+Apr  2 15:28:22 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventHistoryAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:22 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'AgentMonitor' to start in role 'ActiveSupervisor'
+Apr  2 15:28:22 spine2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=579)
+Apr  2 15:28:22 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LacpTxAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:22 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'AgentMonitor' starting with PID=988 (PPID=579) -- execing '/usr/bin/AgentMonitor'
+Apr  2 15:28:22 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'IgmpSnooping' to start in role 'ActiveSupervisor'
+Apr  2 15:28:22 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventHistoryAgent' starting with PID=990 (PPID=579) -- execing '/usr/bin/EventHistoryAgent'
+Apr  2 15:28:22 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Acl' to start in role 'AllSupervisors'
+Apr  2 15:28:22 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SharedSecretProfile' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelNetworkInfo' to start in role 'AllSupervisors'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SuperServer' to start in role 'AllCells'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventMgr' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 AgentMonitor: %AGENT-6-INITIALIZED: Agent 'AgentMonitor' initialized; pid=991
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'FibServices' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'TopoAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Qos' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ira' to start in role 'AllSupervisors'
+Apr  2 15:28:23 spine2 EventHistoryAgent: %AGENT-6-INITIALIZED: Agent 'EventHistoryAgent' initialized; pid=993
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'L2Rib' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'CapiApp' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ebra' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'OpenConfig' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PortSec' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LedPolicy' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Thermostat' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Arp' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PowerFuse' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Aaa' to start in role 'AllSupervisors'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'ReloadCauseAgent' to start in role 'AllCells'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTxRx' to start in role 'AllSupervisors'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelFib' to start in role 'AllSupervisors'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lag' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StandbyCpld' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTopology' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Stp' to start in role 'AllSupervisors'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon6' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Tunnel' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lldp' to start in role 'AllSupervisors'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Etba' to start in role 'ActiveSupervisor'
+Apr  2 15:28:23 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PhyEthtool' to start in role 'AllCells'
+Apr  2 15:28:23 spine2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=579)
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LacpTxAgent' starting with PID=998 (PPID=579) -- execing '/usr/bin/LacpTxAgent'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon' starting with PID=999 (PPID=579) -- execing '/usr/bin/McastCommon'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SuperServer' starting with PID=1001 (PPID=579) -- execing '/usr/bin/SuperServer'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'OpenConfig' starting with PID=1004 (PPID=579) -- execing '/usr/bin/OpenConfig'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lag' starting with PID=1008 (PPID=579) -- execing '/usr/bin/Lag'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PortSec' starting with PID=1012 (PPID=579) -- execing '/usr/bin/PortSec'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ira' starting with PID=1016 (PPID=579) -- execing '/usr/bin/Ira'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LedPolicy' starting with PID=1020 (PPID=579) -- execing '/usr/bin/LedPolicy'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventMgr' starting with PID=1028 (PPID=579) -- execing '/usr/bin/EventMgr'
+Apr  2 15:28:24 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'CapiApp' starting with PID=1032 (PPID=579) -- execing '/usr/bin/CapiApp'
+Apr  2 15:28:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTxRx' starting with PID=1038 (PPID=579) -- execing '/usr/bin/StpTxRx'
+Apr  2 15:28:25 spine2 SuperServer: %AGENT-6-INITIALIZED: Agent 'SuperServer' initialized; pid=1001
+Apr  2 15:28:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StandbyCpld' starting with PID=1041 (PPID=579) -- execing '/usr/bin/StandbyCpld'
+Apr  2 15:28:25 spine2 McastCommon: %AGENT-6-INITIALIZED: Agent 'McastCommon' initialized; pid=1005
+Apr  2 15:28:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'FibServices' starting with PID=1046 (PPID=579) -- execing '/usr/bin/FibServices'
+Apr  2 15:28:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Tunnel' starting with PID=1049 (PPID=579) -- execing '/usr/bin/Tunnel'
+Apr  2 15:28:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PhyEthtool' starting with PID=1052 (PPID=579) -- execing '/usr/bin/PhyEthtool'
+Apr  2 15:28:25 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Aaa' starting with PID=1056 (PPID=579) -- execing '/usr/bin/Aaa'
+Apr  2 15:28:26 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTopology' starting with PID=1057 (PPID=579) -- execing '/usr/bin/StpTopology'
+Apr  2 15:28:26 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Acl' starting with PID=1063 (PPID=579) -- execing '/usr/bin/Acl'
+Apr  2 15:28:26 spine2 PortSec: %AGENT-6-INITIALIZED: Agent 'PortSec' initialized; pid=1019
+Apr  2 15:28:26 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Stp' starting with PID=1065 (PPID=579) -- execing '/usr/bin/Stp'
+Apr  2 15:28:27 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelNetworkInfo' starting with PID=1070 (PPID=579) -- execing '/usr/bin/KernelNetworkInfo'
+Apr  2 15:28:27 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon6' starting with PID=1076 (PPID=579) -- execing '/usr/bin/McastCommon6'
+Apr  2 15:28:28 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Etba' starting with PID=1081 (PPID=579) -- execing '/usr/bin/Etba'
+Apr  2 15:28:28 spine2 EventMgr: %AGENT-6-INITIALIZED: Agent 'EventMgr' initialized; pid=1035
+Apr  2 15:28:28 spine2 LedPolicy: %AGENT-6-INITIALIZED: Agent 'LedPolicy' initialized; pid=1033
+Apr  2 15:28:28 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Arp' starting with PID=1086 (PPID=579) -- execing '/usr/bin/Arp'
+Apr  2 15:28:29 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lldp' starting with PID=1090 (PPID=579) -- execing '/usr/bin/Lldp'
+Apr  2 15:28:29 spine2 StandbyCpld: %AGENT-6-INITIALIZED: Agent 'StandbyCpld' initialized; pid=1047
+Apr  2 15:28:29 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelFib' starting with PID=1096 (PPID=579) -- execing '/usr/bin/KernelFib'
+Apr  2 15:28:29 spine2 LacpTxAgent: %AGENT-6-INITIALIZED: Agent 'LacpTxAgent' initialized; pid=1003
+Apr  2 15:28:30 spine2 StpTxRx: %AGENT-6-INITIALIZED: Agent 'StpTxRx' initialized; pid=1042
+Apr  2 15:28:30 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Qos' starting with PID=1101 (PPID=579) -- execing '/usr/bin/Qos'
+Apr  2 15:28:30 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Thermostat' starting with PID=1106 (PPID=579) -- execing '/usr/bin/Thermostat'
+Apr  2 15:28:31 spine2 FibServices: %AGENT-6-INITIALIZED: Agent 'FibServices' initialized; pid=1050
+Apr  2 15:28:31 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'L2Rib' starting with PID=1112 (PPID=579) -- execing '/usr/bin/L2Rib'
+Apr  2 15:28:31 spine2 Ira: %AGENT-6-INITIALIZED: Agent 'Ira' initialized; pid=1023
+Apr  2 15:28:31 spine2 StpTopology: %AGENT-6-INITIALIZED: Agent 'StpTopology' initialized; pid=1064
+Apr  2 15:28:32 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'TopoAgent' starting with PID=1114 (PPID=579) -- execing '/usr/bin/TopoAgent'
+Apr  2 15:28:32 spine2 Lag: %AGENT-6-INITIALIZED: Agent 'Lag' initialized; pid=1013
+Apr  2 15:28:32 spine2 Aaa: %AGENT-6-INITIALIZED: Agent 'Aaa' initialized; pid=1056
+Apr  2 15:28:32 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PowerFuse' starting with PID=1122 (PPID=579) -- execing '/usr/bin/PowerFuse'
+Apr  2 15:28:33 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ebra' starting with PID=1128 (PPID=579) -- execing '/usr/bin/Ebra'
+Apr  2 15:28:33 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ReloadCauseAgent' starting with PID=1130 (PPID=579) -- execing '/usr/bin/ReloadCauseAgent'
+Apr  2 15:28:34 spine2 Tunnel: %AGENT-6-INITIALIZED: Agent 'Tunnel' initialized; pid=1053
+Apr  2 15:28:34 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SharedSecretProfile' starting with PID=1135 (PPID=579) -- execing '/usr/bin/SharedSecretProfile'
+Apr  2 15:28:34 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'IgmpSnooping' starting with PID=1140 (PPID=579) -- execing '/usr/bin/IgmpSnooping'
+Apr  2 15:28:34 spine2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=579)
+Apr  2 15:28:34 spine2 Acl: %AGENT-6-INITIALIZED: Agent 'Acl' initialized; pid=1069
+Apr  2 15:28:36 spine2 Qos: %AGENT-6-INITIALIZED: Agent 'Qos' initialized; pid=1108
+Apr  2 15:28:37 spine2 McastCommon6: %AGENT-6-INITIALIZED: Agent 'McastCommon6' initialized; pid=1082
+Apr  2 15:28:38 spine2 Stp: %AGENT-6-INITIALIZED: Agent 'Stp' initialized; pid=1074
+Apr  2 15:28:38 spine2 TopoAgent: %AGENT-6-INITIALIZED: Agent 'TopoAgent' initialized; pid=1123
+Apr  2 15:28:39 spine2 CapiApp: %AGENT-6-INITIALIZED: Agent 'CapiApp' initialized; pid=1037
+Apr  2 15:28:39 spine2 L2Rib: %AGENT-6-INITIALIZED: Agent 'L2Rib' initialized; pid=1118
+Apr  2 15:28:41 spine2 SharedSecretProfile: %AGENT-6-INITIALIZED: Agent 'SharedSecretProfile' initialized; pid=1144
+Apr  2 15:28:41 spine2 Arp: %AGENT-6-INITIALIZED: Agent 'Arp' initialized; pid=1091
+Apr  2 15:28:43 spine2 IgmpSnooping: %AGENT-6-INITIALIZED: Agent 'IgmpSnooping' initialized; pid=1140
+Apr  2 15:28:43 spine2 Thermostat: %AGENT-6-INITIALIZED: Agent 'Thermostat' initialized; pid=1110
+Apr  2 15:28:44 spine2 PowerFuse: %AGENT-6-INITIALIZED: Agent 'PowerFuse' initialized; pid=1127
+Apr  2 15:28:44 spine2 KernelNetworkInfo: %AGENT-6-INITIALIZED: Agent 'KernelNetworkInfo' initialized; pid=1077
+Apr  2 15:28:45 spine2 PhyEthtool: %AGENT-6-INITIALIZED: Agent 'PhyEthtool' initialized; pid=1052
+Apr  2 15:28:46 spine2 Lldp: %AGENT-6-INITIALIZED: Agent 'Lldp' initialized; pid=1097
+Apr  2 15:28:46 spine2 Etba: %AGENT-6-INITIALIZED: Agent 'Etba' initialized; pid=1081
+Apr  2 15:28:46 spine2 ReloadCauseAgent: %AGENT-6-INITIALIZED: Agent 'ReloadCauseAgent' initialized; pid=1136
+Apr  2 15:28:48 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'IpRib' to start in role 'AllSupervisors'
+Apr  2 15:28:48 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'BgpCliHelper' to start in role 'AllSupervisors'
+Apr  2 15:28:48 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EvpnrtrEncap' to start in role 'ActiveSupervisor'
+Apr  2 15:28:48 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Bgp' to start in role 'AllSupervisors'
+Apr  2 15:28:48 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'ConnectedRoute' to start in role 'AllSupervisors'
+Apr  2 15:28:48 spine2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=579)
+Apr  2 15:28:49 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StaticRoute' to start in role 'AllSupervisors'
+Apr  2 15:28:49 spine2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'RouteInput' to start in role 'AllSupervisors'
+Apr  2 15:28:49 spine2 Ebra: %AGENT-6-INITIALIZED: Agent 'Ebra' initialized; pid=1137
+Apr  2 15:28:49 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'IpRib' starting with PID=1237 (PPID=579) -- execing '/usr/bin/IpRib'
+Apr  2 15:28:50 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ConnectedRoute' starting with PID=1245 (PPID=579) -- execing '/usr/bin/ConnectedRoute'
+Apr  2 15:28:50 spine2 KernelFib: %AGENT-6-INITIALIZED: Agent 'KernelFib' initialized; pid=1102
+Apr  2 15:28:50 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Bgp' starting with PID=1255 (PPID=579) -- execing '/usr/bin/Bgp'
+Apr  2 15:28:51 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EvpnrtrEncap' starting with PID=1258 (PPID=579) -- execing '/usr/bin/EvpnrtrEncap'
+Apr  2 15:28:52 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'BgpCliHelper' starting with PID=1267 (PPID=579) -- execing '/usr/bin/BgpCliHelper'
+Apr  2 15:28:52 spine2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=579)
+Apr  2 15:28:54 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StaticRoute' starting with PID=1284 (PPID=579) -- execing '/usr/bin/StaticRoute'
+Apr  2 15:28:54 spine2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'RouteInput' starting with PID=1289 (PPID=579) -- execing '/usr/bin/RouteInput'
+Apr  2 15:28:55 spine2 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 0000.0000.0000 and portId "Management0" added on interface Management0
+Apr  2 15:28:56 spine2 EvpnrtrEncapAgent: %AGENT-6-INITIALIZED: Agent 'EvpnrtrEncap' initialized; pid=1258
+Apr  2 15:28:58 spine2 ConnectedRoute: %AGENT-6-INITIALIZED: Agent 'ConnectedRoute' initialized; pid=1259
+Apr  2 15:28:59 spine2 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 5e8b.f383.1e39 and portId "Management0" added on interface Management0
+Apr  2 15:29:00 spine2 IpRib: %AGENT-6-INITIALIZED: Agent 'IpRib' initialized; pid=1252
+Apr  2 15:29:02 spine2 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 46b8.f1a5.6c08 and portId "Management0" added on interface Management0
+Apr  2 15:29:03 spine2 RouteInput: %AGENT-6-INITIALIZED: Agent 'RouteInput' initialized; pid=1298
+Apr  2 15:29:04 spine2 StaticRoute: %AGENT-6-INITIALIZED: Agent 'StaticRoute' initialized; pid=1292

@@ -1,0 +1,14 @@
+
+> interface Ethernet0
+
+% Invalid input at line 13
+
+>    no switchport
+
+% Incomplete command at line 14
+
+>    ip address 10.0.0.1/24
+
+% Invalid input at line 15
+errors in startup-config: 4
+

@@ -1,0 +1,74 @@
+===== Output from /usr/bin/Fru [] (PID=663) started Apr  2 15:27:23.217856 ===
+EntityManager::doBackoff waiting for connection ............2021-04-02 15:27:32.110012   663 HwEpoch              0 SWI Flavor cEOS
+.ok
+waiting for Sysdb init .....................................................................................ok
+2021-04-02 15:28:27.075846   663 Log                  0 %AGENT-6-INITIALIZED: Agent 'Fru' initialized; pid=663
+2021-04-02 15:28:27.188477   663 Fru.Agent            0 doLockingMounts
+2021-04-02 15:28:27.209279   663 Fru.Agent            0 _finishLockingMounts
+2021-04-02 15:28:28.450598   663 Fru.Agent            0 doNonLockingMounts
+2021-04-02 15:28:28.569304   663 Fru.EthPort          0 Not an ASU reboot. Not looking at PSTORE. Using defaults.
+2021-04-02 15:28:29.106946   663 Fru.ModularSystem    1 running ModularSystem plugins for system  ar
+2021-04-02 15:28:29.132488   663 Fru.NorCalCard       1 running NorCalCard plugins for system  ar
+2021-04-02 15:28:29.146693   663 Fru.PciFpga          1 Running PciFpga fru plugin for system:  ar
+2021-04-02 15:28:29.209794   663 Fru.Sfe              9 Sfe plugin registering with Fru...
+2021-04-02 15:28:29.250817   663 Fru.Agent            0 Fru Agent has finished loading the plugins:
+2021-04-02 15:28:29.250912   663 Fru.Agent            1 plugins loaded are: ['AcpiBert', 'AleMib', 'BlackBox', 'CoolingDomain', 'CpuComplex', 'DS2700PowerSupply', 'DS2900PowerSupply', 'DS3000PowerSupply', 'DS460PowerSupply', 'DSPedPowerSupplies', 'DeltaLassenPowerSupplies', 'Denali', 'DeprecatedFru', 'Dpll', 'EthPciPort', 'EthPort', 'ExternalAlarm', 'FanController', 'FanFru', 'FixedSystem', 'GenericPc', 'Gpio', 'GpioLed', 'Health', 'I2c', 'Ipsec', 'Led', 'LedPolicy', 'MdioAccel', 'MidplaneConnections', 'MidplanePositions', 'ModularSystem', 'NorCalCard', 'PLDevice', 'PLSlot', 'PLSmbus', 'PLSystem', 'PciFpga', 'PciRootComplex', 'PciSwitch', 'Peripherals', 'PhyEthtoolFru', 'PhyTopology', 'PhyTopologyConfig', 'PhyTopologyTraces', 'PlutoDaemon', 'PlutoLibrary', 'PmbusPowerSupply', 'PowerController', 'PowerSupply', 'PowerSupplyFixed', 'PowerSupplyIncompatibilities', 'PtpTimeSync', 'RestrictedFru', 'Scd', 'Seeprom', 'SerdesTuning', 'Sfa', 'Sfe', 'SflowAccelFpgaFru', 'Smbus', 'SmbusAccel', 'SolChipFru', 'SpiAccel', 'StandbyCpld', 'StorageDevicesFru', 'SupeToSupeSignals', 'TempSensorFru', 'VEos', 'VEthPort', 'Xcvr', 'XcvrCtrl', 'XcvrLaneMgr', 'Xilinx', 'cEOSLab']
+2021-04-02 15:28:29.250951   663 Fru.Agent            1 Fru Agent FruFactoryRegistry: <Fru.FruFactoryRegistry: factories = plDeviceFactory, chassisFactory, fanTrayFactory, containerFactory, supervisorUplinkFactory, modularSystemFactory, fixedSystemFactory, genericPcFactory, cardFactory, powerSupplyFactory>
+2021-04-02 15:28:29.251010   663 Fru.Agent            1 Fru Agent DriverRegistry: <Fru.DriverRegistry: registered drivers = Eos::GenericPcFru, Inventory::XcvrLaneMgr::PortLaneConfigDir, Inventory::SupportedSystemFans, Inventory::FixedSystem, Inventory::PowerSupply::SlotDir, Inventory::PtpTimeSync::Slave, Inventory::VirtualEthPortDir, Inventory::EthIntfSliceDefaultConfig, Eos::DeprecatedFru, Inventory::ModularSystem, Inventory::StorageDeviceDir, Inventory::PLDevice, Inventory::GpioLed, Inventory::NorCalSupervisorUplink, Inventory::PlutoLibrary, Inventory::Card, Inventory::Cpu, Inventory::Phy::SfaPhyDir, Inventory::PowerSupply::FixedDir, Inventory::SflowAccelFpga::SflowAccelFpga, Inventory::NorCalPcieFabriccard, Inventory::Smbus::GpioEnabledBusComponent, Inventory::FruCoolingRequirement, Inventory::PLDeviceDir, Inventory::L1MidplanePositionDir, Inventory::SflowAccelFpga::SflowAccelFpgaDir, Inventory::Blackbox, Inventory::PciFpga, Inventory::L1ComponentTopoDir, Inventory::StandbyCpldDir, Inventory::Phy::SfePhyDir, Inventory::Rtc, Inventory::Xcvr::SlotDir, Inventory::FanTray, Inventory::Denali::Ac400Dir, Inventory::PtpTimeSync::Master, Inventory::L1TopologyConfig, Inventory::L1TraceDir, Inventory::FanTraySlot, Inventory::NorCalPcieSwitchcard, Inventory::UsbDevice, Inventory::PLSystem, Inventory::PciPortDir, Inventory::EthPortDir, Inventory::CoolingDomainDir, Inventory::Phy::EthtoolDir, Inventory::SolChip, Inventory::StandalonePciBridge, Inventory::CpuComplex, Inventory::Seeprom, Inventory::EthPortMacUpdate, Inventory::Ipsec, Inventory::I2cCpld, Inventory::SouthBridge, Inventory::PcieSwitch, Inventory::I2cDevice, Inventory::StandbyCpld, Inventory::LedSystemDir, Inventory::PowerSupply::PowerSupplyFru, Eos::CEOSLabFru, Inventory::XilinxPartialReconfig, Inventory::Smbus::PlatformSmbus, Inventory::SerdesTuning, Inventory::NorCalPcieLinecard, Inventory::UsbSlot, Inventory::PLSlotDir, Inventory::L1MidplaneConnectionDir, Inventory::Chassis, Inventory::SmbusCpld, Inventory::NorCalSupervisor, Inventory::PciScd, Inventory::Pmbus::PowerFuseRelay, Eos::RestrictedFru>
+2021-04-02 15:28:29.251044   663 Fru.Agent            1 Fru Agent PortIntfFactoryRegistry: <Fru.PortIntfFactoryRegistry: registered factories = >
+2021-04-02 15:28:29.268054   663 Fru.Agent            0 Fru agent waiting for mounts to complete
+2021-04-02 15:28:29.317928   663 Fru.AleMib           1 mode: active protocol: simplex
+2021-04-02 15:28:29.341209   663 Fru.PciFpga          1 Mounts complete.
+2021-04-02 15:28:29.364527   663 Fru.PortIntf         1 Registering Port Intf Factory <Reactor FruPlugin.EthPort.EthIntfFactory to <entity('/ar/Sysdb/hardware/inventory') of type Tac::Dir (non-const)>>
+2021-04-02 15:28:29.364980   663 Fru.PortIntf         1 Registering Port Intf Factory <Reactor FruPlugin.EthPciPort.EthPciIntfFactory to <entity('/ar/Sysdb/hardware/inventory') of type Tac::Dir (non-const)>>
+2021-04-02 15:28:29.411086   663 Fru.ModularSystem    1 Mounts complete
+2021-04-02 15:28:29.433849   663 Fru.NorCalCard       1 Mounts complete
+2021-04-02 15:28:29.452702   663 Fru.Agent            0 _finishNonLockingInitialMounts
+2021-04-02 15:28:29.453003   663 Fru.Agent            0 start EntityMib StatusReactor
+2021-04-02 15:28:29.597033   663 Fru.Agent            0 _finishNonLockingDeferredMounts
+2021-04-02 15:28:29.597074   663 Fru.Agent            0 registerFdl
+2021-04-02 15:28:29.753309   663 Fru.Agent            0 The Fru agent has registered the fdl /var/tmp/agents/tmpN6kGie
+2021-04-02 15:28:29.753360   663 Fru.Agent            0 Fru::maybeStartOnActive
+2021-04-02 15:28:29.753492   663 Fru.Agent            0 RedundancyReactor.__init__
+2021-04-02 15:28:29.753604   663 Fru.Agent            0 Fru::maybeStartOnActive
+2021-04-02 15:28:29.753632   663 Fru.Agent            0 Mounts already started running, return
+2021-04-02 15:28:29.753706   663 Fru.Agent            0 Set the PortIntfFactories to running
+2021-04-02 15:28:29.753743   663 Fru.Agent            0 Executing the root fdl
+2021-04-02 15:28:29.846291   663 Fru.Agent            0 The Fru agent has successfully executed the fdl
+2021-04-02 15:28:29.846391   663 Fru.Agent            0 Fru agent is creating root drivers
+2021-04-02 15:28:29.846996   663 Fru.cEOSLab          0 cEOSLabDriver: Populating the Entity Mib
+2021-04-02 15:28:29.927552   663 Fru.cEOSLab          0 CEosConfig: Building a list of interfaces for cEOS Lab
+2021-04-02 15:28:29.927972   663 Fru.EthPciPort       0 handlePortRole DefaultEthManagementPciPort
+2021-04-02 15:28:29.983676   663 Fru.EthPciPort       0 handlePortRole DefaultEthSwitchedPciPort
+2021-04-02 15:28:29.983737   663 Fru.cEOSLab          0 cEOSLabDriver: Getting Interfaces
+2021-04-02 15:28:29.984308   663 Fru.cEOSLab          0 cEOSLabDriver: Creating Interfaces {'eth3': 'ee:d1:c0:62:94:49', 'eth2': 'f6:43:6e:74:48:dc', 'eth1': '2e:94:1d:02:20:1a', 'eth0': '02:42:ac:14:14:07'}
+2021-04-02 15:28:30.046936   663 Fru.cEOSLab          0 device eth3, mac ee:d1:c0:62:94:49
+2021-04-02 15:28:30.047055   663 Fru.cEOSLab          0 device eth2, mac f6:43:6e:74:48:dc
+2021-04-02 15:28:30.047151   663 Fru.cEOSLab          0 device eth1, mac 2e:94:1d:02:20:1a
+2021-04-02 15:28:30.059914   663 Fru.EthPort          1 first 2 FPPs:
+2021-04-02 15:28:30.059972   663 Fru.EthPort          1 1 linkModeUnknown
+2021-04-02 15:28:30.060004   663 Fru.EthPort          1 2 linkModeUnknown
+2021-04-02 15:28:30.061249   663 Fru.EthPort          0 Create EthIntfStatus for Ethernet2
+2021-04-02 15:28:30.086174   663 Fru.EthPort          0 Created status slice dir for 1
+2021-04-02 15:28:30.086435   663 Fru.EthPort          0 Created status slice dir for  1
+2021-04-02 15:28:30.086833   663 Fru.EthPort          0 intfStatusDir is  <entity('/ar/Sysdb/interface/status/eth/phy/slice/1') of type Interface::EthPhyIntfStatusDir (non-const)> ; ethIntfCapConfig is  <entity('/ar/Sysdb/interface/archer/config/eth/capabilities/slice/FixedSystem') of type Interface::Capabilities::CapabilitiesConfig (non-const)> ; ethIntfCapConfig.gen  Value('Ark::Generation', ** {'id': 1, 'valid': True}) ; ethPhyAnConfig is  <entity('/ar/Sysdb/interface/archer/config/eth/phy/autoneg/slice/FixedSystem') of type Interface::Autoneg::PhyAutonegConfig (non-const)> ; ethPhyAnConfig.gen  Value('Ark::Generation', ** {'id': 1, 'valid': True}) ; ethPhyIntfDescDir is <entity('/ar/Sysdb/interface/archer/status/init/eth/phy/slice/1') of type Interface::EthPhyIntfDescDir (non-const)> ; descStatusDir.gen is  Value('Ark::Generation', ** {'id': 1, 'valid': True})
+2021-04-02 15:28:30.086895   663 Fru.EthPort          0 Creating new intfStatus for Ethernet2
+2021-04-02 15:28:30.087119   663 Fru.EthPort          0 Setting MTU for Ethernet2 to 9214
+2021-04-02 15:28:30.087739   663 Fru.EthPort          0 Create EthIntfStatus for Ethernet3
+2021-04-02 15:28:30.088026   663 Fru.EthPort          0 intfStatusDir is  <entity('/ar/Sysdb/interface/status/eth/phy/slice/1') of type Interface::EthPhyIntfStatusDir (non-const)> ; ethIntfCapConfig is  <entity('/ar/Sysdb/interface/archer/config/eth/capabilities/slice/FixedSystem') of type Interface::Capabilities::CapabilitiesConfig (non-const)> ; ethIntfCapConfig.gen  Value('Ark::Generation', ** {'id': 1, 'valid': True}) ; ethPhyAnConfig is  <entity('/ar/Sysdb/interface/archer/config/eth/phy/autoneg/slice/FixedSystem') of type Interface::Autoneg::PhyAutonegConfig (non-const)> ; ethPhyAnConfig.gen  Value('Ark::Generation', ** {'id': 1, 'valid': True}) ; ethPhyIntfDescDir is <entity('/ar/Sysdb/interface/archer/status/init/eth/phy/slice/1') of type Interface::EthPhyIntfDescDir (non-const)> ; descStatusDir.gen is  Value('Ark::Generation', ** {'id': 1, 'valid': True})
+2021-04-02 15:28:30.088073   663 Fru.EthPort          0 Creating new intfStatus for Ethernet3
+2021-04-02 15:28:30.088177   663 Fru.EthPort          0 Setting MTU for Ethernet3 to 9214
+2021-04-02 15:28:30.088649   663 Fru.EthPort          0 Create EthIntfStatus for Ethernet1
+2021-04-02 15:28:30.089293   663 Fru.EthPort          0 intfStatusDir is  <entity('/ar/Sysdb/interface/status/eth/phy/slice/1') of type Interface::EthPhyIntfStatusDir (non-const)> ; ethIntfCapConfig is  <entity('/ar/Sysdb/interface/archer/config/eth/capabilities/slice/FixedSystem') of type Interface::Capabilities::CapabilitiesConfig (non-const)> ; ethIntfCapConfig.gen  Value('Ark::Generation', ** {'id': 1, 'valid': True}) ; ethPhyAnConfig is  <entity('/ar/Sysdb/interface/archer/config/eth/phy/autoneg/slice/FixedSystem') of type Interface::Autoneg::PhyAutonegConfig (non-const)> ; ethPhyAnConfig.gen  Value('Ark::Generation', ** {'id': 1, 'valid': True}) ; ethPhyIntfDescDir is <entity('/ar/Sysdb/interface/archer/status/init/eth/phy/slice/1') of type Interface::EthPhyIntfDescDir (non-const)> ; descStatusDir.gen is  Value('Ark::Generation', ** {'id': 1, 'valid': True})
+2021-04-02 15:28:30.089415   663 Fru.EthPort          0 Creating new intfStatus for Ethernet1
+2021-04-02 15:28:30.089667   663 Fru.EthPort          0 Setting MTU for Ethernet1 to 9214
+2021-04-02 15:28:30.090792   663 Fru.EthPciPort       0 handlePortRole DefaultEthManagementPciPort
+2021-04-02 15:28:30.090909   663 Fru.EthPciPort       0 handlePortRole DefaultEthSwitchedPciPort
+2021-04-02 15:28:30.112596   663 Fru.EthPciPort       0 intfStatusDir is  <entity('/ar/Sysdb/interface/status/eth/phy/slice/1') of type Interface::EthPhyIntfStatusDir (non-const)> intfStatusDescDir is <entity('/ar/Sysdb/interface/archer/status/init/eth/phy/slice/1') of type Interface::EthPhyIntfDescDir (non-const)> generation is Value('Ark::Generation', ** {'id': 1, 'valid': True})
+2021-04-02 15:28:30.112646   663 Fru.EthPciPort       0 Creating new intfStatus object for PciPort Management0 kernel device name eth0 and mac addr 02:42:ac:14:14:07
+2021-04-02 15:28:30.112893   663 Fru.PhyEthtool       1 Creating a Fru driver for the PhyDir
+2021-04-02 15:28:30.160895   663 Fru.cEOSLab          0 Generating system MAC address
+2021-04-02 15:28:30.173222   663 Fru.cEOSLab          0 Generating EOS version
+2021-04-02 15:28:30.173774   663 Fru.cEOSLab          0 Setting deviceName in PhyEthtool
+2021-04-02 15:28:30.174134   663 Fru.Agent            2 Fru Agent: created a driver for the root Fru <entity('/ar/Sysdb/hardware/inventory/cEOSLab') of type Eos::CEOSLabFru (non-const)>
+2021-04-02 15:28:30.174232   663 Fru.Agent            0 The Fru agent is now running (0.420797574334 seconds since active)

@@ -1,0 +1,27 @@
+name: initial-lab
+
+topology:
+  defaults:
+    env:
+      ETBA: 4
+  nodes:
+    ceos1:
+      kind: ceos
+      image: coesimage:4.25.1F
+      ports:
+      - 4001:6030
+      - 4444:443
+      - 888:80 
+      config: configs/ceos1.conf
+
+    ceos2:
+      kind: ceos
+      image: coesimage:4.25.1F
+      ports:
+      - 4002:6030
+      - 4445:443
+      - 887:80 
+      config: configs/ceos2.conf
+
+  links:
+    - endpoints: ["ceos1:eth1", "ceos2:eth1"]

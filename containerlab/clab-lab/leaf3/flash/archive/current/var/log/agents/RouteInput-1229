@@ -1,0 +1,13 @@
+===== Output from /usr/bin/RouteInput [] (PID=1229) started Apr  2 15:28:53.511557 ===
+EntityManager::doBackoff waiting for remote sysdb version ....ok
+2021-04-02 15:29:05.062110  1237 Log                  0 %AGENT-6-INITIALIZED: Agent 'RouteInput' initialized; pid=1237
+2021-04-02 15:29:05.317053  1237 Shark-gBo_5A-viaMetr 1 ShadowManager::initialize() 
+2021-04-02 15:29:05.317102  1237 Shark-gBo_5A-viaMetr 1 Reader::Reader() fullPath:/var/shmem/sharks/ar/Shmem/cell/1/routing/rib/viaMetricStatus/fenix current path:/var/shmem/sharks/ar/Shmem lastFile:fenix finalPath:false
+2021-04-02 15:29:05.317367  1237 Shark-jmU5bC-viaMetr 1 ShadowManager::initialize() 
+2021-04-02 15:29:05.317400  1237 Shark-jmU5bC-viaMetr 1 Reader::Reader() fullPath:/var/shmem/sharks/ar/Shmem/cell/1/routing/mrib/viaMetricStatus/fenix current path:/var/shmem/sharks/ar/Shmem lastFile:fenix finalPath:false
+2021-04-02 15:29:05.318347  1237 SmashTemp            1 SmashMap::init() name:/ar/Shmem/routing/rib/viaConfig/ipv4/routeInput/via md{ mode:writer localMem:false maxSize:20480 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-02 15:29:05.318984  1237 Smash-Rh3PvC-via     1 SmashWriter::attach() success /var/shmem/smashes/ar/Shmem/routing/rib/viaConfig/ipv4/routeInput/via capacity:128 fenixId:1237:0 mtime:1617377345 shocketInfo:smash-1237-1237-489495418-0:1
+2021-04-02 15:29:05.355973  1237 SmashTemp            1 SmashMap::init() name:/ar/Shmem/routing/rib/viaConfig/ipv6/routeInput/via md{ mode:writer localMem:false maxSize:20480 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-02 15:29:05.421855  1237 Smash-Rh3P1B-via     1 SmashWriter::attach() success /var/shmem/smashes/ar/Shmem/routing/rib/viaConfig/ipv6/routeInput/via capacity:128 fenixId:1237:1 mtime:1617377345 shocketInfo:smash-1237-1237-489495418-0:2
+2021-04-02 15:29:05.422427  1237 SmashTemp            1 SmashMap::init() name:/ar/Shmem/routing/mrib/viaConfig/ipv4/routeInput/via md{ mode:writer localMem:false maxSize:20480 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-02 15:29:05.423110  1237 Smash-jEJv5A-via     1 SmashWriter::attach() success /var/shmem/smashes/ar/Shmem/routing/mrib/viaConfig/ipv4/routeInput/via capacity:128 fenixId:1237:2 mtime:1617377345 shocketInfo:smash-1237-1237-489495418-0:3

@@ -1,0 +1,12 @@
+Apr  1 15:26:19 ceos2 ipsec_starter[218]: Starting strongSwan 5.5.3 IPsec [starter]...
+Apr  1 15:26:19 ceos2 ipsec_starter[218]: no netkey IPsec stack detected
+Apr  1 15:26:19 ceos2 ipsec_starter[218]: no KLIPS IPsec stack detected
+Apr  1 15:26:19 ceos2 ipsec_starter[218]: no known IPsec stack detected, ignoring!
+Apr  1 15:26:19 ceos2 ipsec_starter[218]: charon (252) started after 140 ms
+Apr  1 15:26:20 ceos2 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ConvertPStore
+Apr  1 15:26:20 ceos2 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr  1 15:26:20 ceos2 sudo: pam_unix(sudo:session): session closed for user root
+Apr  1 15:26:26 ceos2 usermod[671]: change user 'root' password
+Apr  1 15:26:52 ceos2 usermod[969]: change user 'root' password
+Apr  1 15:26:56 ceos2 ipsec_starter[218]: charon stopped after 200 ms
+Apr  1 15:26:56 ceos2 ipsec_starter[218]: ipsec starter stopped

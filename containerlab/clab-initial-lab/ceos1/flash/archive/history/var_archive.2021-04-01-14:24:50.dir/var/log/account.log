@@ -1,0 +1,15 @@
+2021 Apr 01 14:26:52                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 14:26:56                                      stop   service=shell priv-lvl=15 cmd=show ip interface brief
+2021 Apr 01 14:26:59                                      stop   service=shell priv-lvl=15 cmd=show management api gnmi
+2021 Apr 01 14:27:05                                      stop   service=shell priv-lvl=15 cmd=ping 10.0.0.2
+2021 Apr 01 14:27:07                                      stop   service=shell priv-lvl=15 cmd=configure terminal
+2021 Apr 01 14:27:22                                      stop   service=shell priv-lvl=15 cmd=system control-plane
+2021 Apr 01 14:27:23                                      stop   service=shell priv-lvl=15 cmd=show active
+2021 Apr 01 14:27:26                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:27:29                                      stop   service=shell priv-lvl=15 cmd=ip access-list copp
+2021 Apr 01 14:27:31                                      stop   service=shell priv-lvl=15 cmd=permit ip any any
+2021 Apr 01 14:27:33                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:27:37                                      stop   service=shell priv-lvl=15 cmd=system control-plane
+2021 Apr 01 14:27:43                                      stop   service=shell priv-lvl=15 cmd=ip access-group copp in
+2021 Apr 01 14:27:44                                      stop   service=shell priv-lvl=15 cmd=write
+2021 Apr 01 14:27:47                                      stop   service=shell priv-lvl=15 cmd=exit

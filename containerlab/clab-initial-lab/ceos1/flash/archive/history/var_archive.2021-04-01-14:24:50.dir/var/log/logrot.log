@@ -1,0 +1,224 @@
+Thu Apr  1 15:15:02 UTC 2021
+reading config file /etc/logrotate.conf
+including /etc/logrotate.d
+Ignoring syslog.Eos, because of .Eos ending
+reading config file mcelog
+reading config file nginx
+reading config file ppp
+reading config file radsecproxy
+reading config file snmpd
+reading config file syslog
+reading config file yum
+Allocating hash table for state file, size 10496 B
+
+Handling 19 logs
+
+rotating pattern: /var/log/mcelog  512000 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/mcelog
+  log does not need rotating (log size is below the 'size' threshold)
+
+rotating pattern: /var/log/nginx-*.log  512000 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/nginx-access.log
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/nginx-error.log
+  log does not need rotating (log size is below the 'size' threshold)
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/ppp/connect-errors  after 1 days (5 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/ppp/connect-errors
+
+rotating pattern: /var/log/radsecproxy/radsecproxy.log  10240 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+switching euid to 999 and egid to 996
+considering log /var/log/radsecproxy/radsecproxy.log
+  log /var/log/radsecproxy/radsecproxy.log does not exist -- skipping
+not running postrotate script, since no logs were rotated
+switching euid to 0 and egid to 0
+
+rotating pattern: /var/log/snmpd  10240 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/snmpd
+  log /var/log/snmpd does not exist -- skipping
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/secure /var/log/maillog /var/log/spooler  10240 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/secure
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/maillog
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/spooler
+  log does not need rotating (log size is below the 'size' threshold)
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/yum.log  yearly (4 rotations)
+empty log files are not rotated, log files >= 30720 are rotated earlier, old logs are removed
+considering log /var/log/yum.log
+  log /var/log/yum.log does not exist -- skipping
+
+rotating pattern: /var/log/wtmp  monthly (1 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/wtmp
+  log does not need rotating (log has been rotated at 2021-4-1 14:0, that is not month ago yet)
+
+rotating pattern: /var/log/btmp  1048576 bytes (1 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/btmp
+  log does not need rotating (log size is below the 'size' threshold)
+
+rotating pattern: /var/log/account.log  2097152 bytes (3 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/account.log
+  log does not need rotating (log size is below the 'size' threshold)
+
+rotating pattern: /var/log/messages /var/log/eos  10485760 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/messages
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/eos
+  log does not need rotating (log size is below the 'size' threshold)
+not running prerotate script, since no logs will be rotated
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/kernel.debug /var/log/canary.log  2097152 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/kernel.debug
+  log /var/log/kernel.debug does not exist -- skipping
+considering log /var/log/canary.log
+  log /var/log/canary.log does not exist -- skipping
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/eos-console /var/log/eos-console-sync /var/log/eos-monitor /var/log/eos-monitor-sync  10240 bytes (no old logs will be kept)
+empty log files are not rotated, old logs are removed
+considering log /var/log/eos-console
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/eos-console-sync
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/eos-monitor
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/eos-monitor-sync
+  log does not need rotating (log size is below the 'size' threshold)
+not running postrotate script, since no logs were rotated
+
+rotating pattern: "/var/core/core*.*[^.'gz']?"  10240 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/core/core*.*[^.'gz']?
+  log /var/core/core*.*[^.'gz']? does not exist -- skipping
+not running postrotate script, since no logs were rotated
+
+rotating pattern: "/var/log/qt/*.qt.[12]"  10240 bytes (no old logs will be kept)
+empty log files are not rotated, old logs are removed
+considering log /var/log/qt/*.qt.[12]
+  log /var/log/qt/*.qt.[12] does not exist -- skipping
+
+rotating pattern: "/var/log/agents/*-[0-9]*[^g][^z]"  512000 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/agents/Aaa-893
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Acl-898
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/AgentMonitor-877
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Arp-915
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/CapiApp-868
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/ConfigAgent-666
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Ebra-941
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Etba-911
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/EventHistoryAgent-892
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/EventMgr-865
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/FibServices-881
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Fru-667
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/IgmpSnooping-957
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Ira-860
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/KernelFib-924
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/KernelNetworkInfo-903
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/L2Rib-936
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/LacpTxAgent-837
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Lag-848
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Launcher-669
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/LedPolicy-862
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Lldp-919
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/McastCommon-838
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/McastCommon6-908
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/OpenConfig-840
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/PhyEthtool-888
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/PortSec-855
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/PowerFuse-940
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/ProcMgr-master-577
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/ProcMgr-worker-603
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Qos-926
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/ReloadCauseAgent-948
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Rib-993
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/SharedSecretProfile-954
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/SlabMonitor-665
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/StageMgr-664
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/StandbyCpld-874
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Stp-900
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/StpTopology-896
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/StpTxRx-872
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/SuperServer-839
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Sysdb-668
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Thermostat-931
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/TopoAgent-938
+  log does not need rotating (log size is below the 'size' threshold)
+considering log /var/log/agents/Tunnel-886
+  log does not need rotating (log size is below the 'size' threshold)
+
+rotating pattern: "/var/log/ribd_dump*.*[^.'gz']?"  10240 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/ribd_dump*.*[^.'gz']?
+  log /var/log/ribd_dump*.*[^.'gz']? does not exist -- skipping
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/charon.log  3145728 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/charon.log
+  log does not need rotating (log size is below the 'size' threshold)
+
+rotating pattern: /var/log/watchdogd.log  512000 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/watchdogd.log
+  log does not need rotating (log size is below the 'size' threshold)

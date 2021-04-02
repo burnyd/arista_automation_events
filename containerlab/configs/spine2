@@ -1,0 +1,60 @@
+hostname spine2
+!
+!
+service routing protocols model multi-agent
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$JLp3YTq546uWAucx$W8J.GiacGTA0c.zkwFYa/JTOyVZY93UwvTeUi.BsJoGeFWsItMXdUTDRHqm6dJX01KZ2gc1jJ4FRF2T2AmAKP.
+username arista privilege 15 secret sha512 $6$EHQh0O5wa.GZw0h/$7TgK17LzV0Sh45HZIotbGHPF9OPWidXaO5c7OB.betS6jlIrvycD3e4mSyCJfEa7JbnfdHQ1n1stdsfP/xuTP/
+!
+interface Ethernet1
+   description leaf1
+   no switchport
+   ip address 10.1.0.2/30
+!
+interface Ethernet2
+   no switchport
+   ip address 10.1.0.6/30
+!
+interface Ethernet3
+!
+interface Ethernet4
+   no switchport
+   ip address 10.1.0.10/30
+!
+interface Ethernet5
+   no switchport
+   ip address 10.1.0.14/30
+!
+int lo0
+ip address 9.9.9.9/32
+!
+int lo1
+ip address 99.99.99.99/32
+ip routing
+!
+ip access-list copp
+   10 permit ip any any
+!
+control-plane
+   ip access-group copp in
+!
+management api http-commands
+   protocol http
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api restconf
+   transport https test
+   ssl profile restconf
+!
+management security
+   ssl profile restconf
+   certificate restconf.crt key restconf.key
+!
+security pki certificate generate self-signed restconf.crt key restconf.key generate rsa 2048 parameters common-name restconf

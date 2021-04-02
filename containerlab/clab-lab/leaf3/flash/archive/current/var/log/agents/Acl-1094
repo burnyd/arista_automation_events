@@ -1,0 +1,32 @@
+===== Output from /usr/bin/Acl [] (PID=1094) started Apr  2 15:28:35.726847 ===
+EntityManager::doBackoff waiting for remote sysdb version .........ok
+2021-04-02 15:28:47.242471  1103 Log                  0 %AGENT-6-INITIALIZED: Agent 'Acl' initialized; pid=1103
+2021-04-02 15:28:47.459180  1103 Acl                  0 virtual void AclAgent::Agent::doInit()++
+2021-04-02 15:28:49.095268  1103 Acl                  0 virtual void AclAgent::Agent::doInit()--
+2021-04-02 15:28:53.100564  1103 Acl                  0 virtual void AclAgent::Agent::doMountsComplete(Sysdb::MountStatus, const Ptr&)++
+2021-04-02 15:28:53.100637  1103 Acl                  0 slave mode is false
+2021-04-02 15:28:53.100765  1103 AclAggregator        0 new input portsec, creating sm for it, 
+2021-04-02 15:28:53.100800  1103 AclAggregator        0 new input pimsm, creating sm for it, 
+2021-04-02 15:28:53.100832  1103 AclAggregator        0 new input Rib, creating sm for it, 
+2021-04-02 15:28:53.100863  1103 AclAggregator        0 new input mcs, creating sm for it, 
+2021-04-02 15:28:53.100893  1103 AclAggregator        0 new input pimsm6, creating sm for it, 
+2021-04-02 15:28:53.100922  1103 AclAggregator        0 new input dot1x, creating sm for it, 
+2021-04-02 15:28:53.100950  1103 AclAggregator        0 new input cvxacl, creating sm for it, 
+2021-04-02 15:28:53.101275  1103 AclIntfConfigSm      0 new input cvxacl priority 0
+2021-04-02 15:28:53.101317  1103 AclIntfConfigSm      0 new input portsec priority 30
+2021-04-02 15:28:53.101381  1103 AclIntfConfigSm      0 new input cli priority 10
+2021-04-02 15:28:53.101437  1103 AclIntfConfigSm      0 new input mcs priority 0
+2021-04-02 15:28:53.101468  1103 AclIntfConfigSm      0 new input pimsm priority 0
+2021-04-02 15:28:53.101497  1103 AclIntfConfigSm      0 new input secure-monitor priority 9
+2021-04-02 15:28:53.101553  1103 AclIntfConfigSm      0 new input dot1x priority 0
+2021-04-02 15:28:53.101586  1103 AclIntfConfigSm      0 new input vxlan priority 0
+2021-04-02 15:28:53.101617  1103 AclIntfConfigSm      0 new input pimsm6 priority 0
+2021-04-02 15:28:58.608793  1103 Acl                  0 ACL copp version is 21023525654888448 aclType ip
+2021-04-02 15:28:58.608829  1103 Acl                  0 creating status for copp
+2021-04-02 15:28:58.608858  1103 Acl                  0 creating status for copp
+2021-04-02 15:28:58.887480  1103 Acl                  0 ACL default-control-plane-acl version is 21023289431818240 aclType ip
+2021-04-02 15:28:58.887528  1103 Acl                  0 creating status for default-control-plane-acl
+2021-04-02 15:28:58.887586  1103 Acl                  0 creating status for default-control-plane-acl
+2021-04-02 15:29:06.256432  1103 Acl                  0 ACL default-control-plane-acl version is 21023289431818268 aclType ipv6
+2021-04-02 15:29:06.256481  1103 Acl                  0 creating status for default-control-plane-acl
+2021-04-02 15:29:06.256541  1103 Acl                  0 creating status for default-control-plane-acl

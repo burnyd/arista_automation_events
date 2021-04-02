@@ -1,0 +1,8 @@
+===== Output from /usr/bin/EventHistoryAgent [] (PID=1017) started Apr  2 15:28:29.192886 ===
+2021-04-02 15:28:30.008806  1019 Log                  0 %AGENT-6-INITIALIZED: Agent 'EventHistoryAgent' initialized; pid=1019
+2021-04-02 15:28:30.159111  1019 EventHistoryAgent    3 EventHistoryAgent::doInit
+2021-04-02 15:28:30.159399  1019 EventHistoryAgent    3 EventHistoryAgent::doMountsComplete
+2021-04-02 15:28:30.159425  1019 EventHistoryAgent    5 doRestore
+2021-04-02 15:28:30.159456  1019 EventHistory         0 void EventHistory::Restorer::doRestoreAll()
+2021-04-02 15:28:30.159472  1019 EventHistory         0 void EventHistory::Store::doRestore()
+2021-04-02 15:28:30.159504  1019 EventHistory         0 void EventHistory::Store::doRestore() Could not open /mnt/flash/eventhistory-persistent-store

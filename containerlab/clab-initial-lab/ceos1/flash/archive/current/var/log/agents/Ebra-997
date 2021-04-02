@@ -1,0 +1,52 @@
+===== Output from /usr/bin/Ebra [] (PID=997) started Apr  1 18:23:11.954861 ===
+EntityManager::doBackoff waiting for remote sysdb version ....ok
+2021-04-01 18:23:15.452769  1001 Log                  0 %AGENT-6-INITIALIZED: Agent 'Ebra' initialized; pid=1001
+2021-04-01 18:23:15.457341  1001 SmashTemp            1 SmashMap::init() name:/ar/Shmem/kni/ns/default/status/interface md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:true assertOnOrphanAccess:false }
+2021-04-01 18:23:15.457393  1001 Smash-3xdYNA-interfa 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface/fenix current path:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface/fenix lastFile:fenix finalPath:true
+2021-04-01 18:23:15.457640  1001 Smash-3xdYNA-interfa 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface capacity:0 fenixId:965:0 mtime:1617301393 delay:2 event:SmashMap::init
+2021-04-01 18:23:15.458097  1001 Smash-3xdYNA-interfa 1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:3 numSlots:32 connected:true asynchronous:true
+2021-04-01 18:23:15.458113  1001 Smash-3xdYNA-interfa 1 Syncer::sync() Scheduling synchronization, mode:0 asynchronous:true numSlots:32
+2021-04-01 18:23:15.458149  1001 SmashTemp            1 SmashMap::init() name:/ar/Shmem/kni/ns/default/status/addr md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:true assertOnOrphanAccess:false }
+2021-04-01 18:23:15.458192  1001 Smash-VsMlwA-addr    1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr/fenix current path:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr/fenix lastFile:fenix finalPath:true
+2021-04-01 18:23:15.458355  1001 Smash-VsMlwA-addr    1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr capacity:0 fenixId:965:0 mtime:1617301393 delay:2 event:SmashMap::init
+2021-04-01 18:23:15.458551  1001 Smash-VsMlwA-addr    1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:4 numSlots:64 connected:true asynchronous:true
+2021-04-01 18:23:15.458565  1001 Smash-VsMlwA-addr    1 Syncer::sync() Scheduling synchronization, mode:0 asynchronous:true numSlots:64
+2021-04-01 18:23:15.458854  1001 SmashTemp            1 SmashMap::init() name:/ar/Shmem/bridging/status/smashFdbStatus md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:true assertOnOrphanAccess:false }
+2021-04-01 18:23:15.458899  1001 Smash-g9AD9A-smashFd 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/bridging/status/smashFdbStatus/fenix current path:/var/shmem/smashes/ar/Shmem/bridging lastFile:fenix finalPath:false
+2021-04-01 18:23:15.459212  1001 SmashTemp            1 SmashMap::init() name:/ar/Shmem/interface/counter/subintf/current/counter md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:true assertOnOrphanAccess:false }
+2021-04-01 18:23:15.459259  1001 Smash-wBO57A-counter 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/interface/counter/subintf/current/counter/fenix current path:/var/shmem/smashes/ar/Shmem/interface/counter lastFile:fenix finalPath:false
+2021-04-01 18:23:15.605122  1001 Smash-3xdYNA-interfa 1 SmashShadow::syncComplete() Synchronization complete, seq:3
+2021-04-01 18:23:15.605201  1001 Smash-VsMlwA-addr    1 SmashShadow::syncComplete() Synchronization complete, seq:4
+2021-04-01 18:23:15.605238  1001 Smash-3xdYNA-interfa 1 ConquerReader::handleAck() minSeq:0 previousSeqSent:3
+2021-04-01 18:23:15.605257  1001 Smash-VsMlwA-addr    1 ConquerReader::handleAck() minSeq:0 previousSeqSent:4
+2021-04-01 18:23:15.735218  1001 SmashTemp            1 SmashMap::init() name:/ar/Shmem/counters/ethIntf/PhyEthtool-1/current/counter md{ mode:reader localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-01 18:23:15.735275  1001 Smash-YFox6B-counter 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/counters/ethIntf/PhyEthtool-1/current/counter/fenix current path:/var/shmem/smashes/ar/Shmem/counters/ethIntf/PhyEthtool-1/current/counter/fenix lastFile:fenix finalPath:true
+2021-04-01 18:23:15.735454  1001 Smash-YFox6B-counter 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/counters/ethIntf/PhyEthtool-1/current/counter capacity:0 fenixId:1011:0 mtime:1617301395 delay:0 event:SmashMap::init
+No matching paths found for pattern: /persist/secure/license/store/*
+2021-04-01 18:23:16.040004  1001 SmashTemp            1 SmashMap::init() name:/ar/Shmem/counters/ethIntf/EtbaDut/current/counter md{ mode:reader localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-01 18:23:16.040069  1001 Smash-qE6KHB-counter 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/counters/ethIntf/EtbaDut/current/counter/fenix current path:/var/shmem/smashes/ar/Shmem/counters/ethIntf/EtbaDut/current/counter/fenix lastFile:fenix finalPath:true
+2021-04-01 18:23:16.040239  1001 Smash-qE6KHB-counter 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/counters/ethIntf/EtbaDut/current/counter capacity:0 fenixId:1012:0 mtime:1617301395 delay:1 event:SmashMap::init
+2021-04-01 18:23:16.198559  1001 Smash-g9AD9A-smashFd 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/bridging/status/smashFdbStatus capacity:0 fenixId:1012:0 mtime:1617301396 delay:0 event:
+2021-04-01 18:23:16.198769  1001 Smash-g9AD9A-smashFd 1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:0 numSlots:64 connected:true asynchronous:true
+2021-04-01 18:23:16.198785  1001 Smash-g9AD9A-smashFd 1 Syncer::sync() Scheduling synchronization, mode:0 asynchronous:true numSlots:0
+2021-04-01 18:23:16.198821  1001 Smash-g9AD9A-smashFd 1 SmashShadow::syncComplete() Synchronization complete, seq:0
+2021-04-01 18:23:16.706408  1001 Smash-g9AD9A-smashFd 1 ConquerReader::handleAck() minSeq:0 previousSeqSent:0
+2021-04-01 18:23:16.709666  1001 Log                  0 %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*
+No matching paths found for pattern: /persist/secure/license/store/*

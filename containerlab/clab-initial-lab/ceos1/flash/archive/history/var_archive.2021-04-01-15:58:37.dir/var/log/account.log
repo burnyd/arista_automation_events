@@ -1,0 +1,5 @@
+2021 Apr 01 15:59:23                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 15:59:26                                      stop   service=shell priv-lvl=15 cmd=show ip interface brief
+2021 Apr 01 16:00:25                                      stop   service=shell priv-lvl=15 cmd=configure terminal
+2021 Apr 01 16:00:26                                      stop   service=shell priv-lvl=15 cmd=interface Management0
+2021 Apr 01 16:00:35                                      stop   service=shell priv-lvl=15 cmd=ip address 172.20.20.4/24

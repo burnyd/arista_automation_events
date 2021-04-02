@@ -1,0 +1,124 @@
+===== Output from /usr/bin/SuperServer [] (PID=840) started Apr  1 14:19:49.960970 ===
+2021-04-01 14:19:50.684448   840 Log                  0 %AGENT-6-INITIALIZED: Agent 'SuperServer' initialized; pid=840
+2021-04-01 14:19:55.434000   840 Log                  0 %SYS-5-CLI_SCHEDULER_ENABLED: CliScheduler is enabled, continuing its execution of scheduled CLI jobs.
+2021-04-01 14:19:56.525688   840 Log                  0 %SECURITY-6-SSL_PROFILE_VALID: SSL profile 'ARISTA_DEFAULT_PROFILE' is valid
+2021-04-01 14:19:57.565272   840 SuperServer          3 service DhclientManager is warm
+2021-04-01 14:19:57.565371   840 SuperServer          3 service Haveged is warm
+2021-04-01 14:19:57.565427   840 SuperServer          3 service SecuritySm is warm
+2021-04-01 14:19:57.565460   840 SuperServer          3 service Redis is warm
+2021-04-01 14:19:57.565495   840 SuperServer          3 service DhcpServerManager is warm
+2021-04-01 14:19:57.565537   840 SuperServer          3 service LogArchiver is warm
+2021-04-01 14:19:57.565573   840 SuperServer          3 service SshHostKeysAgent is warm
+2021-04-01 14:19:57.565606   840 SuperServer          3 service SupplicantManager is warm
+2021-04-01 14:19:57.565777   840 SuperServer          3 service NetworkManager is warm
+2021-04-01 14:19:57.565809   840 SuperServer          3 service SswanManager is warm
+2021-04-01 14:19:57.565882   840 SuperServer          3 service LogMgr is not warm
+2021-04-01 14:19:58.862299   840 SuperServer          3 service LogMgr is warm
+2021-04-01 14:19:58.862353   840 SuperServer          3 service FileSystemMounter is warm
+2021-04-01 14:19:58.862384   840 SuperServer          3 service CliSchedulerMgr is warm
+2021-04-01 14:19:58.862415   840 SuperServer          3 service ConsoleManager is warm
+2021-04-01 14:19:58.862453   840 SuperServer          3 service Ntp is warm
+2021-04-01 14:19:58.862495   840 SuperServer          3 service Capi is not warm
+2021-04-01 14:20:02.072319   840 SuperServer          3 service Capi is warm
+2021-04-01 14:20:02.072391   840 SuperServer          3 service Timezone is warm
+2021-04-01 14:20:02.072444   840 SuperServer          3 service SslManager is warm
+2021-04-01 14:20:02.072501   840 SuperServer          3 service Telnet is warm
+2021-04-01 14:20:02.072531   840 SuperServer          3 service BannerManager is warm
+2021-04-01 14:20:02.072601   840 SuperServer          3 service Ssh is warm
+2021-04-01 14:20:02.072630   840 SuperServer          3 service Tcpdump is warm
+2021-04-01 14:20:02.072659   840 SuperServer          3 service SessionTimeoutAgent is warm
+2021-04-01 14:20:02.072711   840 SuperServer          3 service Snmpd is warm
+2021-04-01 14:20:02.072747   840 SuperServer          3 service EntropySm is warm
+2021-04-01 14:20:02.072774   840 SuperServer          3 service AccountManager is warm
+2021-04-01 14:20:02.072829   840 SuperServer          3 service OvsdbServer is warm
+2021-04-01 14:20:02.072858   840 SuperServer          3 service ContainerMgr is warm
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_rsa_key with 2417 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_rsa_key 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_rsa_key
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_rsa_key.pub with 3684 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_rsa_key.pub 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_rsa_key.pub
+2021-04-01 14:20:02.914289   840 Log                  0 %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is ndbbh7Wp9N2w0kfZOH+iwhbWixA+rb6QWOZdHM0/EkQ.
+2021-04-01 14:20:02.914542   840 Log                  0 %SYS-6-SSH_HOST_KEY_REGENERATED: SSH host keys associated with a different system (MAC address 46:81:01:d0:71:20). Regenerating SSH host keys.
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_ecdsa_key with 3731 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_ecdsa_key 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_ecdsa_key
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_ecdsa_key.pub with 3812 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_ecdsa_key.pub 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_ecdsa_key.pub
+2021-04-01 14:20:03.414124   840 Log                  0 %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is mI4dI2TGrjQcygYWFouowh53jRUTgn7jgZIGoMoPI/k.
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_ed25519_key with 3664 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_ed25519_key 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_ed25519_key
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_ed25519_key.pub with 3984 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_ed25519_key.pub 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_ed25519_key.pub
+2021-04-01 14:20:03.894773   840 Log                  0 %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is 1eJhQAxOP9caaPRiUcSOyAHFibs5S6cXr718FndhHTk.
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_ecdsa_nistp256_key with 3869 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_ecdsa_nistp256_key 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_ecdsa_nistp256_key
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_ecdsa_nistp256_key.pub with 3904 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_ecdsa_nistp256_key.pub 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_ecdsa_nistp256_key.pub
+2021-04-01 14:20:04.390640   840 Log                  0 %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is qEdAM5H3F+Lr1GfiO5gw+SoPYIHNDHD42MQF3MhPaLM.
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_dsa_key with 3428 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_dsa_key 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_dsa_key
+scrub: using NNSA NAP-14.1-C patterns
+scrub: padding /persist/secure/ssh_host_dsa_key.pub with 3476 bytes to fill last fs block
+scrub: scrubbing /persist/secure/ssh_host_dsa_key.pub 4096 bytes
+scrub: random  |................................................|
+scrub: random  |................................................|
+scrub: 0x00    |................................................|
+scrub: verify  |................................................|
+scrub: unlinking /persist/secure/ssh_host_dsa_key.pub
+2021-04-01 14:20:04.887058   840 Log                  0 %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is L548g/Nsw+eh1ZzHgDD8PLMxa5F1NI+enn12+aJxVnI.
+2021-04-01 14:21:58.661967   840 Log                  0 %SYS-5-SYSTEM_RESTARTED: System restarted
+2021-04-01 14:21:58.662554   840 Log                  0 %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+2021-04-01 14:21:58.662636   840 Log                  0 %SYS-6-SYSTEM_INFO: Model: cEOSLab
+2021-04-01 14:21:58.662717   840 Log                  0 %SYS-6-SYSTEM_INFO: Serial number: 

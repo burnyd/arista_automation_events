@@ -1,0 +1,6 @@
+Thu Apr  1 14:24:25 2021 getPrefdl: failed to exec genprefdl ('sh -c genprefdl 2>/dev/null >/etc/prefdl': error code 1)
+Error when identifying the cell via the SCD: SLOTID not set in environment and SLOTID not present in kernel boot parameters and No PCI scd found
+Thu Apr  1 14:24:26 2021 force generic pc mode; identifyCell returned with error '/usr/bin/identifyCell': error code 1:
+Thu Apr  1 14:24:26 2021 identifyCell: cellType: generic cellId: 1 slotId: 1 electionMgrSupported False
+Thu Apr  1 14:24:26 2021 Platform not found. Skipping upgrading power supplies
+Not checking eeprom for platform - ceoslab 

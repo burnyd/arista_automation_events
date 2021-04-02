@@ -1,0 +1,16 @@
+---
+- hosts: all
+  connection: httpapi
+  gather_facts: no
+  vars_files:
+  - "vars/vars.yml"
+
+  tasks:
+  - name: run show version on remote devices
+    register: showcommands
+    eos_command:
+      commands:
+        - show version
+        - show inventory
+
+  - debug: var=showcommands.stdout

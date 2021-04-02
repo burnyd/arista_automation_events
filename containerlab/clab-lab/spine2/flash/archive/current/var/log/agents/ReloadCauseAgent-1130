@@ -1,0 +1,30 @@
+===== Output from /usr/bin/ReloadCauseAgent [] (PID=1130) started Apr  2 15:28:33.666634 ===
+EntityManager::doBackoff waiting for remote sysdb version ......ok
+waiting for connection to Sysdb .........ok
+2021-04-02 15:28:46.651834  1136 Log                  0 %AGENT-6-INITIALIZED: Agent 'ReloadCauseAgent' initialized; pid=1136
+2021-04-02 15:28:46.724025  1136 ReloadCauseAgent     3 Root::doInit
+2021-04-02 15:28:46.724375  1136 ReloadCauseAgent     3 Root::doMountsComplete
+2021-04-02 15:28:46.724410  1136 ReloadCauseAgent     3 Root::doMountsComplete Initializing state machines 
+
+2021-04-02 15:28:46.724427  1136 ReloadCauseAgent     5 handleInitialized
+2021-04-02 15:28:46.724453  1136 ReloadCauseAgent     5 handleInitialized Initializing reloadCauseSm, initialized: false file status: false
+
+2021-04-02 15:28:46.724486  1136 ReloadCause          5 ReloadCauseSm::handleInitialized initialized false file status false
+
+2021-04-02 15:28:46.724499  1136 ReloadCause          5 ReloadCauseSm::handleReloadCauseHistoryFile
+
+2021-04-02 15:28:46.724515  1136 ReloadCause          5 handleReloadCauseHistoryFile /mnt/flash/debug/reload_history
+2021-04-02 15:28:46.734853  1136 ReloadCause          5 handleReloadCauseHistoryFile Failed to stat. Probably OK. /mnt/flash/debug/reload_history
+
+2021-04-02 15:28:46.735387  1136 ReloadCause          5 ReloadCauseSm::initializeInotifyFd
+
+2021-04-02 15:28:46.735419  1136 ReloadCause          5 handleInotifyFdReadable inotifyFd() returning 
+2021-04-02 15:28:46.735449  1136 ReloadCause          5 new inotify fd inotifyFd() 11 11;In;levelTriggered;0x57f2b410
+2021-04-02 15:28:46.735461  1136 ReloadCause          5 ReloadCauseSm::initializeWatchId
+
+2021-04-02 15:28:46.735481  1136 ReloadCause          5  pathToWatch is: /mnt/flash/debug
+
+2021-04-02 15:28:46.735496  1136 ReloadCause          5 new inotify watch id is 1
+2021-04-02 15:28:46.735559  1136 ReloadCauseCommon    0 createReloadCauseAgentInitFile opened file /var/tmp/reloadCauseAgentInitStatusFile
+2021-04-02 15:28:46.735574  1136 ReloadCause          5 ReloadCauseSm::handleInitialized done
+

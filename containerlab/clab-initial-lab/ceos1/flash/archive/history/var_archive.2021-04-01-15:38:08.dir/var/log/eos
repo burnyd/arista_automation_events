@@ -1,0 +1,17 @@
+Apr  1 15:38:17 ceos1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 0000.0000.0000 and portId "Management0" added on interface Management0
+Apr  1 15:38:22 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is krwNkYqatcbG3WFQ3iob4Beo1S4IiKvTz3YY6vM83KM.
+Apr  1 15:38:22 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_REGENERATED: SSH host keys associated with a different system (MAC address 66:af:1c:7f:75:65). Regenerating SSH host keys.
+Apr  1 15:38:22 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is Qu/ZqOF0rwuhUk8GeYse4qZRSXJTxOmOElGAUuQIEuk.
+Apr  1 15:38:23 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is tFKsBgLtMCdcRSatFr1lOm9nBHaXeWOPca8QuOCFHDc.
+Apr  1 15:38:23 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is lfcO9MYUo7b/s3A4knAtTiyDY/fxR09CnshD4ysG+WM.
+Apr  1 15:38:24 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is /A+a0pcEd5QZYJGahUgQjY7yTeowy/X8Ap9rzvOhdmI.
+Apr  1 15:38:44 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 15:40:17 ceos1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 15:40:17 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 15:40:17 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 15:40:17 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 
+Apr  1 15:40:39 ceos1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by root on vty4 (UnknownIpAddr)
+Apr  1 15:41:03 ceos1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by root on vty4 (UnknownIpAddr)
+Apr  1 15:43:31 ceos1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by root on vty4 (UnknownIpAddr)
+Apr  1 15:43:52 ceos1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by root on vty4 (UnknownIpAddr)
+Apr  1 15:43:53 ceos1 ConfigAgent: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by root on vty4 (UnknownIpAddr).

@@ -1,0 +1,13 @@
+2021 Apr 01 15:39:57                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 15:39:59                                      stop   service=shell priv-lvl=15 cmd=show ip interface brief
+2021 Apr 01 15:40:39                                      stop   service=shell priv-lvl=15 cmd=configure terminal
+2021 Apr 01 15:40:42                                      stop   service=shell priv-lvl=15 cmd=interface Management0
+2021 Apr 01 15:41:02                                      stop   service=shell priv-lvl=15 cmd=ip address 172.20.20.2/24
+2021 Apr 01 15:43:31                                      stop   service=shell priv-lvl=15 cmd=configure terminal
+2021 Apr 01 15:43:37                                      stop   service=shell priv-lvl=15 cmd=ip access-list copp
+2021 Apr 01 15:43:42                                      stop   service=shell priv-lvl=15 cmd=permit ip any any
+2021 Apr 01 15:43:44                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 15:43:47                                      stop   service=shell priv-lvl=15 cmd=system control-plane
+2021 Apr 01 15:43:51                                      stop   service=shell priv-lvl=15 cmd=ip access-group copp in
+2021 Apr 01 15:43:52                                      stop   service=shell priv-lvl=15 cmd=write
+2021 Apr 01 15:44:01                                      stop   service=shell priv-lvl=15 cmd=show running-config interfaces Management0

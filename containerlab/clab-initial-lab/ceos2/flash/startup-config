@@ -1,0 +1,40 @@
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model ribd
+!
+hostname ceos2
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$S1jDtSEN/M3/VEsP$fNT4jByGEaYNlEnDxw4qCAyV3dsc/JH5Q7nLLStzZIo0TwUQ3aPuIO2sqVXalm8K74ccIeWQSanzAU5zT9Nj31
+!
+interface Ethernet1
+   no switchport
+   ip address 10.0.0.2/24
+!
+interface management0
+ip address 192.168.99.2/24
+!
+no ip routing
+!
+management api http-commands
+   protocol http
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+ip access-list copp
+   10 permit ip any any
+!
+no ip routing
+!
+system control-plane
+   ip access-group copp in
+!
+end

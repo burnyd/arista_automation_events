@@ -1,0 +1,10 @@
+Apr  2 15:27:09 leaf2 ipsec_starter[266]: Starting strongSwan 5.5.3 IPsec [starter]...
+Apr  2 15:27:09 leaf2 ipsec_starter[266]: no netkey IPsec stack detected
+Apr  2 15:27:09 leaf2 ipsec_starter[266]: no KLIPS IPsec stack detected
+Apr  2 15:27:09 leaf2 ipsec_starter[266]: no known IPsec stack detected, ignoring!
+Apr  2 15:27:11 leaf2 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ConvertPStore
+Apr  2 15:27:11 leaf2 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr  2 15:27:11 leaf2 ipsec_starter[266]: charon (318) started after 1440 ms
+Apr  2 15:27:13 leaf2 sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 15:27:28 leaf2 usermod[665]: change user 'root' password
+Apr  2 15:28:40 leaf2 usermod[1162]: change user 'root' password

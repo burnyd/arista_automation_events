@@ -1,0 +1,11 @@
+Apr  2 15:27:09 leaf1 ipsec_starter[260]: Starting strongSwan 5.5.3 IPsec [starter]...
+Apr  2 15:27:09 leaf1 ipsec_starter[260]: removing pidfile '/etc/strongswan/ipsec.d/run/charon.pid', process not running
+Apr  2 15:27:09 leaf1 ipsec_starter[260]: no netkey IPsec stack detected
+Apr  2 15:27:09 leaf1 ipsec_starter[260]: no KLIPS IPsec stack detected
+Apr  2 15:27:09 leaf1 ipsec_starter[260]: no known IPsec stack detected, ignoring!
+Apr  2 15:27:09 leaf1 ipsec_starter[260]: starter is already running (/etc/strongswan/ipsec.d/run/starter.charon.pid exists) -- no fork done
+Apr  2 15:27:11 leaf1 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ConvertPStore
+Apr  2 15:27:11 leaf1 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr  2 15:27:12 leaf1 sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 15:27:28 leaf1 usermod[647]: change user 'root' password
+Apr  2 15:28:54 leaf1 usermod[1224]: change user 'root' password

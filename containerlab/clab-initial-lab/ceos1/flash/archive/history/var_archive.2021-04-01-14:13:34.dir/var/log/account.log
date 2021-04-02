@@ -1,0 +1,17 @@
+2021 Apr 01 14:13:51                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 14:13:53                                      stop   service=shell priv-lvl=15 cmd=show ip interface brief
+2021 Apr 01 14:13:55                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:14:16                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 14:14:20                                      stop   service=shell priv-lvl=15 cmd=show management api gnmi
+2021 Apr 01 14:14:33                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:16:18                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 14:16:20                                      stop   service=shell priv-lvl=15 cmd=configure terminal
+2021 Apr 01 14:16:22                                      stop   service=shell priv-lvl=15 cmd=interface Management0
+2021 Apr 01 14:16:23                                      stop   service=shell priv-lvl=15 cmd=shutdown
+2021 Apr 01 14:16:25                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:16:27                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:16:28                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:17:17                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 14:17:19                                      stop   service=shell priv-lvl=15 cmd=show management api gnmi
+2021 Apr 01 14:17:22                                      stop   service=shell priv-lvl=15 cmd=show management api http-commands
+2021 Apr 01 14:17:35                                      stop   service=shell priv-lvl=15 cmd=exit

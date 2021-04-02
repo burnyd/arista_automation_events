@@ -1,0 +1,16 @@
+Apr  1 15:45:46 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is DqjdG8aLESCsIn2k/rvx9mwLyaF1aX+5gvSaKZ4Idv0.
+Apr  1 15:45:46 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_REGENERATED: SSH host keys associated with a different system (MAC address 06:28:27:b0:4d:b2). Regenerating SSH host keys.
+Apr  1 15:45:47 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is Ya+hEes2aWcbGb4FtiWt/GISEk6Zr0+6N18vn0pYf+o.
+Apr  1 15:45:47 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is LiYt/zS5lPo3NMCyhHlMYc9SUR4BxmrCbj/gkQtemRc.
+Apr  1 15:45:48 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is 6wjlzq1NF3B1WfOfAHESkVbvdt04q1MNkPExA+1wblc.
+Apr  1 15:45:49 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is BWE93WsjucNK2fhHtvJBdv4pQSe5lYpnX2kfUO3pkyA.
+Apr  1 15:46:08 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 15:47:44 ceos1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 15:47:44 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 15:47:44 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 15:47:44 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 
+Apr  1 15:54:29 ceos1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by root on vty5 (UnknownIpAddr)
+Apr  1 15:54:40 ceos1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by root on vty5 (UnknownIpAddr)
+Apr  1 15:55:31 ceos1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by root on vty5 (UnknownIpAddr)
+Apr  1 15:55:37 ceos1 ReloadCauseAgent: %SYS-6-SYSTEM_INFO: Reload Cause 1: Unknown
+Apr  1 15:55:51 ceos1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by root on vty5 (UnknownIpAddr)

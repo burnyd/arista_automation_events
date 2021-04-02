@@ -1,0 +1,30 @@
+===== Output from /usr/bin/ReloadCauseAgent [] (PID=1120) started Apr  2 15:28:32.572986 ===
+EntityManager::doBackoff waiting for remote sysdb version ..........ok
+waiting for connection to Sysdb ....................ok
+2021-04-02 15:28:56.043996  1129 Log                  0 %AGENT-6-INITIALIZED: Agent 'ReloadCauseAgent' initialized; pid=1129
+2021-04-02 15:28:56.046623  1129 ReloadCauseAgent     3 Root::doInit
+2021-04-02 15:28:56.046916  1129 ReloadCauseAgent     3 Root::doMountsComplete
+2021-04-02 15:28:56.046952  1129 ReloadCauseAgent     3 Root::doMountsComplete Initializing state machines 
+
+2021-04-02 15:28:56.046968  1129 ReloadCauseAgent     5 handleInitialized
+2021-04-02 15:28:56.046993  1129 ReloadCauseAgent     5 handleInitialized Initializing reloadCauseSm, initialized: false file status: false
+
+2021-04-02 15:28:56.047024  1129 ReloadCause          5 ReloadCauseSm::handleInitialized initialized false file status false
+
+2021-04-02 15:28:56.047038  1129 ReloadCause          5 ReloadCauseSm::handleReloadCauseHistoryFile
+
+2021-04-02 15:28:56.047054  1129 ReloadCause          5 handleReloadCauseHistoryFile /mnt/flash/debug/reload_history
+2021-04-02 15:28:56.047087  1129 ReloadCause          5 handleReloadCauseHistoryFile Failed to stat. Probably OK. /mnt/flash/debug/reload_history
+
+2021-04-02 15:28:56.047137  1129 ReloadCause          5 ReloadCauseSm::initializeInotifyFd
+
+2021-04-02 15:28:56.047156  1129 ReloadCause          5 handleInotifyFdReadable inotifyFd() returning 
+2021-04-02 15:28:56.047177  1129 ReloadCause          5 new inotify fd inotifyFd() 11 11;In;levelTriggered;0x577db2e8
+2021-04-02 15:28:56.047189  1129 ReloadCause          5 ReloadCauseSm::initializeWatchId
+
+2021-04-02 15:28:56.047209  1129 ReloadCause          5  pathToWatch is: /mnt/flash/debug
+
+2021-04-02 15:28:56.047224  1129 ReloadCause          5 new inotify watch id is 1
+2021-04-02 15:28:56.047269  1129 ReloadCauseCommon    0 createReloadCauseAgentInitFile opened file /var/tmp/reloadCauseAgentInitStatusFile
+2021-04-02 15:28:56.047282  1129 ReloadCause          5 ReloadCauseSm::handleInitialized done
+

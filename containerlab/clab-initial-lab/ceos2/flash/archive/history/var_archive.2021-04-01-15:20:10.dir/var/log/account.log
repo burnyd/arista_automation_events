@@ -1,0 +1,3 @@
+2021 Apr 01 15:21:13                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 15:21:16                                      stop   service=shell priv-lvl=15 cmd=show management api gnmi
+2021 Apr 01 15:21:27                                      stop   service=shell priv-lvl=15 cmd=show running-config interfaces Management0

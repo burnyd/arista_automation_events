@@ -1,0 +1,16 @@
+2021 Apr 01 15:51:46                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 15:51:47                                      stop   service=shell priv-lvl=15 cmd=bash
+2021 Apr 01 15:52:04                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 15:52:09                                      stop   service=shell priv-lvl=15 cmd=show ip interface brief
+2021 Apr 01 15:54:29                                      stop   service=shell priv-lvl=15 cmd=configure terminal
+2021 Apr 01 15:54:30                                      stop   service=shell priv-lvl=15 cmd=interface Management0
+2021 Apr 01 15:54:39                                      stop   service=shell priv-lvl=15 cmd=ip address 172.20.20.2/24
+2021 Apr 01 15:54:46                                      stop   service=shell priv-lvl=15 cmd=ping 172.20.20.2
+2021 Apr 01 15:54:59                                      stop   service=shell priv-lvl=15 cmd=show management api gnmi
+2021 Apr 01 15:55:02                                      stop   service=shell priv-lvl=15 cmd=show running-config
+2021 Apr 01 15:55:07                                      stop   service=shell priv-lvl=15 cmd=bash
+2021 Apr 01 15:55:31                                      stop   service=shell priv-lvl=15 cmd=configure terminal
+2021 Apr 01 15:55:32                                      stop   service=shell priv-lvl=15 cmd=interface Management0
+2021 Apr 01 15:55:40                                      stop   service=shell priv-lvl=15 cmd=ping 172.20.20.3
+2021 Apr 01 15:55:43                                      stop   service=shell priv-lvl=15 cmd=interface Management0
+2021 Apr 01 15:55:51                                      stop   service=shell priv-lvl=15 cmd=ip address 172.20.20.3/24

@@ -1,0 +1,175 @@
+Apr  2 15:27:05 leaf3 xinetd[230]: xinetd Version 2.3.15 started with loadavg labeled-networking options compiled in.
+Apr  2 15:27:05 leaf3 xinetd[230]: Started working: 0 available services
+Apr  2 15:27:05 leaf3 kernel: [4894966.655943] eth0: renamed from veth088df1e
+Apr  2 15:27:05 leaf3 kernel: [4894966.692303] audit: type=1107 audit(1617377225.687:3951): pid=848 uid=103 auid=4294967295 ses=4294967295 msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/NetworkManager" interface="org.freedesktop.NetworkManager" member="DeviceRemoved" name=":1.15" mask="receive" pid=20901 label="snap.multipass.multipassd" peer_pid=958 peer_label="unconfined"
+Apr  2 15:27:05 leaf3 kernel: [4894966.692303]  exe="/usr/bin/dbus-daemon" sauid=103 hostname=? addr=? terminal=?'
+Apr  2 15:27:05 leaf3 kernel: [4894966.692308] audit: type=1107 audit(1617377225.687:3952): pid=848 uid=103 auid=4294967295 ses=4294967295 msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/NetworkManager" interface="org.freedesktop.NetworkManager" member="PropertiesChanged" name=":1.15" mask="receive" pid=20901 label="snap.multipass.multipassd" peer_pid=958 peer_label="unconfined"
+Apr  2 15:27:05 leaf3 kernel: [4894966.692308]  exe="/usr/bin/dbus-daemon" sauid=103 hostname=? addr=? terminal=?'
+Apr  2 15:27:05 leaf3 kernel: [4894966.694139] audit: type=1107 audit(1617377225.691:3953): pid=848 uid=103 auid=4294967295 ses=4294967295 msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/NetworkManager" interface="org.freedesktop.NetworkManager" member="PropertiesChanged" name=":1.15" mask="receive" pid=20901 label="snap.multipass.multipassd" peer_pid=958 peer_label="unconfined"
+Apr  2 15:27:05 leaf3 kernel: [4894966.694139]  exe="/usr/bin/dbus-daemon" sauid=103 hostname=? addr=? terminal=?'
+Apr  2 15:27:05 leaf3 kernel: [4894966.803509] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Apr  2 15:27:06 leaf3 kernel: [4894967.437721] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Apr  2 15:27:06 leaf3 kernel: [4894967.816678] eth0: renamed from veth59ec004
+Apr  2 15:27:07 leaf3 archive-init: selecting archive: ext4 flash found
+Apr  2 15:27:07 leaf3 archive-init: no archive directory to rotate
+Apr  2 15:27:07 leaf3 archive-init: archive setup done
+Apr  2 15:27:07 leaf3 archive-init: write archive config done
+Apr  2 15:27:09 leaf3 archive-init: checking that 50% of the reserved space is free
+Apr  2 15:27:09 leaf3 kernel: [4894970.081834] IPv6: ADDRCONF(NETDEV_UP): clab-8d438616: link is not ready
+Apr  2 15:27:09 leaf3 kernel: [4894970.084128] IPv6: ADDRCONF(NETDEV_UP): clab-144dd71b: link is not ready
+Apr  2 15:27:09 leaf3 archive-init: no archived instances of the archive deleted
+Apr  2 15:27:09 leaf3 kernel: [4894970.264143] eth3: renamed from clab-da8eb3d5
+Apr  2 15:27:09 leaf3 kernel: [4894970.329514] eth1: renamed from clab-8d438616
+Apr  2 15:27:09 leaf3 kernel: [4894970.541822] audit: type=1107 audit(1617377229.539:3970): pid=848 uid=103 auid=4294967295 ses=4294967295 msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/NetworkManager" interface="org.freedesktop.NetworkManager" member="DeviceAdded" name=":1.15" mask="receive" pid=20901 label="snap.multipass.multipassd" peer_pid=958 peer_label="unconfined"
+Apr  2 15:27:09 leaf3 kernel: [4894970.541822]  exe="/usr/bin/dbus-daemon" sauid=103 hostname=? addr=? terminal=?'
+Apr  2 15:27:09 leaf3 kernel: [4894970.547221] audit: type=1107 audit(1617377229.543:3971): pid=848 uid=103 auid=4294967295 ses=4294967295 msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/NetworkManager" interface="org.freedesktop.NetworkManager" member="DeviceAdded" name=":1.15" mask="receive" pid=20901 label="snap.multipass.multipassd" peer_pid=958 peer_label="unconfined"
+Apr  2 15:27:09 leaf3 kernel: [4894970.547221]  exe="/usr/bin/dbus-daemon" sauid=103 hostname=? addr=? terminal=?'
+Apr  2 15:27:09 leaf3 kernel: [4894970.573959] eth2: renamed from clab-6efb6b1c
+Apr  2 15:27:09 leaf3 archive-init: archive status: name=flash path=/mnt/flash/archive/current exists=True dirsExist=True valid=True disabled=False enabled=True devName=/dev/sda1 devPresent=True devPhysical=True devMounted=True usedKiB=28 usedPct=0 fsMntPt=/mnt/flash fsSize=114854020 fsUsedKiB=100201160 fsUsedPct=92 fsQuotaMount=False quotasOn=None quotasOff=None quotaKiB=None quotaPct=None
+Apr  2 15:27:10 leaf3 kernel: [4894971.093226] eth3: renamed from clab-274cbe08
+Apr  2 15:27:17 leaf3 logEosStarted: %EOS-6-STARTED: EOS started.
+Apr  2 15:27:19 leaf3 ProcMgr-master: %PROCMGR-6-MASTER_STARTED: Master ProcMgr process started. (PID=598)
+Apr  2 15:27:19 leaf3 ProcMgr-master: %PROCMGR-6-MASTER_RUNNING: Master ProcMgr (PID=598) monitoring ProcMgr worker (PID=599)
+Apr  2 15:27:19 leaf3 ProcMgr-worker: %PROCMGR-6-WORKER_COLDSTART: New ProcMgr worker cold start. (PID=599) (Master ProcMgr PID=598)
+Apr  2 15:27:19 leaf3 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=599)
+Apr  2 15:27:21 leaf3 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+Apr  2 15:27:22 leaf3 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=599)
+Apr  2 15:27:23 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StageMgr' starting with PID=660 (PPID=599) -- execing '/usr/bin/StageMgr'
+Apr  2 15:27:23 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SlabMonitor' starting with PID=661 (PPID=599) -- execing '/usr/bin/SlabMonitor'
+Apr  2 15:27:23 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ConfigAgent' starting with PID=662 (PPID=599) -- execing '/usr/bin/ConfigAgent'
+Apr  2 15:27:23 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Fru' starting with PID=663 (PPID=599) -- execing '/usr/bin/Fru'
+Apr  2 15:27:23 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Sysdb' starting with PID=664 (PPID=599) -- execing '/usr/bin/Sysdb'
+Apr  2 15:27:23 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Launcher' starting with PID=665 (PPID=599) -- execing '/usr/bin/Launcher'
+Apr  2 15:27:30 leaf3 Sysdb: %AGENT-6-INITIALIZED: Agent 'Sysdb' initialized; pid=664
+Apr  2 15:27:34 leaf3 ConfigAgent: %AGENT-6-INITIALIZED: Agent 'ConfigAgent' initialized; pid=662
+Apr  2 15:28:21 leaf3 LoadConfig: %SYSDB-3-STARTUP_CONFIG_PARSE_ERROR: Errors encountered in parsing the startup-config
+Apr  2 15:28:27 leaf3 Fru: %AGENT-6-INITIALIZED: Agent 'Fru' initialized; pid=663
+Apr  2 15:28:27 leaf3 Launcher: %AGENT-6-INITIALIZED: Agent 'Launcher' initialized; pid=665
+Apr  2 15:28:27 leaf3 StageMgr: %AGENT-6-INITIALIZED: Agent 'StageMgr' initialized; pid=660
+Apr  2 15:28:28 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventHistoryAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:28 leaf3 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=599)
+Apr  2 15:28:29 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'AgentMonitor' to start in role 'ActiveSupervisor'
+Apr  2 15:28:29 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventHistoryAgent' starting with PID=1017 (PPID=599) -- execing '/usr/bin/EventHistoryAgent'
+Apr  2 15:28:29 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LacpTxAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:29 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'IgmpSnooping' to start in role 'ActiveSupervisor'
+Apr  2 15:28:29 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Acl' to start in role 'AllSupervisors'
+Apr  2 15:28:29 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SharedSecretProfile' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 EventHistoryAgent: %AGENT-6-INITIALIZED: Agent 'EventHistoryAgent' initialized; pid=1019
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelNetworkInfo' to start in role 'AllSupervisors'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SuperServer' to start in role 'AllCells'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventMgr' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'FibServices' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'TopoAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Qos' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ira' to start in role 'AllSupervisors'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'L2Rib' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'CapiApp' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ebra' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'OpenConfig' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PortSec' to start in role 'ActiveSupervisor'
+Apr  2 15:28:30 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LedPolicy' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Thermostat' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Arp' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PowerFuse' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Aaa' to start in role 'AllSupervisors'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'ReloadCauseAgent' to start in role 'AllCells'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTxRx' to start in role 'AllSupervisors'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelFib' to start in role 'AllSupervisors'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lag' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StandbyCpld' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTopology' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Stp' to start in role 'AllSupervisors'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon6' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Tunnel' to start in role 'ActiveSupervisor'
+Apr  2 15:28:31 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lldp' to start in role 'AllSupervisors'
+Apr  2 15:28:32 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Etba' to start in role 'ActiveSupervisor'
+Apr  2 15:28:32 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PhyEthtool' to start in role 'AllCells'
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=599)
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LacpTxAgent' starting with PID=1032 (PPID=599) -- execing '/usr/bin/LacpTxAgent'
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon' starting with PID=1033 (PPID=599) -- execing '/usr/bin/McastCommon'
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SuperServer' starting with PID=1036 (PPID=599) -- execing '/usr/bin/SuperServer'
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PortSec' starting with PID=1041 (PPID=599) -- execing '/usr/bin/PortSec'
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lag' starting with PID=1040 (PPID=599) -- execing '/usr/bin/Lag'
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ira' starting with PID=1042 (PPID=599) -- execing '/usr/bin/Ira'
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'OpenConfig' starting with PID=1039 (PPID=599) -- execing '/usr/bin/OpenConfig'
+Apr  2 15:28:32 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LedPolicy' starting with PID=1046 (PPID=599) -- execing '/usr/bin/LedPolicy'
+Apr  2 15:28:33 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventMgr' starting with PID=1055 (PPID=599) -- execing '/usr/bin/EventMgr'
+Apr  2 15:28:33 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'CapiApp' starting with PID=1063 (PPID=599) -- execing '/usr/bin/CapiApp'
+Apr  2 15:28:33 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTxRx' starting with PID=1064 (PPID=599) -- execing '/usr/bin/StpTxRx'
+Apr  2 15:28:33 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StandbyCpld' starting with PID=1069 (PPID=599) -- execing '/usr/bin/StandbyCpld'
+Apr  2 15:28:34 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'AgentMonitor' starting with PID=1070 (PPID=599) -- execing '/usr/bin/AgentMonitor'
+Apr  2 15:28:34 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'FibServices' starting with PID=1072 (PPID=599) -- execing '/usr/bin/FibServices'
+Apr  2 15:28:34 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Tunnel' starting with PID=1076 (PPID=599) -- execing '/usr/bin/Tunnel'
+Apr  2 15:28:34 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PhyEthtool' starting with PID=1078 (PPID=599) -- execing '/usr/bin/PhyEthtool'
+Apr  2 15:28:34 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Aaa' starting with PID=1083 (PPID=599) -- execing '/usr/bin/Aaa'
+Apr  2 15:28:35 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTopology' starting with PID=1090 (PPID=599) -- execing '/usr/bin/StpTopology'
+Apr  2 15:28:35 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Acl' starting with PID=1094 (PPID=599) -- execing '/usr/bin/Acl'
+Apr  2 15:28:36 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Stp' starting with PID=1098 (PPID=599) -- execing '/usr/bin/Stp'
+Apr  2 15:28:36 leaf3 SuperServer: %AGENT-6-INITIALIZED: Agent 'SuperServer' initialized; pid=1036
+Apr  2 15:28:36 leaf3 McastCommon: %AGENT-6-INITIALIZED: Agent 'McastCommon' initialized; pid=1038
+Apr  2 15:28:36 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelNetworkInfo' starting with PID=1105 (PPID=599) -- execing '/usr/bin/KernelNetworkInfo'
+Apr  2 15:28:36 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon6' starting with PID=1109 (PPID=599) -- execing '/usr/bin/McastCommon6'
+Apr  2 15:28:37 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Etba' starting with PID=1111 (PPID=599) -- execing '/usr/bin/Etba'
+Apr  2 15:28:37 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Arp' starting with PID=1116 (PPID=599) -- execing '/usr/bin/Arp'
+Apr  2 15:28:38 leaf3 PortSec: %AGENT-6-INITIALIZED: Agent 'PortSec' initialized; pid=1052
+Apr  2 15:28:38 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lldp' starting with PID=1122 (PPID=599) -- execing '/usr/bin/Lldp'
+Apr  2 15:28:39 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelFib' starting with PID=1132 (PPID=599) -- execing '/usr/bin/KernelFib'
+Apr  2 15:28:39 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Qos' starting with PID=1138 (PPID=599) -- execing '/usr/bin/Qos'
+Apr  2 15:28:40 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Thermostat' starting with PID=1142 (PPID=599) -- execing '/usr/bin/Thermostat'
+Apr  2 15:28:40 leaf3 LedPolicy: %AGENT-6-INITIALIZED: Agent 'LedPolicy' initialized; pid=1060
+Apr  2 15:28:41 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'L2Rib' starting with PID=1147 (PPID=599) -- execing '/usr/bin/L2Rib'
+Apr  2 15:28:41 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'TopoAgent' starting with PID=1155 (PPID=599) -- execing '/usr/bin/TopoAgent'
+Apr  2 15:28:42 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PowerFuse' starting with PID=1159 (PPID=599) -- execing '/usr/bin/PowerFuse'
+Apr  2 15:28:42 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ebra' starting with PID=1163 (PPID=599) -- execing '/usr/bin/Ebra'
+Apr  2 15:28:43 leaf3 LacpTxAgent: %AGENT-6-INITIALIZED: Agent 'LacpTxAgent' initialized; pid=1037
+Apr  2 15:28:44 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ReloadCauseAgent' starting with PID=1171 (PPID=599) -- execing '/usr/bin/ReloadCauseAgent'
+Apr  2 15:28:44 leaf3 Ira: %AGENT-6-INITIALIZED: Agent 'Ira' initialized; pid=1056
+Apr  2 15:28:44 leaf3 StandbyCpld: %AGENT-6-INITIALIZED: Agent 'StandbyCpld' initialized; pid=1075
+Apr  2 15:28:45 leaf3 AgentMonitor: %AGENT-6-INITIALIZED: Agent 'AgentMonitor' initialized; pid=1084
+Apr  2 15:28:45 leaf3 StpTxRx: %AGENT-6-INITIALIZED: Agent 'StpTxRx' initialized; pid=1073
+Apr  2 15:28:45 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'IgmpSnooping' starting with PID=1180 (PPID=599) -- execing '/usr/bin/IgmpSnooping'
+Apr  2 15:28:45 leaf3 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=599)
+Apr  2 15:28:45 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SharedSecretProfile' starting with PID=1179 (PPID=599) -- execing '/usr/bin/SharedSecretProfile'
+Apr  2 15:28:45 leaf3 KernelNetworkInfo: %AGENT-6-INITIALIZED: Agent 'KernelNetworkInfo' initialized; pid=1113
+Apr  2 15:28:45 leaf3 Tunnel: %AGENT-6-INITIALIZED: Agent 'Tunnel' initialized; pid=1089
+Apr  2 15:28:46 leaf3 Aaa: %AGENT-6-INITIALIZED: Agent 'Aaa' initialized; pid=1083
+Apr  2 15:28:47 leaf3 Acl: %AGENT-6-INITIALIZED: Agent 'Acl' initialized; pid=1103
+Apr  2 15:28:47 leaf3 Lag: %AGENT-6-INITIALIZED: Agent 'Lag' initialized; pid=1048
+Apr  2 15:28:48 leaf3 Lldp: %AGENT-6-INITIALIZED: Agent 'Lldp' initialized; pid=1136
+Apr  2 15:28:49 leaf3 McastCommon6: %AGENT-6-INITIALIZED: Agent 'McastCommon6' initialized; pid=1121
+Apr  2 15:28:49 leaf3 Stp: %AGENT-6-INITIALIZED: Agent 'Stp' initialized; pid=1107
+Apr  2 15:28:50 leaf3 Arp: %AGENT-6-INITIALIZED: Agent 'Arp' initialized; pid=1127
+Apr  2 15:28:50 leaf3 KernelFib: %AGENT-6-INITIALIZED: Agent 'KernelFib' initialized; pid=1143
+Apr  2 15:28:51 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'IpRib' to start in role 'AllSupervisors'
+Apr  2 15:28:51 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'BgpCliHelper' to start in role 'AllSupervisors'
+Apr  2 15:28:51 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EvpnrtrEncap' to start in role 'ActiveSupervisor'
+Apr  2 15:28:51 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Bgp' to start in role 'AllSupervisors'
+Apr  2 15:28:51 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'ConnectedRoute' to start in role 'AllSupervisors'
+Apr  2 15:28:51 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StaticRoute' to start in role 'AllSupervisors'
+Apr  2 15:28:51 leaf3 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'RouteInput' to start in role 'AllSupervisors'
+Apr  2 15:28:51 leaf3 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 0000.0000.0000 and portId "Management0" added on interface Management0
+Apr  2 15:28:51 leaf3 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=599)
+Apr  2 15:28:51 leaf3 Qos: %AGENT-6-INITIALIZED: Agent 'Qos' initialized; pid=1151
+Apr  2 15:28:52 leaf3 CapiApp: %AGENT-6-INITIALIZED: Agent 'CapiApp' initialized; pid=1066
+Apr  2 15:28:52 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StaticRoute' starting with PID=1219 (PPID=599) -- execing '/usr/bin/StaticRoute'
+Apr  2 15:28:52 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'IpRib' starting with PID=1220 (PPID=599) -- execing '/usr/bin/IpRib'
+Apr  2 15:28:53 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ConnectedRoute' starting with PID=1225 (PPID=599) -- execing '/usr/bin/ConnectedRoute'
+Apr  2 15:28:53 leaf3 L2Rib: %AGENT-6-INITIALIZED: Agent 'L2Rib' initialized; pid=1154
+Apr  2 15:28:53 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'RouteInput' starting with PID=1229 (PPID=599) -- execing '/usr/bin/RouteInput'
+Apr  2 15:28:53 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Bgp' starting with PID=1236 (PPID=599) -- execing '/usr/bin/Bgp'
+Apr  2 15:28:53 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EvpnrtrEncap' starting with PID=1238 (PPID=599) -- execing '/usr/bin/EvpnrtrEncap'
+Apr  2 15:28:54 leaf3 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'BgpCliHelper' starting with PID=1243 (PPID=599) -- execing '/usr/bin/BgpCliHelper'
+Apr  2 15:28:54 leaf3 IgmpSnooping: %AGENT-6-INITIALIZED: Agent 'IgmpSnooping' initialized; pid=1180
+Apr  2 15:28:56 leaf3 PhyEthtool: %AGENT-6-INITIALIZED: Agent 'PhyEthtool' initialized; pid=1078
+Apr  2 15:28:56 leaf3 Ebra: %AGENT-6-INITIALIZED: Agent 'Ebra' initialized; pid=1174
+Apr  2 15:28:56 leaf3 SharedSecretProfile: %AGENT-6-INITIALIZED: Agent 'SharedSecretProfile' initialized; pid=1184
+Apr  2 15:28:57 leaf3 PowerFuse: %AGENT-6-INITIALIZED: Agent 'PowerFuse' initialized; pid=1170
+Apr  2 15:28:57 leaf3 Etba: %AGENT-6-INITIALIZED: Agent 'Etba' initialized; pid=1111
+Apr  2 15:28:57 leaf3 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 1abe.fd5d.b557 and portId "Management0" added on interface Management0
+Apr  2 15:28:59 leaf3 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 5e8b.f383.1e39 and portId "Management0" added on interface Management0
+Apr  2 15:29:00 leaf3 ConnectedRoute: %AGENT-6-INITIALIZED: Agent 'ConnectedRoute' initialized; pid=1231
+Apr  2 15:29:01 leaf3 EvpnrtrEncapAgent: %AGENT-6-INITIALIZED: Agent 'EvpnrtrEncap' initialized; pid=1238
+Apr  2 15:29:01 leaf3 StaticRoute: %AGENT-6-INITIALIZED: Agent 'StaticRoute' initialized; pid=1222
+Apr  2 15:29:02 leaf3 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 46b8.f1a5.6c08 and portId "Management0" added on interface Management0
+Apr  2 15:29:05 leaf3 RouteInput: %AGENT-6-INITIALIZED: Agent 'RouteInput' initialized; pid=1237

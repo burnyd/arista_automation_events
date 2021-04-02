@@ -1,0 +1,51 @@
+===== Output from /usr/bin/CapiApp ['--ini', '/etc/uwsgi/CapiApp.ini'] (PID=925) started Apr  1 18:23:10.363332 ===
+[uWSGI] getting INI configuration from /etc/uwsgi/CapiApp.ini
+*** Starting uWSGI 2.0.17 (32bit) on [Thu Apr  1 18:23:10 2021] ***
+compiled with version: 8.4.0 20200304 (Red Hat 8.4.0-4) on 24 November 2020 13:47:27
+os: Linux-4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021
+nodename: ceos1
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /var/tmp/agents
+detected binary path: /usr/bin/netnsd
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/run/capi.uwsgi.sock fd 5
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.18 (default, Nov 24 2020, 03:59:55)  [GCC 8.4.0 20200304 (Red Hat 8.4.0-4)]
+Python main interpreter initialized at 0x5722c548
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 79232 bytes (77 KB) for 3 cores
+*** Operational MODE: threaded ***
+added /usr/lib/python2.7/site-packages/ to pythonpath.
+EntityManager::doBackoff waiting for remote sysdb version ....ok
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x5722c548 pid: 935
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 935, cores: 3)
+[pid: 935|app: 0|req: 1/1] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:53:28 2021] POST /command-api => generated 621 bytes in 94 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 0)
+[pid: 935|app: 0|req: 2/2] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:53:28 2021] POST /command-api => generated 86 bytes in 15 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 1)
+[pid: 935|app: 0|req: 3/3] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:53:28 2021] POST /command-api => generated 240 bytes in 16 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 2)
+[pid: 935|app: 0|req: 4/4] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:53:28 2021] POST /command-api => generated 1120 bytes in 20 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 0)
+[pid: 935|app: 0|req: 5/5] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:54:05 2021] POST /command-api => generated 621 bytes in 84 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 2)
+[pid: 935|app: 0|req: 6/6] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:54:06 2021] POST /command-api => generated 86 bytes in 14 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 1)
+[pid: 935|app: 0|req: 7/7] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:54:06 2021] POST /command-api => generated 240 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 0)
+[pid: 935|app: 0|req: 8/8] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:54:06 2021] POST /command-api => generated 1120 bytes in 24 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 2)
+[pid: 935|app: 0|req: 9/9] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:56:01 2021] POST /command-api => generated 621 bytes in 91 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 0)
+[pid: 935|app: 0|req: 10/10] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:56:01 2021] POST /command-api => generated 86 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 1)
+[pid: 935|app: 0|req: 11/11] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:56:01 2021] POST /command-api => generated 240 bytes in 16 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 2)
+[pid: 935|app: 0|req: 12/12] ::ffff:172.20.20.1 () {48 vars in 641 bytes} [Thu Apr  1 19:56:01 2021] POST /command-api => generated 1120 bytes in 21 msecs (HTTP/1.1 200) 8 headers in 234 bytes (2 switches on core 0)

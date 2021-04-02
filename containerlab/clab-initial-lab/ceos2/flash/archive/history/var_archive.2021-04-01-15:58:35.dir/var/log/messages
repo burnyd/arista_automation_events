@@ -1,0 +1,370 @@
+Apr  1 15:58:06 ceos2 xinetd[230]: xinetd Version 2.3.15 started with loadavg labeled-networking options compiled in.
+Apr  1 15:58:06 ceos2 xinetd[230]: Started working: 0 available services
+Apr  1 15:58:06 ceos2 dbus[248]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Apr  1 15:58:06 ceos2 kernel: [4810425.718831] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Apr  1 15:58:07 ceos2 archive-init: selecting archive: configured archive found: flash /mnt/flash
+Apr  1 15:58:07 ceos2 archive-init: archive directory rotated to var_archive.2021-04-01-15:45:34.dir
+Apr  1 15:58:07 ceos2 archive-init: archive setup done
+Apr  1 15:58:07 ceos2 archive-init: write archive config done
+Apr  1 15:58:07 ceos2 archive-init: checking that 50% of the reserved space is free
+Apr  1 15:58:07 ceos2 archive-init: no archived instances of the archive deleted
+Apr  1 15:58:07 ceos2 archive-init: archive status: name=flash path=/mnt/flash/archive/current exists=True dirsExist=True valid=True disabled=False enabled=True devName=/dev/sda1 devPresent=True devPhysical=True devMounted=True usedKiB=391068 usedPct=0 fsMntPt=/mnt/flash fsSize=114854020 fsUsedKiB=99419684 fsUsedPct=92 fsQuotaMount=False quotasOn=None quotasOff=None quotaKiB=None quotaPct=None
+Apr  1 15:58:10 ceos2 logEosStarted: %EOS-6-STARTED: EOS started.
+Apr  1 15:58:11 ceos2 ProcMgr-master: %PROCMGR-6-MASTER_STARTED: Master ProcMgr process started. (PID=602)
+Apr  1 15:58:11 ceos2 ProcMgr-worker: %PROCMGR-6-WORKER_COLDSTART: New ProcMgr worker cold start. (PID=603) (Master ProcMgr PID=602)
+Apr  1 15:58:11 ceos2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Apr  1 15:58:11 ceos2 ProcMgr-master: %PROCMGR-6-MASTER_RUNNING: Master ProcMgr (PID=602) monitoring ProcMgr worker (PID=603)
+Apr  1 15:58:12 ceos2 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+Apr  1 15:58:13 ceos2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Apr  1 15:58:13 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StageMgr' starting with PID=664 (PPID=603) -- execing '/usr/bin/StageMgr'
+Apr  1 15:58:13 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SlabMonitor' starting with PID=665 (PPID=603) -- execing '/usr/bin/SlabMonitor'
+Apr  1 15:58:13 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ConfigAgent' starting with PID=666 (PPID=603) -- execing '/usr/bin/ConfigAgent'
+Apr  1 15:58:13 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Fru' starting with PID=667 (PPID=603) -- execing '/usr/bin/Fru'
+Apr  1 15:58:13 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Sysdb' starting with PID=668 (PPID=603) -- execing '/usr/bin/Sysdb'
+Apr  1 15:58:13 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Launcher' starting with PID=669 (PPID=603) -- execing '/usr/bin/Launcher'
+Apr  1 15:58:14 ceos2 Sysdb: %AGENT-6-INITIALIZED: Agent 'Sysdb' initialized; pid=668
+Apr  1 15:58:15 ceos2 ConfigAgent: %AGENT-6-INITIALIZED: Agent 'ConfigAgent' initialized; pid=666
+Apr  1 15:58:35 ceos2 Fru: %AGENT-6-INITIALIZED: Agent 'Fru' initialized; pid=667
+Apr  1 15:58:35 ceos2 Launcher: %AGENT-6-INITIALIZED: Agent 'Launcher' initialized; pid=669
+Apr  1 15:58:35 ceos2 StageMgr: %AGENT-6-INITIALIZED: Agent 'StageMgr' initialized; pid=664
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventHistoryAgent' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'AgentMonitor' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LacpTxAgent' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'IgmpSnooping' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Acl' to start in role 'AllSupervisors'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SharedSecretProfile' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelNetworkInfo' to start in role 'AllSupervisors'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SuperServer' to start in role 'AllCells'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventMgr' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'FibServices' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'TopoAgent' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Qos' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ira' to start in role 'AllSupervisors'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'L2Rib' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'CapiApp' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ebra' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'OpenConfig' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PortSec' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LedPolicy' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Thermostat' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Arp' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PowerFuse' to start in role 'ActiveSupervisor'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Aaa' to start in role 'AllSupervisors'
+Apr  1 15:58:35 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'ReloadCauseAgent' to start in role 'AllCells'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon' to start in role 'ActiveSupervisor'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTxRx' to start in role 'AllSupervisors'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelFib' to start in role 'AllSupervisors'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lag' to start in role 'ActiveSupervisor'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StandbyCpld' to start in role 'ActiveSupervisor'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTopology' to start in role 'ActiveSupervisor'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Stp' to start in role 'AllSupervisors'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon6' to start in role 'ActiveSupervisor'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Tunnel' to start in role 'ActiveSupervisor'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lldp' to start in role 'AllSupervisors'
+Apr  1 15:58:36 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PhyEthtool' to start in role 'AllCells'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LacpTxAgent' starting with PID=823 (PPID=603) -- execing '/usr/bin/LacpTxAgent'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon' starting with PID=824 (PPID=603) -- execing '/usr/bin/McastCommon'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SuperServer' starting with PID=826 (PPID=603) -- execing '/usr/bin/SuperServer'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'OpenConfig' starting with PID=829 (PPID=603) -- execing '/usr/bin/OpenConfig'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lag' starting with PID=834 (PPID=603) -- execing '/usr/bin/Lag'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PortSec' starting with PID=840 (PPID=603) -- execing '/usr/bin/PortSec'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ira' starting with PID=843 (PPID=603) -- execing '/usr/bin/Ira'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LedPolicy' starting with PID=846 (PPID=603) -- execing '/usr/bin/LedPolicy'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventMgr' starting with PID=849 (PPID=603) -- execing '/usr/bin/EventMgr'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'CapiApp' starting with PID=852 (PPID=603) -- execing '/usr/bin/CapiApp'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTxRx' starting with PID=856 (PPID=603) -- execing '/usr/bin/StpTxRx'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StandbyCpld' starting with PID=859 (PPID=603) -- execing '/usr/bin/StandbyCpld'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'AgentMonitor' starting with PID=862 (PPID=603) -- execing '/usr/bin/AgentMonitor'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'FibServices' starting with PID=865 (PPID=603) -- execing '/usr/bin/FibServices'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Tunnel' starting with PID=868 (PPID=603) -- execing '/usr/bin/Tunnel'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PhyEthtool' starting with PID=870 (PPID=603) -- execing '/usr/bin/PhyEthtool'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventHistoryAgent' starting with PID=873 (PPID=603) -- execing '/usr/bin/EventHistoryAgent'
+Apr  1 15:58:36 ceos2 McastCommon: %AGENT-6-INITIALIZED: Agent 'McastCommon' initialized; pid=830
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Aaa' starting with PID=874 (PPID=603) -- execing '/usr/bin/Aaa'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTopology' starting with PID=875 (PPID=603) -- execing '/usr/bin/StpTopology'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Acl' starting with PID=877 (PPID=603) -- execing '/usr/bin/Acl'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Stp' starting with PID=879 (PPID=603) -- execing '/usr/bin/Stp'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon6' starting with PID=883 (PPID=603) -- execing '/usr/bin/McastCommon6'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelNetworkInfo' starting with PID=880 (PPID=603) -- execing '/usr/bin/KernelNetworkInfo'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Arp' starting with PID=886 (PPID=603) -- execing '/usr/bin/Arp'
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lldp' starting with PID=898 (PPID=603) -- execing '/usr/bin/Lldp'
+Apr  1 15:58:36 ceos2 SuperServer: %AGENT-6-INITIALIZED: Agent 'SuperServer' initialized; pid=826
+Apr  1 15:58:36 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelFib' starting with PID=904 (PPID=603) -- execing '/usr/bin/KernelFib'
+Apr  1 15:58:37 ceos2 LacpTxAgent: %AGENT-6-INITIALIZED: Agent 'LacpTxAgent' initialized; pid=827
+Apr  1 15:58:37 ceos2 PortSec: %AGENT-6-INITIALIZED: Agent 'PortSec' initialized; pid=847
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Qos' starting with PID=911 (PPID=603) -- execing '/usr/bin/Qos'
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Thermostat' starting with PID=914 (PPID=603) -- execing '/usr/bin/Thermostat'
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'L2Rib' starting with PID=917 (PPID=603) -- execing '/usr/bin/L2Rib'
+Apr  1 15:58:37 ceos2 EventMgr: %AGENT-6-INITIALIZED: Agent 'EventMgr' initialized; pid=864
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'TopoAgent' starting with PID=920 (PPID=603) -- execing '/usr/bin/TopoAgent'
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PowerFuse' starting with PID=921 (PPID=603) -- execing '/usr/bin/PowerFuse'
+Apr  1 15:58:37 ceos2 LedPolicy: %AGENT-6-INITIALIZED: Agent 'LedPolicy' initialized; pid=857
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ebra' starting with PID=923 (PPID=603) -- execing '/usr/bin/Ebra'
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ReloadCauseAgent' starting with PID=925 (PPID=603) -- execing '/usr/bin/ReloadCauseAgent'
+Apr  1 15:58:37 ceos2 StpTxRx: %AGENT-6-INITIALIZED: Agent 'StpTxRx' initialized; pid=866
+Apr  1 15:58:37 ceos2 FibServices: %AGENT-6-INITIALIZED: Agent 'FibServices' initialized; pid=876
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SharedSecretProfile' starting with PID=927 (PPID=603) -- execing '/usr/bin/SharedSecretProfile'
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'IgmpSnooping' starting with PID=932 (PPID=603) -- execing '/usr/bin/IgmpSnooping'
+Apr  1 15:58:37 ceos2 Ira: %AGENT-6-INITIALIZED: Agent 'Ira' initialized; pid=854
+Apr  1 15:58:37 ceos2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Apr  1 15:58:37 ceos2 AgentMonitor: %AGENT-6-INITIALIZED: Agent 'AgentMonitor' initialized; pid=881
+Apr  1 15:58:37 ceos2 Lag: %AGENT-6-INITIALIZED: Agent 'Lag' initialized; pid=845
+Apr  1 15:58:37 ceos2 StandbyCpld: %AGENT-6-INITIALIZED: Agent 'StandbyCpld' initialized; pid=872
+Apr  1 15:58:37 ceos2 EventHistoryAgent: %AGENT-6-INITIALIZED: Agent 'EventHistoryAgent' initialized; pid=887
+Apr  1 15:58:37 ceos2 Tunnel: %AGENT-6-INITIALIZED: Agent 'Tunnel' initialized; pid=882
+Apr  1 15:58:38 ceos2 StpTopology: %AGENT-6-INITIALIZED: Agent 'StpTopology' initialized; pid=890
+Apr  1 15:58:38 ceos2 KernelNetworkInfo: %AGENT-6-INITIALIZED: Agent 'KernelNetworkInfo' initialized; pid=899
+Apr  1 15:58:38 ceos2 PhyEthtool: %AGENT-6-INITIALIZED: Agent 'PhyEthtool' initialized; pid=870
+Apr  1 15:58:38 ceos2 McastCommon6: %AGENT-6-INITIALIZED: Agent 'McastCommon6' initialized; pid=903
+Apr  1 15:58:38 ceos2 Stp: %AGENT-6-INITIALIZED: Agent 'Stp' initialized; pid=901
+Apr  1 15:58:38 ceos2 Lldp: %AGENT-6-INITIALIZED: Agent 'Lldp' initialized; pid=906
+Apr  1 15:58:38 ceos2 KernelFib: %AGENT-6-INITIALIZED: Agent 'KernelFib' initialized; pid=909
+Apr  1 15:58:38 ceos2 Aaa: %AGENT-6-INITIALIZED: Agent 'Aaa' initialized; pid=874
+Apr  1 15:58:38 ceos2 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Rib' to start in role 'AllSupervisors'
+Apr  1 15:58:39 ceos2 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Apr  1 15:58:39 ceos2 Arp: %AGENT-6-INITIALIZED: Agent 'Arp' initialized; pid=900
+Apr  1 15:58:39 ceos2 CapiApp: %AGENT-6-INITIALIZED: Agent 'CapiApp' initialized; pid=863
+Apr  1 15:58:39 ceos2 Acl: %AGENT-6-INITIALIZED: Agent 'Acl' initialized; pid=896
+Apr  1 15:58:39 ceos2 Qos: %AGENT-6-INITIALIZED: Agent 'Qos' initialized; pid=913
+Apr  1 15:58:39 ceos2 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Rib' starting with PID=960 (PPID=603) -- execing '/usr/bin/Rib'
+Apr  1 15:58:39 ceos2 L2Rib: %AGENT-6-INITIALIZED: Agent 'L2Rib' initialized; pid=919
+Apr  1 15:58:39 ceos2 TopoAgent: %AGENT-6-INITIALIZED: Agent 'TopoAgent' initialized; pid=924
+Apr  1 15:58:39 ceos2 Thermostat: %AGENT-6-INITIALIZED: Agent 'Thermostat' initialized; pid=916
+Apr  1 15:58:40 ceos2 PowerFuse: %AGENT-6-INITIALIZED: Agent 'PowerFuse' initialized; pid=931
+Apr  1 15:58:40 ceos2 SharedSecretProfile: %AGENT-6-INITIALIZED: Agent 'SharedSecretProfile' initialized; pid=937
+Apr  1 15:58:40 ceos2 ReloadCauseAgent: %AGENT-6-INITIALIZED: Agent 'ReloadCauseAgent' initialized; pid=936
+Apr  1 15:58:40 ceos2 Ebra: %AGENT-6-INITIALIZED: Agent 'Ebra' initialized; pid=933
+Apr  1 15:58:40 ceos2 IgmpSnooping: %AGENT-6-INITIALIZED: Agent 'IgmpSnooping' initialized; pid=932
+Apr  1 15:58:41 ceos2 Rib: %AGENT-6-INITIALIZED: Agent 'Rib' initialized; pid=960
+Apr  1 15:58:42 ceos2 Rib: Commence routing updates
+Apr  1 15:58:43 ceos2 SuperServer: %SECURITY-6-SSL_PROFILE_VALID: SSL profile 'ARISTA_DEFAULT_PROFILE' is valid
+Apr  1 15:58:44 ceos2 SuperServer: %SYS-5-CLI_SCHEDULER_ENABLED: CliScheduler is enabled, continuing its execution of scheduled CLI jobs.
+Apr  1 15:58:45 ceos2 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 92ef.cab7.02fc and portId "Management0" added on interface Management0
+Apr  1 15:58:48 ceos2 rsyslogd: imuxsock: Acquired UNIX socket '/dev/log' (fd 3) from systemd.  [v8.2001.0]
+Apr  1 15:58:48 ceos2 rsyslogd: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="1325" x-info="https://www.rsyslog.com"] start
+Apr  1 15:58:48 ceos2 xinetd[230]: Starting reconfiguration
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/chargen-dgram [file=/etc/xinetd.conf] [line=56]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/chargen-stream [file=/etc/xinetd.d/chargen-stream] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/daytime-dgram [file=/etc/xinetd.d/daytime-dgram] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/daytime-stream [file=/etc/xinetd.d/daytime-stream] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/discard-dgram [file=/etc/xinetd.d/discard-dgram] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/discard-stream [file=/etc/xinetd.d/discard-stream] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/echo-dgram [file=/etc/xinetd.d/echo-dgram] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/echo-stream [file=/etc/xinetd.d/echo-stream] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/ssh [file=/etc/xinetd.d/ssh] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/ssh6 [file=/etc/xinetd.d/ssh6] [line=29]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/sshnetconf-default [file=/etc/xinetd.d/sshnetconf-default] [line=29]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/sshnetconf-default-6 [file=/etc/xinetd.d/sshnetconf-default-6] [line=28]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/tcpmux-server [file=/etc/xinetd.d/tcpmux-server] [line=28]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/time-dgram [file=/etc/xinetd.d/time-dgram] [line=68]
+Apr  1 15:58:48 ceos2 xinetd[230]: Reading included configuration file: /etc/xinetd.d/time-stream [file=/etc/xinetd.d/time-stream] [line=67]
+Apr  1 15:58:48 ceos2 xinetd[230]: removing chargen
+Apr  1 15:58:48 ceos2 xinetd[230]: removing chargen
+Apr  1 15:58:48 ceos2 xinetd[230]: removing daytime
+Apr  1 15:58:48 ceos2 xinetd[230]: removing daytime
+Apr  1 15:58:48 ceos2 xinetd[230]: removing discard
+Apr  1 15:58:48 ceos2 xinetd[230]: removing discard
+Apr  1 15:58:48 ceos2 xinetd[230]: removing echo
+Apr  1 15:58:48 ceos2 xinetd[230]: removing echo
+Apr  1 15:58:48 ceos2 xinetd[230]: removing tcpmux
+Apr  1 15:58:48 ceos2 xinetd[230]: removing time
+Apr  1 15:58:48 ceos2 xinetd[230]: removing time
+Apr  1 15:58:48 ceos2 xinetd[230]: Swapping defaults
+Apr  1 15:58:48 ceos2 xinetd[230]: Reconfigured: new=4 old=0 dropped=0 (services)
+Apr  1 15:59:01 ceos2 CROND[1481]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 15:59:09 ceos2 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 16:00:01 ceos2 CROND[1690]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:00:01 ceos2 CROND[1689]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:00:48 ceos2 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 16:00:48 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 16:00:48 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 16:00:48 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 
+Apr  1 16:01:01 ceos2 CROND[1778]: (root) CMD (run-parts /etc/cron.hourly)
+Apr  1 16:01:01 ceos2 CROND[1779]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:01:01 ceos2 run-parts(/etc/cron.hourly)[1778]: starting 0anacron
+Apr  1 16:01:01 ceos2 anacron[1789]: Anacron started on 2021-04-01
+Apr  1 16:01:01 ceos2 anacron[1789]: Will run job `cron.daily' in 44 min.
+Apr  1 16:01:01 ceos2 anacron[1789]: Will run job `cron.weekly' in 64 min.
+Apr  1 16:01:01 ceos2 anacron[1789]: Will run job `cron.monthly' in 84 min.
+Apr  1 16:01:01 ceos2 anacron[1789]: Jobs will be executed sequentially
+Apr  1 16:01:01 ceos2 run-parts(/etc/cron.hourly)[1791]: finished 0anacron
+Apr  1 16:01:01 ceos2 run-parts(/etc/cron.hourly)[1778]: starting logrotate
+Apr  1 16:01:01 ceos2 run-parts(/etc/cron.hourly)[1816]: finished logrotate
+Apr  1 16:02:01 ceos2 CROND[1899]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:03:02 ceos2 CROND[1981]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:03:02 ceos2 CROND[1983]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:04:01 ceos2 CROND[2067]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:05:01 ceos2 CROND[2148]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:06:01 ceos2 CROND[2229]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:06:01 ceos2 CROND[2230]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:07:01 ceos2 CROND[2311]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:08:01 ceos2 CROND[2391]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:08:40 ceos2 ReloadCauseAgent: %SYS-6-SYSTEM_INFO: Reload Cause 1: Unknown
+Apr  1 16:09:01 ceos2 CROND[2475]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:09:01 ceos2 CROND[2476]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:10:01 ceos2 CROND[2558]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:11:01 ceos2 CROND[2638]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:12:02 ceos2 CROND[2720]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:12:02 ceos2 CROND[2722]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:13:01 ceos2 CROND[2802]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:14:01 ceos2 CROND[2885]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:15:01 ceos2 CROND[2967]: (root) CMD (/etc/cron.hourly/logrotate)
+Apr  1 16:15:01 ceos2 CROND[2971]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:15:01 ceos2 CROND[2973]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:16:01 ceos2 CROND[3071]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:17:01 ceos2 CROND[3151]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:18:01 ceos2 CROND[3232]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:18:01 ceos2 CROND[3233]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:19:01 ceos2 CROND[3316]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:20:01 ceos2 CROND[3396]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:21:02 ceos2 CROND[3478]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:21:02 ceos2 CROND[3480]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:22:02 ceos2 CROND[3560]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:23:01 ceos2 CROND[3640]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:24:01 ceos2 CROND[3724]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:24:01 ceos2 CROND[3726]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:25:01 ceos2 CROND[3806]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:26:01 ceos2 CROND[3886]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:27:01 ceos2 CROND[3967]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:27:01 ceos2 CROND[3968]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:28:01 ceos2 CROND[4048]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:29:01 ceos2 CROND[4131]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:30:02 ceos2 CROND[4214]: (root) CMD (/etc/cron.hourly/logrotate)
+Apr  1 16:30:02 ceos2 CROND[4226]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:30:02 ceos2 CROND[4228]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:31:02 ceos2 CROND[4318]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:32:01 ceos2 CROND[4398]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:33:01 ceos2 CROND[4479]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:33:01 ceos2 CROND[4481]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:34:01 ceos2 CROND[4564]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:35:01 ceos2 CROND[4644]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:36:01 ceos2 CROND[4725]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:36:01 ceos2 CROND[4726]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:37:01 ceos2 CROND[4806]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:38:01 ceos2 CROND[4886]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:39:02 ceos2 CROND[4971]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:39:02 ceos2 CROND[4973]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:40:02 ceos2 CROND[5053]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:41:01 ceos2 CROND[5133]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:42:01 ceos2 CROND[5214]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:42:01 ceos2 CROND[5216]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:43:01 ceos2 CROND[5285]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:44:01 ceos2 CROND[5366]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:45:01 ceos2 anacron[1789]: Job `cron.daily' started
+Apr  1 16:45:01 ceos2 run-parts(/etc/cron.daily)[5445]: starting logrotate
+Apr  1 16:45:01 ceos2 run-parts(/etc/cron.daily)[5474]: finished logrotate
+Apr  1 16:45:01 ceos2 anacron[1789]: Job `cron.daily' terminated
+Apr  1 16:45:01 ceos2 CROND[5476]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:45:01 ceos2 CROND[5477]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:45:01 ceos2 CROND[5480]: (root) CMD (/etc/cron.hourly/logrotate)
+Apr  1 16:46:01 ceos2 CROND[5579]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:47:01 ceos2 CROND[5659]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:48:02 ceos2 CROND[5741]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:48:02 ceos2 CROND[5742]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:49:02 ceos2 CROND[5826]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:50:01 ceos2 CROND[5906]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:51:01 ceos2 CROND[5987]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:51:01 ceos2 CROND[5989]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:52:01 ceos2 CROND[6069]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:53:01 ceos2 CROND[6149]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:54:01 ceos2 CROND[6233]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:54:01 ceos2 CROND[6235]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:55:01 ceos2 CROND[6315]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:56:01 ceos2 CROND[6394]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:57:01 ceos2 CROND[6475]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 16:57:01 ceos2 CROND[6476]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:58:02 ceos2 CROND[6558]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 16:59:01 ceos2 CROND[6715]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:00:01 ceos2 CROND[6800]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:00:01 ceos2 CROND[6802]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:01:01 ceos2 CROND[6883]: (root) CMD (run-parts /etc/cron.hourly)
+Apr  1 17:01:01 ceos2 CROND[6884]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:01:01 ceos2 run-parts(/etc/cron.hourly)[6883]: starting 0anacron
+Apr  1 17:01:01 ceos2 run-parts(/etc/cron.hourly)[6894]: finished 0anacron
+Apr  1 17:01:01 ceos2 run-parts(/etc/cron.hourly)[6883]: starting logrotate
+Apr  1 17:01:01 ceos2 run-parts(/etc/cron.hourly)[6920]: finished logrotate
+Apr  1 17:02:01 ceos2 CROND[7000]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:03:01 ceos2 CROND[7081]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:03:01 ceos2 CROND[7082]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:04:01 ceos2 CROND[7166]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:05:01 ceos2 CROND[7246]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:05:01 ceos2 anacron[1789]: Job `cron.weekly' started
+Apr  1 17:05:01 ceos2 anacron[1789]: Job `cron.weekly' terminated
+Apr  1 17:06:02 ceos2 CROND[7329]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:06:02 ceos2 CROND[7331]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:07:02 ceos2 CROND[7411]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:08:01 ceos2 CROND[7491]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:09:01 ceos2 CROND[7575]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:09:01 ceos2 CROND[7577]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:10:01 ceos2 CROND[7657]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:11:01 ceos2 CROND[7737]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:12:01 ceos2 CROND[7818]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:12:01 ceos2 CROND[7820]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:13:01 ceos2 CROND[7900]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:14:01 ceos2 CROND[7983]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:15:01 ceos2 CROND[8065]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:15:01 ceos2 CROND[8066]: (root) CMD (/etc/cron.hourly/logrotate)
+Apr  1 17:15:01 ceos2 CROND[8067]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:16:01 ceos2 CROND[8169]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:17:02 ceos2 CROND[8249]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:18:01 ceos2 CROND[8330]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:18:01 ceos2 CROND[8332]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:19:01 ceos2 CROND[8415]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:20:01 ceos2 CROND[8495]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:21:01 ceos2 CROND[8576]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:21:01 ceos2 CROND[8577]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:22:01 ceos2 CROND[8658]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:23:01 ceos2 CROND[8738]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:24:01 ceos2 CROND[8822]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:24:01 ceos2 CROND[8824]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:25:01 ceos2 CROND[8904]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:25:01 ceos2 anacron[1789]: Job `cron.monthly' started
+Apr  1 17:25:01 ceos2 anacron[1789]: Job `cron.monthly' terminated
+Apr  1 17:25:01 ceos2 anacron[1789]: Normal exit (3 jobs run)
+Apr  1 17:26:02 ceos2 CROND[8986]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:27:01 ceos2 CROND[9067]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:27:01 ceos2 CROND[9068]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:28:01 ceos2 CROND[9149]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:29:01 ceos2 CROND[9232]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:30:01 ceos2 CROND[9314]: (root) CMD (/etc/cron.hourly/logrotate)
+Apr  1 17:30:01 ceos2 CROND[9327]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:30:01 ceos2 CROND[9326]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:31:01 ceos2 CROND[9418]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:32:01 ceos2 CROND[9498]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:33:01 ceos2 CROND[9579]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:33:01 ceos2 CROND[9580]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:34:01 ceos2 CROND[9664]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:35:02 ceos2 CROND[9744]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:36:01 ceos2 CROND[9825]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:36:01 ceos2 CROND[9826]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:37:01 ceos2 CROND[9907]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:38:01 ceos2 CROND[9987]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:39:01 ceos2 CROND[10071]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:39:01 ceos2 CROND[10073]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:40:01 ceos2 CROND[10153]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:41:01 ceos2 CROND[10233]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:42:01 ceos2 CROND[10314]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:42:01 ceos2 CROND[10315]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:43:01 ceos2 CROND[10396]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:44:02 ceos2 CROND[10479]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:45:01 ceos2 CROND[10561]: (root) CMD (/etc/cron.hourly/logrotate)
+Apr  1 17:45:01 ceos2 CROND[10562]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:45:01 ceos2 CROND[10564]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:46:01 ceos2 CROND[10665]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:47:01 ceos2 CROND[10745]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:48:01 ceos2 CROND[10826]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:48:01 ceos2 CROND[10828]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:49:01 ceos2 CROND[10911]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:50:01 ceos2 CROND[10991]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:51:01 ceos2 CROND[11072]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:51:01 ceos2 CROND[11073]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:52:01 ceos2 CROND[11154]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:53:02 ceos2 CROND[11234]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:54:02 ceos2 CROND[11318]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:54:02 ceos2 CROND[11319]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:55:02 ceos2 CROND[11400]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:56:02 ceos2 CROND[11480]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:57:02 ceos2 CROND[11561]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 17:57:02 ceos2 CROND[11562]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 17:58:02 ceos2 CROND[11643]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)

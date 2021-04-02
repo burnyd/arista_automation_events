@@ -1,0 +1,29 @@
+===== Output from /usr/bin/ReloadCauseAgent [] (PID=975) started Apr  1 15:20:12.089988 ===
+EntityManager::doBackoff waiting for remote sysdb version ...ok
+2021-04-01 15:20:14.632059   985 Log                  0 %AGENT-6-INITIALIZED: Agent 'ReloadCauseAgent' initialized; pid=985
+2021-04-01 15:20:14.636353   985 ReloadCauseAgent     3 Root::doInit
+2021-04-01 15:20:14.636588   985 ReloadCauseAgent     3 Root::doMountsComplete
+2021-04-01 15:20:14.636619   985 ReloadCauseAgent     3 Root::doMountsComplete Initializing state machines 
+
+2021-04-01 15:20:14.636634   985 ReloadCauseAgent     5 handleInitialized
+2021-04-01 15:20:14.636656   985 ReloadCauseAgent     5 handleInitialized Initializing reloadCauseSm, initialized: false file status: false
+
+2021-04-01 15:20:14.636683   985 ReloadCause          5 ReloadCauseSm::handleInitialized initialized false file status false
+
+2021-04-01 15:20:14.636696   985 ReloadCause          5 ReloadCauseSm::handleReloadCauseHistoryFile
+
+2021-04-01 15:20:14.636710   985 ReloadCause          5 handleReloadCauseHistoryFile /mnt/flash/debug/reload_history
+2021-04-01 15:20:14.636734   985 ReloadCause          5 handleReloadCauseHistoryFile Failed to stat. Probably OK. /mnt/flash/debug/reload_history
+
+2021-04-01 15:20:14.636780   985 ReloadCause          5 ReloadCauseSm::initializeInotifyFd
+
+2021-04-01 15:20:14.636795   985 ReloadCause          5 handleInotifyFdReadable inotifyFd() returning 
+2021-04-01 15:20:14.636815   985 ReloadCause          5 new inotify fd inotifyFd() 11 11;In;levelTriggered;0x57582630
+2021-04-01 15:20:14.636826   985 ReloadCause          5 ReloadCauseSm::initializeWatchId
+
+2021-04-01 15:20:14.636846   985 ReloadCause          5  pathToWatch is: /mnt/flash/debug
+
+2021-04-01 15:20:14.636861   985 ReloadCause          5 new inotify watch id is 1
+2021-04-01 15:20:14.636898   985 ReloadCauseCommon    0 createReloadCauseAgentInitFile opened file /var/tmp/reloadCauseAgentInitStatusFile
+2021-04-01 15:20:14.636910   985 ReloadCause          5 ReloadCauseSm::handleInitialized done
+
