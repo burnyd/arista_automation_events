@@ -1,0 +1,219 @@
+Apr  2 15:27:10 leaf4 xinetd[242]: xinetd Version 2.3.15 started with loadavg labeled-networking options compiled in.
+Apr  2 15:27:10 leaf4 xinetd[242]: Started working: 0 available services
+Apr  2 15:27:16 leaf4 archive-init: selecting archive: ext4 flash found
+Apr  2 15:27:16 leaf4 archive-init: no archive directory to rotate
+Apr  2 15:27:16 leaf4 archive-init: archive setup done
+Apr  2 15:27:17 leaf4 archive-init: write archive config done
+Apr  2 15:27:18 leaf4 archive-init: checking that 50% of the reserved space is free
+Apr  2 15:27:18 leaf4 archive-init: no archived instances of the archive deleted
+Apr  2 15:27:19 leaf4 archive-init: archive status: name=flash path=/mnt/flash/archive/current exists=True dirsExist=True valid=True disabled=False enabled=True devName=/dev/sda1 devPresent=True devPhysical=True devMounted=True usedKiB=28 usedPct=0 fsMntPt=/mnt/flash fsSize=114854020 fsUsedKiB=100203580 fsUsedPct=92 fsQuotaMount=False quotasOn=None quotasOff=None quotaKiB=None quotaPct=None
+Apr  2 15:27:24 leaf4 logEosStarted: %EOS-6-STARTED: EOS started.
+Apr  2 15:27:26 leaf4 ProcMgr-master: %PROCMGR-6-MASTER_STARTED: Master ProcMgr process started. (PID=585)
+Apr  2 15:27:26 leaf4 ProcMgr-worker: %PROCMGR-6-WORKER_COLDSTART: New ProcMgr worker cold start. (PID=586) (Master ProcMgr PID=585)
+Apr  2 15:27:26 leaf4 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=586)
+Apr  2 15:27:26 leaf4 ProcMgr-master: %PROCMGR-6-MASTER_RUNNING: Master ProcMgr (PID=585) monitoring ProcMgr worker (PID=586)
+Apr  2 15:27:27 leaf4 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+Apr  2 15:27:28 leaf4 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=586)
+Apr  2 15:27:28 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StageMgr' starting with PID=647 (PPID=586) -- execing '/usr/bin/StageMgr'
+Apr  2 15:27:29 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SlabMonitor' starting with PID=648 (PPID=586) -- execing '/usr/bin/SlabMonitor'
+Apr  2 15:27:29 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ConfigAgent' starting with PID=649 (PPID=586) -- execing '/usr/bin/ConfigAgent'
+Apr  2 15:27:29 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Sysdb' starting with PID=651 (PPID=586) -- execing '/usr/bin/Sysdb'
+Apr  2 15:27:29 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Fru' starting with PID=650 (PPID=586) -- execing '/usr/bin/Fru'
+Apr  2 15:27:29 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Launcher' starting with PID=652 (PPID=586) -- execing '/usr/bin/Launcher'
+Apr  2 15:27:32 leaf4 Sysdb: %AGENT-6-INITIALIZED: Agent 'Sysdb' initialized; pid=651
+Apr  2 15:27:36 leaf4 ConfigAgent: %AGENT-6-INITIALIZED: Agent 'ConfigAgent' initialized; pid=649
+Apr  2 15:28:20 leaf4 LoadConfig: %SYSDB-3-STARTUP_CONFIG_PARSE_ERROR: Errors encountered in parsing the startup-config
+Apr  2 15:28:23 leaf4 Fru: %AGENT-6-INITIALIZED: Agent 'Fru' initialized; pid=650
+Apr  2 15:28:23 leaf4 StageMgr: %AGENT-6-INITIALIZED: Agent 'StageMgr' initialized; pid=647
+Apr  2 15:28:23 leaf4 Launcher: %AGENT-6-INITIALIZED: Agent 'Launcher' initialized; pid=652
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventHistoryAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'AgentMonitor' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LacpTxAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'IgmpSnooping' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Acl' to start in role 'AllSupervisors'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SharedSecretProfile' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelNetworkInfo' to start in role 'AllSupervisors'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SuperServer' to start in role 'AllCells'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventMgr' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'FibServices' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'TopoAgent' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Qos' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ira' to start in role 'AllSupervisors'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'L2Rib' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'CapiApp' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ebra' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'OpenConfig' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PortSec' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LedPolicy' to start in role 'ActiveSupervisor'
+Apr  2 15:28:24 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Thermostat' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Arp' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PowerFuse' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Aaa' to start in role 'AllSupervisors'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'ReloadCauseAgent' to start in role 'AllCells'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTxRx' to start in role 'AllSupervisors'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelFib' to start in role 'AllSupervisors'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lag' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StandbyCpld' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTopology' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Stp' to start in role 'AllSupervisors'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon6' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Tunnel' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lldp' to start in role 'AllSupervisors'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Etba' to start in role 'ActiveSupervisor'
+Apr  2 15:28:25 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PhyEthtool' to start in role 'AllCells'
+Apr  2 15:28:25 leaf4 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=586)
+Apr  2 15:28:25 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LacpTxAgent' starting with PID=991 (PPID=586) -- execing '/usr/bin/LacpTxAgent'
+Apr  2 15:28:25 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon' starting with PID=992 (PPID=586) -- execing '/usr/bin/McastCommon'
+Apr  2 15:28:25 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SuperServer' starting with PID=993 (PPID=586) -- execing '/usr/bin/SuperServer'
+Apr  2 15:28:25 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'OpenConfig' starting with PID=995 (PPID=586) -- execing '/usr/bin/OpenConfig'
+Apr  2 15:28:26 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lag' starting with PID=1005 (PPID=586) -- execing '/usr/bin/Lag'
+Apr  2 15:28:26 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PortSec' starting with PID=1009 (PPID=586) -- execing '/usr/bin/PortSec'
+Apr  2 15:28:26 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ira' starting with PID=1012 (PPID=586) -- execing '/usr/bin/Ira'
+Apr  2 15:28:26 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LedPolicy' starting with PID=1014 (PPID=586) -- execing '/usr/bin/LedPolicy'
+Apr  2 15:28:26 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventMgr' starting with PID=1019 (PPID=586) -- execing '/usr/bin/EventMgr'
+Apr  2 15:28:26 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'CapiApp' starting with PID=1026 (PPID=586) -- execing '/usr/bin/CapiApp'
+Apr  2 15:28:26 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTxRx' starting with PID=1030 (PPID=586) -- execing '/usr/bin/StpTxRx'
+Apr  2 15:28:27 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StandbyCpld' starting with PID=1032 (PPID=586) -- execing '/usr/bin/StandbyCpld'
+Apr  2 15:28:27 leaf4 SuperServer: %AGENT-6-INITIALIZED: Agent 'SuperServer' initialized; pid=993
+Apr  2 15:28:27 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'AgentMonitor' starting with PID=1040 (PPID=586) -- execing '/usr/bin/AgentMonitor'
+Apr  2 15:28:27 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'FibServices' starting with PID=1042 (PPID=586) -- execing '/usr/bin/FibServices'
+Apr  2 15:28:27 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Tunnel' starting with PID=1046 (PPID=586) -- execing '/usr/bin/Tunnel'
+Apr  2 15:28:27 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PhyEthtool' starting with PID=1049 (PPID=586) -- execing '/usr/bin/PhyEthtool'
+Apr  2 15:28:28 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventHistoryAgent' starting with PID=1053 (PPID=586) -- execing '/usr/bin/EventHistoryAgent'
+Apr  2 15:28:28 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Aaa' starting with PID=1057 (PPID=586) -- execing '/usr/bin/Aaa'
+Apr  2 15:28:29 leaf4 PortSec: %AGENT-6-INITIALIZED: Agent 'PortSec' initialized; pid=1018
+Apr  2 15:28:29 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTopology' starting with PID=1062 (PPID=586) -- execing '/usr/bin/StpTopology'
+Apr  2 15:28:29 leaf4 McastCommon: %AGENT-6-INITIALIZED: Agent 'McastCommon' initialized; pid=999
+Apr  2 15:28:29 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Acl' starting with PID=1067 (PPID=586) -- execing '/usr/bin/Acl'
+Apr  2 15:28:30 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Stp' starting with PID=1074 (PPID=586) -- execing '/usr/bin/Stp'
+Apr  2 15:28:30 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelNetworkInfo' starting with PID=1076 (PPID=586) -- execing '/usr/bin/KernelNetworkInfo'
+Apr  2 15:28:30 leaf4 EventMgr: %AGENT-6-INITIALIZED: Agent 'EventMgr' initialized; pid=1027
+Apr  2 15:28:30 leaf4 LacpTxAgent: %AGENT-6-INITIALIZED: Agent 'LacpTxAgent' initialized; pid=996
+Apr  2 15:28:30 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon6' starting with PID=1078 (PPID=586) -- execing '/usr/bin/McastCommon6'
+Apr  2 15:28:31 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Etba' starting with PID=1083 (PPID=586) -- execing '/usr/bin/Etba'
+Apr  2 15:28:32 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Arp' starting with PID=1090 (PPID=586) -- execing '/usr/bin/Arp'
+Apr  2 15:28:32 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lldp' starting with PID=1094 (PPID=586) -- execing '/usr/bin/Lldp'
+Apr  2 15:28:33 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelFib' starting with PID=1096 (PPID=586) -- execing '/usr/bin/KernelFib'
+Apr  2 15:28:33 leaf4 LedPolicy: %AGENT-6-INITIALIZED: Agent 'LedPolicy' initialized; pid=1024
+Apr  2 15:28:33 leaf4 AgentMonitor: %AGENT-6-INITIALIZED: Agent 'AgentMonitor' initialized; pid=1048
+Apr  2 15:28:33 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Qos' starting with PID=1100 (PPID=586) -- execing '/usr/bin/Qos'
+Apr  2 15:28:34 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Thermostat' starting with PID=1108 (PPID=586) -- execing '/usr/bin/Thermostat'
+Apr  2 15:28:34 leaf4 StpTxRx: %AGENT-6-INITIALIZED: Agent 'StpTxRx' initialized; pid=1038
+Apr  2 15:28:35 leaf4 Ira: %AGENT-6-INITIALIZED: Agent 'Ira' initialized; pid=1022
+Apr  2 15:28:35 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'L2Rib' starting with PID=1115 (PPID=586) -- execing '/usr/bin/L2Rib'
+Apr  2 15:28:35 leaf4 EventHistoryAgent: %AGENT-6-INITIALIZED: Agent 'EventHistoryAgent' initialized; pid=1059
+Apr  2 15:28:35 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'TopoAgent' starting with PID=1119 (PPID=586) -- execing '/usr/bin/TopoAgent'
+Apr  2 15:28:36 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PowerFuse' starting with PID=1123 (PPID=586) -- execing '/usr/bin/PowerFuse'
+Apr  2 15:28:36 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ebra' starting with PID=1126 (PPID=586) -- execing '/usr/bin/Ebra'
+Apr  2 15:28:37 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ReloadCauseAgent' starting with PID=1130 (PPID=586) -- execing '/usr/bin/ReloadCauseAgent'
+Apr  2 15:28:37 leaf4 Lag: %AGENT-6-INITIALIZED: Agent 'Lag' initialized; pid=1011
+Apr  2 15:28:37 leaf4 Tunnel: %AGENT-6-INITIALIZED: Agent 'Tunnel' initialized; pid=1052
+Apr  2 15:28:37 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SharedSecretProfile' starting with PID=1135 (PPID=586) -- execing '/usr/bin/SharedSecretProfile'
+Apr  2 15:28:37 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'IgmpSnooping' starting with PID=1138 (PPID=586) -- execing '/usr/bin/IgmpSnooping'
+Apr  2 15:28:37 leaf4 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=586)
+Apr  2 15:28:38 leaf4 Aaa: %AGENT-6-INITIALIZED: Agent 'Aaa' initialized; pid=1057
+Apr  2 15:28:38 leaf4 CapiApp: %AGENT-6-INITIALIZED: Agent 'CapiApp' initialized; pid=1031
+Apr  2 15:28:39 leaf4 KernelNetworkInfo: %AGENT-6-INITIALIZED: Agent 'KernelNetworkInfo' initialized; pid=1079
+Apr  2 15:28:41 leaf4 Qos: %AGENT-6-INITIALIZED: Agent 'Qos' initialized; pid=1109
+Apr  2 15:28:41 leaf4 Lldp: %AGENT-6-INITIALIZED: Agent 'Lldp' initialized; pid=1101
+Apr  2 15:28:42 leaf4 KernelFib: %AGENT-6-INITIALIZED: Agent 'KernelFib' initialized; pid=1106
+Apr  2 15:28:43 leaf4 Stp: %AGENT-6-INITIALIZED: Agent 'Stp' initialized; pid=1085
+Apr  2 15:28:44 leaf4 L2Rib: %AGENT-6-INITIALIZED: Agent 'L2Rib' initialized; pid=1124
+Apr  2 15:28:44 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'IpRib' to start in role 'AllSupervisors'
+Apr  2 15:28:44 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'BgpCliHelper' to start in role 'AllSupervisors'
+Apr  2 15:28:44 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EvpnrtrEncap' to start in role 'ActiveSupervisor'
+Apr  2 15:28:44 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Bgp' to start in role 'AllSupervisors'
+Apr  2 15:28:45 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'ConnectedRoute' to start in role 'AllSupervisors'
+Apr  2 15:28:45 leaf4 TopoAgent: %AGENT-6-INITIALIZED: Agent 'TopoAgent' initialized; pid=1129
+Apr  2 15:28:45 leaf4 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=586)
+Apr  2 15:28:45 leaf4 Arp: %AGENT-6-INITIALIZED: Agent 'Arp' initialized; pid=1095
+Apr  2 15:28:45 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StaticRoute' to start in role 'AllSupervisors'
+Apr  2 15:28:45 leaf4 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'RouteInput' to start in role 'AllSupervisors'
+Apr  2 15:28:45 leaf4 PowerFuse: %AGENT-6-INITIALIZED: Agent 'PowerFuse' initialized; pid=1132
+Apr  2 15:28:46 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'IpRib' starting with PID=1188 (PPID=586) -- execing '/usr/bin/IpRib'
+Apr  2 15:28:46 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ConnectedRoute' starting with PID=1189 (PPID=586) -- execing '/usr/bin/ConnectedRoute'
+Apr  2 15:28:47 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Bgp' starting with PID=1196 (PPID=586) -- execing '/usr/bin/Bgp'
+Apr  2 15:28:47 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EvpnrtrEncap' starting with PID=1199 (PPID=586) -- execing '/usr/bin/EvpnrtrEncap'
+Apr  2 15:28:47 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'BgpCliHelper' starting with PID=1200 (PPID=586) -- execing '/usr/bin/BgpCliHelper'
+Apr  2 15:28:47 leaf4 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=586)
+Apr  2 15:28:48 leaf4 StpTopology: %AGENT-6-INITIALIZED: Agent 'StpTopology' initialized; pid=1068
+Apr  2 15:28:48 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StaticRoute' starting with PID=1206 (PPID=586) -- execing '/usr/bin/StaticRoute'
+Apr  2 15:28:49 leaf4 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'RouteInput' starting with PID=1208 (PPID=586) -- execing '/usr/bin/RouteInput'
+Apr  2 15:28:50 leaf4 SharedSecretProfile: %AGENT-6-INITIALIZED: Agent 'SharedSecretProfile' initialized; pid=1147
+Apr  2 15:28:51 leaf4 Ebra: %AGENT-6-INITIALIZED: Agent 'Ebra' initialized; pid=1139
+Apr  2 15:28:51 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 0000.0000.0000 and portId "Management0" added on interface Management0
+Apr  2 15:28:51 leaf4 IgmpSnooping: %AGENT-6-INITIALIZED: Agent 'IgmpSnooping' initialized; pid=1138
+Apr  2 15:28:52 leaf4 Acl: %AGENT-6-INITIALIZED: Agent 'Acl' initialized; pid=1072
+Apr  2 15:28:55 leaf4 ConnectedRoute: %AGENT-6-INITIALIZED: Agent 'ConnectedRoute' initialized; pid=1195
+Apr  2 15:28:55 leaf4 PhyEthtool: %AGENT-6-INITIALIZED: Agent 'PhyEthtool' initialized; pid=1049
+Apr  2 15:28:57 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 1abe.fd5d.b557 and portId "Management0" added on interface Management0
+Apr  2 15:28:57 leaf4 Etba: %AGENT-6-INITIALIZED: Agent 'Etba' initialized; pid=1083
+Apr  2 15:28:58 leaf4 FibServices: %AGENT-6-INITIALIZED: Agent 'FibServices' initialized; pid=1050
+Apr  2 15:28:59 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 5e8b.f383.1e39 and portId "Management0" added on interface Management0
+Apr  2 15:28:59 leaf4 Thermostat: %AGENT-6-INITIALIZED: Agent 'Thermostat' initialized; pid=1116
+Apr  2 15:29:00 leaf4 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management0, changed state to up
+Apr  2 15:29:00 leaf4 IpRib: %AGENT-6-INITIALIZED: Agent 'IpRib' initialized; pid=1194
+Apr  2 15:29:01 leaf4 StandbyCpld: %AGENT-6-INITIALIZED: Agent 'StandbyCpld' initialized; pid=1041
+Apr  2 15:29:01 leaf4 McastCommon6: %AGENT-6-INITIALIZED: Agent 'McastCommon6' initialized; pid=1087
+Apr  2 15:29:02 leaf4 StaticRoute: %AGENT-6-INITIALIZED: Agent 'StaticRoute' initialized; pid=1211
+Apr  2 15:29:04 leaf4 EvpnrtrEncapAgent: %AGENT-6-INITIALIZED: Agent 'EvpnrtrEncap' initialized; pid=1199
+Apr  2 15:29:05 leaf4 ReloadCauseAgent: %AGENT-6-INITIALIZED: Agent 'ReloadCauseAgent' initialized; pid=1140
+Apr  2 15:29:06 leaf4 RouteInput: %AGENT-6-INITIALIZED: Agent 'RouteInput' initialized; pid=1213
+Apr  2 15:29:08 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 2e94.1d9a.e596 and portId "Management0" added on interface Management0
+Apr  2 15:29:08 leaf4 IpRib: %IPRIB-5-RIBREADY_IGP: IGP protocols in VRF default have converged
+Apr  2 15:29:08 leaf4 IpRib: %IPRIB-5-RIBREADY_PROTO: All protocols in VRF default have converged
+Apr  2 15:29:08 leaf4 IpRib: %IPRIB-5-RIBREADY_FIB: All routes in VRF default are available in FIB
+Apr  2 15:29:11 leaf4 BgpCliHelper: %AGENT-6-INITIALIZED: Agent 'BgpCliHelper' initialized; pid=1200
+Apr  2 15:29:12 leaf4 Bgp: %AGENT-6-INITIALIZED: Agent 'Bgp' initialized; pid=1196
+Apr  2 15:29:13 leaf4 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  2 15:29:15 leaf4 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2, changed state to up
+Apr  2 15:29:15 leaf4 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3, changed state to up
+Apr  2 15:29:15 leaf4 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Apr  2 15:29:15 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 5eff.595f.9c0e and portId "Management0" added on interface Management0
+Apr  2 15:29:15 leaf4 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Apr  2 15:29:15 leaf4 Stp: %SPANTREE-6-ROOTCHANGE: Root changed for instance MST0: new root interface is (none), new root bridge mac address is 46:b8:f1:a5:6c:08 (this switch)
+Apr  2 15:29:15 leaf4 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet3 has been added to instance MST0
+Apr  2 15:29:16 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 12bb.c236.1aa8 and portId "Management0" added on interface Management0
+Apr  2 15:29:17 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 1abe.fd5d.b557 and portId "Ethernet4" added on interface Ethernet2
+Apr  2 15:29:19 leaf4 Stp: %SPANTREE-6-ROOTCHANGE: Root changed for instance MST0: new root interface is Ethernet3, new root bridge mac address is 2e:94:1d:9a:e5:96 
+Apr  2 15:29:19 leaf4 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet3 instance MST0 moving from discarding to learning
+Apr  2 15:29:19 leaf4 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet3 instance MST0 moving from learning to forwarding
+Apr  2 15:29:20 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 2e94.1d9a.e596 and portId "Ethernet3" added on interface Ethernet3
+Apr  2 15:29:26 leaf4 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 12bb.c236.1aa8 and portId "Ethernet4" added on interface Ethernet1
+Apr  2 15:29:27 leaf4 SuperServer: %SECURITY-6-SSL_PROFILE_VALID: SSL profile 'ARISTA_DEFAULT_PROFILE' is valid
+Apr  2 15:29:27 leaf4 SuperServer: %SECURITY-3-SSL_PROFILE_INVALID: SSL profile 'restconf' is invalid. Check 'show management security ssl profile restconf' for details
+Apr  2 15:29:27 leaf4 SuperServer: %SYS-5-CLI_SCHEDULER_ENABLED: CliScheduler is enabled, continuing its execution of scheduled CLI jobs.
+Apr  2 15:29:38 leaf3 rsyslogd: imuxsock: Acquired UNIX socket '/dev/log' (fd 3) from systemd.  [v8.2001.0]
+Apr  2 15:29:38 leaf3 rsyslogd: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="1815" x-info="https://www.rsyslog.com"] start
+Apr  2 15:29:40 leaf3 xinetd[242]: Starting reconfiguration
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/chargen-dgram [file=/etc/xinetd.conf] [line=56]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/chargen-stream [file=/etc/xinetd.d/chargen-stream] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/daytime-dgram [file=/etc/xinetd.d/daytime-dgram] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/daytime-stream [file=/etc/xinetd.d/daytime-stream] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/discard-dgram [file=/etc/xinetd.d/discard-dgram] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/discard-stream [file=/etc/xinetd.d/discard-stream] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/echo-dgram [file=/etc/xinetd.d/echo-dgram] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/echo-stream [file=/etc/xinetd.d/echo-stream] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/ssh [file=/etc/xinetd.d/ssh] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/ssh6 [file=/etc/xinetd.d/ssh6] [line=29]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/tcpmux-server [file=/etc/xinetd.d/tcpmux-server] [line=29]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/time-dgram [file=/etc/xinetd.d/time-dgram] [line=68]
+Apr  2 15:29:40 leaf3 xinetd[242]: Reading included configuration file: /etc/xinetd.d/time-stream [file=/etc/xinetd.d/time-stream] [line=67]
+Apr  2 15:29:40 leaf3 xinetd[242]: removing chargen
+Apr  2 15:29:40 leaf3 xinetd[242]: removing chargen
+Apr  2 15:29:40 leaf3 xinetd[242]: removing daytime
+Apr  2 15:29:40 leaf3 xinetd[242]: removing daytime
+Apr  2 15:29:40 leaf3 xinetd[242]: removing discard
+Apr  2 15:29:40 leaf3 xinetd[242]: removing discard
+Apr  2 15:29:40 leaf3 xinetd[242]: removing echo
+Apr  2 15:29:40 leaf3 xinetd[242]: removing echo
+Apr  2 15:29:40 leaf3 xinetd[242]: removing tcpmux
+Apr  2 15:29:40 leaf3 xinetd[242]: removing time
+Apr  2 15:29:40 leaf3 xinetd[242]: removing time
+Apr  2 15:29:40 leaf3 xinetd[242]: Swapping defaults
+Apr  2 15:29:40 leaf3 xinetd[242]: Reconfigured: new=2 old=0 dropped=0 (services)
+Apr  2 15:29:53 leaf3 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  2 15:30:02 leaf3 CROND[2071]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  2 15:30:02 leaf3 CROND[2073]: (root) CMD (/etc/cron.hourly/logrotate)
+Apr  2 15:30:02 leaf3 CROND[2074]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)

@@ -1,0 +1,504 @@
+===== Output from /usr/bin/Launcher [] (PID=672) started Apr  1 14:13:12.558612 ===
+EntityManager::doBackoff waiting for connection ....ok
+waiting for Sysdb init ..............................ok
+2021-04-01 14:13:34.471081   672 Log                  0 %AGENT-6-INITIALIZED: Agent 'Launcher' initialized; pid=672
+2021-04-01 14:13:34.507064   672 Launcher             0 Finished mounting Launcher basic paths
+2021-04-01 14:13:34.704842   672 Launcher             0 Finished mounting plugin paths
+2021-04-01 14:13:34.729712   672 Launcher             7 Creating dir for process config files: '/etc/ProcMgr.d/run/ownedByLauncher'
+2021-04-01 14:13:34.754606   672 Launcher             0 LowMemMode is toggled.  Creating related reactors
+2021-04-01 14:13:34.754883   672 Launcher             0 Finished creating Launcher reactors
+2021-04-01 14:13:34.764290   672 Launcher             0 agent FileReplicator is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.765857   672 Launcher             0 agent CloudHa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.766210   672 Launcher             0 agent CloudHa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.766550   672 Launcher             0 agent CloudHa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.768251   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/EventHistoryAgent~ to /etc/ProcMgr.d/run/ownedByLauncher/EventHistoryAgent
+2021-04-01 14:13:34.768449   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'EventHistoryAgent' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.769850   672 Launcher             0 agent Mld is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.771451   672 Launcher             0 agent ManagementActive is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.772752   672 Launcher             0 agent HealthMonitor is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.774173   672 Launcher             0 agent OpenFlow is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.774524   672 Launcher             0 agent OpenFlow is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.775820   672 Launcher             0 agent Msdp6 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.776786   672 Launcher             0 agent NorCalCard is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.777033   672 Launcher             0 agent NorCalCard is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.777976   672 Launcher             0 agent SysdbMonitor is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.779124   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/AgentMonitor~ to /etc/ProcMgr.d/run/ownedByLauncher/AgentMonitor
+2021-04-01 14:13:34.779261   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'AgentMonitor' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.780531   672 Launcher             0 agent Mirroring is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.780978   672 Launcher             0 agent Mirroring is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.781421   672 Launcher             0 agent Mirroring is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.781863   672 Launcher             0 agent Mirroring is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.782447   672 Launcher             0 agent Mirroring is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.782938   672 Launcher             0 agent Mirroring is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.784842   672 Launcher             0 agent Mirroring is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.785568   672 Launcher             0 agent Mirroring is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.788908   672 Launcher             0 agent PLDevice is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.798767   672 Launcher             0 agent PLDevice is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.801671   672 Launcher             0 agent Ipv6RouterAdvt is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.801995   672 Launcher             0 agent Ipv6RouterAdvt is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.802301   672 Launcher             0 agent Ipv6RouterAdvt is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.803777   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/LacpTxAgent~ to /etc/ProcMgr.d/run/ownedByLauncher/LacpTxAgent
+2021-04-01 14:13:34.803930   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'LacpTxAgent' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.805216   672 Launcher             0 agent Igmp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.805551   672 Launcher             0 agent Igmp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.807182   672 Launcher             0 agent Sflow is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.808752   672 Launcher             0 agent Sflow is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.809366   672 Launcher             0 agent Sflow is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.809875   672 Launcher             0 agent Sflow is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.816772   672 Launcher             0 agent NetworkTopology is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.817935   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/IgmpSnooping~ to /etc/ProcMgr.d/run/ownedByLauncher/IgmpSnooping
+2021-04-01 14:13:34.818088   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'IgmpSnooping' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.819313   672 Launcher             0 agent Smbus is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.819935   672 Launcher             0 agent Smbus is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.821815   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Acl~ to /etc/ProcMgr.d/run/ownedByLauncher/Acl
+2021-04-01 14:13:34.821969   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Acl' to start in role 'AllSupervisors'
+2021-04-01 14:13:34.823698   672 Launcher             0 agent Controllerdb is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.824300   672 Launcher             0 agent Controllerdb is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.826854   672 Launcher             0 agent CliRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.827483   672 Launcher             0 agent CliRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.828001   672 Launcher             0 agent CliRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.828497   672 Launcher             0 agent CliRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.828900   672 Launcher             0 agent CliRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.830615   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/SharedSecretProfile~ to /etc/ProcMgr.d/run/ownedByLauncher/SharedSecretProfile
+2021-04-01 14:13:34.830811   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'SharedSecretProfile' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.832802   672 Launcher             0 agent ConnectedRoute is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.834253   672 Launcher             0 agent PLSystem is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.834539   672 Launcher             0 agent PLSystem is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.835891   672 Launcher             0 agent RouteCache is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.836206   672 Launcher             0 agent RouteCache is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.838000   672 Launcher             0 agent Mcs is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.838481   672 Launcher             0 agent Mcs is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.838944   672 Launcher             0 agent Mcs is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.839361   672 Launcher             0 agent Mcs is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.841851   672 Launcher             0 agent BgpCliHelper is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.843332   672 Launcher             0 agent GpioLed is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.847940   672 Launcher             0 agent Pseudowire is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.848545   672 Launcher             0 agent Pseudowire is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.849095   672 Launcher             0 agent Pseudowire is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.849633   672 Launcher             0 agent Pseudowire is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.850136   672 Launcher             0 agent Pseudowire is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.850631   672 Launcher             0 agent Pseudowire is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.851145   672 Launcher             0 agent Pseudowire is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.851768   672 Launcher             0 agent Pseudowire is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.853713   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/KernelNetworkInfo~ to /etc/ProcMgr.d/run/ownedByLauncher/KernelNetworkInfo
+2021-04-01 14:13:34.853868   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'KernelNetworkInfo' to start in role 'AllSupervisors'
+2021-04-01 14:13:34.855746   672 Launcher             0 agent StaticRoute is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.857361   672 Launcher             0 agent Bmp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.857678   672 Launcher             0 agent Bmp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.858905   672 Launcher             0 agent PowerSupplyFixed is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.860074   672 Launcher             0 agent SrTePolicy is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.860384   672 Launcher             0 agent SrTePolicy is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.861737   672 Launcher             0 agent Mlag is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.862116   672 Launcher             0 agent Mlag is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.862514   672 Launcher             0 agent Mlag is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.862879   672 Launcher             0 agent Mlag is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.863245   672 Launcher             0 agent Mlag is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.863624   672 Launcher             0 agent Mlag is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.865796   672 Launcher             0 agent MldSnooping is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.866507   672 Launcher             0 agent MldSnooping is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.866923   672 Launcher             0 agent MldSnooping is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.870826   672 Launcher             0 agent Pimsm is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.872056   672 Launcher             0 agent CfmAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.872549   672 Launcher             0 agent CfmAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.873003   672 Launcher             0 agent CfmAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.873392   672 Launcher             0 agent CfmAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.874751   672 Launcher             0 agent VxlanSwFwd is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.875979   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/SuperServer~ to /etc/ProcMgr.d/run/ownedByLauncher/SuperServer
+2021-04-01 14:13:34.876128   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'SuperServer' to start in role 'AllCells'
+2021-04-01 14:13:34.877214   672 Launcher             0 agent Dcbx is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.879570   672 Launcher             0 agent CpuComplex is not runnable in role allCells but agentConfigReactor does not exist
+2021-04-01 14:13:34.882133   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/EventMgr~ to /etc/ProcMgr.d/run/ownedByLauncher/EventMgr
+2021-04-01 14:13:34.882309   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'EventMgr' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.884589   672 Launcher             0 agent ModularSystem is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.889413   672 Launcher             0 agent AclCvxClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.889875   672 Launcher             0 agent AclCvxClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.891830   672 Launcher             0 agent Pmbus is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.892348   672 Launcher             0 agent Pmbus is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.894421   672 Launcher             0 agent VxlanController is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.894995   672 Launcher             0 agent VxlanController is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.895409   672 Launcher             0 agent VxlanController is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.895823   672 Launcher             0 agent VxlanController is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.897417   672 Launcher             0 agent ControllerDebugServer is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.897834   672 Launcher             0 agent ControllerDebugServer is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.900680   672 Launcher             0 agent SftAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.901539   672 Launcher             0 agent SftAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.903271   672 Launcher             0 agent SftAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.904886   672 Launcher             0 agent SftAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.905992   672 Launcher             0 agent SftAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.907687   672 Launcher             0 agent SftAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.908580   672 Launcher             0 agent SftAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.909492   672 Launcher             0 agent SftAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.912214   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/FibServices~ to /etc/ProcMgr.d/run/ownedByLauncher/FibServices
+2021-04-01 14:13:34.912370   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'FibServices' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.913687   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/TopoAgent~ to /etc/ProcMgr.d/run/ownedByLauncher/TopoAgent
+2021-04-01 14:13:34.913800   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'TopoAgent' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.914912   672 Launcher             0 agent Xmpp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.915247   672 Launcher             0 agent Xmpp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.916662   672 Launcher             0 agent MssPolicyMonitor is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.917026   672 Launcher             0 agent MssPolicyMonitor is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.917390   672 Launcher             0 agent MssPolicyMonitor is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.919441   672 Launcher             0 agent PtpTimeSync is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.920020   672 Launcher             0 agent PtpTimeSync is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.920577   672 Launcher             0 agent PtpTimeSync is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.921163   672 Launcher             0 agent PtpTimeSync is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.921715   672 Launcher             0 agent PtpTimeSync is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.922272   672 Launcher             0 agent PtpTimeSync is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.922907   672 Launcher             0 agent PtpTimeSync is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.923567   672 Launcher             0 agent PtpTimeSync is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.925698   672 Launcher             0 agent Dot1x is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.926116   672 Launcher             0 agent Dot1x is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.926630   672 Launcher             0 agent Dot1x is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.927067   672 Launcher             0 agent Dot1x is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.928811   672 Launcher             0 agent LdpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.929207   672 Launcher             0 agent LdpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.929590   672 Launcher             0 agent LdpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.932351   672 Launcher             0 agent EvpnrtrEncap is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.936427   672 Launcher             0 agent Ospf3 is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.938052   672 Launcher             0 agent FastServerFailover is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.938388   672 Launcher             0 agent FastServerFailover is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.939817   672 Launcher             0 agent McsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.940217   672 Launcher             0 agent McsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.940671   672 Launcher             0 agent McsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.941065   672 Launcher             0 agent McsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.941524   672 Launcher             0 agent McsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.943209   672 Launcher             0 agent LinuxBridge is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.944541   672 Launcher             0 agent BugAlert is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.944922   672 Launcher             0 agent BugAlert is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.945307   672 Launcher             0 agent BugAlert is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.945744   672 Launcher             0 agent BugAlert is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.947191   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Qos~ to /etc/ProcMgr.d/run/ownedByLauncher/Qos
+2021-04-01 14:13:34.947371   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Qos' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.948564   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Ira~ to /etc/ProcMgr.d/run/ownedByLauncher/Ira
+2021-04-01 14:13:34.948681   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Ira' to start in role 'AllSupervisors'
+2021-04-01 14:13:34.949794   672 Launcher             0 agent Etba is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.951411   672 Launcher             0 agent DirectFlow is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.951883   672 Launcher             0 agent DirectFlow is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.952343   672 Launcher             0 agent DirectFlow is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.952838   672 Launcher             0 agent DirectFlow is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.954492   672 Launcher             0 agent PimReg is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.955630   672 Launcher             0 agent ControllerDebugClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.956907   672 Launcher             0 agent IpLockingReflector is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.957341   672 Launcher             0 agent IpLockingReflector is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.961570   672 Launcher             0 agent Sfa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.963466   672 Launcher             0 agent ArpSuppression is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.963818   672 Launcher             0 agent ArpSuppression is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.965236   672 Launcher             0 agent PimBsr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.966502   672 Launcher             0 agent Nat is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.966872   672 Launcher             0 agent Nat is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.967256   672 Launcher             0 agent Nat is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.968796   672 Launcher             0 agent ConnectivityMonitor is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.969197   672 Launcher             0 agent ConnectivityMonitor is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.971354   672 Launcher             0 agent PowerManager is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.974328   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.975126   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.975800   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.976978   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.978312   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.979593   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.980973   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.982254   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.984427   672 Launcher             0 agent Bgp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.987092   672 Launcher             0 agent Fhrp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.987785   672 Launcher             0 agent Fhrp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.989557   672 Launcher             0 agent Fhrp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.990148   672 Launcher             0 agent Fhrp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.990736   672 Launcher             0 agent Fhrp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.991322   672 Launcher             0 agent Fhrp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.991884   672 Launcher             0 agent Fhrp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.992568   672 Launcher             0 agent Fhrp is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:34.994469   672 Launcher             0 agent L2Rib is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.994982   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/L2Rib~ to /etc/ProcMgr.d/run/ownedByLauncher/L2Rib
+2021-04-01 14:13:34.995130   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'L2Rib' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.996434   672 Launcher             0 agent CapiApp is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.996923   672 Launcher             0 agent CapiApp is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:34.997471   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/CapiApp~ to /etc/ProcMgr.d/run/ownedByLauncher/CapiApp
+2021-04-01 14:13:34.997586   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'CapiApp' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:34.998876   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Ebra~ to /etc/ProcMgr.d/run/ownedByLauncher/Ebra
+2021-04-01 14:13:34.998974   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Ebra' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.000377   672 Launcher             0 agent OpenConfig is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.000891   672 Launcher             0 agent OpenConfig is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.001466   672 Launcher             0 agent OpenConfig is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.001980   672 Launcher             0 agent OpenConfig is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.002466   672 Launcher             0 agent OpenConfig is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.002970   672 Launcher             0 agent OpenConfig is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.003613   672 Launcher             0 agent OpenConfig is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.005142   672 Launcher             0 agent OpenConfig is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.005984   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/OpenConfig~ to /etc/ProcMgr.d/run/ownedByLauncher/OpenConfig
+2021-04-01 14:13:35.006119   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'OpenConfig' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.007644   672 Launcher             0 agent IgmpHostProxy is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.009130   672 Launcher             0 agent PimBidirDf is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.010536   672 Launcher             0 agent MplsEtba is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.012569   672 Launcher             0 agent Scd is not runnable in role allCells but agentConfigReactor does not exist
+2021-04-01 14:13:35.014780   672 Launcher             0 agent PLSlot is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.015172   672 Launcher             0 agent PLSlot is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.015579   672 Launcher             0 agent PLSlot is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.016973   672 Launcher             0 agent PlxPcie-system is not runnable in role allCells but agentConfigReactor does not exist
+2021-04-01 14:13:35.018825   672 Launcher             0 agent PortSec is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.019373   672 Launcher             0 agent PortSec is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.020068   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/PortSec~ to /etc/ProcMgr.d/run/ownedByLauncher/PortSec
+2021-04-01 14:13:35.020241   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'PortSec' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.022598   672 Launcher             0 agent LedPolicy is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.023324   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/LedPolicy~ to /etc/ProcMgr.d/run/ownedByLauncher/LedPolicy
+2021-04-01 14:13:35.023442   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'LedPolicy' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.025969   672 Launcher             0 agent Rib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.028232   672 Launcher             0 agent Rib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.029836   672 Launcher             0 agent Rib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.031265   672 Launcher             0 agent Rib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.032784   672 Launcher             0 agent Rib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.034409   672 Launcher             0 agent Rib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.036351   672 Launcher             0 agent Rib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.037870   672 Launcher             0 agent Rib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.040433   672 Launcher             0 agent Apca is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.040842   672 Launcher             0 agent Apca is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.042562   672 Launcher             0 agent MlagTunnel is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.043097   672 Launcher             0 agent MlagTunnel is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.043601   672 Launcher             0 agent MlagTunnel is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.044071   672 Launcher             0 agent MlagTunnel is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.044543   672 Launcher             0 agent MlagTunnel is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.044971   672 Launcher             0 agent MlagTunnel is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.046648   672 Launcher             0 agent MssClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.047019   672 Launcher             0 agent MssClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.048480   672 Launcher             0 agent Snmp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.049814   672 Launcher             0 agent Cdp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.050194   672 Launcher             0 agent Cdp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.052658   672 Launcher             0 agent MaintenanceMode is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.054266   672 Launcher             0 agent MaintenanceMode is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.056284   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Thermostat~ to /etc/ProcMgr.d/run/ownedByLauncher/Thermostat
+2021-04-01 14:13:35.056437   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Thermostat' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.058479   672 Launcher             0 agent Rip is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.060388   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Arp~ to /etc/ProcMgr.d/run/ownedByLauncher/Arp
+2021-04-01 14:13:35.060502   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Arp' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.062203   672 Launcher             0 agent Denali is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.064534   672 Launcher             0 agent MssL3 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.064987   672 Launcher             0 agent MssL3 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.065412   672 Launcher             0 agent MssL3 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.065866   672 Launcher             0 agent MssL3 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.067558   672 Launcher             0 agent KernelMfib is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.068002   672 Launcher             0 agent KernelMfib is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.072273   672 Launcher             0 agent PlxPcie is not runnable in role allCells but agentConfigReactor does not exist
+2021-04-01 14:13:35.073957   672 Launcher             0 agent SmbusSlice is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.076550   672 Launcher             0 agent PimReg6 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.077857   672 Launcher             0 agent PimBidir is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.079401   672 Launcher             0 agent VirtualNetwork is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.079847   672 Launcher             0 agent VirtualNetwork is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.080310   672 Launcher             0 agent VirtualNetwork is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.080877   672 Launcher             0 agent VirtualNetwork is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.081365   672 Launcher             0 agent VirtualNetwork is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.083219   672 Launcher             0 agent Macsec is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.083861   672 Launcher             0 agent Macsec is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.084440   672 Launcher             0 agent Macsec is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.085017   672 Launcher             0 agent Macsec is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.085665   672 Launcher             0 agent Macsec is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.086277   672 Launcher             0 agent Macsec is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.088308   672 Launcher             0 agent MplsUtilLsp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.089874   672 Launcher             0 agent JsonApiApp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.091692   672 Launcher             0 agent PowerFuse is runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.092814   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/PowerFuse~ to /etc/ProcMgr.d/run/ownedByLauncher/PowerFuse
+2021-04-01 14:13:35.092946   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'PowerFuse' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.094368   672 Launcher             0 agent HadoopTracer is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.094786   672 Launcher             0 agent HadoopTracer is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.096438   672 Launcher             0 agent KernelMfib6 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.096905   672 Launcher             0 agent KernelMfib6 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.098558   672 Launcher             0 agent Firewall is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.099030   672 Launcher             0 agent Firewall is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.099548   672 Launcher             0 agent Firewall is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.100033   672 Launcher             0 agent Firewall is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.101674   672 Launcher             0 agent Pim is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.103364   672 Launcher             0 agent ArpInspection is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.103935   672 Launcher             0 agent ArpInspection is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.106868   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Aaa~ to /etc/ProcMgr.d/run/ownedByLauncher/Aaa
+2021-04-01 14:13:35.106992   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Aaa' to start in role 'AllSupervisors'
+2021-04-01 14:13:35.111351   672 Launcher             0 agent Rib-vrf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.114643   672 Launcher             0 agent Rib-vrf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.116410   672 Launcher             0 agent Rib-vrf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.117945   672 Launcher             0 agent Rib-vrf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.119674   672 Launcher             0 agent Rib-vrf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.121575   672 Launcher             0 agent Rib-vrf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.124855   672 Launcher             0 agent DhcpRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.125430   672 Launcher             0 agent DhcpRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.125977   672 Launcher             0 agent DhcpRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.126560   672 Launcher             0 agent DhcpRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.127180   672 Launcher             0 agent DhcpRelay is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.129522   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/ReloadCauseAgent~ to /etc/ProcMgr.d/run/ownedByLauncher/ReloadCauseAgent
+2021-04-01 14:13:35.129678   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'ReloadCauseAgent' to start in role 'AllCells'
+2021-04-01 14:13:35.133865   672 Launcher             0 agent TwampReflector is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.134457   672 Launcher             0 agent TwampReflector is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.136842   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/McastCommon~ to /etc/ProcMgr.d/run/ownedByLauncher/McastCommon
+2021-04-01 14:13:35.137032   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.138906   672 Launcher             0 agent Mpls is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.139445   672 Launcher             0 agent Mpls is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.144565   672 Launcher             0 agent Dot1xWeb is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.145061   672 Launcher             0 agent Dot1xWeb is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.146811   672 Launcher             0 agent Msrp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.147227   672 Launcher             0 agent Msrp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.148977   672 Launcher             0 agent Vxlan is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.149481   672 Launcher             0 agent Vxlan is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.149981   672 Launcher             0 agent Vxlan is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.151961   672 Launcher             0 agent TwinCvxClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.152467   672 Launcher             0 agent TwinCvxClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.152956   672 Launcher             0 agent TwinCvxClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.155764   672 Launcher             0 agent Ospf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.157987   672 Launcher             0 agent PLXcvr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.158550   672 Launcher             0 agent PLXcvr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.159080   672 Launcher             0 agent PLXcvr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.161120   672 Launcher             0 agent ControllerOob is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.161587   672 Launcher             0 agent ControllerOob is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.162067   672 Launcher             0 agent ControllerOob is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.163902   672 Launcher             0 agent Msdp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.168340   672 Launcher             0 agent McastVpn is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.168834   672 Launcher             0 agent McastVpn is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.170682   672 Launcher             0 agent Vm is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.171150   672 Launcher             0 agent Vm is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.172882   672 Launcher             0 agent ControllerProxyAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.173302   672 Launcher             0 agent ControllerProxyAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.175175   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/StpTxRx~ to /etc/ProcMgr.d/run/ownedByLauncher/StpTxRx
+2021-04-01 14:13:35.175379   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'StpTxRx' to start in role 'AllSupervisors'
+2021-04-01 14:13:35.176790   672 Launcher             0 agent SflowAccel is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.177256   672 Launcher             0 agent SflowAccel is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.179030   672 Launcher             0 agent BessMgr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.179523   672 Launcher             0 agent BessMgr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.181243   672 Launcher             0 agent Eoam is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.181745   672 Launcher             0 agent Eoam is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.182241   672 Launcher             0 agent Eoam is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.182878   672 Launcher             0 agent Eoam is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.183466   672 Launcher             0 agent Eoam is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.185415   672 Launcher             0 agent FanDetector is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.185894   672 Launcher             0 agent FanDetector is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.188360   672 Launcher             0 agent PcsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.188945   672 Launcher             0 agent PcsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.189496   672 Launcher             0 agent PcsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.190011   672 Launcher             0 agent PcsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.190697   672 Launcher             0 agent PcsHttpAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.193213   672 Launcher             0 agent Gribi is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.193804   672 Launcher             0 agent Gribi is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.195766   672 Launcher             0 agent Ipsec is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.197216   672 Launcher             0 agent Pimsm6 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.198888   672 Launcher             0 agent Rcf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.199398   672 Launcher             0 agent Rcf is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.201666   672 Launcher             0 agent HealthMgr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.202301   672 Launcher             0 agent HealthMgr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.203099   672 Launcher             0 agent HealthMgr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.203800   672 Launcher             0 agent HealthMgr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.204622   672 Launcher             0 agent HealthMgr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.205451   672 Launcher             0 agent HealthMgr is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.207633   672 Launcher             0 agent PimBsr6 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.209392   672 Launcher             0 agent Hsc is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.209907   672 Launcher             0 agent Hsc is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.210407   672 Launcher             0 agent Hsc is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.210937   672 Launcher             0 agent Hsc is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.212913   672 Launcher             0 agent ObjectTracking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.213391   672 Launcher             0 agent ObjectTracking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.215694   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/KernelFib~ to /etc/ProcMgr.d/run/ownedByLauncher/KernelFib
+2021-04-01 14:13:35.215852   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'KernelFib' to start in role 'AllSupervisors'
+2021-04-01 14:13:35.217483   672 Launcher             0 agent HostInject is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.218219   672 Launcher             0 agent HostInject is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.218918   672 Launcher             0 agent HostInject is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.219785   672 Launcher             0 agent HostInject is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.220515   672 Launcher             0 agent HostInject is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.221229   672 Launcher             0 agent HostInject is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.221921   672 Launcher             0 agent HostInject is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.222651   672 Launcher             0 agent HostInject is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.225636   672 Launcher             0 agent TunnelIntf is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.226337   672 Launcher             0 agent TunnelIntf is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.227060   672 Launcher             0 agent TunnelIntf is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.229907   672 Launcher             0 agent PhyEthtool is not runnable in role allCells but agentConfigReactor does not exist
+2021-04-01 14:13:35.232606   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Lag~ to /etc/ProcMgr.d/run/ownedByLauncher/Lag
+2021-04-01 14:13:35.232753   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Lag' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.234210   672 Launcher             0 agent Olive is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.236457   672 Launcher             0 agent McsClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.237096   672 Launcher             0 agent McsClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.237725   672 Launcher             0 agent McsClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.239927   672 Launcher             0 agent Pim6 is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.241997   672 Launcher             0 agent ZeroTouch is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.242575   672 Launcher             0 agent ZeroTouch is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.244911   672 Launcher             0 agent Octa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.245585   672 Launcher             0 agent Octa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.246239   672 Launcher             0 agent Octa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.246902   672 Launcher             0 agent Octa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.247579   672 Launcher             0 agent Octa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.248234   672 Launcher             0 agent Octa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.248886   672 Launcher             0 agent Octa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.250401   672 Launcher             0 agent Octa is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.252912   672 Launcher             0 agent EventMon is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.253488   672 Launcher             0 agent EventMon is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.255678   672 Launcher             0 agent Goodbye is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.256251   672 Launcher             0 agent Goodbye is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.258403   672 Launcher             0 agent ExternalAlarm is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.259006   672 Launcher             0 agent ExternalAlarm is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.261270   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/StandbyCpld~ to /etc/ProcMgr.d/run/ownedByLauncher/StandbyCpld
+2021-04-01 14:13:35.261439   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'StandbyCpld' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.263230   672 Launcher             0 agent NetworkTopologyAggregator is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.263971   672 Launcher             0 agent NetworkTopologyAggregator is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.264611   672 Launcher             0 agent NetworkTopologyAggregator is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.267819   672 Launcher             0 agent RouteInput is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.270349   672 Launcher             0 agent OpenStack is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.270996   672 Launcher             0 agent OpenStack is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.271647   672 Launcher             0 agent OpenStack is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.272331   672 Launcher             0 agent OpenStack is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.275857   672 Launcher             0 agent VrfLeak is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.276813   672 Launcher             0 agent VrfLeak is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.278397   672 Launcher             0 agent VrfLeak is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.281179   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/StpTopology~ to /etc/ProcMgr.d/run/ownedByLauncher/StpTopology
+2021-04-01 14:13:35.281353   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'StpTopology' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.286173   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Stp~ to /etc/ProcMgr.d/run/ownedByLauncher/Stp
+2021-04-01 14:13:35.286334   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Stp' to start in role 'AllSupervisors'
+2021-04-01 14:13:35.288095   672 Launcher             0 agent Rsvp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.288749   672 Launcher             0 agent Rsvp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.290632   672 Launcher             0 agent PowerSupplyDetector is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.291152   672 Launcher             0 agent PowerSupplyDetector is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.293207   672 Launcher             0 agent Ptp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.293781   672 Launcher             0 agent Ptp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.295981   672 Launcher             0 agent Mvrp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.296602   672 Launcher             0 agent Mvrp is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.298579   672 Launcher             0 agent TwampControl is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.300384   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/McastCommon6~ to /etc/ProcMgr.d/run/ownedByLauncher/McastCommon6
+2021-04-01 14:13:35.300525   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon6' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.302341   672 Launcher             0 agent CliRelaySwitchAgent is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.304776   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Tunnel~ to /etc/ProcMgr.d/run/ownedByLauncher/Tunnel
+2021-04-01 14:13:35.304893   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Tunnel' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.306417   672 Launcher             0 agent Pcs is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.306984   672 Launcher             0 agent Pcs is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.307576   672 Launcher             0 agent Pcs is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.308165   672 Launcher             0 agent Pcs is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.310554   672 Launcher             0 agent Sfe is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.311671   672 Launcher             0 agent Sfe is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.312885   672 Launcher             0 agent Sfe is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.313560   672 Launcher             0 agent Sfe is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.314547   672 Launcher             0 agent Sfe is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.315890   672 Launcher             0 agent Sfe is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.318286   672 Launcher             0 agent Cspf is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.319533   672 Launcher             0 agent Cspf is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.322340   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Lldp~ to /etc/ProcMgr.d/run/ownedByLauncher/Lldp
+2021-04-01 14:13:35.322478   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Lldp' to start in role 'AllSupervisors'
+2021-04-01 14:13:35.324254   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.324942   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.325676   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.326339   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.326947   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.327641   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.328305   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.328949   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.329555   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.330159   672 Launcher             0 agent IpLocking is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.333019   672 Launcher             0 agent IpRib is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.335146   672 Launcher             0 agent LoopProtect is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.335689   672 Launcher             0 agent LoopProtect is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.338311   672 Launcher             0 agent Isis is not runnable in role allSupervisors but agentConfigReactor does not exist
+2021-04-01 14:13:35.343765   672 Launcher             0 agent ControllerClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.344289   672 Launcher             0 agent ControllerClient is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.346292   672 Launcher             0 agent Rpki is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.348285   672 Launcher             0 agent Rpki is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.349399   672 Launcher             0 agent Rpki is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.352221   672 Launcher             0 agent LicenseManager is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.352900   672 Launcher             0 agent LicenseManager is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.353579   672 Launcher             0 agent LicenseManager is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.355973   672 Launcher             0 agent Sai is not runnable in role activeSupervisor but agentConfigReactor does not exist
+2021-04-01 14:13:35.358042   672 Launcher             0 Initiating warm start of 'ProcMgr (worker)'
+2021-04-01 14:13:35.365504   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Etba~ to /etc/ProcMgr.d/run/ownedByLauncher/Etba
+2021-04-01 14:13:35.365669   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Etba' to start in role 'ActiveSupervisor'
+2021-04-01 14:13:35.374454   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/PhyEthtool~ to /etc/ProcMgr.d/run/ownedByLauncher/PhyEthtool
+2021-04-01 14:13:35.374660   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'PhyEthtool' to start in role 'AllCells'
+2021-04-01 14:13:35.467190   672 Launcher             0 Initiating warm start of 'ProcMgr (worker)'
+2021-04-01 14:13:39.027477   672 Launcher             7 Renaming temp config file /etc/ProcMgr.d/run/ownedByLauncher/Rib~ to /etc/ProcMgr.d/run/ownedByLauncher/Rib
+2021-04-01 14:13:39.027686   672 Log                  0 %LAUNCHER-6-PROCESS_START: Configuring process 'Rib' to start in role 'AllSupervisors'
+2021-04-01 14:13:39.132344   672 Launcher             0 Initiating warm start of 'ProcMgr (worker)'

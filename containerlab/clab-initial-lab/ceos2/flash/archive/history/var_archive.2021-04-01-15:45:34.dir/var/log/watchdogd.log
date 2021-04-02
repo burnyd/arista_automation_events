@@ -1,0 +1,1521 @@
+2021-04-01 15:45:00.374645   227 WatchdogDaemon       0 Starting watchdog daemon
+2021-04-01 15:45:00.474124   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:00.474155   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:00.474224   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:00.474275   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:02.475447   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:02.475482   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:02.475512   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:02.475574   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:02.475586   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:02.475604   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:02.475625   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:04.478106   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:04.478140   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:04.478172   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:04.478225   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:04.478239   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:04.478257   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:04.478303   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:04.478316   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:04.478332   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:04.478357   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:06.479515   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:06.479567   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:06.479612   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:06.479705   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:06.479727   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:06.479758   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:06.479846   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:06.479873   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:06.479908   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:06.479988   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:06.480009   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:06.480036   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:06.480070   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:08.483078   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:08.483120   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:08.483169   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:08.483252   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:08.483315   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:08.483457   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:08.483530   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:08.483547   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:08.483572   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:08.483633   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:08.483650   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:08.483674   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:08.483735   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:08.483751   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:08.483773   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:08.483799   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:10.486912   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:10.486948   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:10.486982   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:10.487047   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:10.487063   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:10.487082   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:10.487138   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:10.487153   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:10.487173   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:10.487229   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:10.487242   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:10.487262   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:10.487332   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:10.487348   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:10.487366   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:10.487423   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:10.487437   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:10.487457   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:10.487479   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:12.490499   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:12.490545   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:12.490590   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:12.490681   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:12.490703   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:12.490732   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:12.490823   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:12.490844   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:12.490874   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:12.490953   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:12.490973   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:12.491003   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:12.491080   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:12.491100   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:12.491127   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:12.491205   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:12.491225   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:12.491254   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:12.491363   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:12.491380   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:12.491405   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:12.491431   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:14.494757   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:14.494800   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:14.494836   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:14.494911   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:14.494929   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:14.494954   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:14.495027   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:14.495047   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:14.495076   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:14.495162   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:14.495186   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:14.495215   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:14.495306   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:14.495325   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:14.495348   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:14.495417   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:14.495433   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:14.495455   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:14.495518   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:14.495536   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:14.495558   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:14.495621   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:14.495645   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:14.495670   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:14.495696   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:16.499017   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.499063   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.499105   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.499203   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.499224   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.499253   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.499356   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.499380   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.499411   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.499492   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.499514   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.499543   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.499664   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.499685   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.499715   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.499799   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.499819   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.499850   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.499942   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.499963   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.499991   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.500072   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.500092   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.500122   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.500202   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:16.500222   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:16.500252   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:16.500287   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:18.503463   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.503495   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.503523   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.503573   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.503586   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.503601   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.503649   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.503660   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.503675   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.503716   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.503727   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.503742   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.503782   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.503793   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.503813   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.503853   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.503864   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.503878   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.503917   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.503927   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.503942   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.503982   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.503993   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.504007   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.504046   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.504056   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.504071   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.504111   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:18.504121   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:18.504136   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:18.504153   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:20.506272   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.506308   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.506340   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.506402   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.506417   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.506437   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.506491   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.506505   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.506525   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.506581   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.506594   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.506613   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.506668   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.506686   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.506705   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.506758   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.506772   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.506793   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.506845   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.506860   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.506879   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.506932   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.506946   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.506964   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.507015   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.507030   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.507047   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.507100   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.507113   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.507133   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.507185   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:20.507200   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:20.507217   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:20.507241   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:22.510549   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.510584   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.510615   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.510673   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.510687   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.510705   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.510756   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.510768   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.510786   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.510833   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.510854   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.510891   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.510998   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.511027   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.511060   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.511157   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.511190   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.511228   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.511356   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.511383   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.511421   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.511523   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.511553   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.511590   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.511693   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.511723   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.511760   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.511862   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.511889   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.511925   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.512032   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.512058   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.512099   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.512197   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:22.512226   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:22.512263   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:22.512305   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:24.515443   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.515475   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.515501   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.515556   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.515568   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.515584   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.515630   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.515642   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.515659   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.515702   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.515714   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.515731   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.515774   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.515785   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.515801   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.515845   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.515856   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.515877   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.515922   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.515933   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.515949   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.515991   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.516002   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.516017   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.516061   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.516072   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.516087   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.516141   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.516154   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.516170   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.516213   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.516225   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.516241   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.516285   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.516297   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.516313   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.516355   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:24.516366   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:24.516381   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:24.516400   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:26.519584   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.519634   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.519680   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.519774   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.519795   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.519826   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.519908   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.519928   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.519958   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.520035   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.520056   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.520085   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.520164   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.520184   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.520222   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.520303   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.520323   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.520350   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.520436   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.520456   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.520483   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.520560   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.520581   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.520608   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.520685   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.520705   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.520734   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.520809   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.520833   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.520860   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.520936   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.520956   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.520986   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.521063   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.521084   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.521111   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.521188   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.521208   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.521235   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.521311   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:26.521331   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:26.521358   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:26.521392   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:28.524760   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.524818   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.524878   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.525012   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.525043   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.525087   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.525202   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.525232   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.525273   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.525394   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.525424   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.525466   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.525584   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.525614   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.525655   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.525763   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.525793   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.525832   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.525942   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.525970   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.526011   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.526118   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.526148   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.526187   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.526294   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.526324   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.526362   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.526483   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.526511   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.526551   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.526658   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.526686   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.526726   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.526833   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.526873   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.526921   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.527034   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.527062   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.527102   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.527215   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.527245   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.527331   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.527451   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:28.527481   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:28.527520   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:28.527569   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:30.531649   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.531709   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.531769   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.531900   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.531932   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.531975   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.532089   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.532119   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.532160   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.532272   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.532300   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.532351   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.532459   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.532489   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.532529   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.532644   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.532686   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.532728   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.532841   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.532871   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.532912   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.533020   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.533050   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.533090   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.533196   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.533226   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.533267   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.533380   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.533410   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.533449   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.533557   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.533586   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.533626   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.533734   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.533762   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.533803   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.533911   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.533941   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.533992   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.534123   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.534152   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.534207   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.534315   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.534343   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.534384   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.534492   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:30.534522   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:30.534562   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:30.534610   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:32.540184   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.540246   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.540307   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.540438   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.540469   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.540513   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.540628   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.540661   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.540702   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.540816   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.540844   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.540885   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.540997   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.541027   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.541069   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.541179   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.541208   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.541250   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.541363   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.541393   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.541435   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.541547   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.541575   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.541615   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.541731   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.541759   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.541812   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.541928   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.541958   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.541997   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.542109   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.542140   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.542180   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.542289   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.542319   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.542361   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.542471   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.542501   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.542543   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.542655   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.542685   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.542725   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.542835   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.542866   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.542907   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.543025   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.543055   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.543096   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.543209   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:32.543237   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:32.543278   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:32.543401   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:34.547465   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.547496   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.547527   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.547590   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.547605   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.547625   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.547677   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.547691   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.547709   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.547760   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.547774   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.547797   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.547849   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.547863   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.547880   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.547930   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.547943   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.547961   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548012   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548024   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548043   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548090   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548104   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548125   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548173   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548187   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548204   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548254   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548268   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548285   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548332   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548346   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548365   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548413   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548427   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548445   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548496   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548508   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548527   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548574   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548588   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548604   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548654   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548666   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548685   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548734   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548748   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548765   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548815   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548830   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548850   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548902   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:34.548914   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:34.548933   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:34.548954   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:36.551835   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.551867   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.551898   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.551966   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.551983   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552002   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552059   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552074   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552094   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552151   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552166   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552186   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552243   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552258   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552279   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552335   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552350   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552369   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552427   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552442   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552462   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552520   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552535   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552552   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552613   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552628   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552648   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552704   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552719   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552738   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552797   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552815   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552836   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552896   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.552912   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.552932   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.552988   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.553003   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.553020   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.553073   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.553086   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.553106   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.553158   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.553170   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.553189   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.553236   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.553250   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.553267   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.553314   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.553327   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.553344   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.553399   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.553414   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.553433   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.553493   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:36.553508   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:36.553527   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:36.553550   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:38.557619   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.557651   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.557679   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.557744   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.557760   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.557780   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.557837   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.557852   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.557872   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.557926   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.557941   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.557969   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558023   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558038   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558058   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558113   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558126   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558146   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558199   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558213   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558232   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558284   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558298   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558316   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558371   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558384   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558403   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558454   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558469   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558489   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558542   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558554   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558573   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558625   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558640   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558659   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558712   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558725   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558744   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558798   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558810   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558828   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558880   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558892   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558911   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.558964   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.558979   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.558998   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.559055   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.559068   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.559088   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.559140   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.559154   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.559175   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.559226   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.559241   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.559258   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.559324   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:38.559340   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:38.559361   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:38.559390   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:40.563451   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.563481   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.563508   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.563566   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.563580   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.563597   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.563647   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.563658   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.563676   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.563724   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.563736   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.563783   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.563868   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.563884   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.563904   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.563954   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.563966   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.563982   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564032   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564044   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564062   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564107   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564120   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564136   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564183   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564199   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564218   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564265   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564277   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564294   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564342   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564352   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564373   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564419   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564430   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564448   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564492   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564506   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564524   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564570   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564583   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564599   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564645   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564656   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564673   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564723   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564737   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564753   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564801   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564814   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564831   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564876   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564888   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564904   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.564951   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.564965   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.564980   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.565742   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.565769   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.565798   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.565856   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:40.565871   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:40.565891   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:40.565912   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:42.570852   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.570911   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.570971   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.571100   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.571131   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.571175   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.571326   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.571362   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.571405   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.571523   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.571553   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.571593   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.571836   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.571881   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.571933   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.572058   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.572088   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.572130   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.572315   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.572365   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.572423   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.572556   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.572587   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.572628   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.572743   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.572773   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.572815   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.572946   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.572976   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.573016   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.573128   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.573158   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.573199   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.573309   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.573338   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.573389   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.573501   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.573529   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.573570   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.573678   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.573708   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.573746   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.573854   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.573884   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.573924   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.574048   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.574084   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.574438   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.574686   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.574733   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.574789   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.574912   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.574942   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.574982   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.575093   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.575123   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.575162   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.575272   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.575355   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.575402   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.575613   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.575651   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.575699   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.575912   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:42.575947   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:42.575992   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:42.576042   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:44.583590   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.583623   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.583657   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.583719   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.583731   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.583750   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.583802   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.583815   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.583831   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.583878   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.583889   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.583906   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.583954   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.583966   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.583986   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.584043   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.584057   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.584078   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.584327   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.584346   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.584364   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.584420   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.584434   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.584450   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.584497   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.584510   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.584527   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.584649   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.584664   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.584682   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.584733   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.584924   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.584950   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585009   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585021   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585040   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585088   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585102   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585119   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585166   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585179   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585195   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585242   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585257   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585274   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585321   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585335   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585351   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585400   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585412   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585428   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585474   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585486   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585505   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585551   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585562   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585578   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585625   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585638   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585655   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585702   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585716   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585731   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585777   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585788   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585805   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585853   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:44.585865   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:44.585881   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:44.585901   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:46.590527   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.590554   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.590584   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.590646   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.590660   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.590679   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.590733   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.590748   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.590766   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.590818   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.590832   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.590856   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.590909   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.590924   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.590945   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.590996   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591010   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591028   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591082   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591095   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591115   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591171   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591186   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591204   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591259   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591274   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591314   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591370   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591383   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591403   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591454   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591468   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591486   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591538   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591552   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591572   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591625   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591639   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591659   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591711   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591725   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591743   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591794   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591809   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591826   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591877   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591892   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.591909   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.591968   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.591983   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.592001   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.592057   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.592071   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.592089   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.592140   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.592154   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.592173   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.592222   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.592236   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.592256   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.592308   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.592322   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.592339   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.592390   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.592403   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.592422   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.592472   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.592485   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.592504   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.592554   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:46.592567   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:46.592586   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:46.592609   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:48.595546   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.595588   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.595624   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.595695   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.595711   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.595733   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.595796   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.595813   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.595834   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.595896   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.595912   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.595935   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596003   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596020   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596043   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596105   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596121   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596143   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596205   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596221   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596242   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596301   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596317   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596338   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596400   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596415   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596438   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596499   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596524   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596545   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596599   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596612   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596632   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596689   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596704   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596725   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596781   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596796   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596816   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596869   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596884   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596904   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.596957   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.596972   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.596997   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.597054   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.597068   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.597088   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.597142   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.597157   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.597182   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.597239   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.597718   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.597747   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.597815   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.597827   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.597847   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.597903   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.597918   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.597935   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.597992   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.598006   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.598026   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.598079   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.598093   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.598113   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.598165   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.598180   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.598308   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.598370   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.598383   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.598402   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.598459   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:48.598473   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:48.598495   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:48.598520   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:50.603499   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.603533   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.603564   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.603627   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.603641   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.603662   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.603713   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.603727   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.603744   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.603796   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.603809   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.603833   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.603885   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.603899   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.603916   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.603969   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.603981   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604000   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604049   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604063   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604080   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604130   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604145   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604161   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604212   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604224   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604243   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604293   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604305   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604324   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604374   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604387   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604406   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604454   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604468   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604485   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604536   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604548   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604567   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604618   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604630   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604648   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604696   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604710   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604727   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604778   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604792   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604809   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604859   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604875   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604892   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.604943   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.604955   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.604973   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605021   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.605034   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.605051   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605101   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.605113   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.605132   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605180   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.605194   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.605214   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605263   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.605277   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.605293   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605344   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.605355   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.605374   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605422   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.605434   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.605452   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605503   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.605515   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.605532   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605581   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:50.605596   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:50.605612   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:50.605633   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:52.610071   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610099   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610130   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610198   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610210   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610236   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610287   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610306   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610327   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610378   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610390   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610409   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610457   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610470   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610486   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610533   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610547   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610563   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610610   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610621   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610639   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610685   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610697   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610714   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610760   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610773   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610789   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610835   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610846   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610863   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610908   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610919   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.610935   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.610980   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.610991   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611010   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611053   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611066   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611083   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611128   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611140   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611155   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611200   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611212   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611227   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611274   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611320   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611340   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611388   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611401   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611417   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611463   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611474   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611491   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611541   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611553   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611569   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611615   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611629   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611649   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611700   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611712   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611731   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611782   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611794   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611813   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611864   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611876   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611895   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.611943   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.611957   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.611974   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.612023   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.612035   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.612054   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.612103   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.612116   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.612134   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.612184   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:52.612196   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:52.612214   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:52.612235   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:54.615464   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.615499   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.615529   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.615592   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.615607   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.615627   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.615680   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.615694   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.615714   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.615766   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.615780   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.615798   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.615850   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.615864   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.615883   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.615933   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.615947   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.615966   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616015   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616029   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616048   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616100   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616112   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616131   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616180   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616194   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616211   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616264   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616277   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616296   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616348   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616362   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616379   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616430   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616444   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616461   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616512   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616534   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616554   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616604   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616616   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616635   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616684   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616698   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616715   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616766   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616780   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616797   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616847   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616859   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616878   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.616926   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.616940   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.616957   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617007   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617021   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617039   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617089   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617103   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617132   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617185   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617197   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617216   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617266   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617280   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617299   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617348   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617362   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617381   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617432   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617444   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617463   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617512   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617527   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617544   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617599   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617613   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617631   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617682   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617697   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617714   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617765   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:54.617779   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:54.617798   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:54.617820   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:56.622637   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.622694   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.622756   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.622889   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.622921   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.622963   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.623081   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.623111   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.623153   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.623266   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.623348   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.623393   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.623512   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.623542   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.623583   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.623708   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.623738   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.623778   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.623891   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.623919   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.623960   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.624072   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.624100   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.624155   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.624267   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.624296   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.624336   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.624455   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.624485   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.624526   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.624634   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.624664   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.624705   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.624815   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.624845   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.624885   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.624995   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.625025   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.625066   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.625175   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.625205   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.625246   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.625354   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.625382   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.625422   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.625530   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.625560   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.625601   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.625710   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.625739   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.625778   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.625889   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.625917   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.625960   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.626074   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.626104   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.626143   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.626271   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.626301   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.626342   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.626454   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.626483   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.626523   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.626631   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.626661   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.626707   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.626817   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.626847   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.626888   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.626997   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.627027   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.627068   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.627177   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.627207   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.627248   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.627377   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.627408   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.627449   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.627558   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.627588   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.627628   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.627738   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.627768   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.627810   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.627919   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:56.627948   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:56.627993   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:56.628061   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:45:58.635461   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.635492   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.635520   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.635585   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.635600   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.635621   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.635675   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.635696   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.635718   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.635771   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.635787   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.635807   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.635862   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.635875   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.635900   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.635956   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.635971   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.635989   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636044   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636059   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636077   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636132   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636146   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636166   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636219   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636234   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636253   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636307   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636322   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636339   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636395   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636409   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636429   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636482   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636496   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636516   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636569   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636584   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636604   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636663   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636678   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636698   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636750   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636765   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636785   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636837   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636852   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636872   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.636924   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.636940   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.636959   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637016   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637029   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637049   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637103   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637116   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637135   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637190   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637203   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637223   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637276   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637290   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637310   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637363   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637377   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637397   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637451   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637465   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637485   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637538   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637552   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637572   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637625   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637640   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637660   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637713   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637727   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637747   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637799   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637813   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637831   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637886   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637901   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.637921   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.637974   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.637989   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.638009   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.638068   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:45:58.638082   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:45:58.638103   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:45:58.638124   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:46:00.643253   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.643352   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.643415   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.643553   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.643584   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.643629   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.643759   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.643793   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.643835   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.643953   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.643982   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.644025   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.644135   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.644165   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.644211   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.644381   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.644413   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.644454   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.644563   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.644593   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.644633   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.644742   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.644774   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.644814   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.644923   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.644998   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.645049   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.645207   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.645241   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.645369   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.645493   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.645518   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.645550   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.645633   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.645656   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.645693   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.645776   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.645797   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.645824   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.645925   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.645956   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.645997   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.646109   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.646142   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.646181   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.646272   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.646295   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.646323   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.646403   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.646424   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.646451   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.646529   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.646550   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.646579   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.646656   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.646677   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.646706   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.646784   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.646804   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.646831   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.646908   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.646929   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.646958   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.647034   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.647056   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.647084   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.647161   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.647181   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.647209   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.647310   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.647334   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.647363   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.647449   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.647470   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.647500   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.647578   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.647598   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.647627   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.647705   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.647726   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.647753   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.647859   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.647888   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.647929   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.648035   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.648058   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.648089   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.648242   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.648276   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.648319   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.648431   227 WatchdogDriver       0 Scd probe: hasModuleTypeRegister = 1
+2021-04-01 15:46:00.648461   227 WatchdogDriver       0 Scd probe: sys-search = /sys/module/scd/drivers/pci:scd/*/resource0
+2021-04-01 15:46:00.648498   227 WatchdogDriverManage 0 probe(/usr/lib/watchdog/libScdWatchdogDriver.so) failed
+2021-04-01 15:46:00.648534   227 WatchdogDaemon       0 Couldn't load a driver for the platform
+2021-04-01 15:46:00.648552   227 WatchdogDaemon       0 Max retry reached, abort

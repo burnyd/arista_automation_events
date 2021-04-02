@@ -1,0 +1,21 @@
+Apr  1 14:04:36 ceos1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 9adf.8026.08f7 and portId "Ethernet1" added on interface Ethernet1
+Apr  1 14:04:38 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is uoTm/0SKM9P+0XLSwaD55c5Iy9VpJXUG8S9eX8GsBxE.
+Apr  1 14:04:38 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_REGENERATED: SSH host keys associated with a different system (MAC address 6e:53:51:4d:71:77). Regenerating SSH host keys.
+Apr  1 14:04:39 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is CC1mMO51KjyDvxtQ3IHWw0MnqPEUHLPvGqFHcboXiSw.
+Apr  1 14:04:39 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is vgpCpBkC4bOUCc2YE3YWBSCWYTr5HXBXx9ylCAEmDZ0.
+Apr  1 14:04:39 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is RW6Z3xOeepNjqUYHb0qy0j/uV3Oq+5eimC4HuyOKX+k.
+Apr  1 14:04:40 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is Dn/d39HNjWgh0jeTKuXhkXNy815Au7h9jS4S6YpsdkA.
+Apr  1 14:05:06 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 14:06:04 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Apr  1 14:06:04 ceos1 Stp: %SPANTREE-6-ROOTCHANGE: Root changed for instance MST0: new root interface is (none), new root bridge mac address is e6:86:d6:f9:16:ce (this switch)
+Apr  1 14:06:35 ceos1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 14:06:35 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 14:06:35 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 14:06:35 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 
+Apr  1 14:06:45 ceos1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by root on vty4 (UnknownIpAddr)
+Apr  1 14:06:49 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 14:06:50 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Apr  1 14:06:50 ceos1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Apr  1 14:07:05 ceos1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by root on vty4 (UnknownIpAddr)
+Apr  1 14:07:06 ceos1 ConfigAgent: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by root on vty4 (UnknownIpAddr).
+Apr  1 14:07:20 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable

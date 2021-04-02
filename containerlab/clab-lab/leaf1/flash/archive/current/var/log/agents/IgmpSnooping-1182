@@ -1,0 +1,16 @@
+===== Output from /usr/bin/IgmpSnooping ['--scheduled'] (PID=1182) started Apr  2 15:28:48.004053 ===
+Starting IgmpSnoopingAgent
+EntityManager::doBackoff waiting for remote sysdb version ........ok
+2021-04-02 15:28:58.568474  1182 Log                  0 %AGENT-6-INITIALIZED: Agent 'IgmpSnooping' initialized; pid=1182
+2021-04-02 15:28:59.081899  1182 SmashTemp            1 SmashMap::init() name:/ar/Shmem/kni/ns/default/status/interface md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-02 15:28:59.081964  1182 Smash-3xdYNA-interfa 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface/fenix current path:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface/fenix lastFile:fenix finalPath:true
+2021-04-02 15:28:59.082170  1182 Smash-3xdYNA-interfa 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface capacity:0 fenixId:1122:0 mtime:1617377327 delay:12 event:SmashMap::init
+2021-04-02 15:28:59.082485  1182 Smash-3xdYNA-interfa 1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:11 numSlots:32 connected:true asynchronous:false
+2021-04-02 15:28:59.082521  1182 Smash-3xdYNA-interfa 1 Syncer::sync() Synchronizing, mode:0 asynchronous:false numSlots:32
+2021-04-02 15:28:59.082592  1182 Smash-3xdYNA-interfa 1 SmashShadow::syncComplete() Synchronization complete, seq:11
+2021-04-02 15:28:59.082667  1182 SmashTemp            1 SmashMap::init() name:/ar/Shmem/kni/ns/default/status/addr md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-02 15:28:59.082777  1182 Smash-VsMlwA-addr    1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr/fenix current path:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr/fenix lastFile:fenix finalPath:true
+2021-04-02 15:28:59.083201  1182 Smash-VsMlwA-addr    1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr capacity:0 fenixId:1122:0 mtime:1617377327 delay:12 event:SmashMap::init
+2021-04-02 15:28:59.219801  1182 Smash-VsMlwA-addr    1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:6 numSlots:64 connected:true asynchronous:false
+2021-04-02 15:28:59.219863  1182 Smash-VsMlwA-addr    1 Syncer::sync() Synchronizing, mode:0 asynchronous:false numSlots:64
+2021-04-02 15:28:59.219954  1182 Smash-VsMlwA-addr    1 SmashShadow::syncComplete() Synchronization complete, seq:6

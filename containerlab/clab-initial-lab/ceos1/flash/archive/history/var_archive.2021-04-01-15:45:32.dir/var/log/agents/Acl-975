@@ -1,0 +1,35 @@
+===== Output from /usr/bin/Acl [] (PID=975) started Apr  1 15:45:34.090464 ===
+2021-04-01 15:45:36.037918   992 Log                  0 %AGENT-6-INITIALIZED: Agent 'Acl' initialized; pid=992
+2021-04-01 15:45:36.056416   992 Acl                  0 virtual void AclAgent::Agent::doInit()++
+2021-04-01 15:45:36.441854   992 Acl                  0 virtual void AclAgent::Agent::doInit()--
+2021-04-01 15:45:37.342434   992 Acl                  0 virtual void AclAgent::Agent::doMountsComplete(Sysdb::MountStatus, const Ptr&)++
+2021-04-01 15:45:37.342470   992 Acl                  0 slave mode is false
+2021-04-01 15:45:37.342533   992 AclAggregator        0 new input portsec, creating sm for it, 
+2021-04-01 15:45:37.342547   992 AclAggregator        0 new input pimsm, creating sm for it, 
+2021-04-01 15:45:37.342561   992 AclAggregator        0 new input Rib, creating sm for it, 
+2021-04-01 15:45:37.342572   992 AclAggregator        0 new input mcs, creating sm for it, 
+2021-04-01 15:45:37.342585   992 AclAggregator        0 new input pimsm6, creating sm for it, 
+2021-04-01 15:45:37.342597   992 AclAggregator        0 new input dot1x, creating sm for it, 
+2021-04-01 15:45:37.342608   992 AclAggregator        0 new input cvxacl, creating sm for it, 
+2021-04-01 15:45:37.342760   992 AclIntfConfigSm      0 new input vxlan priority 0
+2021-04-01 15:45:37.342777   992 AclIntfConfigSm      0 new input secure-monitor priority 9
+2021-04-01 15:45:37.342806   992 AclIntfConfigSm      0 new input pimsm priority 0
+2021-04-01 15:45:37.342818   992 AclIntfConfigSm      0 new input dot1x priority 0
+2021-04-01 15:45:37.342832   992 AclIntfConfigSm      0 new input pimsm6 priority 0
+2021-04-01 15:45:37.342844   992 AclIntfConfigSm      0 new input mcs priority 0
+2021-04-01 15:45:37.342855   992 AclIntfConfigSm      0 new input portsec priority 30
+2021-04-01 15:45:37.342878   992 AclIntfConfigSm      0 new input cvxacl priority 0
+2021-04-01 15:45:37.342890   992 AclIntfConfigSm      0 new input cli priority 10
+2021-04-01 15:45:38.161133   992 Acl                  0 ACL copp version is 20656847120957440 aclType ip
+2021-04-01 15:45:38.161169   992 Acl                  0 creating status for copp
+2021-04-01 15:45:38.161200   992 Acl                  0 creating status for copp
+2021-04-01 15:45:38.206100   992 Acl                  0 ACL default-control-plane-acl version is 20656756926775296 aclType ip
+2021-04-01 15:45:38.206147   992 Acl                  0 creating status for default-control-plane-acl
+2021-04-01 15:45:38.206204   992 Acl                  0 creating status for default-control-plane-acl
+2021-04-01 15:45:39.246560   992 Acl                  0 ACL default-control-plane-acl version is 20656756926775324 aclType ipv6
+2021-04-01 15:45:39.246597   992 Acl                  0 creating status for default-control-plane-acl
+2021-04-01 15:45:39.246648   992 Acl                  0 creating status for default-control-plane-acl
+2021-04-01 15:45:39.291593   992 Acl                  0 Creating VrfContext for default
+2021-04-01 15:45:39.291755   992 Acl                  0 mnl_socket is NULL
+2021-04-01 15:45:39.292485   992 Acl                  0 virtual void AclAgent::Agent::doMountsComplete(Sysdb::MountStatus, const Ptr&)--
+2021-04-01 15:45:40.534106   992 AclAggregator        0 new input Rib, creating sm for it, 

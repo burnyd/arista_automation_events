@@ -1,0 +1,10 @@
+Apr  2 15:27:06 spine2 ipsec_starter[223]: Starting strongSwan 5.5.3 IPsec [starter]...
+Apr  2 15:27:06 spine2 ipsec_starter[223]: no netkey IPsec stack detected
+Apr  2 15:27:06 spine2 ipsec_starter[223]: no KLIPS IPsec stack detected
+Apr  2 15:27:06 spine2 ipsec_starter[223]: no known IPsec stack detected, ignoring!
+Apr  2 15:27:06 spine2 ipsec_starter[223]: starter is already running (/etc/strongswan/ipsec.d/run/starter.charon.pid exists) -- no fork done
+Apr  2 15:27:08 spine2 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ConvertPStore
+Apr  2 15:27:08 spine2 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr  2 15:27:09 spine2 sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 15:27:26 spine2 usermod[647]: change user 'root' password
+Apr  2 15:28:40 spine2 usermod[1166]: change user 'root' password

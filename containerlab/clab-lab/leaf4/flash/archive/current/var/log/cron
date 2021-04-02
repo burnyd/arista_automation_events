@@ -1,0 +1,4 @@
+Apr  2 15:27:11 leaf4 crond[309]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 98% if used.)
+Apr  2 15:27:11 leaf4 crond[309]: (CRON) INFO (running with inotify support)
+Apr  2 15:28:02 leaf4 CROND[849]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  2 15:29:02 leaf4 CROND[1297]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)

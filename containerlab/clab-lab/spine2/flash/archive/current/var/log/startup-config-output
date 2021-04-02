@@ -1,0 +1,10 @@
+
+> control-plane
+
+! Hardware not present. ACL(s) not programmed in the hardware. at line 42
+
+> security pki certificate generate self-signed restconf.crt key restconf.key generate rsa 2048 parameters common-name restconf
+
+% Invalid input at line 60
+errors in startup-config: 1
+

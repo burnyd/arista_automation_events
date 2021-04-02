@@ -1,0 +1,17 @@
+Apr  1 14:04:41 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is Lxv5qclUOdd8SG6+WlHz28COEX5MAQcc2jxAwq+6F4Q.
+Apr  1 14:04:41 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_REGENERATED: SSH host keys associated with a different system (MAC address e6:ca:18:3e:b7:a0). Regenerating SSH host keys.
+Apr  1 14:04:42 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is Ep/QW0vHpdgcoD2zGFKYKt0PrUcIj844SF/PAE2QAOA.
+Apr  1 14:04:42 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is DWOXHb5rAi8x+vMJsAUGlydhjuj0uyTq9xk70tROHgo.
+Apr  1 14:04:43 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is v5nAq65/5oRt+LjzaloGA0Z2fQWnH345q+jyvY7o3h4.
+Apr  1 14:04:43 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is 9qJ4BJ6wepeV43i/a5d0FXDo2puVwWqmWO8ifHP0zu8.
+Apr  1 14:05:26 ceos2 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 14:05:53 ceos2 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by root on vty4 (UnknownIpAddr)
+Apr  1 14:05:59 ceos2 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Apr  1 14:05:59 ceos2 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Apr  1 14:06:22 ceos2 ConfigAgent: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by root on vty4 (UnknownIpAddr).
+Apr  1 14:06:25 ceos2 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by root on vty4 (UnknownIpAddr)
+Apr  1 14:06:29 ceos2 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 14:06:39 ceos2 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 14:06:39 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 14:06:39 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 14:06:39 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 

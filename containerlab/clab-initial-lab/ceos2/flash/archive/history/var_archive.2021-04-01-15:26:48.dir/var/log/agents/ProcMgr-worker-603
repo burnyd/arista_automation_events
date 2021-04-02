@@ -1,0 +1,88 @@
+=Thu Apr 01 15:26:24.389815 2021: PROCMGR_WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Thu Apr 01 15:26:24.392584 2021: PROCMGR_WORKER_WARMSTART_DONE: ProcMgr worker warm start done. (PID=603)
+Thu Apr 01 15:26:26.132416 2021: PROCMGR_WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Thu Apr 01 15:26:26.135558 2021: PROCMGR_NEW_PROCESSES: New processes configured to run under ProcMgr control: ['ConfigAgent', 'Fru', 'Launcher', 'SlabMonitor', 'StageMgr', 'Sysdb']
+Thu Apr 01 15:26:26.143593 2021: PROCMGR_PROCESS_STARTED: 'StageMgr' starting with PID=664 (PPID=603) -- execing '/usr/bin/StageMgr'
+Thu Apr 01 15:26:26.156121 2021: PROCMGR_PROCESS_STARTED: 'SlabMonitor' starting with PID=665 (PPID=603) -- execing '/usr/bin/SlabMonitor'
+Thu Apr 01 15:26:26.165028 2021: PROCMGR_PROCESS_STARTED: 'ConfigAgent' starting with PID=666 (PPID=603) -- execing '/usr/bin/ConfigAgent'
+Thu Apr 01 15:26:26.171974 2021: PROCMGR_PROCESS_STARTED: 'Fru' starting with PID=667 (PPID=603) -- execing '/usr/bin/Fru'
+Thu Apr 01 15:26:26.184595 2021: PROCMGR_PROCESS_STARTED: 'Sysdb' starting with PID=668 (PPID=603) -- execing '/usr/bin/Sysdb'
+Thu Apr 01 15:26:26.193743 2021: PROCMGR_WORKER_WARMSTART_DONE: ProcMgr worker warm start done. (PID=603)
+Thu Apr 01 15:26:26.196272 2021: PROCMGR_PROCESS_STARTED: 'Launcher' starting with PID=669 (PPID=603) -- execing '/usr/bin/Launcher'
+Thu Apr 01 15:26:49.225371 2021: PROCMGR_WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Thu Apr 01 15:26:49.257046 2021: PROCMGR_NEW_PROCESSES: New processes configured to run under ProcMgr control: ['Aaa', 'Acl', 'AgentMonitor', 'Arp', 'CapiApp', 'Ebra', 'EventHistoryAgent', 'EventMgr', 'FibServices', 'IgmpSnooping', 'Ira', 'KernelFib', 'KernelNetworkInfo', 'L2Rib', 'LacpTxAgent', 'Lag', 'LedPolicy', 'Lldp', 'McastCommon', 'McastCommon6', 'OpenConfig', 'PhyEthtool', 'PortSec', 'PowerFuse', 'Qos', 'ReloadCauseAgent', 'SharedSecretProfile', 'StandbyCpld', 'Stp', 'StpTopology', 'StpTxRx', 'SuperServer', 'Thermostat', 'TopoAgent', 'Tunnel']
+Thu Apr 01 15:26:49.260661 2021: PROCMGR_PROCESSES_ADOPTED: ProcMgr (PID=603) adopted running processes:  (StageMgr, PID=664) (SlabMonitor, PID=665) (ConfigAgent, PID=666) (Fru, PID=667) (Sysdb, PID=668) (Launcher, PID=669)
+Thu Apr 01 15:26:49.276065 2021: PROCMGR_PROCESS_STARTED: 'LacpTxAgent' starting with PID=835 (PPID=603) -- execing '/usr/bin/LacpTxAgent'
+Thu Apr 01 15:26:49.288340 2021: PROCMGR_PROCESS_STARTED: 'McastCommon' starting with PID=836 (PPID=603) -- execing '/usr/bin/McastCommon'
+Thu Apr 01 15:26:49.303661 2021: PROCMGR_PROCESS_STARTED: 'SuperServer' starting with PID=838 (PPID=603) -- execing '/usr/bin/SuperServer'
+Thu Apr 01 15:26:49.327935 2021: PROCMGR_PROCESS_STARTED: 'OpenConfig' starting with PID=843 (PPID=603) -- execing '/usr/bin/OpenConfig'
+Thu Apr 01 15:26:49.336152 2021: PROCMGR_PROCESS_STARTED: 'Lag' starting with PID=845 (PPID=603) -- execing '/usr/bin/Lag'
+Thu Apr 01 15:26:49.368174 2021: PROCMGR_PROCESS_STARTED: 'PortSec' starting with PID=850 (PPID=603) -- execing '/usr/bin/PortSec'
+Thu Apr 01 15:26:49.394023 2021: PROCMGR_PROCESS_STARTED: 'Ira' starting with PID=852 (PPID=603) -- execing '/usr/bin/Ira'
+Thu Apr 01 15:26:49.410099 2021: PROCMGR_PROCESS_STARTED: 'LedPolicy' starting with PID=854 (PPID=603) -- execing '/usr/bin/LedPolicy'
+Thu Apr 01 15:26:49.429274 2021: PROCMGR_PROCESS_STARTED: 'EventMgr' starting with PID=855 (PPID=603) -- execing '/usr/bin/EventMgr'
+Thu Apr 01 15:26:49.477493 2021: PROCMGR_PROCESS_STARTED: 'CapiApp' starting with PID=862 (PPID=603) -- execing '/usr/bin/CapiApp'
+Thu Apr 01 15:26:49.489771 2021: PROCMGR_PROCESS_STARTED: 'StpTxRx' starting with PID=864 (PPID=603) -- execing '/usr/bin/StpTxRx'
+Thu Apr 01 15:26:49.516267 2021: PROCMGR_PROCESS_STARTED: 'StandbyCpld' starting with PID=869 (PPID=603) -- execing '/usr/bin/StandbyCpld'
+Thu Apr 01 15:26:49.524107 2021: PROCMGR_PROCESS_STARTED: 'AgentMonitor' starting with PID=871 (PPID=603) -- execing '/usr/bin/AgentMonitor'
+Thu Apr 01 15:26:49.548385 2021: PROCMGR_PROCESS_STARTED: 'FibServices' starting with PID=875 (PPID=603) -- execing '/usr/bin/FibServices'
+Thu Apr 01 15:26:49.584504 2021: PROCMGR_PROCESS_STARTED: 'Tunnel' starting with PID=878 (PPID=603) -- execing '/usr/bin/Tunnel'
+Thu Apr 01 15:26:49.585758 2021: PROCMGR_PROCESS_STARTED: 'PhyEthtool' starting with PID=880 (PPID=603) -- execing '/usr/bin/PhyEthtool'
+Thu Apr 01 15:26:49.613640 2021: PROCMGR_PROCESS_STARTED: 'EventHistoryAgent' starting with PID=883 (PPID=603) -- execing '/usr/bin/EventHistoryAgent'
+Thu Apr 01 15:26:49.708527 2021: PROCMGR_PROCESS_STARTED: 'Aaa' starting with PID=890 (PPID=603) -- execing '/usr/bin/Aaa'
+Thu Apr 01 15:26:49.737575 2021: PROCMGR_PROCESS_STARTED: 'StpTopology' starting with PID=891 (PPID=603) -- execing '/usr/bin/StpTopology'
+Thu Apr 01 15:26:49.749065 2021: PROCMGR_PROCESS_STARTED: 'Acl' starting with PID=895 (PPID=603) -- execing '/usr/bin/Acl'
+Thu Apr 01 15:26:49.869078 2021: PROCMGR_PROCESS_STARTED: 'Stp' starting with PID=900 (PPID=603) -- execing '/usr/bin/Stp'
+Thu Apr 01 15:26:49.937030 2021: PROCMGR_PROCESS_STARTED: 'KernelNetworkInfo' starting with PID=905 (PPID=603) -- execing '/usr/bin/KernelNetworkInfo'
+Thu Apr 01 15:26:49.968522 2021: PROCMGR_PROCESS_STARTED: 'McastCommon6' starting with PID=906 (PPID=603) -- execing '/usr/bin/McastCommon6'
+Thu Apr 01 15:26:50.052266 2021: PROCMGR_PROCESS_STARTED: 'Arp' starting with PID=910 (PPID=603) -- execing '/usr/bin/Arp'
+Thu Apr 01 15:26:50.126827 2021: PROCMGR_PROCESS_STARTED: 'Lldp' starting with PID=915 (PPID=603) -- execing '/usr/bin/Lldp'
+Thu Apr 01 15:26:50.204129 2021: PROCMGR_PROCESS_STARTED: 'KernelFib' starting with PID=918 (PPID=603) -- execing '/usr/bin/KernelFib'
+Thu Apr 01 15:26:50.284250 2021: PROCMGR_PROCESS_STARTED: 'Qos' starting with PID=922 (PPID=603) -- execing '/usr/bin/Qos'
+Thu Apr 01 15:26:50.357366 2021: PROCMGR_PROCESS_STARTED: 'Thermostat' starting with PID=927 (PPID=603) -- execing '/usr/bin/Thermostat'
+Thu Apr 01 15:26:50.415015 2021: PROCMGR_PROCESS_STARTED: 'L2Rib' starting with PID=929 (PPID=603) -- execing '/usr/bin/L2Rib'
+Thu Apr 01 15:26:50.433686 2021: PROCMGR_PROCESS_STARTED: 'TopoAgent' starting with PID=930 (PPID=603) -- execing '/usr/bin/TopoAgent'
+Thu Apr 01 15:26:50.468086 2021: PROCMGR_PROCESS_STARTED: 'PowerFuse' starting with PID=932 (PPID=603) -- execing '/usr/bin/PowerFuse'
+Thu Apr 01 15:26:50.484064 2021: PROCMGR_PROCESS_STARTED: 'ReloadCauseAgent' starting with PID=936 (PPID=603) -- execing '/usr/bin/ReloadCauseAgent'
+Thu Apr 01 15:26:50.488017 2021: PROCMGR_PROCESS_STARTED: 'Ebra' starting with PID=935 (PPID=603) -- execing '/usr/bin/Ebra'
+Thu Apr 01 15:26:50.502731 2021: PROCMGR_WORKER_WARMSTART_DONE: ProcMgr worker warm start done. (PID=603)
+Thu Apr 01 15:26:50.504138 2021: PROCMGR_PROCESS_STARTED: 'IgmpSnooping' starting with PID=938 (PPID=603) -- execing '/usr/bin/IgmpSnooping'
+Thu Apr 01 15:26:50.508024 2021: PROCMGR_PROCESS_STARTED: 'SharedSecretProfile' starting with PID=937 (PPID=603) -- execing '/usr/bin/SharedSecretProfile'
+Thu Apr 01 15:26:50.603566 2021: PROCMGR_WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Thu Apr 01 15:26:50.703414 2021: PROCMGR_PROCESSES_ADOPTED: ProcMgr (PID=603) adopted running processes:  (LacpTxAgent, PID=835) (McastCommon, PID=836) (KernelFib, PID=918) (SuperServer, PID=838) (KernelNetworkInfo, PID=905) (McastCommon6, PID=906) (OpenConfig, PID=843) (Lag, PID=845) (Arp, PID=910) (Stp, PID=900) (PortSec, PID=850) (Lldp, PID=915) (Ira, PID=852) (Qos, PID=922) (LedPolicy, PID=854) (EventMgr, PID=855) (StageMgr, PID=664) (SlabMonitor, PID=665) (ConfigAgent, PID=666) (Fru, PID=667) (Sysdb, PID=668) (Launcher, PID=669) (CapiApp, PID=862) (Thermostat, PID=927) (StpTxRx, PID=864) (L2Rib, PID=929) (TopoAgent, PID=930) (PowerFuse, PID=932) (StandbyCpld, PID=869) (AgentMonitor, PID=871) (ReloadCauseAgent, PID=936) (SharedSecretProfile, PID=937) (IgmpSnooping, PID=938) (FibServices, PID=875) (Tunnel, PID=878) (PhyEthtool, PID=880) (EventHistoryAgent, PID=883) (Ebra, PID=935) (Aaa, PID=890) (StpTopology, PID=891) (Acl, PID=895)
+Thu Apr 01 15:26:50.703791 2021: PROCMGR_WORKER_WARMSTART_DONE: ProcMgr worker warm start done. (PID=603)
+Thu Apr 01 15:26:50.905517 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'LacpTxAgent' PID=835 has FastClientPID=842
+Thu Apr 01 15:26:50.905621 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'McastCommon' PID=836 has FastClientPID=844
+Thu Apr 01 15:26:50.905721 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Lag' PID=845 has FastClientPID=856
+Thu Apr 01 15:26:50.905793 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'PortSec' PID=850 has FastClientPID=865
+Thu Apr 01 15:26:50.905863 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Ira' PID=852 has FastClientPID=867
+Thu Apr 01 15:26:50.905933 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'LedPolicy' PID=854 has FastClientPID=870
+Thu Apr 01 15:26:50.906003 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'EventMgr' PID=855 has FastClientPID=868
+Thu Apr 01 15:26:50.906102 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'StpTxRx' PID=864 has FastClientPID=876
+Thu Apr 01 15:26:51.912433 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'StandbyCpld' PID=869 has FastClientPID=885
+Thu Apr 01 15:26:51.912538 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'AgentMonitor' PID=871 has FastClientPID=882
+Thu Apr 01 15:26:51.912615 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'FibServices' PID=875 has FastClientPID=889
+Thu Apr 01 15:26:51.912694 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Tunnel' PID=878 has FastClientPID=887
+Thu Apr 01 15:26:51.912769 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'EventHistoryAgent' PID=883 has FastClientPID=893
+Thu Apr 01 15:26:51.912846 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'StpTopology' PID=891 has FastClientPID=903
+Thu Apr 01 15:26:51.912922 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Acl' PID=895 has FastClientPID=899
+Thu Apr 01 15:26:51.913020 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'KernelNetworkInfo' PID=905 has FastClientPID=914
+Thu Apr 01 15:26:52.023948 2021: PROCMGR_WORKER_WARMSTART: ProcMgr worker warm start. (PID=603)
+Thu Apr 01 15:26:52.109887 2021: PROCMGR_NEW_PROCESSES: New processes configured to run under ProcMgr control: ['Rib']
+Thu Apr 01 15:26:52.148246 2021: PROCMGR_PROCESSES_ADOPTED: ProcMgr (PID=603) adopted running processes:  (LacpTxAgent, PID=835) (McastCommon, PID=836) (KernelFib, PID=918) (SuperServer, PID=838) (KernelNetworkInfo, PID=905) (McastCommon6, PID=906) (OpenConfig, PID=843) (Lag, PID=845) (Arp, PID=910) (Stp, PID=900) (PortSec, PID=850) (Lldp, PID=915) (Ira, PID=852) (Qos, PID=922) (LedPolicy, PID=854) (EventMgr, PID=855) (StageMgr, PID=664) (SlabMonitor, PID=665) (ConfigAgent, PID=666) (Fru, PID=667) (Sysdb, PID=668) (Launcher, PID=669) (CapiApp, PID=862) (Thermostat, PID=927) (StpTxRx, PID=864) (L2Rib, PID=929) (TopoAgent, PID=930) (PowerFuse, PID=932) (StandbyCpld, PID=869) (AgentMonitor, PID=871) (ReloadCauseAgent, PID=936) (SharedSecretProfile, PID=937) (IgmpSnooping, PID=938) (FibServices, PID=875) (Tunnel, PID=878) (PhyEthtool, PID=880) (EventHistoryAgent, PID=883) (Ebra, PID=935) (Aaa, PID=890) (StpTopology, PID=891) (Acl, PID=895)
+Thu Apr 01 15:26:52.196731 2021: PROCMGR_WORKER_WARMSTART_DONE: ProcMgr worker warm start done. (PID=603)
+Thu Apr 01 15:26:52.219623 2021: PROCMGR_PROCESS_STARTED: 'Rib' starting with PID=970 (PPID=603) -- execing '/usr/bin/Rib'
+Thu Apr 01 15:26:53.115218 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Stp' PID=900 has FastClientPID=908
+Thu Apr 01 15:26:53.115373 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'McastCommon6' PID=906 has FastClientPID=912
+Thu Apr 01 15:26:53.115449 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Arp' PID=910 has FastClientPID=917
+Thu Apr 01 15:26:53.115513 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Lldp' PID=915 has FastClientPID=919
+Thu Apr 01 15:26:53.115576 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'KernelFib' PID=918 has FastClientPID=921
+Thu Apr 01 15:26:53.115641 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Qos' PID=922 has FastClientPID=926
+Thu Apr 01 15:26:53.115703 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Thermostat' PID=927 has FastClientPID=933
+Thu Apr 01 15:26:53.115765 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'L2Rib' PID=929 has FastClientPID=944
+Thu Apr 01 15:26:53.115832 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'TopoAgent' PID=930 has FastClientPID=940
+Thu Apr 01 15:26:53.115918 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'Ebra' PID=935 has FastClientPID=941
+Thu Apr 01 15:26:54.129114 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'CapiApp' PID=862 has FastClientPID=892
+Thu Apr 01 15:26:54.129211 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'PowerFuse' PID=932 has FastClientPID=945
+Thu Apr 01 15:26:54.129282 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'ReloadCauseAgent' PID=936 has FastClientPID=950
+Thu Apr 01 15:26:54.129348 2021: PROCMGR_PROCESS_FASTCLIENT: FastClient 'SharedSecretProfile' PID=937 has FastClientPID=948

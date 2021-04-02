@@ -1,0 +1,13 @@
+Apr  1 18:13:15 ceos1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 6e1a.592c.eded and portId "Management0" added on interface Management0
+Apr  1 18:13:16 ceos1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 6e1a.592c.eded and portId "Ethernet1" added on interface Ethernet1
+Apr  1 18:13:20 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is ZairGK2iEsCVbNv8uFOq+HA0T+aknXCmQVhwKGnk5aI.
+Apr  1 18:13:20 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_REGENERATED: SSH host keys associated with a different system (MAC address 92:ef:ca:b7:02:fc). Regenerating SSH host keys.
+Apr  1 18:13:20 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is tW51vw1Tyf5+UYSilDX9VSnLvu3YqJDx9N6YuG8/Qs8.
+Apr  1 18:13:21 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is UXsQLE45wpM2DcK7K9qIqhwa4Nn6wdO7T1Fr8jY1tyY.
+Apr  1 18:13:21 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is OUoNhvbRQsjy2dNlfbMS/UvcURWCherg865ALhLAujs.
+Apr  1 18:13:21 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is ygJNCkMQnF/8Vr4ZAVUtlgQISW5e06yu1NqAfNzqkHY.
+Apr  1 18:13:42 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 18:15:15 ceos1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 18:15:15 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 18:15:15 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 18:15:15 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 

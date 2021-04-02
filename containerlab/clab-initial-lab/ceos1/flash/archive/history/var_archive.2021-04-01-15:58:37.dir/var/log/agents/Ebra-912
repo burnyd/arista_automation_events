@@ -1,0 +1,35 @@
+===== Output from /usr/bin/Ebra [] (PID=912) started Apr  1 15:58:39.705115 ===
+EntityManager::doBackoff waiting for remote sysdb version .....ok
+2021-04-01 15:58:44.085969   939 Log                  0 %AGENT-6-INITIALIZED: Agent 'Ebra' initialized; pid=939
+2021-04-01 15:58:44.090959   939 SmashTemp            1 SmashMap::init() name:/ar/Shmem/kni/ns/default/status/interface md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:true assertOnOrphanAccess:false }
+2021-04-01 15:58:44.091013   939 Smash-3xdYNA-interfa 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface/fenix current path:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface/fenix lastFile:fenix finalPath:true
+2021-04-01 15:58:44.091190   939 Smash-3xdYNA-interfa 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface capacity:0 fenixId:914:0 mtime:1617292722 delay:2 event:SmashMap::init
+2021-04-01 15:58:44.091623   939 Smash-3xdYNA-interfa 1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:3 numSlots:32 connected:true asynchronous:true
+2021-04-01 15:58:44.091638   939 Smash-3xdYNA-interfa 1 Syncer::sync() Scheduling synchronization, mode:0 asynchronous:true numSlots:32
+2021-04-01 15:58:44.091670   939 SmashTemp            1 SmashMap::init() name:/ar/Shmem/kni/ns/default/status/addr md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:true assertOnOrphanAccess:false }
+2021-04-01 15:58:44.091711   939 Smash-VsMlwA-addr    1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr/fenix current path:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr/fenix lastFile:fenix finalPath:true
+2021-04-01 15:58:44.091875   939 Smash-VsMlwA-addr    1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr capacity:0 fenixId:914:0 mtime:1617292722 delay:2 event:SmashMap::init
+2021-04-01 15:58:44.092087   939 Smash-VsMlwA-addr    1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:4 numSlots:64 connected:true asynchronous:true
+2021-04-01 15:58:44.092103   939 Smash-VsMlwA-addr    1 Syncer::sync() Scheduling synchronization, mode:0 asynchronous:true numSlots:64
+2021-04-01 15:58:44.092457   939 SmashTemp            1 SmashMap::init() name:/ar/Shmem/bridging/status/smashFdbStatus md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:true assertOnOrphanAccess:false }
+2021-04-01 15:58:44.092505   939 Smash-g9AD9A-smashFd 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/bridging/status/smashFdbStatus/fenix current path:/var/shmem/smashes/ar/Shmem/bridging lastFile:fenix finalPath:false
+2021-04-01 15:58:44.092833   939 SmashTemp            1 SmashMap::init() name:/ar/Shmem/interface/counter/subintf/current/counter md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:true assertOnOrphanAccess:false }
+2021-04-01 15:58:44.092885   939 Smash-wBO57A-counter 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/interface/counter/subintf/current/counter/fenix current path:/var/shmem/smashes/ar/Shmem/interface/counter lastFile:fenix finalPath:false
+2021-04-01 15:58:44.189759   939 Smash-3xdYNA-interfa 1 SmashShadow::syncComplete() Synchronization complete, seq:3
+2021-04-01 15:58:44.189888   939 Smash-VsMlwA-addr    1 SmashShadow::syncComplete() Synchronization complete, seq:4
+2021-04-01 15:58:44.189971   939 Smash-3xdYNA-interfa 1 ConquerReader::handleAck() minSeq:0 previousSeqSent:3
+2021-04-01 15:58:44.189992   939 Smash-VsMlwA-addr    1 ConquerReader::handleAck() minSeq:0 previousSeqSent:4
+2021-04-01 15:58:44.305392   939 SmashTemp            1 SmashMap::init() name:/ar/Shmem/counters/ethIntf/PhyEthtool-1/current/counter md{ mode:reader localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-01 15:58:44.305476   939 Smash-YFox6B-counter 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/counters/ethIntf/PhyEthtool-1/current/counter/fenix current path:/var/shmem/smashes/ar/Shmem/counters/ethIntf/PhyEthtool-1/current/counter/fenix lastFile:fenix finalPath:true
+2021-04-01 15:58:44.305675   939 Smash-YFox6B-counter 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/counters/ethIntf/PhyEthtool-1/current/counter capacity:0 fenixId:870:0 mtime:1617292722 delay:2 event:SmashMap::init
+2021-04-01 15:58:44.305881   939 SmashTemp            1 SmashMap::init() name:/ar/Shmem/counters/ethIntf/EtbaDut/current/counter md{ mode:reader localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-01 15:58:44.305917   939 Smash-qE6KHB-counter 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/counters/ethIntf/EtbaDut/current/counter/fenix current path:/var/shmem/smashes/ar/Shmem/counters/ethIntf/EtbaDut/current/counter/fenix lastFile:fenix finalPath:true
+2021-04-01 15:58:44.306046   939 Smash-qE6KHB-counter 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/counters/ethIntf/EtbaDut/current/counter capacity:0 fenixId:888:0 mtime:1617292722 delay:2 event:SmashMap::init
+No matching paths found for pattern: /persist/secure/license/store/*
+2021-04-01 15:58:44.426805   939 Smash-g9AD9A-smashFd 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/bridging/status/smashFdbStatus capacity:0 fenixId:888:0 mtime:1617292724 delay:0 event:status
+2021-04-01 15:58:44.427041   939 Smash-g9AD9A-smashFd 1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:0 numSlots:64 connected:true asynchronous:true
+2021-04-01 15:58:44.427056   939 Smash-g9AD9A-smashFd 1 Syncer::sync() Scheduling synchronization, mode:0 asynchronous:true numSlots:0
+2021-04-01 15:58:44.427119   939 Smash-g9AD9A-smashFd 1 SmashShadow::syncComplete() Synchronization complete, seq:0
+2021-04-01 15:58:44.812673   939 Smash-g9AD9A-smashFd 1 ConquerReader::handleAck() minSeq:0 previousSeqSent:0
+2021-04-01 15:58:44.814045   939 Log                  0 %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+No matching paths found for pattern: /persist/secure/license/store/*

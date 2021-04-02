@@ -1,0 +1,53 @@
+hostname leaf2
+!
+!
+service routing protocols model multi-agent
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$aw2g1BtPIkNZNCzi$EX09xWsSfFqWKL9jBhIujnusqoL0F/sMFT5/iNhHRQ/0ro85Ad4wTOekij5PtZOoJQ6JDf5hZ.Q4P68gd1xZI/
+username arista privilege 15 secret sha512 $6$sO2S8XZgWs38w/hf$xmwY.GJcivJ2Sq1Bv5wRcny.l9B6njT7IifbmDPM1Vyn4cMzEkuQeOMeFDg9n7EMuKRDs0OsjgSvuMswU8nQq0
+!
+interface Ethernet1
+   no switchport
+   ip address 10.0.0.5/30
+!
+interface Ethernet2
+   no switchport
+   ip address 10.1.0.5/30
+!
+interface Ethernet3
+   switchport
+   switchport mode trunk
+!
+int lo0
+ip address 2.2.2.2/32
+!
+int lo1
+ip address 22.22.22.22/32
+ip access-list copp
+   10 permit ip any any
+!
+ip routing
+!
+control-plane
+   ip access-group copp in
+!
+management api http-commands
+   protocol http
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api restconf
+   transport https test
+      ssl profile restconf
+!
+management security
+   ssl profile restconf
+      certificate restconf.crt key restconf.key
+!
+

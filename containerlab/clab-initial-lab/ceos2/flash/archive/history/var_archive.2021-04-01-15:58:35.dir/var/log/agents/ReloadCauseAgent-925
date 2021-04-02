@@ -1,0 +1,31 @@
+===== Output from /usr/bin/ReloadCauseAgent [] (PID=925) started Apr  1 15:58:37.462109 ===
+EntityManager::doBackoff waiting for remote sysdb version ....ok
+2021-04-01 15:58:40.384666   936 Log                  0 %AGENT-6-INITIALIZED: Agent 'ReloadCauseAgent' initialized; pid=936
+2021-04-01 15:58:40.425317   936 ReloadCauseAgent     3 Root::doInit
+2021-04-01 15:58:40.425782   936 ReloadCauseAgent     3 Root::doMountsComplete
+2021-04-01 15:58:40.425817   936 ReloadCauseAgent     3 Root::doMountsComplete Initializing state machines 
+
+2021-04-01 15:58:40.425833   936 ReloadCauseAgent     5 handleInitialized
+2021-04-01 15:58:40.425857   936 ReloadCauseAgent     5 handleInitialized Initializing reloadCauseSm, initialized: false file status: false
+
+2021-04-01 15:58:40.425889   936 ReloadCause          5 ReloadCauseSm::handleInitialized initialized false file status false
+
+2021-04-01 15:58:40.425900   936 ReloadCause          5 ReloadCauseSm::handleReloadCauseHistoryFile
+
+2021-04-01 15:58:40.425915   936 ReloadCause          5 handleReloadCauseHistoryFile /mnt/flash/debug/reload_history
+2021-04-01 15:58:40.425930   936 ReloadCause          5 handleReloadCauseHistoryFile Failed to stat. Probably OK. /mnt/flash/debug/reload_history
+
+2021-04-01 15:58:40.425980   936 ReloadCause          5 ReloadCauseSm::initializeInotifyFd
+
+2021-04-01 15:58:40.426000   936 ReloadCause          5 handleInotifyFdReadable inotifyFd() returning 
+2021-04-01 15:58:40.426019   936 ReloadCause          5 new inotify fd inotifyFd() 11 11;In;levelTriggered;0x56b46478
+2021-04-01 15:58:40.426032   936 ReloadCause          5 ReloadCauseSm::initializeWatchId
+
+2021-04-01 15:58:40.426050   936 ReloadCause          5  pathToWatch is: /mnt/flash/debug
+
+2021-04-01 15:58:40.426067   936 ReloadCause          5 new inotify watch id is 1
+2021-04-01 15:58:40.426106   936 ReloadCauseCommon    0 createReloadCauseAgentInitFile opened file /var/tmp/reloadCauseAgentInitStatusFile
+2021-04-01 15:58:40.426120   936 ReloadCause          5 ReloadCauseSm::handleInitialized done
+
+2021-04-01 16:08:40.428467   936 ReloadCauseAgent     3 void ReloadCauseAgent::ReloadCauseAgentSm::handleSyslogDelayClock()
+2021-04-01 16:08:40.428565   936 Log                  0 %SYS-6-SYSTEM_INFO: Reload Cause 1: Unknown

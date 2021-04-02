@@ -1,0 +1,4 @@
+Apr  2 15:27:07 spine2 crond[291]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 79% if used.)
+Apr  2 15:27:07 spine2 crond[291]: (CRON) INFO (running with inotify support)
+Apr  2 15:28:02 spine2 CROND[856]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  2 15:29:01 spine2 CROND[1350]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)

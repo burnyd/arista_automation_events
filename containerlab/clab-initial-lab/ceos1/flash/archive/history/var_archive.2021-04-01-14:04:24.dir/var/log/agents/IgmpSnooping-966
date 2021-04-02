@@ -1,0 +1,28 @@
+===== Output from /usr/bin/IgmpSnooping ['--scheduled'] (PID=966) started Apr  1 14:04:26.584603 ===
+Starting IgmpSnoopingAgent
+EntityManager::doBackoff waiting for remote sysdb version ...ok
+2021-04-01 14:04:29.362684   966 Log                  0 %AGENT-6-INITIALIZED: Agent 'IgmpSnooping' initialized; pid=966
+2021-04-01 14:04:29.402877   966 SmashTemp            1 SmashMap::init() name:/ar/Shmem/kni/ns/default/status/interface md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-01 14:04:29.402947   966 Smash-3xdYNA-interfa 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface/fenix current path:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface/fenix lastFile:fenix finalPath:true
+2021-04-01 14:04:29.403183   966 Smash-3xdYNA-interfa 1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/kni/ns/default/status/interface capacity:0 fenixId:931:0 mtime:1617285867 delay:2 event:SmashMap::init
+2021-04-01 14:04:29.455854   966 Smash-3xdYNA-interfa 1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:3 numSlots:32 connected:true asynchronous:false
+2021-04-01 14:04:29.455883   966 Smash-3xdYNA-interfa 1 Syncer::sync() Synchronizing, mode:0 asynchronous:false numSlots:32
+2021-04-01 14:04:29.455919   966 Smash-3xdYNA-interfa 1 SmashShadow::syncComplete() Synchronization complete, seq:3
+2021-04-01 14:04:29.455964   966 SmashTemp            1 SmashMap::init() name:/ar/Shmem/kni/ns/default/status/addr md{ mode:keyshadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-01 14:04:29.456027   966 Smash-VsMlwA-addr    1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr/fenix current path:/var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr/fenix lastFile:fenix finalPath:true
+2021-04-01 14:04:29.456259   966 Smash-VsMlwA-addr    1 SmashReader::initialize() success /var/shmem/smashes/ar/Shmem/kni/ns/default/status/addr capacity:0 fenixId:931:0 mtime:1617285867 delay:2 event:SmashMap::init
+2021-04-01 14:04:29.456393   966 Smash-VsMlwA-addr    1 SmashShadowBase::initializeConquer() Synchronizing into local shadow, latestSeq:4 numSlots:64 connected:true asynchronous:false
+2021-04-01 14:04:29.456403   966 Smash-VsMlwA-addr    1 Syncer::sync() Synchronizing, mode:0 asynchronous:false numSlots:64
+2021-04-01 14:04:29.456434   966 Smash-VsMlwA-addr    1 SmashShadow::syncComplete() Synchronization complete, seq:4
+2021-04-01 14:04:30.178713   966 Shark-Wusm1A-igmpsno 1 WriterManager::initialize() success /var/shmem/sharks/ar/Shmem/multicast/ipv4/irb/membership/join/igmpsnooping fenixId: 966:0 mtime:1617285870 shocketInfo:smash-966-966-480348677-0:1
+2021-04-01 14:04:30.178739   966 Shark-Wusm1A-igmpsno 0 WriterManager::handleSyncComplete() success:true
+2021-04-01 14:04:30.179352   966 Shark-9gXxXD-igmpsno 1 WriterManager::initialize() success /var/shmem/sharks/ar/Shmem/multicast/ipv4/irb/membership/join/igmpsnoopingStatic fenixId: 966:1 mtime:1617285870 shocketInfo:smash-966-966-480348677-0:2
+2021-04-01 14:04:30.179367   966 Shark-9gXxXD-igmpsno 0 WriterManager::handleSyncComplete() success:true
+2021-04-01 14:04:30.179517   966 Shark-5ZJ0mA-evpn    1 ShadowManager::initialize() 
+2021-04-01 14:04:30.179544   966 Shark-5ZJ0mA-evpn    1 Reader::Reader() fullPath:/var/shmem/sharks/ar/Shmem/multicast/ipv4/irb/membership/join/evpn/fenix current path:/var/shmem/sharks/ar/Shmem/multicast/ipv4/irb/membership/join lastFile:fenix finalPath:false
+2021-04-01 14:04:30.179704   966 Shark-Dd6QhA-mcs     1 ShadowManager::initialize() 
+2021-04-01 14:04:30.179729   966 Shark-Dd6QhA-mcs     1 Reader::Reader() fullPath:/var/shmem/sharks/ar/Shmem/multicast/ipv4/irb/membership/join/mcs/fenix current path:/var/shmem/sharks/ar/Shmem/multicast/ipv4/irb/membership/join lastFile:fenix finalPath:false
+2021-04-01 14:04:30.331973   966 Smash-3xdYNA-interfa 1 ConquerReader::handleAck() minSeq:0 previousSeqSent:3
+2021-04-01 14:04:30.332011   966 Smash-VsMlwA-addr    1 ConquerReader::handleAck() minSeq:0 previousSeqSent:4
+2021-04-01 14:04:30.677539   966 SmashTemp            1 SmashMap::init() name:/ar/Shmem/irb/multicast/igmpProxyStatus/igmpProxyVlan md{ mode:shadow localMem:false maxSize:0 fixedCapacity:false shrinkSlots:true shrinkBuckets:true pruneConquer:true notifySync:true notifyFlush:true useHeap:false heapCheckEnabled:false cleanup:false asynchronous:false assertOnOrphanAccess:false }
+2021-04-01 14:04:30.677613   966 Smash-nBdfOD-igmpPro 1 Reader::Reader() fullPath:/var/shmem/smashes/ar/Shmem/irb/multicast/igmpProxyStatus/igmpProxyVlan/fenix current path:/var/shmem/smashes/ar/Shmem lastFile:fenix finalPath:false

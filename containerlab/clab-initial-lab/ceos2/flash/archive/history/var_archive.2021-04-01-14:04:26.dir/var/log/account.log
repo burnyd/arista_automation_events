@@ -1,0 +1,14 @@
+2021 Apr 01 14:05:08                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 14:05:11                                      stop   service=shell priv-lvl=15 cmd=show management api gnmi
+2021 Apr 01 14:05:13                                      stop   service=shell priv-lvl=15 cmd=show running-config
+2021 Apr 01 14:05:53                                      stop   service=shell priv-lvl=15 cmd=configure terminal
+2021 Apr 01 14:05:55                                      stop   service=shell priv-lvl=15 cmd=interface Ethernet1
+2021 Apr 01 14:05:59                                      stop   service=shell priv-lvl=15 cmd=no switchport
+2021 Apr 01 14:06:03                                      stop   service=shell priv-lvl=15 cmd=ip address 10.0.0.24/24
+2021 Apr 01 14:06:05                                      stop   service=shell priv-lvl=15 cmd=no shutdown
+2021 Apr 01 14:06:09                                      stop   service=shell priv-lvl=15 cmd=interface Management0
+2021 Apr 01 14:06:20                                      stop   service=shell priv-lvl=15 cmd=ip address 192.168.99.2/24
+2021 Apr 01 14:06:22                                      stop   service=shell priv-lvl=15 cmd=write
+2021 Apr 01 14:06:24                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:06:25                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 14:06:27                                      stop   service=shell priv-lvl=15 cmd=exit

@@ -1,0 +1,5 @@
+2021 Apr 01 19:54:20                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:54:26                                      stop   service=shell priv-lvl=15 cmd=show running-config
+2021 Apr 01 19:54:31                                      stop   service=shell priv-lvl=15 cmd=show management api http-commands
+2021 Apr 01 19:54:44                                      stop   service=shell priv-lvl=15 cmd=show running-config | include user
+2021 Apr 01 19:54:51                                      stop   service=shell priv-lvl=15 cmd=exit

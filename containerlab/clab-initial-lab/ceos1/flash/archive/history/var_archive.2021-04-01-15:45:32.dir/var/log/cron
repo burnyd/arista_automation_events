@@ -1,0 +1,5 @@
+Apr  1 15:44:58 ceos1 crond[333]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 56% if used.)
+Apr  1 15:44:58 ceos1 crond[333]: (CRON) INFO (running with inotify support)
+Apr  1 15:45:02 ceos1 CROND[578]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 15:45:02 ceos1 CROND[580]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 15:45:02 ceos1 CROND[582]: (root) CMD (/etc/cron.hourly/logrotate)

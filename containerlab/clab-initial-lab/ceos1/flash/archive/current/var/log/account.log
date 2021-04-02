@@ -1,0 +1,31 @@
+2021 Apr 01 18:25:03                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 18:25:04                                      stop   service=shell priv-lvl=15 cmd=show ip interface brief
+2021 Apr 01 18:25:07                                      stop   service=shell priv-lvl=15 cmd=bash
+2021 Apr 01 19:44:46                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 19:53:28 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=show version
+2021 Apr 01 19:53:28 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:53:28 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show hostname
+2021 Apr 01 19:53:28 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:53:28 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show configuration sessions
+2021 Apr 01 19:53:28 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:53:28 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show version
+2021 Apr 01 19:53:28 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show inventory
+2021 Apr 01 19:54:06 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=show version
+2021 Apr 01 19:54:06 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:54:06 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show hostname
+2021 Apr 01 19:54:06 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:54:06 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show configuration sessions
+2021 Apr 01 19:54:06 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:54:06 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show version
+2021 Apr 01 19:54:06 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show inventory
+2021 Apr 01 19:54:55                                      stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:54:58                                      stop   service=shell priv-lvl=15 cmd=show management api http-commands
+2021 Apr 01 19:55:22                                      stop   service=shell priv-lvl=15 cmd=exit
+2021 Apr 01 19:56:01 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=show version
+2021 Apr 01 19:56:01 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:56:01 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show hostname
+2021 Apr 01 19:56:01 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:56:01 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show configuration sessions
+2021 Apr 01 19:56:01 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=1 cmd=enable
+2021 Apr 01 19:56:01 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show version
+2021 Apr 01 19:56:01 admin    command-api 172.20.20.1     stop   service=shell priv-lvl=15 cmd=show inventory

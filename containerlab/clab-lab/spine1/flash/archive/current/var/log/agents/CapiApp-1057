@@ -1,0 +1,40 @@
+===== Output from /usr/bin/CapiApp ['--ini', '/etc/uwsgi/CapiApp.ini'] (PID=1057) started Apr  2 15:28:34.625788 ===
+[uWSGI] getting INI configuration from /etc/uwsgi/CapiApp.ini
+*** Starting uWSGI 2.0.17 (32bit) on [Fri Apr  2 15:28:36 2021] ***
+compiled with version: 8.4.0 20200304 (Red Hat 8.4.0-4) on 24 November 2020 13:47:27
+os: Linux-4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021
+nodename: spine1
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /var/tmp/agents
+detected binary path: /usr/bin/netnsd
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/run/capi.uwsgi.sock fd 5
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.18 (default, Nov 24 2020, 03:59:55)  [GCC 8.4.0 20200304 (Red Hat 8.4.0-4)]
+Python main interpreter initialized at 0x582a1878
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 79232 bytes (77 KB) for 3 cores
+*** Operational MODE: threaded ***
+added /usr/lib/python2.7/site-packages/ to pythonpath.
+EntityManager::doBackoff waiting for remote sysdb version ......ok
+waiting for CapiApp to be warm ....ok
+WSGI app 0 (mountpoint='') ready in 16 seconds on interpreter 0x582a1878 pid: 1070
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 1070, cores: 3)

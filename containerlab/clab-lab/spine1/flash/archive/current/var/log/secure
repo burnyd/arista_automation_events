@@ -1,0 +1,10 @@
+Apr  2 15:27:11 spine1 ipsec_starter[226]: Starting strongSwan 5.5.3 IPsec [starter]...
+Apr  2 15:27:11 spine1 ipsec_starter[226]: no netkey IPsec stack detected
+Apr  2 15:27:11 spine1 ipsec_starter[226]: no KLIPS IPsec stack detected
+Apr  2 15:27:11 spine1 ipsec_starter[226]: no known IPsec stack detected, ignoring!
+Apr  2 15:27:11 spine1 ipsec_starter[226]: removing pidfile '/etc/strongswan/ipsec.d/run/starter.charon.pid', process not running
+Apr  2 15:27:13 spine1 sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ConvertPStore
+Apr  2 15:27:13 spine1 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr  2 15:27:13 spine1 ipsec_starter[226]: charon (286) started after 1240 ms
+Apr  2 15:27:15 spine1 sudo: pam_unix(sudo:session): session closed for user root
+Apr  2 15:27:29 spine1 usermod[663]: change user 'root' password

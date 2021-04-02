@@ -1,0 +1,14 @@
+Apr  1 14:13:49 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is k9cYwihRz4wXkA8ZTgr+R37FQud5aivCMJifuxQ0eFU.
+Apr  1 14:13:49 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_REGENERATED: SSH host keys associated with a different system (MAC address e6:86:d6:f9:16:ce). Regenerating SSH host keys.
+Apr  1 14:13:49 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is A1+MqNhsjdAFqQxli+avAzWmlwTcPM13lM8eh4D+ZPQ.
+Apr  1 14:13:50 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is N/V/cNpDYTORWGcHGFuaugSLJZJH732HU/h9kmWHOkw.
+Apr  1 14:13:50 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is CUIvO5TzZmuCZu7+B7Ss8gCYNjO6vowQ4Vm3zssdOOM.
+Apr  1 14:13:51 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is CJJa0+c5GZNAMfoI4g50LEapSHXCwr6EPw7Hq6GDlK0.
+Apr  1 14:14:12 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 14:15:46 ceos1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 14:15:46 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 14:15:46 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 14:15:46 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 
+Apr  1 14:16:20 ceos1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by root on vty4 (UnknownIpAddr)
+Apr  1 14:16:24 ceos1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management0, changed state to down
+Apr  1 14:16:27 ceos1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by root on vty4 (UnknownIpAddr)

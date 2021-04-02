@@ -1,0 +1,17 @@
+Apr  1 13:59:54 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is P0zh96osNrVXpfff/OtOCObjrrZoMuN8pvL4IRBIxpA.
+Apr  1 13:59:54 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is u1Mn7ZhABUzrSQgqACri/JuPzxIJiV/jrzGhCr6piLA.
+Apr  1 13:59:55 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is SWPgxqifvH6LTxRsvIJG4oxWQXxY82rY51mbz5bKvpY.
+Apr  1 13:59:55 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is 9HzIKbacX/LydJ9QdEymuqrNKjVnB5/AY12DCO8Ou0Q.
+Apr  1 13:59:56 ceos2 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is 5TIQbVBDPQyb2BxE7AVS4bi9ugfuCf2gq3fQ51tSapA.
+Apr  1 14:00:18 ceos2 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 14:01:26 ceos2 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by root on vty4 (UnknownIpAddr)
+Apr  1 14:01:38 ceos2 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Apr  1 14:01:38 ceos2 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Apr  1 14:01:38 ceos2 Stp: %SPANTREE-6-ROOTCHANGE: Root changed for instance MST0: new root interface is (none), new root bridge mac address is e6:ca:18:3e:b7:a0 (this switch)
+Apr  1 14:01:41 ceos2 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by root on vty4 (UnknownIpAddr)
+Apr  1 14:01:50 ceos2 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 14:01:50 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 14:01:50 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 14:01:50 ceos2 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 
+Apr  1 14:02:08 ceos2 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 14:02:22 ceos2 ConfigAgent: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by root on vty4 (UnknownIpAddr).

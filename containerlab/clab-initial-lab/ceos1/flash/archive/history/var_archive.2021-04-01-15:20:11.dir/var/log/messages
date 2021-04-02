@@ -1,0 +1,204 @@
+Apr  1 15:19:42 ceos1 xinetd[342]: xinetd Version 2.3.15 started with loadavg labeled-networking options compiled in.
+Apr  1 15:19:42 ceos1 xinetd[342]: Started working: 0 available services
+Apr  1 15:19:43 ceos1 archive-init: selecting archive: configured archive found: flash /mnt/flash
+Apr  1 15:19:43 ceos1 archive-init: archive directory rotated to var_archive.2021-04-01-14:24:50.dir
+Apr  1 15:19:43 ceos1 archive-init: archive setup done
+Apr  1 15:19:43 ceos1 archive-init: write archive config done
+Apr  1 15:19:43 ceos1 archive-init: checking that 50% of the reserved space is free
+Apr  1 15:19:43 ceos1 archive-init: no archived instances of the archive deleted
+Apr  1 15:19:44 ceos1 archive-init: archive status: name=flash path=/mnt/flash/archive/current exists=True dirsExist=True valid=True disabled=False enabled=True devName=/dev/sda1 devPresent=True devPhysical=True devMounted=True usedKiB=199204 usedPct=0 fsMntPt=/mnt/flash fsSize=114854020 fsUsedKiB=97996484 fsUsedPct=90 fsQuotaMount=False quotasOn=None quotasOff=None quotaKiB=None quotaPct=None
+Apr  1 15:19:47 ceos1 logEosStarted: %EOS-6-STARTED: EOS started.
+Apr  1 15:19:47 ceos1 ProcMgr-master: %PROCMGR-6-MASTER_STARTED: Master ProcMgr process started. (PID=603)
+Apr  1 15:19:47 ceos1 ProcMgr-worker: %PROCMGR-6-WORKER_COLDSTART: New ProcMgr worker cold start. (PID=604) (Master ProcMgr PID=603)
+Apr  1 15:19:47 ceos1 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=604)
+Apr  1 15:19:47 ceos1 ProcMgr-master: %PROCMGR-6-MASTER_RUNNING: Master ProcMgr (PID=603) monitoring ProcMgr worker (PID=604)
+Apr  1 15:19:48 ceos1 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+Apr  1 15:19:49 ceos1 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=604)
+Apr  1 15:19:49 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StageMgr' starting with PID=665 (PPID=604) -- execing '/usr/bin/StageMgr'
+Apr  1 15:19:49 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SlabMonitor' starting with PID=666 (PPID=604) -- execing '/usr/bin/SlabMonitor'
+Apr  1 15:19:49 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ConfigAgent' starting with PID=667 (PPID=604) -- execing '/usr/bin/ConfigAgent'
+Apr  1 15:19:49 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Fru' starting with PID=668 (PPID=604) -- execing '/usr/bin/Fru'
+Apr  1 15:19:49 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Sysdb' starting with PID=669 (PPID=604) -- execing '/usr/bin/Sysdb'
+Apr  1 15:19:49 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Launcher' starting with PID=670 (PPID=604) -- execing '/usr/bin/Launcher'
+Apr  1 15:19:50 ceos1 Sysdb: %AGENT-6-INITIALIZED: Agent 'Sysdb' initialized; pid=669
+Apr  1 15:19:51 ceos1 ConfigAgent: %AGENT-6-INITIALIZED: Agent 'ConfigAgent' initialized; pid=667
+Apr  1 15:20:11 ceos1 Fru: %AGENT-6-INITIALIZED: Agent 'Fru' initialized; pid=668
+Apr  1 15:20:11 ceos1 Launcher: %AGENT-6-INITIALIZED: Agent 'Launcher' initialized; pid=670
+Apr  1 15:20:11 ceos1 StageMgr: %AGENT-6-INITIALIZED: Agent 'StageMgr' initialized; pid=665
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventHistoryAgent' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'AgentMonitor' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LacpTxAgent' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'IgmpSnooping' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Acl' to start in role 'AllSupervisors'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SharedSecretProfile' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelNetworkInfo' to start in role 'AllSupervisors'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SuperServer' to start in role 'AllCells'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'EventMgr' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'FibServices' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'TopoAgent' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Qos' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ira' to start in role 'AllSupervisors'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'L2Rib' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'CapiApp' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Ebra' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'OpenConfig' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PortSec' to start in role 'ActiveSupervisor'
+Apr  1 15:20:11 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'LedPolicy' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Thermostat' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Arp' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PowerFuse' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Aaa' to start in role 'AllSupervisors'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'ReloadCauseAgent' to start in role 'AllCells'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTxRx' to start in role 'AllSupervisors'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'KernelFib' to start in role 'AllSupervisors'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lag' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StandbyCpld' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'StpTopology' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Stp' to start in role 'AllSupervisors'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'McastCommon6' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Tunnel' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Lldp' to start in role 'AllSupervisors'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Etba' to start in role 'ActiveSupervisor'
+Apr  1 15:20:12 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'PhyEthtool' to start in role 'AllCells'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=604)
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LacpTxAgent' starting with PID=875 (PPID=604) -- execing '/usr/bin/LacpTxAgent'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon' starting with PID=876 (PPID=604) -- execing '/usr/bin/McastCommon'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SuperServer' starting with PID=878 (PPID=604) -- execing '/usr/bin/SuperServer'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'OpenConfig' starting with PID=880 (PPID=604) -- execing '/usr/bin/OpenConfig'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lag' starting with PID=884 (PPID=604) -- execing '/usr/bin/Lag'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PortSec' starting with PID=887 (PPID=604) -- execing '/usr/bin/PortSec'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ira' starting with PID=891 (PPID=604) -- execing '/usr/bin/Ira'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'LedPolicy' starting with PID=896 (PPID=604) -- execing '/usr/bin/LedPolicy'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventMgr' starting with PID=898 (PPID=604) -- execing '/usr/bin/EventMgr'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'CapiApp' starting with PID=904 (PPID=604) -- execing '/usr/bin/CapiApp'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTxRx' starting with PID=905 (PPID=604) -- execing '/usr/bin/StpTxRx'
+Apr  1 15:20:12 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StandbyCpld' starting with PID=910 (PPID=604) -- execing '/usr/bin/StandbyCpld'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'AgentMonitor' starting with PID=914 (PPID=604) -- execing '/usr/bin/AgentMonitor'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'FibServices' starting with PID=920 (PPID=604) -- execing '/usr/bin/FibServices'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Tunnel' starting with PID=922 (PPID=604) -- execing '/usr/bin/Tunnel'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PhyEthtool' starting with PID=925 (PPID=604) -- execing '/usr/bin/PhyEthtool'
+Apr  1 15:20:13 ceos1 McastCommon: %AGENT-6-INITIALIZED: Agent 'McastCommon' initialized; pid=882
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'EventHistoryAgent' starting with PID=928 (PPID=604) -- execing '/usr/bin/EventHistoryAgent'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Aaa' starting with PID=930 (PPID=604) -- execing '/usr/bin/Aaa'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'StpTopology' starting with PID=932 (PPID=604) -- execing '/usr/bin/StpTopology'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Acl' starting with PID=937 (PPID=604) -- execing '/usr/bin/Acl'
+Apr  1 15:20:13 ceos1 PortSec: %AGENT-6-INITIALIZED: Agent 'PortSec' initialized; pid=895
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Stp' starting with PID=944 (PPID=604) -- execing '/usr/bin/Stp'
+Apr  1 15:20:13 ceos1 SuperServer: %AGENT-6-INITIALIZED: Agent 'SuperServer' initialized; pid=878
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelNetworkInfo' starting with PID=947 (PPID=604) -- execing '/usr/bin/KernelNetworkInfo'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'McastCommon6' starting with PID=949 (PPID=604) -- execing '/usr/bin/McastCommon6'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Etba' starting with PID=952 (PPID=604) -- execing '/usr/bin/Etba'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Arp' starting with PID=955 (PPID=604) -- execing '/usr/bin/Arp'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'KernelFib' starting with PID=959 (PPID=604) -- execing '/usr/bin/KernelFib'
+Apr  1 15:20:13 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Lldp' starting with PID=956 (PPID=604) -- execing '/usr/bin/Lldp'
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Qos' starting with PID=962 (PPID=604) -- execing '/usr/bin/Qos'
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Thermostat' starting with PID=964 (PPID=604) -- execing '/usr/bin/Thermostat'
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'L2Rib' starting with PID=969 (PPID=604) -- execing '/usr/bin/L2Rib'
+Apr  1 15:20:14 ceos1 LedPolicy: %AGENT-6-INITIALIZED: Agent 'LedPolicy' initialized; pid=903
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'TopoAgent' starting with PID=974 (PPID=604) -- execing '/usr/bin/TopoAgent'
+Apr  1 15:20:14 ceos1 StpTxRx: %AGENT-6-INITIALIZED: Agent 'StpTxRx' initialized; pid=913
+Apr  1 15:20:14 ceos1 LacpTxAgent: %AGENT-6-INITIALIZED: Agent 'LacpTxAgent' initialized; pid=879
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PowerFuse' starting with PID=978 (PPID=604) -- execing '/usr/bin/PowerFuse'
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Ebra' starting with PID=981 (PPID=604) -- execing '/usr/bin/Ebra'
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'ReloadCauseAgent' starting with PID=983 (PPID=604) -- execing '/usr/bin/ReloadCauseAgent'
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SharedSecretProfile' starting with PID=989 (PPID=604) -- execing '/usr/bin/SharedSecretProfile'
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'IgmpSnooping' starting with PID=991 (PPID=604) -- execing '/usr/bin/IgmpSnooping'
+Apr  1 15:20:14 ceos1 StandbyCpld: %AGENT-6-INITIALIZED: Agent 'StandbyCpld' initialized; pid=916
+Apr  1 15:20:14 ceos1 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=604)
+Apr  1 15:20:14 ceos1 EventMgr: %AGENT-6-INITIALIZED: Agent 'EventMgr' initialized; pid=919
+Apr  1 15:20:14 ceos1 AgentMonitor: %AGENT-6-INITIALIZED: Agent 'AgentMonitor' initialized; pid=924
+Apr  1 15:20:14 ceos1 Ira: %AGENT-6-INITIALIZED: Agent 'Ira' initialized; pid=902
+Apr  1 15:20:14 ceos1 Lag: %AGENT-6-INITIALIZED: Agent 'Lag' initialized; pid=890
+Apr  1 15:20:14 ceos1 FibServices: %AGENT-6-INITIALIZED: Agent 'FibServices' initialized; pid=926
+Apr  1 15:20:15 ceos1 EventHistoryAgent: %AGENT-6-INITIALIZED: Agent 'EventHistoryAgent' initialized; pid=933
+Apr  1 15:20:15 ceos1 PhyEthtool: %AGENT-6-INITIALIZED: Agent 'PhyEthtool' initialized; pid=925
+Apr  1 15:20:15 ceos1 Aaa: %AGENT-6-INITIALIZED: Agent 'Aaa' initialized; pid=930
+Apr  1 15:20:15 ceos1 Tunnel: %AGENT-6-INITIALIZED: Agent 'Tunnel' initialized; pid=929
+Apr  1 15:20:15 ceos1 McastCommon6: %AGENT-6-INITIALIZED: Agent 'McastCommon6' initialized; pid=954
+Apr  1 15:20:15 ceos1 StpTopology: %AGENT-6-INITIALIZED: Agent 'StpTopology' initialized; pid=938
+Apr  1 15:20:15 ceos1 CapiApp: %AGENT-6-INITIALIZED: Agent 'CapiApp' initialized; pid=915
+Apr  1 15:20:15 ceos1 Acl: %AGENT-6-INITIALIZED: Agent 'Acl' initialized; pid=942
+Apr  1 15:20:16 ceos1 KernelNetworkInfo: %AGENT-6-INITIALIZED: Agent 'KernelNetworkInfo' initialized; pid=953
+Apr  1 15:20:16 ceos1 Stp: %AGENT-6-INITIALIZED: Agent 'Stp' initialized; pid=946
+Apr  1 15:20:16 ceos1 Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Rib' to start in role 'AllSupervisors'
+Apr  1 15:20:16 ceos1 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=604)
+Apr  1 15:20:16 ceos1 Qos: %AGENT-6-INITIALIZED: Agent 'Qos' initialized; pid=971
+Apr  1 15:20:16 ceos1 Etba: %AGENT-6-INITIALIZED: Agent 'Etba' initialized; pid=952
+Apr  1 15:20:16 ceos1 Thermostat: %AGENT-6-INITIALIZED: Agent 'Thermostat' initialized; pid=972
+Apr  1 15:20:16 ceos1 KernelFib: %AGENT-6-INITIALIZED: Agent 'KernelFib' initialized; pid=963
+Apr  1 15:20:16 ceos1 Arp: %AGENT-6-INITIALIZED: Agent 'Arp' initialized; pid=958
+Apr  1 15:20:16 ceos1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Rib' starting with PID=1027 (PPID=604) -- execing '/usr/bin/Rib'
+Apr  1 15:20:17 ceos1 Lldp: %AGENT-6-INITIALIZED: Agent 'Lldp' initialized; pid=973
+Apr  1 15:20:17 ceos1 TopoAgent: %AGENT-6-INITIALIZED: Agent 'TopoAgent' initialized; pid=977
+Apr  1 15:20:17 ceos1 L2Rib: %AGENT-6-INITIALIZED: Agent 'L2Rib' initialized; pid=979
+Apr  1 15:20:17 ceos1 PowerFuse: %AGENT-6-INITIALIZED: Agent 'PowerFuse' initialized; pid=982
+Apr  1 15:20:17 ceos1 SharedSecretProfile: %AGENT-6-INITIALIZED: Agent 'SharedSecretProfile' initialized; pid=993
+Apr  1 15:20:17 ceos1 IgmpSnooping: %AGENT-6-INITIALIZED: Agent 'IgmpSnooping' initialized; pid=991
+Apr  1 15:20:17 ceos1 ReloadCauseAgent: %AGENT-6-INITIALIZED: Agent 'ReloadCauseAgent' initialized; pid=990
+Apr  1 15:20:17 ceos1 Ebra: %AGENT-6-INITIALIZED: Agent 'Ebra' initialized; pid=988
+Apr  1 15:20:17 ceos1 Rib: %AGENT-6-INITIALIZED: Agent 'Rib' initialized; pid=1027
+Apr  1 15:20:18 ceos1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId ee3b.6b0a.5858 and portId "Management0" added on interface Management0
+Apr  1 15:20:18 ceos1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Apr  1 15:20:18 ceos1 Stp: %SPANTREE-6-ROOTCHANGE: Root changed for instance MST0: new root interface is (none), new root bridge mac address is 66:af:1c:7f:75:65 (this switch)
+Apr  1 15:20:19 ceos1 Rib: Commence routing updates
+Apr  1 15:20:19 ceos1 SuperServer: %SECURITY-6-SSL_PROFILE_VALID: SSL profile 'ARISTA_DEFAULT_PROFILE' is valid
+Apr  1 15:20:20 ceos1 Rib: %RIB-5-IGP_CONVERGED: IGP protocols in VRF default have converged and their routes are in FIB
+Apr  1 15:20:20 ceos1 SuperServer: %SYS-5-CLI_SCHEDULER_ENABLED: CliScheduler is enabled, continuing its execution of scheduled CLI jobs.
+Apr  1 15:20:20 ceos1 Rib: %RIB-5-ROUTE_READY: Routes in VRF default are ready and available in FIB
+Apr  1 15:20:20 ceos1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId ee3b.6b0a.5858 and portId "Ethernet1" added on interface Ethernet1
+Apr  1 15:20:23 ceos1 xinetd[342]: Starting reconfiguration
+Apr  1 15:20:23 ceos1 xinetd[342]: Swapping defaults
+Apr  1 15:20:23 ceos1 xinetd[342]: Reconfigured: new=2 old=0 dropped=0 (services)
+Apr  1 15:20:24 ceos1 rsyslogd: imuxsock: Acquired UNIX socket '/dev/log' (fd 3) from systemd.  [v8.2001.0]
+Apr  1 15:20:24 ceos1 rsyslogd: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="1419" x-info="https://www.rsyslog.com"] start
+Apr  1 15:20:26 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key rsa has been updated. The SHA-256 hash of public key rsa fingerprint is qAd1tdzx9c2c4xDirkquK4NMSITPrT5pTHpYC+MIEUc.
+Apr  1 15:20:26 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_REGENERATED: SSH host keys associated with a different system (MAC address ca:89:86:01:64:47). Regenerating SSH host keys.
+Apr  1 15:20:27 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp521 has been updated. The SHA-256 hash of public key ecdsa-nistp521 fingerprint is td1XDpNR3qZ9BXL+1X5/rvt+lYUFr6yj//OsbNg1txs.
+Apr  1 15:20:28 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ed25519 has been updated. The SHA-256 hash of public key ed25519 fingerprint is TRCgTYys8D7LZ1dQAmEckD0aYh3VZzRIFRp8rZn30DI.
+Apr  1 15:20:28 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key ecdsa-nistp256 has been updated. The SHA-256 hash of public key ecdsa-nistp256 fingerprint is Hr7JRoOEykvpTH+xVmdAlJ0RDtmjCfNIsaYMf+sdBEg.
+Apr  1 15:20:29 ceos1 SuperServer: %SYS-6-SSH_HOST_KEY_UPDATED: SSH host key dsa has been updated. The SHA-256 hash of public key dsa fingerprint is zLGG5ibzOzHFzTXLrZ9p3oHuq/j8ljqh/ZwU5UrIhEk.
+Apr  1 15:20:29 ceos1 xinetd[342]: Starting reconfiguration
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/chargen-dgram [file=/etc/xinetd.conf] [line=56]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/chargen-stream [file=/etc/xinetd.d/chargen-stream] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/daytime-dgram [file=/etc/xinetd.d/daytime-dgram] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/daytime-stream [file=/etc/xinetd.d/daytime-stream] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/discard-dgram [file=/etc/xinetd.d/discard-dgram] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/discard-stream [file=/etc/xinetd.d/discard-stream] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/echo-dgram [file=/etc/xinetd.d/echo-dgram] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/echo-stream [file=/etc/xinetd.d/echo-stream] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/ssh [file=/etc/xinetd.d/ssh] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/ssh6 [file=/etc/xinetd.d/ssh6] [line=29]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/sshnetconf-default [file=/etc/xinetd.d/sshnetconf-default] [line=29]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/sshnetconf-default-6 [file=/etc/xinetd.d/sshnetconf-default-6] [line=28]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/tcpmux-server [file=/etc/xinetd.d/tcpmux-server] [line=28]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/time-dgram [file=/etc/xinetd.d/time-dgram] [line=68]
+Apr  1 15:20:29 ceos1 xinetd[342]: Reading included configuration file: /etc/xinetd.d/time-stream [file=/etc/xinetd.d/time-stream] [line=67]
+Apr  1 15:20:29 ceos1 xinetd[342]: removing chargen
+Apr  1 15:20:29 ceos1 xinetd[342]: removing chargen
+Apr  1 15:20:29 ceos1 xinetd[342]: removing daytime
+Apr  1 15:20:29 ceos1 xinetd[342]: removing daytime
+Apr  1 15:20:29 ceos1 xinetd[342]: removing discard
+Apr  1 15:20:29 ceos1 xinetd[342]: removing discard
+Apr  1 15:20:29 ceos1 xinetd[342]: removing echo
+Apr  1 15:20:29 ceos1 xinetd[342]: removing echo
+Apr  1 15:20:29 ceos1 xinetd[342]: removing tcpmux
+Apr  1 15:20:29 ceos1 xinetd[342]: removing time
+Apr  1 15:20:29 ceos1 xinetd[342]: removing time
+Apr  1 15:20:29 ceos1 xinetd[342]: Swapping defaults
+Apr  1 15:20:29 ceos1 xinetd[342]: readjusting service sshnetconf-830
+Apr  1 15:20:29 ceos1 xinetd[342]: readjusting service sshnetconf-830-6
+Apr  1 15:20:29 ceos1 xinetd[342]: Reconfigured: new=2 old=2 dropped=0 (services)
+Apr  1 15:20:48 ceos1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Apr  1 15:21:02 ceos1 CROND[1766]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 15:21:02 ceos1 CROND[1768]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 15:22:01 ceos1 CROND[1958]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 15:22:24 ceos1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Apr  1 15:22:24 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.1F-20001546.4251F (engineering build)
+Apr  1 15:22:24 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Model: cEOSLab
+Apr  1 15:22:24 ceos1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: 
+Apr  1 15:23:01 ceos1 CROND[2041]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 15:24:01 ceos1 CROND[2124]: (root) CMD (/usr/bin/appendAutoBwQtrace.py &> /dev/null)
+Apr  1 15:24:01 ceos1 CROND[2125]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 15:25:02 ceos1 CROND[2207]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
+Apr  1 15:26:01 ceos1 CROND[2290]: (root) CMD (/usr/bin/archivecheck.py &> /dev/null)
